@@ -30,6 +30,10 @@ export class LoginComponent implements OnInit {
       return;
     }
 
+    if(this.recordarme === false){
+      localStorage.removeItem('email');
+    }
+
     Swal.fire({
       allowOutsideClick: false,
       icon: 'info',
