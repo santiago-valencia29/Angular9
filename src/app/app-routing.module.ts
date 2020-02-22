@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-  // Redux
-import { ListaComponent } from './usuarios/lista/lista.component';
-import { UsuarioComponent } from './usuarios/usuario/usuario.component';
-  // Home
+// Redux
+import { ListaComponent } from './components/usuarios/lista/lista.component';
+import { UsuarioComponent } from './components/usuarios/usuario/usuario.component';
+// Home
 import { HomeComponent } from './shared/home/home.component';
 // CrudFirebase
-import { HeroesComponent } from './crudfirebase/heroes/heroes.component';
-import { HeroeComponent } from './crudfirebase/heroe/heroe.component';
+import { HeroesComponent } from './components/crudfirebase/heroes/heroes.component';
+import { HeroeComponent } from './components/crudfirebase/heroe/heroe.component';
 // Login-Register
 import { RegistroComponent } from './auth/registro/registro.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
+
 
 const routes: Routes = [
   // CrudFirebase

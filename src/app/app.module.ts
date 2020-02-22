@@ -1,10 +1,10 @@
 // Modulos
 import { AppRoutingModule } from './app-routing.module';
-import { UsuariosModule } from './usuarios/usuarios.module';
-import { CrudfirebaseModule } from './crudfirebase/crudfirebase.module';
+import { UsuariosModule } from './components/usuarios/usuarios.module';
+import { CrudfirebaseModule } from './components/crudfirebase/crudfirebase.module';
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
-import { MeanstackModule } from './meanstack/meanstack.module';
+import { MeanstackModule } from './components/meanstack/meanstack.module';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
