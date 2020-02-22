@@ -4,6 +4,7 @@ import { UsuariosModule } from './usuarios/usuarios.module';
 import { CrudfirebaseModule } from './crudfirebase/crudfirebase.module';
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
+import { MeanstackModule } from './meanstack/meanstack.module';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -22,6 +23,7 @@ import { effectsArr } from './store/effects/index';
 
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
+
 
 
 
@@ -50,6 +52,7 @@ import { environment } from 'src/environments/environment';
     UsuariosModule,
     CrudfirebaseModule,
     AuthModule,
+    MeanstackModule,
     BrowserAnimationsModule
   ],
   providers: [],
