@@ -1,3 +1,15 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* style APPComponent footer */
+  .content {
+    min-height: 100%;
+  }
+  .content-inside {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  
+  
