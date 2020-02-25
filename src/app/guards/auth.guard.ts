@@ -23,6 +23,8 @@ export class AuthGuard implements CanActivate {
         text: 'Debe autenticarse'
       });
       this.router.navigateByUrl('/login');
+      this.auth.logout();
+      // localStorage.removeItem('email');
       return false;
     }
   }
