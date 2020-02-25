@@ -15,7 +15,6 @@ import { RegistroComponent } from './auth/registro/registro.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 
-import { AboutComponent } from './components/meanstack/about/about.component';
 import { ProjectsComponent } from './components/meanstack/projects/projects.component';
 import { CreateComponent } from './components/meanstack/create/create.component';
 import { ContactComponent } from './components/meanstack/contact/contact.component';
@@ -23,7 +22,6 @@ import { ContactComponent } from './components/meanstack/contact/contact.compone
 
 const routes: Routes = [
   // MeanStack
-  { path: 'sobre-mi', component: AboutComponent},
   { path: 'proyectos', component: ProjectsComponent},
   { path: 'crear-proyecto', component: CreateComponent},
   { path: 'contacto', component: ContactComponent},
