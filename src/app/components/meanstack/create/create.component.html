@@ -1,1 +1,66 @@
-<p>create works!</p>
+<h2>{{titulo}}</h2>
+
+<mat-vertical-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Información de Proyecto</ng-template>
+        <p>Estos son proyectos de desarrollo</p>
+        <div>
+          <button mat-button matStepperNext>Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Guardar Proyecto</ng-template>
+            <mat-form-field class="m-2">
+              <mat-label>Nombre</mat-label>
+              <input matInput formControlName="name" required>
+              <mat-error>Ingrese un valor correcto</mat-error>
+            </mat-form-field>
+            <ng-template matStepLabel>Descripción</ng-template>
+            <mat-form-field class="m-2">
+              <mat-label>Descripción</mat-label>
+              <input matInput formControlName="description" 
+                     required>
+            <mat-error>Ingrese un valor correcto</mat-error>
+            </mat-form-field>
+            <ng-template matStepLabel>Categoria</ng-template>
+            <mat-form-field class="m-2">
+              <mat-label>Categoria</mat-label>
+              <input matInput formControlName="category" 
+                     required>
+            <mat-error>Ingrese un valor correcto</mat-error>
+            </mat-form-field>
+            <ng-template matStepLabel>Actualización</ng-template>
+            <mat-form-field class="m-2">
+              <mat-label>Año Lanzamiento</mat-label>
+              <input matInput formControlName="year" required>
+              <mat-error>Ingrese un valor YYYY númerico</mat-error>
+            </mat-form-field>
+            <ng-template matStepLabel>Lenguajes</ng-template>
+            <mat-form-field class="m-2">
+              <mat-label>Lenguajes</mat-label>
+              <input matInput formControlName="langs" 
+                     required>
+                <mat-error>Ingrese un valor correcto</mat-error>
+            </mat-form-field>
+            <ng-template matStepLabel>Subir imagen del proyecto</ng-template>
+            <div class="m-2">
+              <h6> Subir imagen del proyecto</h6>
+              <input  type="file" formControlName="image" 
+                     required>
+            </div>
+            <div class="p-4"> 
+                <button (click)="onSubmit()" type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+          </form>
+         
+          <div>
+            <button mat-button matStepperPrevious>Anterior</button>
+            <!-- <button mat-button (click)="stepper.reset()">Nuevo</button> -->
+          </div>
+      </mat-step>
+ 
+  </mat-vertical-stepper>
