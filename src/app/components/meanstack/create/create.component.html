@@ -54,7 +54,7 @@
                      required>
             </div>
             <div class="p-4"> 
-                <button (click)="onSubmit()" type="submit" class="btn btn-primary">Guardar</button>
+                <button (click)="onSubmit()" type="submit" class="btn btn-primary" [disabled]="!secondFormGroup.valid">Guardar</button>
               </div>
           </form>
          

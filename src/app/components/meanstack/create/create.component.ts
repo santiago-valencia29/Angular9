@@ -48,7 +48,7 @@ export class CreateComponent implements OnInit {
 
     if (this.secondFormGroup.invalid) {
       Swal.fire({
-        text: 'Hay campos que presentan errores',
+        text: 'Hay campos sin completar',
         icon: 'info'
       })
       return;
