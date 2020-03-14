@@ -51,13 +51,11 @@ export class CreateComponent implements OnInit {
         text: 'Hay campos sin completar',
         icon: 'info'
       })
-      this.secondFormGroup.reset();
       return;
     }
     this._projectService.saveProject(this.project).subscribe(
       response =>{
         if(response.project){
-          this.secondFormGroup.reset();
           Swal.fire({
             text: 'El Projecto se ha guardado correctamente',
             icon: 'success'
@@ -80,6 +78,10 @@ export class CreateComponent implements OnInit {
     )
 
     
+  }
+
+  nuevo(){
+    this.secondFormGroup.reset();
   }
 
 

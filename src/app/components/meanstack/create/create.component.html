@@ -54,12 +54,17 @@
                      required>
             </div>
             <div class="p-4"> 
-                <button (click)="onSubmit()"  class="btn btn-primary" [disabled]="!secondFormGroup.valid">Guardar</button>
-              </div>
+              <button  (click)="onSubmit()" type="reset" class="btn btn-primary" [disabled]="!secondFormGroup.valid">Guardar</button>
+              
+             
+            </div>
+
           </form>
          
+       
           <div>
             <button mat-button matStepperPrevious>Anterior</button>
+            <button (click)="nuevo()"  class="btn btn-dark">Nuevo</button>
             <!-- <button mat-button (click)="stepper.reset()">Nuevo</button> -->
           </div>
       </mat-step>
