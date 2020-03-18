@@ -4,6 +4,7 @@ import { HeroeComponent } from './heroe/heroe.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { AppMaterialModule } from 'src/app/app-material.module';
 
 
 
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    AppMaterialModule
   ],
   exports: [
     HeroeComponent,

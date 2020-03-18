@@ -50,7 +50,7 @@ export class CreateComponent implements OnInit {
 
   onSubmit(){
     this.project = this.secondFormGroup.value
-    console.log(this.project)
+    // console.log(this.project)
     // console.log(this.secondFormGroup)
     if (this.secondFormGroup.invalid) {
       Swal.fire({

@@ -46,7 +46,9 @@
         </td>
       </tr>
     </tbody>
+   
   </table>
+  <mat-paginator [pageSizeOptions]="[5, 15,30]"></mat-paginator>
 
 
   <div  *ngIf="loading"   class="alert alert-info text-center mt-3">

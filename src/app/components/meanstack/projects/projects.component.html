@@ -1,6 +1,8 @@
+<h2>Lista de Proyectos</h2>
+
 <mat-form-field>
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia">
+    <mat-label>Buscar</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ej. Arch">
   </mat-form-field>
   
   <div class="mat-elevation-z8">
@@ -9,24 +11,34 @@
       <!-- ID Column -->
       <ng-container matColumnDef="_id">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
-        <td mat-cell *matCellDef="let row"> {{row._id}} </td>
+        <td mat-cell *matCellDef="let i = index"> {{i+1}} </td>
       </ng-container>
   
       <!-- Name Column -->
       <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
         <td mat-cell *matCellDef="let row"> {{row.name}} </td>
       </ng-container>
   
       <!-- Color Column -->
       <ng-container matColumnDef="description">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Color </th>
-        <td mat-cell *matCellDef="let row" [style.color]="row.description"> {{row.description}} </td>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Descripcion </th>
+        <td mat-cell *matCellDef="let row" > {{row.description}} </td>
       </ng-container>
 
-      <ng-container matColumnDef="symbol">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Color </th>
-        <td mat-cell *matCellDef="let row" [style.color]="row.symbol"> {{row.symbol}} </td>
+      <ng-container matColumnDef="category">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Categoria </th>
+        <td mat-cell *matCellDef="let row" > {{row.category}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="year">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Año </th>
+        <td mat-cell *matCellDef="let row" [ngClass]="{anio: row.year > 2014}"> {{row.year}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="langs">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> lenguajes </th>
+        <td mat-cell *matCellDef="let row" > {{row.langs}} </td>
       </ng-container>
   
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -34,6 +46,8 @@
       </tr>
     </table>
   
-    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+    <mat-paginator [pageSizeOptions]="[5, 15,30]"></mat-paginator>
   </div>
+
+  <button [routerLink]="['/crear-proyecto']" class="btn btn-dark mt-3">Crear proyecto</button>
   

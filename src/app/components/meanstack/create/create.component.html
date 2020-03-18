@@ -6,7 +6,9 @@
         <ng-template matStepLabel>Información de Proyecto</ng-template>
         <p>Estos son proyectos de desarrollo</p>
         <img src="../../../../assets/images/images_santiago/project.svg" style="width: 200px;" alt="">
+        <button [routerLink]="['/proyectos']" class="btn btn-outline-info">Lista de proyectos</button>
         <div>
+         
           <button mat-button matStepperNext>Siguiente</button>
         </div>
       </form>
@@ -66,6 +68,8 @@
             <button (click)="nuevo()"  class="btn btn-dark">Nuevo</button>
             <!-- <button mat-button (click)="stepper.reset()">Nuevo</button> -->
           </div>
+          
+
       </mat-step>
  
   </mat-vertical-stepper>

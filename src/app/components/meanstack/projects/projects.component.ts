@@ -1,9 +1,8 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { Project } from '../../../models/project.model';
 import { ProjectService } from '../../../services/meanstack/project.service';
-import { global } from '../../../services/meanstack/global';
 import {MatTableDataSource} from '@angular/material/table';
-import {MatPaginator} from '@angular/material/paginator';
+import {MatPaginator,MatPaginatorIntl} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 
 
@@ -15,14 +14,18 @@ import {MatSort} from '@angular/material/sort';
 
 
 export class ProjectsComponent implements OnInit {
-  displayedColumns: string[] = ['_id', 'name', 'description', 'symbol'];
+
+  displayedColumns: string[] = ['_id', 'name', 'description', 'category', 'year', 'langs'];
   dataSource: MatTableDataSource<Project>;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
-  
   public projects: Project[];
-  constructor(private _projectService: ProjectService) { 
-  
+
+  constructor(private _projectService: ProjectService, private paginatorleng: MatPaginatorIntl) { 
+
+    this.paginatorleng.itemsPerPageLabel = "Registros por página";
+    this.paginatorleng.getRangeLabel = this.changeLenguage();
+
   }
 
   ngOnInit(): void {
@@ -30,6 +33,7 @@ export class ProjectsComponent implements OnInit {
 
     this.getProjects();
   }
+
 
   getProjects(){
     this._projectService.getProjects().subscribe(
@@ -39,7 +43,7 @@ export class ProjectsComponent implements OnInit {
           this.dataSource = new MatTableDataSource(this.projects);
           this.dataSource.paginator = this.paginator;
           this.dataSource.sort = this.sort;
-          console.log(this.projects)
+          // console.log(this.projects)
         }
        
       },
@@ -58,25 +62,26 @@ export class ProjectsComponent implements OnInit {
     }
   }
   
+  changeLenguage(){
+    const dutchRangeLabel = (page: number, pageSize: number, length: number) => {
+      if (length == 0 || pageSize == 0) { return `0 van ${length}`; }
+      
+      length = Math.max(length, 0);
+    
+      const startIndex = page * pageSize;
+    
+      // If the start index exceeds the list length, do not try and fix the end index to the end.
+      const endIndex = startIndex < length ?
+          Math.min(startIndex + pageSize, length) :
+          startIndex + pageSize;
+    
+      return `${startIndex + 1} - ${endIndex} de ${length}`;
+    }
 
+    return dutchRangeLabel
+
+  }
 
 }
-const ELEMENT_DATA: Project[] = [
-  {_id: "1", name: 'Hydrogen', description: "1.0079", category: 'H', year: 2014 ,langs: 'lenguajes', image: null},
-  {_id: "1", name: 'Hydrogen', description: "1.0079", category: 'H', year: 2014 ,langs: 'lenguajes', image: null},
-  {_id: "1", name: 'Hydrogen', description: "1.0079", category: 'H', year: 2014 ,langs: 'lenguajes', image: null},
-  {_id: "1", name: 'Hydrogen', description: "1.0079", category: 'H', year: 2014 ,langs: 'lenguajes', image: null},
-];
 
-// function createNewUser(id: number): UserData {
-//   const name = NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
-//       NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) + '.';
-
-//   return {
-//     id: id.toString(),
-//     nombre: name,
-//     progress: Math.round(Math.random() * 100).toString(),
-//     color: COLORS[Math.round(Math.random() * (COLORS.length - 1))]
-//   };
-// }
 
