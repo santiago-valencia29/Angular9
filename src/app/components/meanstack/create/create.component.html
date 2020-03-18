@@ -50,8 +50,7 @@
             <ng-template matStepLabel>Subir imagen del proyecto</ng-template>
             <div class="m-2">
               <h6> Subir imagen del proyecto</h6>
-              <input  type="file" formControlName="image" 
-                     required>
+              <input  type="file" formControlName="image" (change)="fileChangeEvent($event)"/>
             </div>
             <div class="p-4"> 
               <button  (click)="onSubmit()" type="reset" class="btn btn-primary" [disabled]="!secondFormGroup.valid">Guardar</button>

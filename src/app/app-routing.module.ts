@@ -17,14 +17,12 @@ import { AuthGuard } from './guards/auth.guard';
 
 import { ProjectsComponent } from './components/meanstack/projects/projects.component';
 import { CreateComponent } from './components/meanstack/create/create.component';
-import { ContactComponent } from './components/meanstack/contact/contact.component';
 
 
 const routes: Routes = [
   // MeanStack
   { path: 'proyectos', component: ProjectsComponent},
   { path: 'crear-proyecto', component: CreateComponent},
-  { path: 'contacto', component: ContactComponent},
 
 
   // CrudFirebase

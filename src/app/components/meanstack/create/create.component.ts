@@ -3,6 +3,9 @@ import { Project } from '../../../models/project.model';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import Swal from 'sweetalert2';
 import { ProjectService } from '../../../services/meanstack/project.service';
+import { UploadService } from '../../../services/meanstack/upload.service';
+import { global } from '../../../services/meanstack/global';
+
 
 @Component({
   selector: 'app-create',
@@ -19,7 +22,9 @@ export class CreateComponent implements OnInit {
   titulo: string;
   project: Project;
 
-  constructor(private _formBuilder: FormBuilder, private _projectService: ProjectService
+  filesToUpload: Array<File>;
+
+  constructor(private _formBuilder: FormBuilder, private _projectService: ProjectService, private _uploadService: UploadService
     
   ) {
     this.titulo = "Crear Proyecto";
@@ -38,7 +43,8 @@ export class CreateComponent implements OnInit {
       category: ['', [Validators.required, Validators.minLength(4),Validators.maxLength(25)]], 
       year: ['', [Validators.required, Validators.minLength(4),Validators.maxLength(4),Validators.pattern("^[0-9]*$")]],
       langs: ['',[Validators.required, Validators.minLength(4),Validators.maxLength(25)]],
-      image: ['', Validators.required]
+      image: ['']
+      // image: ['', Validators.required]
     });
   }
 
@@ -56,10 +62,20 @@ export class CreateComponent implements OnInit {
     this._projectService.saveProject(this.project).subscribe(
       response =>{
         if(response.project){
+          console.log(response.project)
           Swal.fire({
             text: 'El Projecto se ha guardado correctamente',
             icon: 'success'
           })
+
+          //subir imagen
+          // this._uploadService.makeFileRequest(global.url+"upload-image/"+response.project._id,[],this.filesToUpload,'image').then((result:any)=>{
+          //   Swal.fire({
+          //     text: 'El Projecto se ha guardado correctamente',
+          //     icon: 'success'
+          //   })
+          //   console.log(result);
+          // });   PROBAR LOCAL NODEJS. ERROR 500 EN HEROKU
  
         } else {
           Swal.fire({
@@ -84,6 +100,10 @@ export class CreateComponent implements OnInit {
     this.secondFormGroup.reset();
   }
 
+  fileChangeEvent(fileInput: any){
+    console.log(fileInput)
+    this.filesToUpload = <Array<File>>fileInput.target.files;
+  }
 
 
 }

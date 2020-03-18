@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectsComponent } from './projects/projects.component';
 import { CreateComponent } from './create/create.component';
-import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppMaterialModule } from 'src/app/app-material.module';
@@ -17,13 +16,12 @@ import { AppMaterialModule } from 'src/app/app-material.module';
   ],
   declarations: [
     ProjectsComponent,
-    CreateComponent,
-    ContactComponent
+    CreateComponent
+    
   ],
   exports: [
     ProjectsComponent,
-    CreateComponent,
-    ContactComponent
+    CreateComponent
   ]
 })
 export class MeanstackModule { }

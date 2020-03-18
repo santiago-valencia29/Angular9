@@ -25,4 +25,11 @@ import { global } from './global';
 
             return this._http.post(this.url+'save-project',params,{headers: headers});
         }
+
+        getProjects(): Observable<any>{
+            let headers = new HttpHeaders().set('Content-Type','application/json');
+
+            return this._http.get(this.url+'projects',{headers: headers})
+
+        }
   }
