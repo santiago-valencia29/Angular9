@@ -25,6 +25,10 @@ export class HeroesComponent implements OnInit {
   loading: boolean
   error: any
 
+  pageSize = 2;
+  page = 1;
+
+
   constructor(private heroesService:HeroesService,
               private store:Store<AppState>) { }
 
@@ -59,6 +63,8 @@ export class HeroesComponent implements OnInit {
     //   this.cargando = false
     // })
   }
+
+
 
   borrarHeroe(heroe:HeroeModel, i:number){
   

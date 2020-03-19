@@ -4,8 +4,7 @@ import { HeroeComponent } from './heroe/heroe.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { AppMaterialModule } from 'src/app/app-material.module';
-
+import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -18,7 +17,7 @@ import { AppMaterialModule } from 'src/app/app-material.module';
     CommonModule,
     RouterModule,
     FormsModule,
-    AppMaterialModule
+    NgbPaginationModule
   ],
   exports: [
     HeroeComponent,
