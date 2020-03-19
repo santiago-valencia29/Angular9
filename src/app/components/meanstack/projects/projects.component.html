@@ -12,7 +12,7 @@
   </div>
 </div>
 
-  <mat-form-field *ngIf="projects.length>0">
+  <mat-form-field *ngIf="loading">
     <mat-label>Buscar</mat-label>
     <input matInput (keyup)="applyFilter($event)" placeholder="Ej. Arch">
   </mat-form-field>
