@@ -1,6 +1,18 @@
 <h2>Lista de Proyectos</h2>
 
-<mat-form-field>
+<div class="row" *ngIf="!loading">
+  <div class="col">
+
+      <div class="alert alert-info text-center">
+          <i class="fa fa-sync fa-spin fa-2x"></i>
+          <h1>Espere...</h1>
+
+
+      </div>
+  </div>
+</div>
+
+  <mat-form-field *ngIf="projects.length>0">
     <mat-label>Buscar</mat-label>
     <input matInput (keyup)="applyFilter($event)" placeholder="Ej. Arch">
   </mat-form-field>
@@ -50,4 +62,5 @@
   </div>
 
   <button [routerLink]="['/crear-proyecto']" class="btn btn-dark mt-3">Crear proyecto</button>
+
   

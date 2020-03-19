@@ -20,6 +20,7 @@ export class ProjectsComponent implements OnInit {
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
   public projects: Project[];
+  loading: boolean;
 
   constructor(private _projectService: ProjectService, private paginatorleng: MatPaginatorIntl) { 
 
@@ -39,6 +40,7 @@ export class ProjectsComponent implements OnInit {
     this._projectService.getProjects().subscribe(
       response => {
         if(response.projects){
+          this.loading = true;
           this.projects= response.projects;
           this.dataSource = new MatTableDataSource(this.projects);
           this.dataSource.paginator = this.paginator;
@@ -49,6 +51,7 @@ export class ProjectsComponent implements OnInit {
       },
       error => {
         console.log(<any>error)
+        this.loading = false;
       }
     );
   }
