@@ -4,8 +4,6 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import Swal from 'sweetalert2';
 import { ProjectService } from '../../../services/meanstack/project.service';
 import { UploadService } from '../../../services/meanstack/upload.service';
-import { global } from '../../../services/meanstack/global';
-
 
 @Component({
   selector: 'app-create',

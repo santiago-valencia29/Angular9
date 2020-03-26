@@ -4,6 +4,7 @@ import { ProjectService } from '../../../services/meanstack/project.service';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatPaginator,MatPaginatorIntl} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
+import {FormControl} from '@angular/forms'
 
 
 @Component({
@@ -15,12 +16,13 @@ import {MatSort} from '@angular/material/sort';
 
 export class ProjectsComponent implements OnInit {
 
-  displayedColumns: string[] = ['_id', 'name', 'description', 'category', 'year', 'langs'];
+  displayedColumns: string[] = ['_id', 'name', 'description', 'category', 'year', 'langs','tools'];
   dataSource: MatTableDataSource<Project>;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
   public projects: Project[];
   loading: boolean;
+  disableSelect = new FormControl(false);
 
   constructor(private _projectService: ProjectService, private paginatorleng: MatPaginatorIntl) { 
 
