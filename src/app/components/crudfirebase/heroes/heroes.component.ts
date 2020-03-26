@@ -66,7 +66,7 @@ export class HeroesComponent implements OnInit {
 
 
 
-  borrarHeroe(heroe:HeroeModel, i:number){
+  borrarHeroe(heroe:HeroeModel){
   
     Swal.fire({
       title:'¿Está seguro?',

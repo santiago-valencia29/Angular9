@@ -4,7 +4,8 @@ import { ProjectService } from '../../../services/meanstack/project.service';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatPaginator,MatPaginatorIntl} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
-import {FormControl} from '@angular/forms'
+import Swal from 'sweetalert2';
+
 
 
 @Component({
@@ -16,13 +17,12 @@ import {FormControl} from '@angular/forms'
 
 export class ProjectsComponent implements OnInit {
 
-  displayedColumns: string[] = ['_id', 'name', 'description', 'category', 'year', 'langs','tools'];
+  displayedColumns: string[] = ['id', 'name', 'description', 'category', 'year', 'langs','_id'];
   dataSource: MatTableDataSource<Project>;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
   public projects: Project[];
   loading: boolean;
-  disableSelect = new FormControl(false);
 
   constructor(private _projectService: ProjectService, private paginatorleng: MatPaginatorIntl) { 
 
@@ -56,6 +56,41 @@ export class ProjectsComponent implements OnInit {
         this.loading = false;
       }
     );
+  }
+
+  borrarproject(_id){
+    Swal.fire({
+      title:'¿Está seguro?',
+      text:`Desea borrar a el proyecto?`,
+      icon:'question',
+      showConfirmButton:true,
+      showCancelButton:true
+    }).then(resp=>{
+      if (resp.value){
+
+        this._projectService.deleteProject(_id).subscribe(response =>{
+          // console.log(response)
+          Swal.fire({
+            title:'Proyecto Eliminado',
+            icon:'success',
+            showConfirmButton:true
+          })
+          this.getProjects();
+        },
+          error => {
+            console.log(<any>error)
+            Swal.fire({
+              title:'Error',
+              text: error.message,
+              icon: 'error'
+            })
+          }
+        )
+      }
+    }
+    );
+
+  
   }
 
   applyFilter(event: Event) {

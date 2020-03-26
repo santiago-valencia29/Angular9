@@ -32,4 +32,12 @@ import { global } from './global';
             return this._http.get(this.url+'projects',{headers: headers})
 
         }
+
+
+
+        deleteProject(id: string){
+            let headers = new HttpHeaders().set('Content-Type','application/json');
+            return this._http.delete(`${this.url}/project/${id}`,{headers: headers})
+        }
+
   }
