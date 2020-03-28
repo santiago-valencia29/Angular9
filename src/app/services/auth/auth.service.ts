@@ -5,11 +5,13 @@ import { map } from 'rxjs/operators';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../store/app.reducer';
 import { SetUserAction } from 'src/app/store/actions';
-import { UnsetUserAction } from '../../store/actions/auth-actions/auth.actions';
 
 @Injectable({
   providedIn: 'root'
 })
+
+//                        AUTH FIREBASE                    //
+
 export class AuthService {
 
 
