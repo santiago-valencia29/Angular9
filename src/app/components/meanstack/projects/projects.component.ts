@@ -30,6 +30,9 @@ export class ProjectsComponent implements OnInit {
     this.paginatorleng.itemsPerPageLabel = "Registros por página";
     this.paginatorleng.getRangeLabel = this.changeLenguage();
 
+   
+    
+
   }
 
   ngOnInit(): void {
@@ -38,6 +41,7 @@ export class ProjectsComponent implements OnInit {
 
 
   getProjects(){
+
     this._behaviorSubject.serviceExternalBehavior(["Estuve visitando proyectos meanStack"]);
 
     this._projectService.getProjects().subscribe(
@@ -105,7 +109,7 @@ export class ProjectsComponent implements OnInit {
   
   changeLenguage(){
     const dutchRangeLabel = (page: number, pageSize: number, length: number) => {
-      if (length == 0 || pageSize == 0) { return `0 van ${length}`; }
+      if (length == 0 || pageSize == 0) { return `0 de ${length}`; }
       
       length = Math.max(length, 0);
     

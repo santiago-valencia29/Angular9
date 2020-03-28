@@ -17,7 +17,10 @@
     <input matInput (keyup)="applyFilter($event)" placeholder="Ej. Arch">
   </mat-form-field>
   
-  <div class="mat-elevation-z8">
+<mat-paginator [pageSizeOptions]="[5,15,30]"></mat-paginator>
+
+  
+  <div *ngIf="loading" class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource" matSort>
 
       <!-- ID Column -->
@@ -78,11 +81,14 @@
   
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+      
       </tr>
+     
     </table>
   
-    <mat-paginator [pageSizeOptions]="[5,15,30]"></mat-paginator>
   </div>
+   
+
 
   <button [routerLink]="['/crear-proyecto']" class="btn btn-dark mt-3">Crear proyecto</button>
 
