@@ -38,12 +38,13 @@ export class ProjectsComponent implements OnInit {
 
 
   getProjects(){
+    this._behaviorSubject.serviceExternalBehavior(["Estuve visitando proyectos meanStack"]);
+
     this._projectService.getProjects().subscribe(
       response => {
         if(response.projects){
           this.loading = true;
           this.projects= response.projects;
-          this._behaviorSubject.serviceExternalBehavior(["Estuve visitando proyectos meanStack"]);
           this.dataSource = new MatTableDataSource(this.projects);
           this.dataSource.paginator = this.paginator;
           this.dataSource.sort = this.sort;

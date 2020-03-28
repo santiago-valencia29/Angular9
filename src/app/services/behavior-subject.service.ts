@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, ReplaySubject } from 'rxjs';
 
 
 @Injectable({
@@ -7,18 +7,19 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class BehaviorSubjectService {
 
-  private cargardata = new BehaviorSubject<any>(0);
-  public cargar$ = this.cargardata.asObservable();
+  private loadData = new BehaviorSubject<any>(0);
+  public load$ = this.loadData.asObservable();
 
 
   constructor() { }
 
   serviceExternalBehavior(data?: any){
     if (data == null){
-      return this.cargardata.getValue();
+      return this.loadData.getValue();
     };
-    this.cargardata.next(data);
-    console.log(this.cargardata.getValue());
-    return this.cargardata.getValue();
+    this.loadData.next(data);
+    // console.log(this.loadData.getValue());
+    return this.loadData.getValue();
   }
+
 }
