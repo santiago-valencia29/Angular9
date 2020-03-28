@@ -7,6 +7,7 @@ import * as heroesActions from '../../../store/actions'
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/store/app.reducer';
 import Swal from 'sweetalert2';
+import { BehaviorSubjectService } from 'src/app/services/behavior-subject.service';
 
 @Component({
   selector: 'app-heroes',
@@ -29,7 +30,7 @@ export class HeroesComponent implements OnInit {
   page = 1;
 
 
-  constructor(private heroesService:HeroesService,
+  constructor(private heroesService:HeroesService,private _behaviorSubject:BehaviorSubjectService,
               private store:Store<AppState>) { }
 
   ngOnInit() {
@@ -42,6 +43,8 @@ export class HeroesComponent implements OnInit {
         this.loading=heroes.loading;
         this.error=heroes.error;
         this.heroes=heroes.heroes;
+
+        this._behaviorSubject.serviceExternalBehavior(this.heroes);
 
         if(this.error){
           Swal.fire({
@@ -62,6 +65,7 @@ export class HeroesComponent implements OnInit {
     //   console.log(this.heroes)
     //   this.cargando = false
     // })
+ 
   }
 
 

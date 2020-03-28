@@ -5,6 +5,7 @@ import {MatTableDataSource} from '@angular/material/table';
 import {MatPaginator,MatPaginatorIntl} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import Swal from 'sweetalert2';
+import { BehaviorSubjectService } from 'src/app/services/behavior-subject.service';
 
 
 
@@ -24,7 +25,7 @@ export class ProjectsComponent implements OnInit {
   public projects: Project[];
   loading: boolean;
 
-  constructor(private _projectService: ProjectService, private paginatorleng: MatPaginatorIntl) { 
+  constructor(private _projectService: ProjectService, private paginatorleng: MatPaginatorIntl,private _behaviorSubject:BehaviorSubjectService) { 
 
     this.paginatorleng.itemsPerPageLabel = "Registros por página";
     this.paginatorleng.getRangeLabel = this.changeLenguage();
@@ -32,8 +33,6 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-   
-
     this.getProjects();
   }
 
@@ -44,6 +43,7 @@ export class ProjectsComponent implements OnInit {
         if(response.projects){
           this.loading = true;
           this.projects= response.projects;
+          this._behaviorSubject.serviceExternalBehavior(["Estuve visitando proyectos meanStack"]);
           this.dataSource = new MatTableDataSource(this.projects);
           this.dataSource.paginator = this.paginator;
           this.dataSource.sort = this.sort;

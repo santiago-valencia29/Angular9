@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 // Redux
 import { ListaComponent } from './components/usuarios/lista/lista.component';
 import { UsuarioComponent } from './components/usuarios/usuario/usuario.component';
+
 // Home
 import { HomeComponent } from './shared/home/home.component';
 // CrudFirebase
@@ -17,6 +18,7 @@ import { AuthGuard } from './guards/auth.guard';
 
 import { ProjectsComponent } from './components/meanstack/projects/projects.component';
 import { CreateComponent } from './components/meanstack/create/create.component';
+import { BehaviorSubjectComponent } from './components/usuarios/behavior-subject/behavior-subject.component';
 
 
 const routes: Routes = [
@@ -32,6 +34,8 @@ const routes: Routes = [
   // Redux
   { path: 'listaUsuarios', component: ListaComponent },
   { path: 'usuario/:id', component: UsuarioComponent },
+  { path: 'BehaviorSubject', component: BehaviorSubjectComponent },
+
 
   // Home
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
