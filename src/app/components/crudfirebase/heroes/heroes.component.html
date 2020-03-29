@@ -50,7 +50,7 @@
  
   </table>
 <ngb-pagination *ngIf="!loading && heroes.length>0" [pageSize] = "pageSize" [collectionSize]="heroes.length" [(page)]="page" [boundaryLinks]="true"></ngb-pagination>
-  <div  *ngIf="loading"   class="alert alert-info text-center mt-3">
+  <div  *ngIf="loading"   class="alert alert-dismissible text-center mt-3">
       <h4 [@fadeOut] class="alert-heading">Cargando</h4>
       <p>
           <i class="fa fa-sync-alt fa-spin fa-2x"></i>

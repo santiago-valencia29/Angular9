@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/store/app.reducer';
 import { SetUserAction } from 'src/app/store/actions';
+import { authService } from '../../services/meanstack/auth.service';
 
 
 @Component({
@@ -17,7 +18,8 @@ export class NavbarComponent implements OnInit {
 
   constructor(private auth: AuthService,
               private router: Router,
-              private store: Store<AppState>
+              private store: Store<AppState>,
+              private authService: authService
               ) {}
 
   ngOnInit() {
@@ -41,6 +43,16 @@ export class NavbarComponent implements OnInit {
     this.auth.logout();
     this.router.navigateByUrl('/login');
   }
+
+
+
+    loggedIn_mean(){  // para interactuar con el ng container y template
+      return this.authService.loggedIn();
+    }
+
+    logout_mean(){  // para interactuar con el ng container y template
+      return this.authService.logout();
+    }
 
 }
 

@@ -13,7 +13,6 @@ import { HeroesComponent } from './components/crudfirebase/heroes/heroes.compone
 import { HeroeComponent } from './components/crudfirebase/heroe/heroe.component';
 
 // MeanStack
-import { TasksComponent } from './components/meanstack/tasks/tasks.component';
 import { PrivateTasksComponent } from './components/meanstack/private-tasks/private-tasks.component';
 import { ProjectsComponent } from './components/meanstack/projects/projects.component';
 import { CreateComponent } from './components/meanstack/create/create.component';
@@ -23,7 +22,11 @@ import { SignupComponent } from './components/meanstack/signup/signup.component'
 // Login-Register
 import { RegistroComponent } from './auth/registro/registro.component';
 import { LoginComponent } from './auth/login/login.component';
+
+//Guards
 import { AuthGuard } from './guards/auth.guard';
+import { AuthMeanGuard } from './guards/auth-mean.guard';
+
 
 
 
@@ -35,8 +38,7 @@ const routes: Routes = [
   // MeanStack
   { path: 'proyectos', component: ProjectsComponent },
   { path: 'crear-proyecto', component: CreateComponent },
-  { path: 'tasks', component: TasksComponent },
-  { path: 'private', component: PrivateTasksComponent },
+  { path: 'private', component: PrivateTasksComponent,canActivate:[AuthMeanGuard] },
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
 

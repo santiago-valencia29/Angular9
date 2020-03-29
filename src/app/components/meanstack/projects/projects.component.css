@@ -2,3 +2,28 @@
     color:red;
 }
 
+::ng-deep .mat-paginator{
+    background: transparent;
+    color: white;
+}
+
+::ng-deep .mat-paginator-icon{
+    color: white;
+}
+
+::ng-deep .mat-select-arrow{
+    color:white;
+}
+
+.fondo{
+padding-left: 20px;
+padding-right: 10px;
+background-color: white;
+border-radius: 35px 0px 35px 0px;
+-moz-border-radius: 35px 0px 35px 0px;
+-webkit-border-radius: 35px 0px 35px 0px;
+border: 2px solid #5878ca;
+    
+}
+
+

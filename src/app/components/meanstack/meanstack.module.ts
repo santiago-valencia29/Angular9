@@ -8,8 +8,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CreateComponent } from './create/create.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
-import { TasksComponent } from './tasks/tasks.component';
 import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { tokenService } from 'src/app/services/meanstack/token.service';
+
 
 
 @NgModule({
@@ -25,7 +27,6 @@ import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
     CreateComponent,
     SigninComponent,
     SignupComponent,
-    TasksComponent,
     PrivateTasksComponent
     
   ],
@@ -34,8 +35,13 @@ import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
     CreateComponent,
     SigninComponent,
     SignupComponent,
-    TasksComponent,
     PrivateTasksComponent
   ]
+  // ],
+  // providers:[{
+  //   provide: HTTP_INTERCEPTORS, // permite agregar header autorization con el token verifyToken en node js
+  //   useClass: tokenService,
+  //   multi: true
+  // }]
 })
 export class MeanstackModule { }

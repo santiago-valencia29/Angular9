@@ -39,7 +39,17 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
          <a class="dropdown-item" routerLinkActive="active"routerLink="proyectos">Proyectos</a>
-         <a class="dropdown-item" routerLinkActive="active"routerLink="crear-proyecto">Crear Proyecto</a>         
+         <a class="dropdown-item" routerLinkActive="active"routerLink="crear-proyecto">Crear Proyecto</a>
+         <a class="dropdown-item" routerLinkActive="active"routerLink="private">Privado</a>
+
+         <ng-container *ngIf="!loggedIn_mean(); else loggedIn">
+          <a class="dropdown-item" routerLinkActive="active"routerLink="signin">SignIn</a>
+          <a class="dropdown-item" routerLinkActive="active"routerLink="signup">SignUp</a>
+         </ng-container>
+
+         <ng-template #loggedIn>
+          <a class="dropdown-item" style="cursor: pointer;" (click)="logout_mean()">Logout</a>       
+         </ng-template>
         </div>
       </li>
 
