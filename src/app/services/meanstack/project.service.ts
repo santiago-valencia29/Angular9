@@ -33,6 +33,12 @@ import { global } from './global';
 
         }
 
+        putProject(_id:string, project:Project): Observable<any>{
+        
+              return this._http.put(`${this.url}project/${_id}`,project)
+
+        }
+
 
 
         deleteProject(id: string){

@@ -4,13 +4,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppMaterialModule } from 'src/app/app-material.module';
 
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsComponent, ModalDialog } from './projects/projects.component';
 import { CreateComponent } from './create/create.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { tokenService } from 'src/app/services/meanstack/token.service';
+
+// import { HTTP_INTERCEPTORS } from '@angular/common/http';
+// import { tokenService } from 'src/app/services/meanstack/token.service';
 
 
 
@@ -27,7 +28,9 @@ import { tokenService } from 'src/app/services/meanstack/token.service';
     CreateComponent,
     SigninComponent,
     SignupComponent,
-    PrivateTasksComponent
+    PrivateTasksComponent,
+    ModalDialog
+
     
   ],
   exports: [
@@ -35,8 +38,10 @@ import { tokenService } from 'src/app/services/meanstack/token.service';
     CreateComponent,
     SigninComponent,
     SignupComponent,
-    PrivateTasksComponent
-  ]
+    PrivateTasksComponent,
+    ModalDialog
+  ],
+  entryComponents:[ProjectsComponent,ModalDialog]
   // ],
   // providers:[{
   //   provide: HTTP_INTERCEPTORS, // permite agregar header autorization con el token verifyToken en node js

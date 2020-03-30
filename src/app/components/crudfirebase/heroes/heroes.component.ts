@@ -26,7 +26,7 @@ export class HeroesComponent implements OnInit {
   loading: boolean
   error: any
 
-  pageSize = 2;
+  pageSize = 4;
   page = 1;
 
 

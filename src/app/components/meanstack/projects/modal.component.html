@@ -1,0 +1,46 @@
+<h1 mat-dialog-title>Editar Proyecto</h1>
+<div mat-dialog-content>
+
+    <form [formGroup]="editFormGroup">
+        <!-- <ng-template matStepLabel>Guardar Proyecto</ng-template> -->
+        <mat-form-field>
+            <mat-label>Id</mat-label>
+            <input matInput formControlName="_id" [attr.disabled]="true">
+            <mat-error>Ingrese un valor correcto</mat-error>
+        </mat-form-field>
+            <mat-form-field>
+                <mat-label>Nombre</mat-label>
+                <input matInput formControlName="name" required >
+                <mat-error>Ingrese un valor correcto</mat-error>
+            </mat-form-field>      
+        <mat-form-field>
+            <mat-label>Descripción</mat-label>
+            <input matInput formControlName="description" required>
+            <mat-error>Ingrese un valor correcto</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Categoria</mat-label>
+            <input matInput formControlName="category" 
+                   required>
+          <mat-error>Ingrese un valor correcto</mat-error>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label>Año Lanzamiento</mat-label>
+            <input matInput formControlName="year" required>
+            <mat-error>Ingrese un valor YYYY númerico</mat-error>
+          </mat-form-field>
+          <mat-form-field >
+            <mat-label>Lenguajes</mat-label>
+            <input matInput formControlName="langs" 
+                   required>
+              <mat-error>Ingrese un valor correcto</mat-error>
+          </mat-form-field>
+    </form>
+
+
+</div>
+<div mat-dialog-actions>
+    <button class="btn btn-dark m-r-4" (click)="onClose()" >Cancelar</button>
+    <button class="btn btn-info" (click)="onNoClick()" [disabled]="!editFormGroup.valid" cdkFocusInitial>Guardar</button>
+
+</div>
