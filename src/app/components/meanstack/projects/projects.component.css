@@ -37,3 +37,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
     max-height: 500px;
 }
 
+::ng-deep .mat-select-value{
+    color: white ;
+}
+
