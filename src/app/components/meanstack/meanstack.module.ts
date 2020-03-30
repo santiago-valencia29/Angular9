@@ -9,6 +9,9 @@ import { CreateComponent } from './create/create.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
+import { GalleryModule } from  '@ngx-gallery/core';
+import { GALLERY_CONFIG } from '@ngx-gallery/core';
+
 
 // import { HTTP_INTERCEPTORS } from '@angular/common/http';
 // import { tokenService } from 'src/app/services/meanstack/token.service';
@@ -21,7 +24,8 @@ import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
     RouterModule,
     FormsModule,
     AppMaterialModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    GalleryModule    
   ],
   declarations: [
     ProjectsComponent,
@@ -41,7 +45,15 @@ import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
     PrivateTasksComponent,
     ModalDialog
   ],
-  entryComponents:[ProjectsComponent,ModalDialog]
+  entryComponents:[ProjectsComponent,ModalDialog],
+  providers:[{
+    provide: GALLERY_CONFIG,
+    useValue: {
+      dots: true,
+      imageSize: 'cover'
+    }
+  }]
+
   // ],
   // providers:[{
   //   provide: HTTP_INTERCEPTORS, // permite agregar header autorization con el token verifyToken en node js
