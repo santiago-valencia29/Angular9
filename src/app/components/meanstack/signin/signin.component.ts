@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { authService } from '../../../services/meanstack/auth.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-signin',
@@ -26,10 +27,15 @@ export class SigninComponent implements OnInit {
           localStorage.setItem('token_mean', res.token)
           this.router.navigate(['/private'])
         }, err => {
+
+          Swal.fire({
+            title: 'ERROR',
+            text: err.error,
+            icon: 'error'
+          })
           console.log(err)
         }
       )
-    console.log(this.user)
   }
 
 
