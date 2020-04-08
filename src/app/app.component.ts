@@ -11,7 +11,7 @@ import { zoomIn } from 'ng-animate';
   ]
 })
 export class AppComponent {
-  title = 'Angular9';
+ 
 }
 
 
