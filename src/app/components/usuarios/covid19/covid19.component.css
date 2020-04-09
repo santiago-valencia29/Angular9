@@ -1,7 +1,8 @@
-.naver{
-    color: white !important;
-}
-
 h3{
     color: white;
+}
+
+card{
+    max-width: 10rem;
+    max-height: 6rem;
 }

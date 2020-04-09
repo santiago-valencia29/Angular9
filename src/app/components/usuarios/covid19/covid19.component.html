@@ -1,42 +1,83 @@
-<h3>COVID19 COLOMBIA <img src="../../../../assets/images/images_santiago/colombia.svg" style="width: 43px;" alt=""></h3> 
+<h3>COVID19 COLOMBIA <img src="../../../../assets/images/images_santiago/colombia.svg" style="width: 43px;" alt=""></h3>
 <hr>
-<p>{{clock | date:'long'}}</p>
-<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-    <li [ngbNavItem]="1">
-      <a ngbNavLink>Resumen</a>
-      <ng-template ngbNavContent>
-        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-          master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-          keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
-          salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-      </ng-template>
-    </li>
-    <li [ngbNavItem]="2">
-      <a ngbNavLink>Two</a>
-      <ng-template ngbNavContent>
-        <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko
-          farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts
-          ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar
-          helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson
-          8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
-          stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-      </ng-template>
-    </li>
-    <li [ngbNavItem]="3">
-      <a ngbNavLink>Three</a>
-      <ng-template ngbNavContent>
-        <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi.
-          Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio.
-          Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna,
-          egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec
-          tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et
-          magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
-          neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
-      </ng-template>
-    </li>
-  </ul>
+<p>{{clock | date:'MMM d,y'}}</p>
+<div class="row" *ngIf="!loading">
+    <div class="col">
   
-  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+      <div class="alert alert-dismissible text-center">
+        <i class="fa fa-sync fa-spin fa-2x"></i>
+        <h1>Espere...</h1>
   
-  <pre>Active: {{ active }}</pre>
   
+      </div>
+    </div>
+  </div>
+
+<div>
+<ul  ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li *ngIf="loading" [ngbNavItem]="1">
+        <a ngbNavLink>Resumen</a>
+        <ng-template ngbNavContent>
+            <div class="row">
+                <div class="card text-white bg-primary ml-3 mb-3" style="max-width: 12rem; max-height: 6rem;">
+                    <div class="card-header" >Casos Confirmados</div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center; font-size: 18px; ">{{casos.length}}</h5>
+                       
+                    </div>
+                </div>
+                <div class="card text-white bg-info ml-3" style="max-width: 10rem; max-height: 6rem;">
+                    <div class="card-header" >Recuperados</div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center; font-size: 18px;">{{recuperados}}</h5>
+                       
+                    </div>
+                </div>
+                <div class="card text-white bg-warning ml-3" style="max-width: 10rem; max-height: 6rem;">
+                    <div class="card-header">Fallecidos</div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center; font-size: 18px;">{{fallecidos}}</h5>
+                       
+                    </div>
+                </div>
+
+                <div class="card text-white bg-danger ml-3" style="max-width: 15rem; max-height: 6rem;">
+                    <div class="card-header" >Activos</div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center; font-size: 18px;">{{activos}}</h5>
+                       
+                    </div>
+                </div>
+            </div>
+
+
+        </ng-template>
+    </li>
+    <li *ngIf="loading"  [ngbNavItem]="2">
+        <a ngbNavLink>Estadísticas</a>
+        <ng-template ngbNavContent>
+           
+        </ng-template>
+    </li>
+    <li *ngIf="loading" [ngbNavItem]="3">
+        <a ngbNavLink>Three</a>
+        <ng-template ngbNavContent>
+            <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla
+                facilisi.
+                Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue
+                et odio.
+                Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed
+                diam urna,
+                egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl
+                enim, nec
+                tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque
+                penatibus et
+                magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in
+                eget
+                neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
+        </ng-template>
+    </li>
+</ul>
+</div>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
