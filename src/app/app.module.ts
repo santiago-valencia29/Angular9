@@ -24,6 +24,12 @@ import { effectsArr } from './store/effects/index';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+
+import localeEsCo from '@angular/common/locales/es-CO';
+
+registerLocaleData(localeEsCo, 'es-CO');
 
 
 
@@ -55,7 +61,7 @@ import { environment } from 'src/environments/environment';
     MeanstackModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'es-CO' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,21 +4,30 @@ import { ListaComponent } from './lista/lista.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { RouterModule } from '@angular/router';
+import { Covid19Component } from './covid19/covid19.component';
+import { NgbModule, NgbNav } from '@ng-bootstrap/ng-bootstrap';
+
+
+
 
 @NgModule({
   declarations: [
     ListaComponent, 
     UsuarioComponent,
-    BehaviorSubjectComponent],
+    BehaviorSubjectComponent,
+    Covid19Component
+  
+  ],
   imports: [
     CommonModule,
-    RouterModule
-
+    RouterModule,
+    NgbModule
   ],
   exports:[
     ListaComponent, 
     UsuarioComponent,
-    BehaviorSubjectComponent
+    BehaviorSubjectComponent,
+    Covid19Component
   ]
 })
 export class UsuariosModule { }
