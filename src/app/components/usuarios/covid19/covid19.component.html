@@ -17,7 +17,7 @@
     <div>
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
             <li *ngIf="loading" [ngbNavItem]="1">
-                <a (click)="ngAfterViewInit()" ngbNavLink>Resumen</a>
+                <a (click)="ngAfterContentInit()" ngbNavLink>Resumen</a>
                 <ng-template ngbNavContent>
                     <div class="row">
                         <div class="card text-white bg-primary ml-3 mb-3" style="max-width: 12rem; max-height: 6rem;">

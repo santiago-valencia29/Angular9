@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterContentInit } from '@angular/core';
 import { Covid19Service } from '../../../services/covid19.service';
 import { Casos } from '../../../models/casos.model';
 import { coord_muni } from 'src/app/models/coord_muni';
@@ -11,7 +11,7 @@ import * as Mapboxgl from 'mapbox-gl';
   templateUrl: './covid19.component.html',
   styleUrls: ['./covid19.component.css']
 })
-export class Covid19Component implements OnInit,AfterViewInit {
+export class Covid19Component implements OnInit, AfterContentInit {
 
 
   active = 1;
@@ -34,13 +34,13 @@ export class Covid19Component implements OnInit,AfterViewInit {
 
   ngOnInit(): void {
 
-   
     this._Covid19Service.getDataCovid().subscribe((data: Casos) => {
       if (data) {
         this.loading = true;
         this.casos = data;
         this.getQuery();
         this.asignCoord();
+
       }
     },
       error => {
@@ -48,21 +48,21 @@ export class Covid19Component implements OnInit,AfterViewInit {
         this.loading = false;
       });
 
-      Mapboxgl.accessToken = environment.mapboxkey;
-      
-
   }
 
-  ngAfterViewInit(){
-    setTimeout(() => {
-      this.mapa = new Mapboxgl.Map({
-        container: this.mapElement.nativeElement, // container id
-        style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
-        center: [-74.2973328, 4.570868], // starting position [lng, lat]
-        zoom: 4.5 // starting zoom
-      });
-    }, 800);
-   
+  ngAfterContentInit() {
+
+      setTimeout(() => {
+        Mapboxgl.accessToken = environment.mapboxkey;
+        this.mapa = new Mapboxgl.Map({
+          container: this.mapElement.nativeElement, // container id
+          style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
+          center: [-74.2973328, 4.570868], // starting position [lng, lat]
+          zoom: 4.5 // starting zoom    
+        });
+        
+      }, 1000);
+      
   }
 
 
@@ -107,6 +107,8 @@ export class Covid19Component implements OnInit,AfterViewInit {
       });
 
     console.log(this.coordinates)
+
+   
 
   }
 }
