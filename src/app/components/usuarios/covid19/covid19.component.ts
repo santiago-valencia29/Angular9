@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterContentInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Covid19Service } from '../../../services/covid19.service';
 import { Casos } from '../../../models/casos.model';
 import { coord_muni } from 'src/app/models/coord_muni';
@@ -6,12 +6,13 @@ import { environment } from '../../../../environments/environment';
 import * as Mapboxgl from 'mapbox-gl';
 
 
+
 @Component({
   selector: 'app-covid19',
   templateUrl: './covid19.component.html',
   styleUrls: ['./covid19.component.css']
 })
-export class Covid19Component implements OnInit, AfterContentInit {
+export class Covid19Component implements OnInit {
 
 
   active = 1;
@@ -26,9 +27,10 @@ export class Covid19Component implements OnInit, AfterContentInit {
   coordinates = [];
 
   mapa: Mapboxgl.Map;
-  @ViewChild('mapElement') mapElement: ElementRef;
+
 
   constructor(private _Covid19Service: Covid19Service) {
+
   }
 
 
@@ -38,8 +40,11 @@ export class Covid19Component implements OnInit, AfterContentInit {
       if (data) {
         this.loading = true;
         this.casos = data;
+        this.addMap();
         this.getQuery();
         this.asignCoord();
+        this.getDataMarker();
+        this.addMarkers();
 
       }
     },
@@ -50,19 +55,61 @@ export class Covid19Component implements OnInit, AfterContentInit {
 
   }
 
-  ngAfterContentInit() {
+  getDataMarker() {
 
-      setTimeout(() => {
-        Mapboxgl.accessToken = environment.mapboxkey;
-        this.mapa = new Mapboxgl.Map({
-          container: this.mapElement.nativeElement, // container id
-          style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
-          center: [-74.2973328, 4.570868], // starting position [lng, lat]
-          zoom: 4.5 // starting zoom    
-        });
+
+    var repetidos = {};
+
+    this.casos.forEach(function (campo) {
+      repetidos[campo.ciudad_de_ubicaci_n] = (repetidos[campo.ciudad_de_ubicaci_n] || 0) + 1;
+    });
+
+
+    console.log(repetidos)
+
+    for (let i in this.coordinates) {
+      for (let key in repetidos) {
+        if (this.coordinates[i].title.includes(key)) {
+         this.coordinates[i]['numCasos'] = repetidos[key]
+        }
+
+      }
+    }
+
+  
+
+    
+  }
+
+
+  addMap() {
+    Mapboxgl.accessToken = environment.mapboxkey;
+    this.mapa = new Mapboxgl.Map({
+      container: 'mapa-mapbox', // container id
+      style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
+      center: [-74.2973328, 4.570868], // starting position [lng, lat]
+      zoom: 4.5 // starting zoom    
+    });
+  }
+
+
+  addMarkers() {
+    for (let i in this.coordinates) {
+
+      var popup = new Mapboxgl.Popup({ offset: 25 }).setText(
         
-      }, 1000);
-      
+        "Municipio: "+ this.coordinates[i].title + "\n,"+
+        "Casos confirmados Aproximados: "+this.coordinates[i].numCasos
+        );
+
+      var el = document.createElement('div');
+
+      el.style.backgroundImage = 'url("/assets/images/images_santiago/virus.svg")';
+      el.style.width = '15px';
+      el.style.height = '15px';
+
+      new Mapboxgl.Marker(el).setLngLat(this.coordinates[i].coordinates).setPopup(popup).addTo(this.mapa);
+    }
   }
 
 
@@ -87,6 +134,7 @@ export class Covid19Component implements OnInit, AfterContentInit {
       for (let i in this.casos) {
         if (this.casos[i].ciudad_de_ubicaci_n.includes(coord_muni[x].municipio)) {
 
+
           this.coordinates.push(
             {
               'title': this.casos[i].ciudad_de_ubicaci_n,
@@ -108,7 +156,7 @@ export class Covid19Component implements OnInit, AfterContentInit {
 
     console.log(this.coordinates)
 
-   
+
 
   }
 }
