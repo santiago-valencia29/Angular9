@@ -24,6 +24,7 @@ export class Covid19Component implements OnInit {
   recuperados: number = 0;
   fallecidos: number = 0;
   activos: number = 0;
+  showPieChart:boolean;
 
   loading: boolean;
 
@@ -32,7 +33,7 @@ export class Covid19Component implements OnInit {
   mapa: Mapboxgl.Map;
 
 
-  constructor(private _behaviorSubject:BehaviorSubjectService, private _Covid19Service: Covid19Service) {
+  constructor(private _behaviorSubject: BehaviorSubjectService, private _Covid19Service: Covid19Service) {
 
   }
 
@@ -59,22 +60,22 @@ export class Covid19Component implements OnInit {
 
   }
 
-  sendDataAreaChart(){
-    let multi =  [
+  sendDataAreaChart() {
+    let multi = [
       {
-        "name": "Casos repotados por día",
+        "name": "Casos reportados por día",
         "series": []
       }
     ]
     let repetidos = {};
     for (let i in this.casos) {
-      if(this.casos[i].atenci_n!=="Recuperado" && this.casos[i].atenci_n!=="Fallecido" ){
+      if (this.casos[i].atenci_n !== "Recuperado" && this.casos[i].atenci_n !== "Fallecido") {
         repetidos[this.casos[i].fecha_de_diagn_stico] = (repetidos[this.casos[i].fecha_de_diagn_stico] || 0) + 1;
       }
-     
+
     }
 
-    for(let x in repetidos){
+    for (let x in repetidos) {
 
       multi[0]['series'].push(
         {
@@ -83,7 +84,7 @@ export class Covid19Component implements OnInit {
 
         })
     }
-    this._behaviorSubject.serviceExternalBehavior(multi);
+    this._behaviorSubject.serviceExternalAreaChart(multi);
   }
 
   getDataMarker() {
@@ -98,7 +99,7 @@ export class Covid19Component implements OnInit {
     for (let i in this.coordinates) {
       for (let key in repetidos) {
         if (this.coordinates[i].title.includes(key)) {
-         this.coordinates[i]['numCasos'] = repetidos[key]
+          this.coordinates[i]['numCasos'] = repetidos[key]
         }
       }
     }
@@ -118,10 +119,10 @@ export class Covid19Component implements OnInit {
     for (let i in this.coordinates) {
 
       var popup = new Mapboxgl.Popup({ offset: 25 }).setText(
-        
-        "Municipio: "+ this.coordinates[i].title + "\n,"+
-        "Casos Aproximados: "+this.coordinates[i].numCasos
-        );
+
+        "Municipio: " + this.coordinates[i].title + "\n," +
+        "Casos Aproximados: " + this.coordinates[i].numCasos
+      );
 
       var el = document.createElement('div');
 
@@ -147,6 +148,21 @@ export class Covid19Component implements OnInit {
 
     });
 
+    let dataPiechart = [
+      {
+        "name": "Recuperados",
+        "value": this.recuperados
+      },
+      {
+        "name": "Fallecidos",
+        "value": this.fallecidos
+      },
+      {
+        "name": "Activos",
+        "value": this.activos
+      }
+    ]
+    this._behaviorSubject.serviceExternalPieChart(dataPiechart);
   }
 
   asignCoord() {

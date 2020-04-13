@@ -20,7 +20,7 @@
                 <a ngbNavLink>Resumen</a>
                 <ng-template ngbNavContent>
                     <div class="row">
-                        <div class="card text-white bg-primary ml-3 mb-3" style="max-width: 12rem; max-height: 6rem;">
+                        <div class="card text-dark bg-white ml-3" style="max-width: 12rem; max-height: 6rem;">
                             <div class="card-header">Casos Confirmados</div>
                             <div class="card-body">
                                 <h5 class="card-title" style="text-align: center; font-size: 18px; ">{{casos.length}}
@@ -28,7 +28,7 @@
 
                             </div>
                         </div>
-                        <div class="card text-dark bg-light ml-3" style="max-width: 10rem; max-height: 6rem;">
+                        <div class="card text-white bg-info ml-3" style="max-width: 10rem; max-height: 6rem;">
                             <div class="card-header">Recuperados</div>
                             <div class="card-body">
                                 <h5 class="card-title" style="text-align: center; font-size: 18px;">{{recuperados}}</h5>
@@ -42,8 +42,8 @@
 
                             </div>
                         </div>
-
-                        <div class="card text-ligth bg-light-gray ml-3" style="max-width: 15rem; max-height: 6rem;">
+                        
+                        <div class="card text-white bg-primary ml-3 mb-3" style="max-width: 15rem; max-height: 6rem;">
                             <div class="card-header">Activos</div>
                             <div class="card-body">
                                 <h5 class="card-title" style="text-align: center; font-size: 18px;">{{activos}}</h5>
@@ -52,7 +52,13 @@
                         </div>
 
                     </div>
+                    <hr>
                     <div class="row">
+                        <button type="button" (click)="showPieChart=!showPieChart" class="btn btn-secondary">Ver Porcentajes</button>
+                    </div>
+                    
+                    <div *ngIf="showPieChart" class="row">
+                       
                         <div class="utilresponsive">
                             <app-pie-chart-advance></app-pie-chart-advance>
 

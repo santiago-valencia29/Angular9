@@ -13,6 +13,9 @@ export class BehaviorSubjectService {
   private loadDataAreaChart = new BehaviorSubject<any>(0);
   public loadAreaChart$ = this.loadDataAreaChart.asObservable();
 
+  private loadDataPieChart = new BehaviorSubject<any>(0);
+  public loadPieChart$ = this.loadDataPieChart.asObservable();
+
 
   constructor() { }
 
@@ -32,10 +35,18 @@ export class BehaviorSubjectService {
 
   serviceExternalAreaChart(data?: any){
     if (data == null){
-      return this.loadData.getValue();
+      return this.loadDataAreaChart.getValue();
     };
-    this.loadData.next(data);
-    return this.loadData.getValue();
+    this.loadDataAreaChart.next(data);
+    return this.loadDataAreaChart.getValue();
+  }
+
+  serviceExternalPieChart(data?: any){
+    if (data == null){
+      return this.loadDataPieChart.getValue();
+    };
+    this.loadDataPieChart.next(data);
+    return this.loadDataPieChart.getValue();
   }
 
 }

@@ -1,10 +1,10 @@
-::ng-deep .advanced-pie-legend .legend-items-container .legend-items .legend-item .item-value{
-    color:white;
-}
+
 ::ng-deep .advanced-pie-legend .legend-items-container .legend-items .legend-item:hover{
     color: white !important; 
 }
-::ng-deep .advanced-pie-legend .total-value{
-    color:white;
+::ng-deep .advanced-pie-legend .legend-items-container .legend-items .legend-item .item-percent{
+    color: white !important; 
+
 }
+
 
