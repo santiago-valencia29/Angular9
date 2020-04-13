@@ -12,17 +12,15 @@ h3 {
 
 }
 
-
-  /* demonstration purposed only : non-essential */
-  .utilresponsive {
-    padding: 10px;
-    background: white;
+.utilresponsive {
+    /* padding: 10px; */
+    /* background: white; */
     box-sizing: border-box;
     resize: horizontal;
-    border: 1px dashed;
+    border: 0px dashed;
     overflow: auto;
     max-width: 100%;
-    height: calc(35vh - 16px);
+    height: 100%;
+    /* height: calc(45vh - 16px); */
   }
-
 

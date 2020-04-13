@@ -62,13 +62,16 @@ export class Covid19Component implements OnInit {
   sendDataAreaChart(){
     let multi =  [
       {
-        "name": "Casos por día",
+        "name": "Casos repotados por día",
         "series": []
       }
     ]
     let repetidos = {};
     for (let i in this.casos) {
-      repetidos[this.casos[i].fecha_de_diagn_stico] = (repetidos[this.casos[i].fecha_de_diagn_stico] || 0) + 1;
+      if(this.casos[i].atenci_n!=="Recuperado" && this.casos[i].atenci_n!=="Fallecido" ){
+        repetidos[this.casos[i].fecha_de_diagn_stico] = (repetidos[this.casos[i].fecha_de_diagn_stico] || 0) + 1;
+      }
+     
     }
 
     for(let x in repetidos){

@@ -1,6 +1,6 @@
 <h3>COVID19 COLOMBIA <img src="../../../../assets/images/images_santiago/colombia.svg" style="width: 43px;" alt=""></h3>
 <hr>
-<p>{{clock | date:'MMMM d, y'}}-  Primer caso:  Marzo 6, 2020</p>
+<p>{{clock | date:'MMMM d, y'}}- Primer caso: Marzo 6, 2020</p>
 <div class="row" *ngIf="!loading">
     <div class="col">
 
@@ -50,25 +50,31 @@
 
                             </div>
                         </div>
-                     
+
                     </div>
+                    <div class="row">
+                        <div class="utilresponsive">
+                            <app-pie-chart-advance></app-pie-chart-advance>
 
-
+                        </div>
+                    </div>
                 </ng-template>
 
             </li>
             <li *ngIf="loading" [ngbNavItem]="2">
-                <a ngbNavLink>Números de casos</a>
-                <ng-template ngbNavContent >
+                <a ngbNavLink>Diagnóstico</a>
+                <ng-template ngbNavContent>
                     <div class="row">
                         <div class="utilresponsive">
-                            <app-area-chart ></app-area-chart>
+                            <app-area-chart></app-area-chart>
                         </div>
-                    </div>       
+                    </div>
+                   
+
                 </ng-template>
             </li>
             <li *ngIf="loading" [ngbNavItem]="3">
-                <a ngbNavLink>Three</a>
+                <a ngbNavLink>Tabla</a>
                 <ng-template ngbNavContent>
                     <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam.
                         Nulla
@@ -97,6 +103,5 @@
     <div [ngbNavOutlet]="nav" class="mt-2"></div>
     <hr>
     <div class="row">
-        <div  id="mapa-mapbox"></div>
+        <div id="mapa-mapbox"></div>
     </div>
-   

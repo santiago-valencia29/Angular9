@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { multi } from './data';
 import { BehaviorSubjectService } from 'src/app/services/behavior-subject.service';
 
 
@@ -34,7 +33,7 @@ export class AreaChartComponent implements OnInit {
   };
 
   constructor(private _behaviorSubject: BehaviorSubjectService) {
-    this.multi = this._behaviorSubject.serviceExternalBehavior();
+    this.multi = this._behaviorSubject.serviceExternalAreaChart();
     Object.assign(this,this.multi);
 
   }
