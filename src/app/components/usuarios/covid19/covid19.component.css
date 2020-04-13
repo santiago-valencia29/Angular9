@@ -7,8 +7,22 @@ h3 {
 }
 
 #mapa-mapbox {
-    width: 70%;
+    width: 80%;
     height: 400px;
 
 }
+
+
+  /* demonstration purposed only : non-essential */
+  .utilresponsive {
+    padding: 10px;
+    background: white;
+    box-sizing: border-box;
+    resize: horizontal;
+    border: 1px dashed;
+    overflow: auto;
+    max-width: 100%;
+    height: calc(35vh - 16px);
+  }
+
 

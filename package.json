@@ -30,6 +30,7 @@
     "@ngrx/store": "^8.6.0",
     "@ngrx/store-devtools": "^8.6.0",
     "@ngx-gallery/core": "^5.0.0-beta.0",
+    "@swimlane/ngx-charts": "^13.0.2",
     "express": "^4.17.1",
     "mapbox-gl": "^1.9.1",
     "ng-animate": "^0.3.4",

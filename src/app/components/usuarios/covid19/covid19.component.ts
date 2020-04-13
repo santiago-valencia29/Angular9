@@ -4,6 +4,8 @@ import { Casos } from '../../../models/casos.model';
 import { coord_muni } from 'src/app/models/coord_muni';
 import { environment } from '../../../../environments/environment';
 import * as Mapboxgl from 'mapbox-gl';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
 
 
 
@@ -41,7 +43,7 @@ export class Covid19Component implements OnInit {
         this.loading = true;
         this.casos = data;
         this.addMap();
-        this.getQuery();
+        this.getQueryResumen();
         this.asignCoord();
         this.getDataMarker();
         this.addMarkers();
@@ -57,7 +59,6 @@ export class Covid19Component implements OnInit {
 
   getDataMarker() {
 
-
     var repetidos = {};
 
     this.casos.forEach(function (campo) {
@@ -65,22 +66,14 @@ export class Covid19Component implements OnInit {
     });
 
 
-    console.log(repetidos)
-
     for (let i in this.coordinates) {
       for (let key in repetidos) {
         if (this.coordinates[i].title.includes(key)) {
          this.coordinates[i]['numCasos'] = repetidos[key]
         }
-
       }
     }
-
-  
-
-    
   }
-
 
   addMap() {
     Mapboxgl.accessToken = environment.mapboxkey;
@@ -92,14 +85,13 @@ export class Covid19Component implements OnInit {
     });
   }
 
-
   addMarkers() {
     for (let i in this.coordinates) {
 
       var popup = new Mapboxgl.Popup({ offset: 25 }).setText(
         
         "Municipio: "+ this.coordinates[i].title + "\n,"+
-        "Casos confirmados Aproximados: "+this.coordinates[i].numCasos
+        "Casos Aproximados: "+this.coordinates[i].numCasos
         );
 
       var el = document.createElement('div');
@@ -112,8 +104,7 @@ export class Covid19Component implements OnInit {
     }
   }
 
-
-  getQuery() {
+  getQueryResumen() {
     this.casos.forEach((campo: Casos) => {
       if (campo.atenci_n === 'Recuperado') {
         this.recuperados++
@@ -153,11 +144,6 @@ export class Covid19Component implements OnInit {
           coordinates: this.coordinates.find(campo => campo.title === title).coordinates
         };
       });
-
-    console.log(this.coordinates)
-
-
-
   }
 }
 
