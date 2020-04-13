@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { multi } from './data';
+// import { multi } from './data';
+import { BehaviorSubjectService } from 'src/app/services/behavior-subject.service';
+
 
 
 @Component({
@@ -10,7 +12,10 @@ import { multi } from './data';
 export class AreaChartComponent implements OnInit {
 
   multi: any[];
-  view: any[] = [700, 300];
+  view: any[] = [800, 300];
+
+  casos: any = [];
+ 
 
   // options
   legend: boolean = false;
@@ -25,19 +30,25 @@ export class AreaChartComponent implements OnInit {
   timeline: boolean = true;
 
   colorScheme = {
-    domain: ['#b32d6e']
+    domain: ['#009688']
   };
 
-  constructor() {
-    Object.assign(this, { multi });
+  constructor(private _behaviorSubject: BehaviorSubjectService) {
+    this.multi = this._behaviorSubject.serviceExternalBehavior();
+    Object.assign(this,this.multi);
 
-   }
+  }
 
-   onSelect(event) {
+  onSelect(event) {
     console.log(event);
   }
 
   ngOnInit(): void {
+   
+    
+   
   }
+
+
 
 }

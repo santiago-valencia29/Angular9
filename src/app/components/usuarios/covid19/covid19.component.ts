@@ -4,7 +4,8 @@ import { Casos } from '../../../models/casos.model';
 import { coord_muni } from 'src/app/models/coord_muni';
 import { environment } from '../../../../environments/environment';
 import * as Mapboxgl from 'mapbox-gl';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BehaviorSubjectService } from 'src/app/services/behavior-subject.service';
+
 
 
 
@@ -31,7 +32,7 @@ export class Covid19Component implements OnInit {
   mapa: Mapboxgl.Map;
 
 
-  constructor(private _Covid19Service: Covid19Service) {
+  constructor(private _behaviorSubject:BehaviorSubjectService, private _Covid19Service: Covid19Service) {
 
   }
 
@@ -47,6 +48,7 @@ export class Covid19Component implements OnInit {
         this.asignCoord();
         this.getDataMarker();
         this.addMarkers();
+        this.sendDataAreaChart();
 
       }
     },
@@ -57,9 +59,33 @@ export class Covid19Component implements OnInit {
 
   }
 
+  sendDataAreaChart(){
+    let multi =  [
+      {
+        "name": "Casos por día",
+        "series": []
+      }
+    ]
+    let repetidos = {};
+    for (let i in this.casos) {
+      repetidos[this.casos[i].fecha_de_diagn_stico] = (repetidos[this.casos[i].fecha_de_diagn_stico] || 0) + 1;
+    }
+
+    for(let x in repetidos){
+
+      multi[0]['series'].push(
+        {
+          "name": x,
+          "value": repetidos[x]
+
+        })
+    }
+    this._behaviorSubject.serviceExternalBehavior(multi);
+  }
+
   getDataMarker() {
 
-    var repetidos = {};
+    let repetidos = {};
 
     this.casos.forEach(function (campo) {
       repetidos[campo.ciudad_de_ubicaci_n] = (repetidos[campo.ciudad_de_ubicaci_n] || 0) + 1;

@@ -1,19 +1,36 @@
 export var multi = [
     {
-      "name": "Germany",
+      "name": "progreso",
       "series": [
         {
-          "name": "1990",
-          "value": 62000000
+          "name": "29/3/2020",
+          "value": 8
         },
         {
-          "name": "2010",
-          "value": 73000000
+          "name": "28/3/2020",
+          "value": 10
         },
         {
-          "name": "2011",
-          "value": 89400000
+          "name": "22/4/2020",
+          "value": 2
+        },
+        {
+          "name": "27/4/2020",
+          "value": 4
+        },
+        {
+          "name": "19/4/2020",
+          "value": 3
+        },
+        {
+          "name": "20/4/2020",
+          "value": 2
+        },
+        {
+          "name": "28/4/2020",
+          "value": 2
         }
+        
       ]
     }
   ];
