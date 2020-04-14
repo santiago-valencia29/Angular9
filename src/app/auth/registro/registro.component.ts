@@ -49,7 +49,8 @@ export class RegistroComponent implements OnInit {
         Swal.fire({
           title: 'Error al Registrar',
           icon: 'error',
-          text: err.error.error.message
+          text: err.error.error.message,
+          
         });
       });
 

@@ -1,6 +1,6 @@
 <h3>COVID19 COLOMBIA <img src="../../../../assets/images/images_santiago/colombia.svg" style="width: 43px;" alt=""></h3>
 <hr>
-<p>{{clock | date:'MMMM d, y'}}- Primer caso: Marzo 6, 2020</p>
+<p>Hoy: {{clock | date:'MMMM d, y'}}-Primer caso: Marzo 6, 2020</p>
 <div class="row" *ngIf="!loading">
     <div class="col">
 
@@ -122,6 +122,12 @@
 
     <div [ngbNavOutlet]="nav" class="mt-2"></div>
     <hr>
-    <div class="row">
-        <div id="mapa-mapbox"></div>
+    <div  class="row">
+        <div class="animated fadeIn" id="mapa-mapbox"></div>
     </div>
+
+    <footer  id="sticky-footer" class="text-white-50">
+        <div class="container text-center">
+          <small>Copyright {{anio}}  &copy; Santiago Valencia My App</small>
+        </div>
+      </footer>

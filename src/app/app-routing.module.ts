@@ -46,7 +46,7 @@ const routes: Routes = [
   { path: 'listaUsuarios', component: ListaComponent },
   { path: 'usuario/:id', component: UsuarioComponent },
   { path: 'BehaviorSubject', component: BehaviorSubjectComponent },
-  { path: 'covid19', component: Covid19Component },
+  { path: 'covid19-colombia', component: Covid19Component },
 
   // Home
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
@@ -55,7 +55,7 @@ const routes: Routes = [
   // Login-Register
   { path: 'registro', component: RegistroComponent },
   { path: 'login', component: LoginComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'login' },
+  { path: '**', pathMatch: 'full', redirectTo: 'covid19-colombia' }
 ];
 
 @NgModule({

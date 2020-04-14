@@ -5,10 +5,7 @@ import { coord_muni } from 'src/app/models/coord_muni';
 import { environment } from '../../../../environments/environment';
 import * as Mapboxgl from 'mapbox-gl';
 import { BehaviorSubjectService } from 'src/app/services/behavior-subject.service';
-
-
-
-
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-covid19',
@@ -32,6 +29,7 @@ export class Covid19Component implements OnInit {
 
   mapa: Mapboxgl.Map;
   showpie = true;
+  anio = new Date().getFullYear();
 
 
   constructor(private _behaviorSubject: BehaviorSubjectService, private _Covid19Service: Covid19Service) {
@@ -60,6 +58,13 @@ export class Covid19Component implements OnInit {
       error => {
         console.log(<any>error)
         this.loading = false;
+        Swal.fire({
+          title: 'Error',
+          icon: 'error',
+          text: error.message,
+          showConfirmButton: false,
+          allowOutsideClick:false
+        });
       });
 
   }
@@ -256,13 +261,23 @@ export class Covid19Component implements OnInit {
   }
 
   addMap() {
+
+ 
     Mapboxgl.accessToken = environment.mapboxkey;
     this.mapa = new Mapboxgl.Map({
       container: 'mapa-mapbox', // container id
       style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
       center: [-74.2973328, 4.570868], // starting position [lng, lat]
       zoom: 4.5 // starting zoom    
+    },err =>{
+      Swal.fire({
+        title: 'Error al cargar el mapa',
+        icon: 'error',
+        text: err
+      });
+    
     });
+   
   }
 
   addMarkers() {

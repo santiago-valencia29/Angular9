@@ -22,7 +22,7 @@ export class AuthMeanGuard implements CanActivate {
         Swal.fire({
           title: 'Sitio Restringido',
           icon: 'warning',
-          text: 'Debe autenticarse con MEAN 123456'
+          text: 'Debe autenticarse'
         });
         this.router.navigateByUrl('/signin');
         // this.auth.logout();
