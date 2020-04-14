@@ -28,6 +28,7 @@ import { LoginComponent } from './auth/login/login.component';
 //Guards
 import { AuthGuard } from './guards/auth.guard';
 import { AuthMeanGuard } from './guards/auth-mean.guard';
+import { PagNotFoundComponent } from './shared/pag-not-found/pag-not-found.component';
 
 const routes: Routes = [
   // MeanStack
@@ -35,7 +36,7 @@ const routes: Routes = [
   { path: 'crear-proyecto', component: CreateComponent },
   { path: 'private', component: PrivateTasksComponent,canActivate:[AuthMeanGuard] },
   { path: 'signin', component: SigninComponent },
-  { path: 'signup', component: SignupComponent },
+  // { path: 'signup', component: SignupComponent },
 
 
   // CrudFirebase
@@ -47,15 +48,17 @@ const routes: Routes = [
   { path: 'usuario/:id', component: UsuarioComponent },
   { path: 'BehaviorSubject', component: BehaviorSubjectComponent },
   { path: 'covid19-colombia', component: Covid19Component },
+  { path: 'pag-not-found', component: PagNotFoundComponent },
+
 
   // Home
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   // {path:'**', pathMatch: 'full', redirectTo:'home'},
 
   // Login-Register
-  { path: 'registro', component: RegistroComponent },
-  { path: 'login', component: LoginComponent }
-  // { path: '**', pathMatch: 'full', redirectTo: 'login' }
+  // { path: 'registro', component: RegistroComponent },
+  { path: 'login', component: LoginComponent },
+  { path: '**', pathMatch: 'full', redirectTo: 'pag-not-found' }
 ];
 
 @NgModule({

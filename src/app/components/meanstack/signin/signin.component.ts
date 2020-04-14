@@ -20,6 +20,7 @@ export class SigninComponent implements OnInit {
   }
 
   signIn() {
+    Swal.showLoading();
     this._authService.signIn(this.user)
       .subscribe(
         res => {

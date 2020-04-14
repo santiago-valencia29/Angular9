@@ -20,7 +20,7 @@ export class PieChartAdvanceComponent implements OnInit {
   isDoughnut: boolean = false;
 
   colorScheme = {
-    domain: ['#268bd2', '#A10A28', '#b58900']
+    domain: ['#1da0fd', '#f21e48', '#ffdc00']
   };
   constructor(private _behaviorSubject:BehaviorSubjectService) { 
     this.single=this._behaviorSubject.serviceExternalPieChart();

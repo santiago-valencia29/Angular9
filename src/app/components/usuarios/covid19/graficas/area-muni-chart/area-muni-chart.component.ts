@@ -8,7 +8,7 @@ import { BehaviorSubjectService } from 'src/app/services/behavior-subject.servic
 })
 export class AreaMuniChartComponent implements OnInit {
   multi: any[];
-  view: any[] = [1600, 400];
+  view: any[] = [3000, 400];
 
   // options
   legend: boolean = false;

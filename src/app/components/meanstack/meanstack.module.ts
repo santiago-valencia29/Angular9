@@ -12,9 +12,9 @@ import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
 import { GalleryModule } from  '@ngx-gallery/core';
 import { GALLERY_CONFIG } from '@ngx-gallery/core';
 
-
 // import { HTTP_INTERCEPTORS } from '@angular/common/http';
 // import { tokenService } from 'src/app/services/meanstack/token.service';
+
 
 
 
@@ -25,7 +25,8 @@ import { GALLERY_CONFIG } from '@ngx-gallery/core';
     FormsModule,
     AppMaterialModule,
     ReactiveFormsModule,
-    GalleryModule    
+    GalleryModule
+       
   ],
   declarations: [
     ProjectsComponent,

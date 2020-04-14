@@ -6,13 +6,15 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { AppMaterialModule } from '../app-material.module';
 import { FooterComponent } from './footer/footer.component';
+import { PagNotFoundComponent } from './pag-not-found/pag-not-found.component';
 
 @NgModule({
   declarations: [
     NavbarComponent, 
     HomeComponent, 
     ErrorComponent, 
-    FooterComponent
+    FooterComponent,
+    PagNotFoundComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    ErrorComponent
+    ErrorComponent,
+    PagNotFoundComponent
   ]
 })
 export class SharedModule { }
