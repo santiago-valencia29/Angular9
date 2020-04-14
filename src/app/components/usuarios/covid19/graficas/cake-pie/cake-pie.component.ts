@@ -19,7 +19,7 @@ export class CakePieComponent implements OnInit {
   legendPosition: string = 'below';
 
   colorScheme = {
-    domain: ['#669900', '#66CC00', '#66FF00', '#00FF00','#00CC00', '#009900', '#00FFCC', '#66FFCC']
+    domain: ['#bed8db', '#84dcc6', '#264e70', '#4990b7','#c2e812', '#fe9b42', '#e26d5a', '#c43c55']
   };
   constructor(private _behaviorSubject:BehaviorSubjectService) {
     

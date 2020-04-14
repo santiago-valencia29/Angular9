@@ -25,12 +25,14 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
 
-    this.router.events.subscribe((event: any) => {
-      if (event instanceof NavigationEnd) {
-        this.currentUrl = event.url;
-        // console.log(this.currentUrl);
-      }
-    });
+    //para saber la ruta donde estoy ubicado
+    // this.router.events.subscribe((event: any) => {
+    //   if (event instanceof NavigationEnd) {
+    //     this.currentUrl = event.url;
+    //     // console.log(this.currentUrl);
+    //   }
+
+    // });
 
     if (localStorage.getItem('user')) {
       this.store.dispatch(new SetUserAction(localStorage.getItem('user')));

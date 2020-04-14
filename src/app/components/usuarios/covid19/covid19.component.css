@@ -7,7 +7,7 @@ h3 {
 }
 
 #mapa-mapbox {
-    width: 80%;
+    width: 95%;
     height: 400px;
 
 }
@@ -24,3 +24,6 @@ h3 {
     /* height: calc(45vh - 16px); */
   }
 
+  .nav-ng:hover{
+      color: white;
+  }

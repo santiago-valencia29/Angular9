@@ -1,6 +1,6 @@
 <h3>COVID19 COLOMBIA <img src="../../../../assets/images/images_santiago/colombia.svg" style="width: 43px;" alt=""></h3>
 <hr>
-<p>Hoy: {{clock | date:'MMMM d, y'}}-Primer caso: Marzo 6, 2020</p>
+<p class="text-muted">Hoy: {{clock | date:'MMMM d, y'}}-Primer caso: Marzo 6, 2020</p>
 <div class="row" *ngIf="!loading">
     <div class="col">
 
@@ -17,10 +17,10 @@
     <div>
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
             <li *ngIf="loading" [ngbNavItem]="1">
-                <a (click)="analyticsEventDiagnostico()" ngbNavLink>Resumen</a>
+                <a class="nav-ng" (click)="analyticsEventDiagnostico()" ngbNavLink>Resumen</a>
                 <ng-template ngbNavContent>
                     <div class="row">
-                        <div class="card text-dark bg-white ml-3 mb-2" style="max-width: 12rem; max-height: 6rem;">
+                        <div class="card text-white bg-gray ml-3 mb-2" style="max-width: 12rem; max-height: 6rem;">
                             <div class="card-header">Casos Confirmados</div>
                             <div class="card-body">
                                 <h5 class="card-title" style="text-align: center; font-size: 18px; ">{{casos.length}}
@@ -68,32 +68,33 @@
 
             </li>
             <li *ngIf="loading" [ngbNavItem]="2">
-                <a ngbNavLink>Diagnóstico</a>
+                <a class="nav-ng" ngbNavLink>Diagnóstico</a>
                 <ng-template ngbNavContent>
                     <div class="row">
                         <div class="utilresponsive">
                             <app-area-chart></app-area-chart>
                         </div>
                     </div>
-
+                    <hr>
                     <div class="row">
                         <div class="utilresponsive">
                             <app-bar-chart></app-bar-chart>
                         </div>
                     </div>
                     <hr>
-                    <hr>
-                    <hr>
+                    <br>
+                    <br>
                     <div class="row">
                         <div class="utilresponsive">
                         <app-line-chart></app-line-chart>
                         </div>
                     </div>
+                    <hr>
+
                     <div class="row">
                         <button (click)="sendDataCakePieCasosEdad()" class="btn btn-secondary mr-4 active">Casos por edad</button>
                         <button (click)="sendDataCakePieFalleEdad();analyticsEventPieChart()" class="btn btn-secondary">Fallecimiento por edad</button>
                     </div>
-                  
                     <div class="row">
                         
                         <div class="utilresponsive">
@@ -106,6 +107,7 @@
                        
                         </div>
                     </div>
+                    <hr>
 
                     <div class="row">
                         <div class="utilresponsive">
@@ -126,8 +128,8 @@
         <div class="animated fadeIn" id="mapa-mapbox"></div>
     </div>
 
-    <footer  id="sticky-footer" class="text-white-50">
+    <!-- <footer  id="sticky-footer" class="text-white-50">
         <div class="container text-center">
           <small>Copyright {{anio}}  &copy; Santiago Valencia My App</small>
         </div>
-      </footer>
+      </footer> -->
