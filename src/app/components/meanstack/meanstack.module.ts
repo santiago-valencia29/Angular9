@@ -11,7 +11,6 @@ import { SignupComponent } from './signup/signup.component';
 import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
 import { GalleryModule } from  '@ngx-gallery/core';
 import { GALLERY_CONFIG } from '@ngx-gallery/core';
-import { SharedModule } from '../../shared/shared.module';
 
 // import { HTTP_INTERCEPTORS } from '@angular/common/http';
 // import { tokenService } from 'src/app/services/meanstack/token.service';
@@ -26,8 +25,8 @@ import { SharedModule } from '../../shared/shared.module';
     FormsModule,
     AppMaterialModule,
     ReactiveFormsModule,
-    GalleryModule,
-    SharedModule   
+    GalleryModule
+       
   ],
   declarations: [
     ProjectsComponent,
