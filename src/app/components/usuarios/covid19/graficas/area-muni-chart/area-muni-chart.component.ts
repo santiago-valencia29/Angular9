@@ -1,17 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubjectService } from 'src/app/services/behavior-subject.service';
 
-
-
 @Component({
-  selector: 'app-area-chart',
-  templateUrl: './area-chart.component.html',
-  styleUrls: ['./area-chart.component.css']
+  selector: 'app-area-muni-chart',
+  templateUrl: './area-muni-chart.component.html',
+  styleUrls: ['./area-muni-chart.component.css']
 })
-export class AreaChartComponent implements OnInit {
-
+export class AreaMuniChartComponent implements OnInit {
   multi: any[];
-  view: any[] = [800, 300];
+  view: any[] = [1600, 400];
 
   // options
   legend: boolean = false;
@@ -21,30 +18,26 @@ export class AreaChartComponent implements OnInit {
   yAxis: boolean = true;
   showYAxisLabel: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Días';
+  xAxisLabel: string = 'Municipios';
   yAxisLabel: string = 'Número de casos';
   timeline: boolean = true;
 
   colorScheme = {
-    domain: ['#009688']
+    domain: ['#ffc300']
   };
 
   constructor(private _behaviorSubject: BehaviorSubjectService) {
-    this.multi = this._behaviorSubject.serviceExternalAreaChart();
+    this.multi = this._behaviorSubject.serviceExternalAreaMuniChart();
     Object.assign(this,this.multi);
+   }
 
+
+
+  ngOnInit(): void {
   }
 
   onSelect(event) {
-    console.log(event);
+    // console.log(event);
   }
-
-  ngOnInit(): void {
-   
-    
-   
-  }
-
-
 
 }

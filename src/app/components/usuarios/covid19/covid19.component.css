@@ -16,7 +16,7 @@ h3 {
     /* padding: 10px; */
     /* background: white; */
     box-sizing: border-box;
-    resize: horizontal;
+    /* resize: horizontal; */
     border: 0px dashed;
     overflow: auto;
     max-width: 100%;

@@ -12,6 +12,10 @@ import { PieChartAdvanceComponent } from './covid19/graficas/pie-chart-advance/p
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BarChartComponent } from './covid19/graficas/bar-chart/bar-chart.component';
+import { LineChartComponent } from './covid19/graficas/line-chart/line-chart.component';
+import { CakePieComponent } from './covid19/graficas/cake-pie/cake-pie.component';
+import { AreaMuniChartComponent } from './covid19/graficas/area-muni-chart/area-muni-chart.component';
 
 
 
@@ -22,7 +26,11 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     BehaviorSubjectComponent,
     Covid19Component,
     AreaChartComponent,
-    PieChartAdvanceComponent
+    PieChartAdvanceComponent,
+    BarChartComponent,
+    LineChartComponent,
+    CakePieComponent,
+    AreaMuniChartComponent
   
   ],
   imports: [
@@ -38,7 +46,11 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     BehaviorSubjectComponent,
     Covid19Component,
     AreaChartComponent,
-    PieChartAdvanceComponent
+    PieChartAdvanceComponent,
+    BarChartComponent,
+    LineChartComponent,
+    CakePieComponent,
+    AreaMuniChartComponent
   ]
 })
 export class UsuariosModule { }

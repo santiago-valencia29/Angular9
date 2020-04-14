@@ -24,13 +24,14 @@ export class Covid19Component implements OnInit {
   recuperados: number = 0;
   fallecidos: number = 0;
   activos: number = 0;
-  showPieChart:boolean;
+  showPieChart: boolean;
 
   loading: boolean;
 
   coordinates = [];
 
   mapa: Mapboxgl.Map;
+  showpie = true;
 
 
   constructor(private _behaviorSubject: BehaviorSubjectService, private _Covid19Service: Covid19Service) {
@@ -50,6 +51,9 @@ export class Covid19Component implements OnInit {
         this.getDataMarker();
         this.addMarkers();
         this.sendDataAreaChart();
+        this.sendDataAreaMuni();
+        this.sendDataLineChart();
+        this.sendDataCakePieCasosEdad();
 
       }
     },
@@ -58,6 +62,151 @@ export class Covid19Component implements OnInit {
         this.loading = false;
       });
 
+  }
+  //******** */
+  sendDataCakePieFalleEdad() {
+    this.showpie = false
+    setTimeout(() => {
+      this.showpie = true
+      let single = []
+      let edad1 = 0, edad2 = 0, edad3 = 0, edad4 = 0, edad5 = 0, edad6 = 0, edad7 = 0, edad8 = 0
+      for (let i in this.casos) {
+        if (this.casos[i].edad > 0 && this.casos[i].edad < 10 && this.casos[i].atenci_n === 'Fallecido') {
+          edad1++
+          single[0] = { "name": "0-9", "value": edad1 }
+        } else
+          if (this.casos[i].edad > 9 && this.casos[i].edad < 20 && this.casos[i].atenci_n === 'Fallecido') {
+            edad2++
+            single[1] = { "name": "10-19", "value": edad2 }
+          } else
+            if (this.casos[i].edad > 19 && this.casos[i].edad < 30 && this.casos[i].atenci_n === 'Fallecido') {
+              edad3++
+              single[2] = { "name": "20-29", "value": edad3 }
+            } else
+              if (this.casos[i].edad > 29 && this.casos[i].edad < 40 && this.casos[i].atenci_n === 'Fallecido') {
+                edad4++
+                single[3] = { "name": "30-39", "value": edad4 }
+              } else
+                if (this.casos[i].edad > 39 && this.casos[i].edad < 50 && this.casos[i].atenci_n === 'Fallecido') {
+                  edad5++
+                  single[4] = { "name": "40-49", "value": edad5 }
+                } else
+                  if (this.casos[i].edad > 49 && this.casos[i].edad < 60 && this.casos[i].atenci_n === 'Fallecido') {
+                    edad6++
+                    single[5] = { "name": "50-59", "value": edad6 }
+                  } else
+                    if (this.casos[i].edad > 59 && this.casos[i].edad < 70 && this.casos[i].atenci_n === 'Fallecido') {
+                      edad7++
+                      single[6] = { "name": "60-69", "value": edad7 }
+                    } else
+                      if (this.casos[i].edad > 60 && this.casos[i].atenci_n === 'Fallecido') {
+                        edad8++
+                        single[7] = { "name": ">70", "value": edad8 }
+                      }
+      }
+      this._behaviorSubject.serviceExternalCake(single);
+    }, 200);
+
+
+  }
+
+  sendDataCakePieCasosEdad() {
+    this.showpie = false;
+
+    setTimeout(() => {
+      this.showpie = true;
+      let single = []
+      let edad1 = 0, edad2 = 0, edad3 = 0, edad4 = 0, edad5 = 0, edad6 = 0, edad7 = 0, edad8 = 0
+      for (let i in this.casos) {
+        if (this.casos[i].edad > 0 && this.casos[i].edad < 10) {
+          edad1++
+          single[0] = { "name": "0-9", "value": edad1 }
+        } else
+          if (this.casos[i].edad > 9 && this.casos[i].edad < 20) {
+            edad2++
+            single[1] = { "name": "10-19", "value": edad2 }
+          } else
+            if (this.casos[i].edad > 19 && this.casos[i].edad < 30) {
+              edad3++
+              single[2] = { "name": "20-29", "value": edad3 }
+            } else
+              if (this.casos[i].edad > 29 && this.casos[i].edad < 40) {
+                edad4++
+                single[3] = { "name": "30-39", "value": edad4 }
+              } else
+                if (this.casos[i].edad > 39 && this.casos[i].edad < 50) {
+                  edad5++
+                  single[4] = { "name": "40-49", "value": edad5 }
+                } else
+                  if (this.casos[i].edad > 49 && this.casos[i].edad < 60) {
+                    edad6++
+                    single[5] = { "name": "50-59", "value": edad6 }
+                  } else
+                    if (this.casos[i].edad > 59 && this.casos[i].edad < 70) {
+                      edad7++
+                      single[6] = { "name": "60-69", "value": edad7 }
+                    } else
+                      if (this.casos[i].edad > 60) {
+                        edad8++
+                        single[7] = { "name": ">70", "value": edad8 }
+                      }
+
+
+      }
+      this._behaviorSubject.serviceExternalCake(single);
+    }, 300);
+
+  }
+
+  sendDataLineChart() {
+    let multi = [
+      {
+        "name": "Fallecidos",
+        "series": []
+      }
+    ]
+    let repetidos = {};
+    for (let i in this.casos) {
+      if (this.casos[i].atenci_n === "Fallecido") {
+        repetidos[this.casos[i].fecha_de_diagn_stico] = (repetidos[this.casos[i].fecha_de_diagn_stico] || 0) + 1;
+      }
+
+    }
+
+    for (let x in repetidos) {
+      multi[0]['series'].push(
+        {
+          "name": x,
+          "value": repetidos[x]
+
+        })
+    }
+    this._behaviorSubject.serviceExternalLineChart(multi);
+  }
+
+  sendDataAreaMuni() {
+    let multi = [
+      {
+        "name": "Casos por Municipios",
+        "series": []
+      }
+    ]
+    let repetidos = {};
+    for (let i in this.casos) {
+      repetidos[this.casos[i].ciudad_de_ubicaci_n] = (repetidos[this.casos[i].ciudad_de_ubicaci_n] || 0) + 1;
+    }
+
+    for (let x in repetidos) {
+
+      //console.log(x) para controlar las fechas que vienen erradas pendiente
+      multi[0]['series'].push(
+        {
+          "name": x,
+          "value": repetidos[x]
+
+        })
+    }
+    this._behaviorSubject.serviceExternalAreaMuniChart(multi);
   }
 
   sendDataAreaChart() {
@@ -77,6 +226,7 @@ export class Covid19Component implements OnInit {
 
     for (let x in repetidos) {
 
+      //console.log(x) para controlar las fechas que vienen erradas pendiente
       multi[0]['series'].push(
         {
           "name": x,
@@ -135,18 +285,58 @@ export class Covid19Component implements OnInit {
   }
 
   getQueryResumen() {
+    let aislados = 0;
+    let hospital = 0;
+    let hospitalUci = 0;
+
     this.casos.forEach((campo: Casos) => {
-      if (campo.atenci_n === 'Recuperado') {
-        this.recuperados++
-      }
+      if (campo)
+        if (campo.atenci_n === 'Recuperado') {
+          this.recuperados++
+        }
       if (campo.atenci_n === 'Fallecido') {
         this.fallecidos++
       }
       if (campo.atenci_n !== 'Recuperado' && campo.atenci_n !== 'Fallecido') {
         this.activos++
       }
+      if (campo.atenci_n === 'Casa') {
+        aislados++
+      }
+      if (campo.atenci_n === 'Hospital') {
+        hospital++
+      }
+      if (campo.atenci_n === 'Hospital UCI') {
+        hospitalUci++
+      }
 
     });
+
+    let dataBarChart = [
+      {
+        "name": "Recuperados",
+        "value": this.recuperados
+      },
+      {
+        "name": "Aislados",
+        "value": aislados
+      },
+      {
+        "name": "Hospital",
+        "value": hospital
+      },
+      {
+        "name": "Hospital UCI",
+        "value": hospitalUci
+      },
+      {
+        "name": "Fallecidos",
+        "value": this.fallecidos
+      }
+
+    ]
+    this._behaviorSubject.serviceExternalBarChart(dataBarChart);
+
 
     let dataPiechart = [
       {

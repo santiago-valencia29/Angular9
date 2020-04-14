@@ -20,7 +20,7 @@
                 <a ngbNavLink>Resumen</a>
                 <ng-template ngbNavContent>
                     <div class="row">
-                        <div class="card text-dark bg-white ml-3" style="max-width: 12rem; max-height: 6rem;">
+                        <div class="card text-dark bg-white ml-3 mb-2" style="max-width: 12rem; max-height: 6rem;">
                             <div class="card-header">Casos Confirmados</div>
                             <div class="card-body">
                                 <h5 class="card-title" style="text-align: center; font-size: 18px; ">{{casos.length}}
@@ -28,7 +28,7 @@
 
                             </div>
                         </div>
-                        <div class="card text-white bg-info ml-3" style="max-width: 10rem; max-height: 6rem;">
+                        <div class="card text-white bg-info ml-3 mb-2" style="max-width: 10rem; max-height: 6rem;">
                             <div class="card-header">Recuperados</div>
                             <div class="card-body">
                                 <h5 class="card-title" style="text-align: center; font-size: 18px;">{{recuperados}}</h5>
@@ -75,31 +75,45 @@
                             <app-area-chart></app-area-chart>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="utilresponsive">
+                            <app-bar-chart></app-bar-chart>
+                        </div>
+                    </div>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <div class="row">
+                        <div class="utilresponsive">
+                        <app-line-chart></app-line-chart>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button (click)="sendDataCakePieCasosEdad()" class="btn btn-secondary mr-4 active">Casos por edad</button>
+                        <button (click)="sendDataCakePieFalleEdad()" class="btn btn-secondary">Fallecimiento por edad</button>
+                    </div>
+                  
+                    <div class="row">
+                        
+                        <div class="utilresponsive">
+                           
+                            <div style="height: 300px;">
+                            <div *ngIf="showpie">
+                                <app-cake-pie></app-cake-pie>
+                            </div>
+                        </div>
+                       
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="utilresponsive">
+                           <app-area-muni-chart></app-area-muni-chart>
+                        </div>
+                    </div>
                    
 
-                </ng-template>
-            </li>
-            <li *ngIf="loading" [ngbNavItem]="3">
-                <a ngbNavLink>Tabla</a>
-                <ng-template ngbNavContent>
-                    <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam.
-                        Nulla
-                        facilisi.
-                        Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu,
-                        congue
-                        et odio.
-                        Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et.
-                        Sed
-                        diam urna,
-                        egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus
-                        nisl
-                        enim, nec
-                        tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque
-                        penatibus et
-                        magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet
-                        ultricies in
-                        eget
-                        neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
                 </ng-template>
             </li>
         </ul>
