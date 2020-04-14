@@ -54,8 +54,8 @@ const routes: Routes = [
 
   // Login-Register
   { path: 'registro', component: RegistroComponent },
-  { path: 'login', component: LoginComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'covid19-colombia' }
+  { path: 'login', component: LoginComponent }
+  // { path: '**', pathMatch: 'full', redirectTo: 'login' }
 ];
 
 @NgModule({

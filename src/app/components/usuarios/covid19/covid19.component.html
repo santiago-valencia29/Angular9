@@ -17,7 +17,7 @@
     <div>
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
             <li *ngIf="loading" [ngbNavItem]="1">
-                <a ngbNavLink>Resumen</a>
+                <a (click)="analyticsEventDiagnostico()" ngbNavLink>Resumen</a>
                 <ng-template ngbNavContent>
                     <div class="row">
                         <div class="card text-dark bg-white ml-3 mb-2" style="max-width: 12rem; max-height: 6rem;">
@@ -54,7 +54,7 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <button type="button" (click)="showPieChart=!showPieChart" class="btn btn-secondary">Ver Porcentajes</button>
+                        <button type="button" (click)="showPieChart=!showPieChart;analyticsEventVerPorcentajes()" class="btn btn-secondary">Ver Porcentajes</button>
                     </div>
                     
                     <div *ngIf="showPieChart" class="row">
@@ -91,7 +91,7 @@
                     </div>
                     <div class="row">
                         <button (click)="sendDataCakePieCasosEdad()" class="btn btn-secondary mr-4 active">Casos por edad</button>
-                        <button (click)="sendDataCakePieFalleEdad()" class="btn btn-secondary">Fallecimiento por edad</button>
+                        <button (click)="sendDataCakePieFalleEdad();analyticsEventPieChart()" class="btn btn-secondary">Fallecimiento por edad</button>
                     </div>
                   
                     <div class="row">

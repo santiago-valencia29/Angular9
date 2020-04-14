@@ -6,6 +6,7 @@ import { environment } from '../../../../environments/environment';
 import * as Mapboxgl from 'mapbox-gl';
 import { BehaviorSubjectService } from 'src/app/services/behavior-subject.service';
 import Swal from 'sweetalert2';
+import { GoogleAnalyticsService } from 'mugan86-ng-google-analytics';
 
 @Component({
   selector: 'app-covid19',
@@ -32,7 +33,7 @@ export class Covid19Component implements OnInit {
   anio = new Date().getFullYear();
 
 
-  constructor(private _behaviorSubject: BehaviorSubjectService, private _Covid19Service: Covid19Service) {
+  constructor(public googleAnalyticsService: GoogleAnalyticsService,private _behaviorSubject: BehaviorSubjectService, private _Covid19Service: Covid19Service) {
 
   }
 
@@ -69,6 +70,19 @@ export class Covid19Component implements OnInit {
 
   }
   //******** */
+  analyticsEventVerPorcentajes() {
+    // We call the event emmiter function from our service and pass in the details
+    this.googleAnalyticsService.eventEmitter('Resumen Covid', 'Clic boton', 'Ver porcentajes', 1);
+  }
+  analyticsEventDiagnostico(){
+    this.googleAnalyticsService.eventEmitter('Diagnostico Covid', 'Clic item Nav', 'Pag Diagnostico', 1);
+  }
+
+  analyticsEventPieChart(){
+    this.googleAnalyticsService.eventEmitter('Diagnostico Covid', 'Clic boton Fallecimiento', 'Data Fallecimiento', 1);
+  }
+
+
   sendDataCakePieFalleEdad() {
     this.showpie = false
     setTimeout(() => {

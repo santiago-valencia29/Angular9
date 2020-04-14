@@ -31,6 +31,8 @@ import localeEsCo from '@angular/common/locales/es-CO';
 
 registerLocaleData(localeEsCo, 'es-CO');
 
+import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
+
 
 
 @NgModule({
@@ -59,7 +61,13 @@ registerLocaleData(localeEsCo, 'es-CO');
     CrudfirebaseModule,
     AuthModule,
     MeanstackModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    Mugan86GoogleAnalyticsModule.forRoot(
+      {
+        analyticsId: 'UA-157504171-1',
+        showLog: true
+      }
+    )
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'es-CO' }],
   bootstrap: [AppComponent]
