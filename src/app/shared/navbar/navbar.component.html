@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-dark ">
+<nav *ngIf="currentUrl!== '/covid19-colombia'" class="navbar navbar-expand-md navbar-light bg-dark ">
 
   <a class="navbar-brand text-light font-weight-bold px-3 " routerLink="home"><img src="assets\images\images_santiago\icono_angular.svg"><a>Angular 9</a> </a>
 
@@ -20,6 +20,8 @@
          <a class="dropdown-item" routerLinkActive="active" routerLink="listaUsuarios">Lista de Usuarios</a>
          <a class="dropdown-item" routerLinkActive="active" routerLink="usuario/1">Buscar Usuario</a>
          <a class="dropdown-item" routerLinkActive="active" routerLink="BehaviorSubject">BehaviorSubject Heroes</a>
+         <a class="dropdown-item" routerLinkActive="active" routerLink="covid19-colombia">Colombia Covid19</a>
+
         </div>
       </li>
 

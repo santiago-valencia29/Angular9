@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { ListaComponent } from './components/usuarios/lista/lista.component';
 import { UsuarioComponent } from './components/usuarios/usuario/usuario.component';
 import { BehaviorSubjectComponent } from './components/usuarios/behavior-subject/behavior-subject.component';
+import { Covid19Component } from './components/usuarios/covid19/covid19.component';
+
 
 // Home
 import { HomeComponent } from './shared/home/home.component';
@@ -27,13 +29,6 @@ import { LoginComponent } from './auth/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { AuthMeanGuard } from './guards/auth-mean.guard';
 
-
-
-
-
-
-
-
 const routes: Routes = [
   // MeanStack
   { path: 'proyectos', component: ProjectsComponent },
@@ -51,7 +46,7 @@ const routes: Routes = [
   { path: 'listaUsuarios', component: ListaComponent },
   { path: 'usuario/:id', component: UsuarioComponent },
   { path: 'BehaviorSubject', component: BehaviorSubjectComponent },
-
+  { path: 'covid19-colombia', component: Covid19Component },
 
   // Home
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
@@ -59,8 +54,8 @@ const routes: Routes = [
 
   // Login-Register
   { path: 'registro', component: RegistroComponent },
-  { path: 'login', component: LoginComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'login' },
+  { path: 'login', component: LoginComponent }
+  // { path: '**', pathMatch: 'full', redirectTo: 'login' }
 ];
 
 @NgModule({

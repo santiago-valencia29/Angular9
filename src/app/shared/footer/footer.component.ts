@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -8,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   anio:number;
+  currentUrl: string;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+    
+    this.router.events.subscribe((event: any) => {
+      if (event instanceof NavigationEnd) {
+        this.currentUrl = event.url;
+        // console.log(this.currentUrl);
+      }
+    });
 
     this.anio = new Date().getFullYear();
   }

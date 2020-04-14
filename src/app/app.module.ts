@@ -24,6 +24,14 @@ import { effectsArr } from './store/effects/index';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+
+import localeEsCo from '@angular/common/locales/es-CO';
+
+registerLocaleData(localeEsCo, 'es-CO');
+
+import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
 
 
 
@@ -53,9 +61,15 @@ import { environment } from 'src/environments/environment';
     CrudfirebaseModule,
     AuthModule,
     MeanstackModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    Mugan86GoogleAnalyticsModule.forRoot(
+      {
+        analyticsId: 'UA-157504171-1',
+        showLog: true
+      }
+    )
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'es-CO' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
-import { Component, OnInit,  } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { AuthService } from '../../services/auth/auth.service';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/store/app.reducer';
 import { SetUserAction } from 'src/app/store/actions';
@@ -15,14 +15,23 @@ export class NavbarComponent implements OnInit {
 
   logout: boolean;
   usuario: string;
+  currentUrl: string;
 
   constructor(private auth: AuthService,
-              private router: Router,
-              private store: Store<AppState>,
-              private authService: authService
-              ) {}
+    private router: Router,
+    private store: Store<AppState>,
+    private authService: authService,
+  ) { }
 
   ngOnInit() {
+
+    this.router.events.subscribe((event: any) => {
+      if (event instanceof NavigationEnd) {
+        this.currentUrl = event.url;
+        // console.log(this.currentUrl);
+      }
+    });
+
     if (localStorage.getItem('user')) {
       this.store.dispatch(new SetUserAction(localStorage.getItem('user')));
     }
@@ -32,7 +41,7 @@ export class NavbarComponent implements OnInit {
         if (auth.user) {
           this.usuario = auth.user;
           this.logout = true;
-         } else {
+        } else {
           this.logout = false;
         }
       });
@@ -46,13 +55,13 @@ export class NavbarComponent implements OnInit {
 
 
 
-    loggedIn_mean(){  // para interactuar con el ng container y template
-      return this.authService.loggedIn();
-    }
+  loggedIn_mean() {  // para interactuar con el ng container y template
+    return this.authService.loggedIn();
+  }
 
-    logout_mean(){  // para interactuar con el ng container y template
-      return this.authService.logout();
-    }
+  logout_mean() {  // para interactuar con el ng container y template
+    return this.authService.logout();
+  }
 
 }
 

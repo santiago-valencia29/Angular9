@@ -1,0 +1,5 @@
+::ng-deep .ngx-charts text { fill: #fff; }
+
+::ng-deep .chart-legend .legend-label .active .legend-label-text{
+    color:#fff !important;
+}

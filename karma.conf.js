@@ -25,8 +25,21 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
-    singleRun: false,
+    customLaunchers: {
+      ChromeHeadless: {
+          base: 'Chrome',
+          flags: [
+              '--headless',
+              '--disable-gpu',
+              '--no-sandbox',
+              '--remote-debugging-port=9222'
+          ]
+      }
+  },
+    browsers: ['ChromeHeadless'],
+    singleRun: true, // true al subir
+    browserDisconnectTimeout: 20000,
+    browserNoActivityTimeout: 400000,
     restartOnFileChange: true
   });
 };
