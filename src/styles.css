@@ -1,5 +1,5 @@
 
-html, body { width: 100%; height: 100%; }
+html, body { width: 100%; height:100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
@@ -10,6 +10,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .content-inside {
     padding: 20px;
     padding-bottom: 50px;
+    background-image: none;
   }
+
+  .boxDiv {
+    background-color: white;
+    -webkit-box-shadow: 9px 11px 5px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 11px 5px -7px rgba(0,0,0,0.75);
+    box-shadow: 9px 11px 5px -7px rgba(0,0,0,0.75);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
   
   

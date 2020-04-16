@@ -5,6 +5,8 @@ import { CrudfirebaseModule } from './components/crudfirebase/crudfirebase.modul
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
 import { MeanstackModule } from './components/meanstack/meanstack.module';
+import { DyrcocinasModule } from './components/dyrcocinas/dyrcocinas.module';
+
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -62,6 +64,7 @@ import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
     AuthModule,
     MeanstackModule,
     BrowserAnimationsModule,
+    DyrcocinasModule,
     Mugan86GoogleAnalyticsModule.forRoot(
       {
         analyticsId: 'UA-157504171-1',

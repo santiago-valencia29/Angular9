@@ -1,0 +1,20 @@
+::ng-deep .content-inside {
+    padding: 0px !important;
+    padding-bottom: 0px;
+    background-image: url("../../../../assets/images/fondo.png");
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    height: 900px;
+}
+
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+    padding: 10px;
+}
+
+
+  
+.mat-table {
+    overflow: auto;
+    max-height: 500px;
+}
