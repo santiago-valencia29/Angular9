@@ -25,8 +25,10 @@ export class SigninComponent implements OnInit {
       .subscribe(
         res => {
           console.log(res);
+          Swal.close();
           localStorage.setItem('token_mean', res.token)
-          this.router.navigate(['/private'])
+          localStorage.setItem('user_mean', this.user.email)
+          this.router.navigate(['/publico'])
         }, err => {
 
           Swal.fire({

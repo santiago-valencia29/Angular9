@@ -1,7 +1,25 @@
 .navbar-light .navbar-nav .nav-link:hover{
     color: black !important;
+    font-size: 20px !important;
 }
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 18px !important;
+}
+
 
 .hover-home:hover{
     color: black !important;
+    font-size: 20px !important;
 }
+
+.dropdown-item:hover{
+    color:white;
+}
+
+.hover-logo:hover{
+    width: 80px;
+    height: 80px;
+
+}
+

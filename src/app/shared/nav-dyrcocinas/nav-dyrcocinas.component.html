@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-md navbar-light">
+<nav *ngIf="logout===true" class="navbar navbar-expand-md navbar-light">
 
-    <a class="navbar-brand font-weight-bold px-3 text-light hover-home" [routerLink]="['/publico']"><a>Público</a> </a>
+    <a  class="navbar-brand font-weight-bold px-3 text-light hover-home animated fadeInUp" [routerLink]="['/publico']"><img  style="width: 70px; height: 70px;" src="assets\images\images_santiago\logodyr.jpg"> </a>
 
-    <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+    <button type="button" class="navbar-toggler bg-light " data-toggle="collapse" data-target="#nav">
         Menú
         <span class="navbar-toggler-icon"></span>
 
@@ -12,52 +12,55 @@
         <ul class="navbar-nav">
 
             <li class="nav-item dropdown">
-                <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle" href="#" id="navbarDropdown"
+                <a class="nav-link text-light  font-weight-bold px-3 dropdown-toggle animated fadeInUp" href="#" id="navbarDropdown"
                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Clientes y productos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/cliente']">Cliente</a>
-                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/color-madecor']">Color Madecor</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/color-madecor']">Color
+                        Madecor</a>
                     <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/ferreteria']">Ferretería</a>
 
                 </div>
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle" href="#" id="navbarDropdown"
+                <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle animated fadeInUp" href="#" id="navbarDropdown"
                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Cotización
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/cotizacion-ferreteria']">Cotización Ferretería</a>
-                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/cotizacion-madera']">Cotización Madera</a>
+                    <a class="dropdown-item" routerLinkActive="active"
+                        [routerLink]="['/cotizacion-ferreteria']">Cotización Ferretería</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/cotizacion-madera']">Cotización
+                        Madera</a>
                 </div>
             </li>
         </ul>
     </div>
 
     <div style="padding-right: 60px;">
-    <li class="nav-item dropdown ">
-        <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle hover-home" href="#" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Sesión
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li class="nav-item dropdown ">
+            <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle hover-home" href="#" id="navbarDropdown"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{showUser}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-            <!-- <ng-container *ngIf="!loggedIn_mean(); else loggedIn">
-          <a class="dropdown-item" routerLinkActive="active"routerLink="signin">SignIn</a>
-          <a class="dropdown-item" routerLinkActive="active"routerLink="signup">SignUp</a>
-         </ng-container>
- -->
-            <!-- <ng-template #loggedIn>
-          <a class="dropdown-item" style="cursor: pointer;" (click)="logout_mean()">Logout</a>       
-         </ng-template> -->
+                <ng-container *ngIf="!loggedIn_mean(); else loggedIn">
+                    <!-- <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/signup']">registrar</a> -->
+                </ng-container>
 
-        </div>
+                <ng-template #loggedIn>
+                    <a class="dropdown-item" style="cursor: pointer;" (click)="logout_mean()">Cerrar Sesión</a>
+                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/pag-not-found']">Registrar</a>
+                </ng-template>
 
-   
-    </li>
-     </div>
+            </div>
+
+
+        </li>
+    </div>
 
 </nav>

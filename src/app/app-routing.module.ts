@@ -44,14 +44,14 @@ const routes: Routes = [
   { path: 'crear-proyecto', component: CreateComponent },
   { path: 'private', component: PrivateTasksComponent,canActivate:[AuthMeanGuard] },
   { path: 'signin', component: SigninComponent },
-  // { path: 'signup', component: SignupComponent },
+  { path: 'signup', component: SignupComponent },
 
   //DyrCocinas
-  { path: 'cliente', component: ClienteComponent },
-  { path: 'color-madecor', component: ColorMadecorComponent },
-  { path: 'ferreteria', component: FerreteriaComponent },
-  { path: 'cotizacion-ferreteria', component: CotizacionFerreteriaComponent },
-  { path: 'cotizacion-madera', component: CotizacionMaderaComponent },
+  { path: 'cliente', component: ClienteComponent,canActivate:[AuthMeanGuard] },
+  { path: 'color-madecor', component: ColorMadecorComponent,canActivate:[AuthMeanGuard] },
+  { path: 'ferreteria', component: FerreteriaComponent,canActivate:[AuthMeanGuard] },
+  { path: 'cotizacion-ferreteria', component: CotizacionFerreteriaComponent,canActivate:[AuthMeanGuard] },
+  { path: 'cotizacion-madera', component: CotizacionMaderaComponent,canActivate:[AuthMeanGuard] },
   { path: 'publico', component: PublicoComponent },
 
 
