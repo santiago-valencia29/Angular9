@@ -384,10 +384,14 @@ export class Covid19Component implements OnInit {
     this._behaviorSubject.serviceExternalPieChart(dataPiechart);
   }
 
+  MaysPrimera(string){
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   asignCoord() {
     for (let x in coord_muni) {
       for (let i in this.casos) {
-        if (this.casos[i].ciudad_de_ubicaci_n.includes(coord_muni[x].municipio)) {
+        if (this.casos[i].ciudad_de_ubicaci_n.includes(this.MaysPrimera(coord_muni[x].municipio.toLowerCase()))) {
 
 
           this.coordinates.push(
@@ -410,5 +414,6 @@ export class Covid19Component implements OnInit {
       });
   }
 }
+
 
 
