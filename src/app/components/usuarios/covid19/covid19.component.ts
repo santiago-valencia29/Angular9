@@ -7,6 +7,7 @@ import * as Mapboxgl from 'mapbox-gl';
 import { BehaviorSubjectService } from 'src/app/services/behavior-subject.service';
 import Swal from 'sweetalert2';
 import { GoogleAnalyticsService } from 'mugan86-ng-google-analytics';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-covid19',
@@ -23,23 +24,20 @@ export class Covid19Component implements OnInit {
   fallecidos: number = 0;
   activos: number = 0;
   showPieChart: boolean;
-
   loading: boolean;
-
   coordinates = [];
-
   mapa: Mapboxgl.Map;
   showpie = true;
   anio = new Date().getFullYear();
 
 
-  constructor(public googleAnalyticsService: GoogleAnalyticsService,private _behaviorSubject: BehaviorSubjectService, private _Covid19Service: Covid19Service) {
-
+  constructor(private titleService: Title,public googleAnalyticsService: GoogleAnalyticsService,private _behaviorSubject: BehaviorSubjectService, private _Covid19Service: Covid19Service) {
+    this.titleService.setTitle( 'Covid19 Colombia' );
   }
 
-
   ngOnInit(): void {
-
+ 
+   
     this._Covid19Service.getDataCovid().subscribe((data: Casos) => {
       if (data) {
         this.loading = true;
@@ -74,6 +72,7 @@ export class Covid19Component implements OnInit {
     // We call the event emmiter function from our service and pass in the details
     this.googleAnalyticsService.eventEmitter('Resumen Covid', 'Clic boton', 'Ver porcentajes', 1);
   }
+
   analyticsEventDiagnostico(){
     this.googleAnalyticsService.eventEmitter('Diagnostico Covid', 'Clic item Nav', 'Pag Diagnostico', 1);
   }
@@ -81,7 +80,6 @@ export class Covid19Component implements OnInit {
   analyticsEventPieChart(){
     this.googleAnalyticsService.eventEmitter('Diagnostico Covid', 'Clic boton Fallecimiento', 'Data Fallecimiento', 1);
   }
-
 
   sendDataCakePieFalleEdad() {
     this.showpie = false
@@ -384,10 +382,14 @@ export class Covid19Component implements OnInit {
     this._behaviorSubject.serviceExternalPieChart(dataPiechart);
   }
 
+  MaysPrimera(string){
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   asignCoord() {
     for (let x in coord_muni) {
       for (let i in this.casos) {
-        if (this.casos[i].ciudad_de_ubicaci_n.includes(coord_muni[x].municipio)) {
+        if (this.casos[i].ciudad_de_ubicaci_n.includes(this.MaysPrimera(coord_muni[x].municipio.toLowerCase()))) {
 
 
           this.coordinates.push(
@@ -410,5 +412,6 @@ export class Covid19Component implements OnInit {
       });
   }
 }
+
 
 

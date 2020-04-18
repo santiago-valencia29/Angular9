@@ -1,0 +1,42 @@
+<h3 mat-dialog-title>Info Ferretería</h3>
+<div mat-dialog-content>
+
+    <form [formGroup]="updateFormGroup">
+
+        <mat-form-field *ngIf="showInputId===true">
+            <mat-label>Id</mat-label>
+            <input matInput formControlName="_id" [attr.disabled]="true">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="nombre" required cdkFocusInitial>
+            <mat-error>Ingrese un valor correcto</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Precio</mat-label>
+            <span matPrefix>$&nbsp;</span>
+            <input type="number" matInput formControlName="precio">
+            <mat-error>Ingrese un valor correcto</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Proveedor</mat-label>
+            <input matInput formControlName="proveedor">
+            <mat-error>Ingrese un valor correcto</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>descripcion</mat-label>
+            <textarea matInput formControlName="descripcion"></textarea>
+            <mat-error>Ingrese un valor correcto</mat-error>
+        </mat-form-field>
+    </form>
+
+
+</div>
+<div mat-dialog-actions>
+    <button class="btn btn-dark m-r-4" (click)="onClose()">Cancelar</button>
+    <button *ngIf="!showActionButton" class="btn btn-info" (click)="updateFerreteria()"
+        [disabled]="!updateFormGroup.valid">Actualizar</button>
+    <button *ngIf="showActionButton" class="btn btn-info" (click)="saveFerreteria()"
+        [disabled]="!updateFormGroup.valid">Guardar</button>
+
+</div>

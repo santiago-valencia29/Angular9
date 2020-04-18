@@ -1,0 +1,8 @@
+::ng-deep .content-inside {
+    padding: 0px !important;
+    padding-bottom: 0px;
+    background-image: url("../../../../assets/images/fondo.png");
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    height: 900px;
+}

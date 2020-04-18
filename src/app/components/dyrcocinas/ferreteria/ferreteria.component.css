@@ -1,0 +1,32 @@
+::ng-deep .content-inside {
+    padding: 0px !important;
+    padding-bottom: 0px;
+    background-image: url("../../../../assets/images/fondo.png") !important;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    height: 900px;
+}
+
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+    padding: 10px;
+}
+
+
+  
+.mat-table {
+    overflow: auto;
+    max-height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}

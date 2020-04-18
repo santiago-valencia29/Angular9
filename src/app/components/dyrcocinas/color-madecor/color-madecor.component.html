@@ -1,0 +1,72 @@
+<app-nav-dyrcocinas></app-nav-dyrcocinas>
+<div class="boxDiv animated fadeInLeft">
+  <h3 class="text-black">Color Madecor</h3>
+
+  <button (click)="openModal(' ',true)" class="btn btn-dark mb-4 mt-4">Crear ColorMadecor</button>
+
+  <mat-form-field class="ml-5">
+    <mat-label>Buscar</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ej. Miel">
+  </mat-form-field>
+
+  <mat-paginator [pageSizeOptions]="[10,20,30]"></mat-paginator>
+
+
+  <div class="mat-elevation-z8">
+    <mat-table [dataSource]="dataSource" matSort>
+
+
+      <ng-container matColumnDef="num">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+        <td mat-cell *matCellDef="let row"> {{row.num}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
+        <td mat-cell *matCellDef="let row"> {{row.nombre}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="precio">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Precio </th>
+        <td mat-cell *matCellDef="let row"> {{row.precio|currency:'COP':'symbol':'1.0-0'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="proveedor">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Proveedor </th>
+        <td mat-cell *matCellDef="let row"> {{row.proveedor}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="descripcion">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Descripción </th>
+        <td mat-cell *matCellDef="let row"> {{row.descripcion}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="_id">
+        <th mat-header-cell *matHeaderCellDef> Tools </th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button (click)="deleteColorMadecor(row._id)" mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Eliminar</span>
+            </button>
+            <button (click)="openModal(row,false)" mat-menu-item>
+              <mat-icon>edit</mat-icon>
+              <span>Editar</span>
+            </button>
+          </mat-menu>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+
+      </tr>
+
+    </mat-table>
+  </div>
+</div>
