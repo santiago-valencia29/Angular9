@@ -7,6 +7,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { ColorMadecor } from '../../../models/dyrcocinas/colorMadecor.model';
 import { ColorMadecorService } from '../../../services/dyrcocinas/colorMadecor.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-color-madecor',
@@ -20,9 +21,10 @@ export class ColorMadecorComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   public colorMadecors: ColorMadecor[];
-  constructor(public dialog: MatDialog, private _colorMadecorService: ColorMadecorService, private paginatorleng: MatPaginatorIntl) {
+  constructor(private titleService: Title,public dialog: MatDialog, private _colorMadecorService: ColorMadecorService, private paginatorleng: MatPaginatorIntl) {
     this.paginatorleng.itemsPerPageLabel = "Registros por página";
     this.paginatorleng.getRangeLabel = this.changeLenguage();
+    this.titleService.setTitle( 'ColorMadecor' );
   }
 
 
