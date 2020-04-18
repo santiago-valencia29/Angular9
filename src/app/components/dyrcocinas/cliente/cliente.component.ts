@@ -9,6 +9,7 @@ import { BehaviorSubjectService } from 'src/app/services/behavior-subject.servic
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Project } from 'src/app/models/project.model';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cliente',
@@ -17,7 +18,9 @@ import { Project } from 'src/app/models/project.model';
 })
 export class ClienteComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(private titleService: Title,public dialog: MatDialog) {
+    this.titleService.setTitle( 'Clientes' )
+   }
 
   ngOnInit(): void {
   }
@@ -47,7 +50,10 @@ export class ModalDialogCliente implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<ModalDialogCliente>,
-    @Inject(MAT_DIALOG_DATA) public data: Project) { }
+    @Inject(MAT_DIALOG_DATA) public data: Project) { 
+
+      
+    }
 
 
   ngOnInit(): void {

@@ -44,7 +44,7 @@ const routes: Routes = [
   { path: 'crear-proyecto', component: CreateComponent },
   { path: 'private', component: PrivateTasksComponent,canActivate:[AuthMeanGuard] },
   { path: 'signin', component: SigninComponent },
-  { path: 'signup', component: SignupComponent },
+  // { path: 'signup', component: SignupComponent },
 
   //DyrCocinas
   { path: 'cliente', component: ClienteComponent,canActivate:[AuthMeanGuard] },

@@ -98,11 +98,15 @@ export class FerreteriaComponent implements OnInit {
       error => {
         console.log(<any>error)
         Swal.fire({
-          title: 'Error',
+          title: 'Error de conexión',
           icon: 'error',
           text: error.message,
-          showConfirmButton: false,
-          allowOutsideClick: false
+          showConfirmButton: true,
+          allowOutsideClick: false,
+          confirmButtonText:'Intentar Nuevamente'
+        }).then((result)=>{
+          Swal.showLoading();
+          this.ngOnInit();
         });
       }
     );

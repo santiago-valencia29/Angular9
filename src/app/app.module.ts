@@ -8,7 +8,7 @@ import { MeanstackModule } from './components/meanstack/meanstack.module';
 import { DyrcocinasModule } from './components/dyrcocinas/dyrcocinas.module';
 
 
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -72,7 +72,7 @@ import { Mugan86GoogleAnalyticsModule } from 'mugan86-ng-google-analytics';
       }
     )
   ],
-  providers: [{ provide: LOCALE_ID, useValue: 'es-CO' }],
+  providers: [{ provide: LOCALE_ID, useValue: 'es-CO' },Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
