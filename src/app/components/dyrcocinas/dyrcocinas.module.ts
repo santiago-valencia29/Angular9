@@ -6,7 +6,7 @@ import { AppMaterialModule } from 'src/app/app-material.module';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ClienteComponent, ModalDialogCliente } from './cliente/cliente.component';
-import { ColorMadecorComponent } from './color-madecor/color-madecor.component';
+import { ColorMadecorComponent, ModalDialogColorMadecor } from './color-madecor/color-madecor.component';
 import { FerreteriaComponent, ModalDialogFerreteria } from './ferreteria/ferreteria.component';
 import { CotizacionMaderaComponent } from './cotizacion-madera/cotizacion-madera.component';
 import { CotizacionFerreteriaComponent } from './cotizacion-ferreteria/cotizacion-ferreteria.component';
@@ -15,14 +15,14 @@ import { PublicoComponent } from './publico/publico.component';
 
 @NgModule({
   declarations: [
-      
   ClienteComponent,
   ColorMadecorComponent,
   FerreteriaComponent,
   CotizacionMaderaComponent,
   CotizacionFerreteriaComponent,
   PublicoComponent,
-  ModalDialogFerreteria
+  ModalDialogFerreteria,
+  ModalDialogColorMadecor
 ],
   imports: [
     CommonModule,
@@ -41,9 +41,8 @@ import { PublicoComponent } from './publico/publico.component';
     FerreteriaComponent,
     CotizacionMaderaComponent,
     CotizacionFerreteriaComponent,
-    ModalDialogFerreteria
-   
-  ],
-  entryComponents:[ClienteComponent,ModalDialogCliente],
+    ModalDialogFerreteria,
+    ModalDialogColorMadecor
+  ]
 })
 export class DyrcocinasModule { }

@@ -37,10 +37,13 @@ export class FerreteriaComponent implements OnInit {
       data: [row, flagShowButton]
     });
     dialogRef.afterClosed().subscribe(result => {
-      if (result !== false) {
+      if(result==null){
+        return
+      } else
+      if (result !== false ) {
         this.getFerreterias();
+        // console.log('The dialog was closed', result);
       }
-      // console.log('The dialog was closed', result);
     });
   }
 

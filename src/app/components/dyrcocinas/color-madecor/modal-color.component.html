@@ -1,46 +1,42 @@
-<h3 mat-dialog-title>Info Colores Madecor</h3>
+<h3 mat-dialog-title>Info ColorMadecor</h3>
 <div mat-dialog-content>
 
-    <!-- <form [formGroup]="editFormGroup">
-     
-        <mat-form-field>
+    <form [formGroup]="updateFormGroup">
+
+        <mat-form-field *ngIf="showInputId===true">
             <mat-label>Id</mat-label>
             <input matInput formControlName="_id" [attr.disabled]="true">
-            <mat-error>Ingrese un valor correcto</mat-error>
         </mat-form-field>
-            <mat-form-field>
-                <mat-label>Nombre</mat-label>
-                <input matInput formControlName="name" required >
-                <mat-error>Ingrese un valor correcto</mat-error>
-            </mat-form-field>      
         <mat-form-field>
-            <mat-label>Descripción</mat-label>
-            <input matInput formControlName="description" required>
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="nombre" required cdkFocusInitial>
             <mat-error>Ingrese un valor correcto</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <mat-label>Categoria</mat-label>
-            <input matInput formControlName="category" 
-                   required>
-          <mat-error>Ingrese un valor correcto</mat-error>
+            <mat-label>Precio</mat-label>
+            <span matPrefix>$&nbsp;</span>
+            <input type="number" matInput formControlName="precio">
+            <mat-error>Ingrese un valor correcto</mat-error>
         </mat-form-field>
-        <mat-form-field >
-            <mat-label>Año Lanzamiento</mat-label>
-            <input matInput formControlName="year" required>
-            <mat-error>Ingrese un valor YYYY númerico</mat-error>
-          </mat-form-field>
-          <mat-form-field >
-            <mat-label>Lenguajes</mat-label>
-            <input matInput formControlName="langs" 
-                   required>
-              <mat-error>Ingrese un valor correcto</mat-error>
-          </mat-form-field>
-    </form> -->
+        <mat-form-field>
+            <mat-label>Proveedor</mat-label>
+            <input matInput formControlName="proveedor">
+            <mat-error>Ingrese un valor correcto</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>descripcion</mat-label>
+            <textarea matInput formControlName="descripcion"></textarea>
+            <mat-error>Ingrese un valor correcto</mat-error>
+        </mat-form-field>
+    </form>
 
 
 </div>
-<!-- <div mat-dialog-actions>
-    <button class="btn btn-dark m-r-4" (click)="onClose()" >Cancelar</button>
-    <button class="btn btn-info" (click)="onNoClick()" [disabled]="!editFormGroup.valid" cdkFocusInitial>Guardar</button>
+<div mat-dialog-actions>
+    <button class="btn btn-dark m-r-4" (click)="onClose()">Cancelar</button>
+    <button *ngIf="!showActionButton" class="btn btn-info" (click)="updateColorMadecor()"
+        [disabled]="!updateFormGroup.valid">Actualizar</button>
+    <button *ngIf="showActionButton" class="btn btn-info" (click)="saveColorMadecor()"
+        [disabled]="!updateFormGroup.valid">Guardar</button>
 
-</div> -->
+</div>
