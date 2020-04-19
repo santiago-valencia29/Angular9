@@ -22,7 +22,8 @@ import { PublicoComponent } from './publico/publico.component';
   CotizacionFerreteriaComponent,
   PublicoComponent,
   ModalDialogFerreteria,
-  ModalDialogColorMadecor
+  ModalDialogColorMadecor,
+  ModalDialogCliente
 ],
   imports: [
     CommonModule,
@@ -42,7 +43,8 @@ import { PublicoComponent } from './publico/publico.component';
     CotizacionMaderaComponent,
     CotizacionFerreteriaComponent,
     ModalDialogFerreteria,
-    ModalDialogColorMadecor
+    ModalDialogColorMadecor,
+    ModalDialogCliente
   ]
 })
 export class DyrcocinasModule { }

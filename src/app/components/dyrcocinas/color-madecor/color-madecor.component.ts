@@ -162,7 +162,7 @@ export class ModalDialogColorMadecor implements OnInit {
   showInputId = false;
   showActionButton: boolean;
   constructor(
-    private _ferreteriaService: ColorMadecorService, private _formBuilder: FormBuilder,
+    private _colorMadecorService: ColorMadecorService, private _formBuilder: FormBuilder,
     public dialogRef: MatDialogRef<ModalDialogColorMadecor>,
     @Inject(MAT_DIALOG_DATA) public data: [any, boolean]) {
     this.showActionButton = data[1];
@@ -184,7 +184,7 @@ export class ModalDialogColorMadecor implements OnInit {
   }
 
   saveColorMadecor() {
-    this._ferreteriaService.saveColorMadecor(this.updateFormGroup.value).subscribe(
+    this._colorMadecorService.saveColorMadecor(this.updateFormGroup.value).subscribe(
       resp => {
         setTimeout(() => {
           Swal.fire({
@@ -215,7 +215,7 @@ export class ModalDialogColorMadecor implements OnInit {
 
   updateColorMadecor() {
     let updateColorMadecor = this.updateFormGroup.value;
-    this._ferreteriaService.putColorMadecor(this.data[0]._id, updateColorMadecor).subscribe(
+    this._colorMadecorService.putColorMadecor(this.data[0]._id, updateColorMadecor).subscribe(
       resp => {
         setTimeout(() => {
           Swal.fire({

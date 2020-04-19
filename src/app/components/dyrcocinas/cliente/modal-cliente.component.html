@@ -1,46 +1,133 @@
 <h3 mat-dialog-title>Info Cliente</h3>
 <div mat-dialog-content>
 
-    <!-- <form [formGroup]="editFormGroup">
-     
-        <mat-form-field>
-            <mat-label>Id</mat-label>
-            <input matInput formControlName="_id" [attr.disabled]="true">
-            <mat-error>Ingrese un valor correcto</mat-error>
-        </mat-form-field>
-            <mat-form-field>
-                <mat-label>Nombre</mat-label>
-                <input matInput formControlName="name" required >
-                <mat-error>Ingrese un valor correcto</mat-error>
-            </mat-form-field>      
-        <mat-form-field>
-            <mat-label>Descripción</mat-label>
-            <input matInput formControlName="description" required>
-            <mat-error>Ingrese un valor correcto</mat-error>
-        </mat-form-field>
-        <mat-form-field>
-            <mat-label>Categoria</mat-label>
-            <input matInput formControlName="category" 
-                   required>
-          <mat-error>Ingrese un valor correcto</mat-error>
-        </mat-form-field>
-        <mat-form-field >
-            <mat-label>Año Lanzamiento</mat-label>
-            <input matInput formControlName="year" required>
-            <mat-error>Ingrese un valor YYYY númerico</mat-error>
-          </mat-form-field>
-          <mat-form-field >
-            <mat-label>Lenguajes</mat-label>
-            <input matInput formControlName="langs" 
-                   required>
-              <mat-error>Ingrese un valor correcto</mat-error>
-          </mat-form-field>
-    </form> -->
+    <form [formGroup]="updateFormGroup">
+        <div class="row">
+            <div class="col-sm-auto">
+                <mat-form-field *ngIf="!showActionButton">
+                    <mat-label>Id</mat-label>
+                    <input matInput formControlName="_id" [attr.disabled]="true">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Estado</mat-label>
+                    <mat-select formControlName="estado" name="estado">
+                        <mat-option *ngFor="let estado of estados" [value]="estado.viewValue">
+                            {{estado.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error>Debe seleccionar un estado</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Nombre Proyecto</mat-label>
+                    <input matInput formControlName="nombre_proyecto">
+                    <mat-error>Ingrese un valor correcto</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Cedula</mat-label>
+                    <input matInput formControlName="cedula">
+                    <mat-error>Ingrese un valor correcto</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Nombres y Apellidos</mat-label>
+                    <input type="text" matInput formControlName="nombres_apellidos" required>
+                    <mat-error>Debes ingresar al menos un nombre</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Teléfono</mat-label>
+                    <input type="tel" matInput formControlName="telefono">
+                    <mat-error>Ingrese un valor correcto</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Celular</mat-label>
+                    <input matInput formControlName="celular">
+                    <mat-error>Ingrese un valor correcto</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Correo</mat-label>
+                    <input type="email" matInput formControlName="correo">
+                    <mat-error>Ingrese un correo correcto</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Ciudad</mat-label>
+                    <input matInput formControlName="ciudad" required>
+                    <mat-error>Ingrese una ciudad</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Sector</mat-label>
+                    <input matInput formControlName="sector">
+                    <mat-error>Ingrese una sector</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Dirección</mat-label>
+                    <input matInput formControlName="direccion">
+                    <mat-error>Ingrese una dirección</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Medidas</mat-label>
+                    <input matInput formControlName="medidas">
+                    <mat-error>Ingrese una medida</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Color Madecor</mat-label>
+                    <mat-select formControlName="color_madekor_REL">
+                        <mat-option>Seleccionar</mat-option>
+                        <mat-option *ngFor="let color of colores" [value]="color.nombre">{{color.nombre}}</mat-option>
+                    </mat-select>
+                    <mat-error>Debe seleccionar un color</mat-error>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Color Combinado</mat-label>
+                    <mat-select formControlName="color_combinado_REL">
+                        <mat-option>Seleccionar</mat-option>
+                        <mat-option *ngFor="let color of colores" [value]="color.nombre">{{color.nombre}}</mat-option>
+                    </mat-select>
+                    <mat-error>Debe seleccionar un color</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Inicio de proyecto</mat-label>
+                    <input type="date" matInput formControlName="fecha_inicio_proyecto">
+                    <mat-error>Ingrese una fecha</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Entrega</mat-label>
+                    <input type="date" matInput formControlName="fecha_entrega_proyecto">
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Fecha Garantia</mat-label>
+                    <input type="date" matInput formControlName="fecha_garantia_proyecto">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Descripción Garantia</mat-label>
+                    <textarea matInput formControlName="desc_garantia"></textarea>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Precio</mat-label>
+                    <span matPrefix>$&nbsp;</span>
+                    <input (input)="onSearchChange($event.target.value)" type="number" matInput
+                        formControlName="precio">
+                    <mat-hint>Anticipo 70%:{{labelPrecio*70/100}}, Restante Cliente:{{labelPrecio-(labelPrecio*70/100)}}
+                    </mat-hint>
+                    <mat-error>Ingrese un valor correcto</mat-error>
+
+                </mat-form-field>
+
+
+            </div>
+
+            <div class="col mt-2">
+                <div mat-dialog-actions>
+                    <button class="btn btn-dark m-r-4" (click)="onClose()">Cancelar</button>
+                    <button *ngIf="!showActionButton" class="btn btn-info" (click)="updateCliente()"
+                        [disabled]="!updateFormGroup.valid">Actualizar</button>
+                    <button *ngIf="showActionButton" class="btn btn-info" (click)="saveCliente()"
+                        [disabled]="!updateFormGroup.valid">Guardar</button>
+
+                </div>
+            </div>
+        </div>
+    </form>
 
 
 </div>
-<!-- <div mat-dialog-actions>
-    <button class="btn btn-dark m-r-4" (click)="onClose()" >Cancelar</button>
-    <button class="btn btn-info" (click)="onNoClick()" [disabled]="!editFormGroup.valid" cdkFocusInitial>Guardar</button>
-
-</div> -->
