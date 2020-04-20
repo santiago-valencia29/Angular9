@@ -231,7 +231,7 @@ export class ModalDialogCliente implements OnInit {
     this._colorMadecorService.getColorMadecors().subscribe(
       resp=>{
         this.colores=resp.colorMadecors;
-    }, error=>{
+    }, error=>{ 
       console.log(<any>error)
       Swal.fire({
         title: 'Error de conexión',
