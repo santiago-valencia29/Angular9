@@ -267,7 +267,7 @@ export class ModalDialogCliente implements OnInit {
       fecha_inicio_proyecto: [this.data[0].fecha_inicio_proyecto],
       fecha_entrega_proyecto: [this.data[0].fecha_entrega_proyecto],
       fecha_garantia_proyecto: [this.data[0].fecha_garantia_proyecto],
-      desc_garantia: [this.data[0].desc_garantia],
+      desc_garantia: [this.data[0].desc_garantia]
     });
   }
 
@@ -281,12 +281,12 @@ export class ModalDialogCliente implements OnInit {
           })
         }, 800);
 
-        console.log(resp)
+        // console.log(resp)
         this.dialogRef.close(true);
       }, error => {
         if (error.error.message.code === 11000) {
           Swal.fire({
-            text: "El nombre ya existe",
+            text: "La Cédula ya existe",
             icon: 'error'
           })
         } else {
