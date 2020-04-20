@@ -10,7 +10,7 @@
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Estado</mat-label>
-                    <mat-select formControlName="estado" name="estado">
+                    <mat-select formControlName="estado" >
                         <mat-option *ngFor="let estado of estados" [value]="estado.viewValue">
                             {{estado.viewValue}}
                         </mat-option>
@@ -19,7 +19,7 @@
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Nombre Proyecto</mat-label>
-                    <input matInput formControlName="nombre_proyecto">
+                    <input matInput formControlName="nombre_proyecto" required>
                     <mat-error>Ingrese un valor correcto</mat-error>
                 </mat-form-field>
                 <mat-form-field>
@@ -121,7 +121,7 @@
                     <button class="btn btn-dark m-r-4" (click)="onClose()">Cancelar</button>
                     <button *ngIf="!showActionButton" class="btn btn-info" (click)="updateCliente()"
                         [disabled]="!updateFormGroup.valid">Actualizar</button>
-                    <button *ngIf="showActionButton" class="btn btn-info" (click)="saveCliente()"
+                    <button  *ngIf="showActionButton" class="btn btn-info" (click)="saveCliente()"
                         [disabled]="!updateFormGroup.valid">Guardar</button>
 
                 </div>
