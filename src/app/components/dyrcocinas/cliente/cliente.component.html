@@ -1,95 +1,153 @@
 <app-nav-dyrcocinas></app-nav-dyrcocinas>
 <div class="boxDiv animated fadeInLeft">
-    <h3 class="text-black">Clientes</h3>
+  <h3 class="text-black">Clientes</h3>
 
-    <button (click)="openModal('4')" class="btn btn-dark mb-4 mt-4">Crear Cliente</button>
+  <button (click)="openModal(' ',true)" class="btn btn-dark mb-4 mt-4">Crear Cliente</button>
 
-    <!-- <div class="row" *ngIf="!loading"> -->
-    <div class="col">
+  <mat-form-field class="ml-5">
+    <mat-label>Buscar</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ej. Martinez">
+  </mat-form-field>
 
-        <div class="alert alert-dismissible text-center text-black">
-            <i class="fa fa-sync fa-spin fa-2x"></i>
-            <h1>Espere...</h1>
-
-
-        </div>
-    </div>
-    <!-- </div> -->
-    <!-- <mat-form-field class="fondo" *ngIf="loading">
-  <mat-label>Buscar</mat-label>
-  <input matInput (keyup)="applyFilter($event)" placeholder="Ej. Arch">
-    </mat-form-field> -->
-
-    <mat-paginator [pageSizeOptions]="[5,15,30]"></mat-paginator>
+  <mat-paginator [pageSizeOptions]="[10,20,30]"></mat-paginator>
 
 
-    <!-- <div *ngIf="loading" class="mat-elevation-z8"
-  <mat-table [dataSource]="dataSource" matSort>
+  <div class="mat-elevation-z8">
+    <mat-table [dataSource]="dataSource" matSort>
 
-    
-    <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
-      <td mat-cell *matCellDef="let i = index"> {{i+1}} </td>
-    </ng-container>
-
-   
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
-      <td mat-cell *matCellDef="let row"> {{row.name}} </td>
-    </ng-container>
-
-    
-    <ng-container matColumnDef="description">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Descripcion </th>
-      <td mat-cell *matCellDef="let row"> {{row.description}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="category">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Categoria </th>
-      <td mat-cell *matCellDef="let row"> {{row.category}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="year">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Año </th>
-      <td mat-cell *matCellDef="let row" [ngClass]="{anio: row.year > 2014}"> {{row.year}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="langs">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> lenguajes </th>
-      <td mat-cell *matCellDef="let row"> {{row.langs}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="_id">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header> Tools </th>
-      <td mat-cell *matCellDef="let row">
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-          <button (click)="deleteProject(row._id)" mat-menu-item>
-            <mat-icon>delete</mat-icon>
-            <span>Eliminar</span>
+      <ng-container matColumnDef="_id">
+        <th mat-header-cell *matHeaderCellDef > Tools </th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
           </button>
-          <button (click)="openModal(row)" mat-menu-item>
-            <mat-icon>edit</mat-icon>
-            <span>Editar</span>
-          </button>
-        </mat-menu>
-      </td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;">
-
-    </tr>
-
-  </mat-table>
-
-
-
-  
-
-    </div> -->
+          <mat-menu #menu="matMenu">
+            <button (click)="deleteCliente(row._id)" mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Eliminar</span>
+            </button>
+            <button (click)="openModal(row,false)" mat-menu-item>
+              <mat-icon>edit</mat-icon>
+              <span>Editar</span>
+            </button>
+          </mat-menu>
+        </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="num">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+        <td mat-cell *matCellDef="let row"> {{row.num}} </td>
+      </ng-container>
 
 
+      <ng-container matColumnDef="estado">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Estado </th>
+        <td mat-cell *matCellDef="let row"> {{row.estado}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="nombre_proyecto">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre Proyecto </th>
+        <td mat-cell *matCellDef="let row"> {{row.nombre_proyecto}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="cedula">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Cédula </th>
+        <td mat-cell *matCellDef="let row"> {{row.cedula}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="nombres_apellidos">
+        <th  mat-header-cell *matHeaderCellDef>Nombres y Apellidos</th>
+        <td  mat-cell *matCellDef="let row"> {{row.nombres_apellidos}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="telefono">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Telefono </th>
+        <td mat-cell *matCellDef="let row">Tel: {{row.telefono}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="celular">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Celular </th>
+        <td mat-cell *matCellDef="let row">Cel: {{row.celular}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="correo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Correo </th>
+        <td mat-cell *matCellDef="let row">{{row.correo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="ciudad">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Ciudad </th>
+        <td mat-cell *matCellDef="let row"> {{row.ciudad}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="sector">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Sector </th>
+        <td mat-cell *matCellDef="let row"> {{row.sector}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="direccion">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Dirección </th>
+        <td mat-cell *matCellDef="let row"> {{row.direccion}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="medidas">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Medidas </th>
+        <td mat-cell *matCellDef="let row"> {{row.medidas}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="color_madekor_REL">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> ColorMadecor </th>
+        <td mat-cell *matCellDef="let row"> {{row.color_madekor_REL}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="color_combinado_REL">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Color Combinado </th>
+        <td mat-cell *matCellDef="let row"> {{row.color_combinado_REL}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="precio">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Precio </th>
+        <td mat-cell *matCellDef="let row"> {{row.precio|currency:'COP':'symbol':'1.0-0'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="anticipo_70">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Anticipo del 70% </th>
+        <td mat-cell *matCellDef="let row"> {{row.precio*70/100|currency:'COP':'symbol':'1.0-0'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="resta_cliente">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Resta Cliente </th>
+        <td mat-cell *matCellDef="let row"> {{row.precio-(row.precio*70/100)|currency:'COP':'symbol':'1.0-0'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="fecha_inicio_proyecto">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Inicio Proyecto </th>
+        <td mat-cell *matCellDef="let row"> {{row.fecha_inicio_proyecto|date:'MMMM d, y'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="fecha_entrega_proyecto">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Entrega Proyecto </th>
+        <td mat-cell *matCellDef="let row"> {{row.fecha_entrega_proyecto|date:'MMMM d, y'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="fecha_garantia_proyecto">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Limite Garantia </th>
+        <td mat-cell *matCellDef="let row"> {{row.fecha_garantia_proyecto|date:'MMMM d, y'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="desc_garantia">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Descripción </th>
+        <td mat-cell *matCellDef="let row"> {{row.desc_garantia}} </td>
+      </ng-container>
+
+     
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{'row-cierre': row.estado === 'Cierre','row-espera':row.estado === 'En Espera','row-proceso': row.estado === 'En Proceso','row-descartado': row.estado === 'Descartado'}">
+
+      </tr>
+
+    </mat-table>
+  </div>
 </div>

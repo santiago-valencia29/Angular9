@@ -7,6 +7,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Ferreteria } from '../../../models/dyrcocinas/ferreteria.model';
 import { FerreteriaService } from '../../../services/dyrcocinas/ferreteria.service';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -22,9 +23,11 @@ export class FerreteriaComponent implements OnInit {
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   public ferreterias: Ferreteria[];
 
-  constructor(public dialog: MatDialog, private _ferreteriaService: FerreteriaService, private paginatorleng: MatPaginatorIntl) {
+  constructor(private titleService: Title,public dialog: MatDialog, private _ferreteriaService: FerreteriaService, private paginatorleng: MatPaginatorIntl) {
     this.paginatorleng.itemsPerPageLabel = "Registros por página";
     this.paginatorleng.getRangeLabel = this.changeLenguage();
+    this.titleService.setTitle( 'Ferretería' );
+
   }
 
   ngOnInit(): void {

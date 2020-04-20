@@ -1,9012 +1,8354 @@
-export const coord_muni = 
- [
+export const coord_muni =  [
         {
-            "Código departamento": "05",
-            "Código municipio": "05001",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "MEDELLIN",
-            "Longitud": "-75.6316478",
-            "Latitud": "6.2530707",
+            "dep": "5",
+            "muni": "5001",
+            "departamento": "ANTIOQUIA",
+            "municipio": "MEDELLÍN",
+            "longitud": "-75.572795",
+            "latitud": "6.293075",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05002",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5002",
+            "departamento": "ANTIOQUIA",
             "municipio": "ABEJORRAL",
-            "Longitud": "-75.4287381",
-            "Latitud": "5.789304485"
+            "longitud": "-75.4287381",
+            "latitud": "5.789304485"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05004",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "ABRIAQUI",
-            "Longitud": "-76.06470346",
-            "Latitud": "6.631806452"
+            "dep": "5",
+            "muni": "5004",
+            "departamento": "ANTIOQUIA",
+            "municipio": "ABRIAQUÍ",
+            "longitud": "-76.06470346",
+            "latitud": "6.631806452"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05021",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "ALEJANDRIA",
-            "Longitud": "-75.1413329",
-            "Latitud": "6.376065676"
+            "dep": "5",
+            "muni": "5021",
+            "departamento": "ANTIOQUIA",
+            "municipio": "ALEJANDRÍA",
+            "longitud": "-75.1413329",
+            "latitud": "6.376065676"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05030",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "AMAGA",
-            "Longitud": "-75.70194607",
-            "Latitud": "6.038808575"
+            "dep": "5",
+            "muni": "5030",
+            "departamento": "ANTIOQUIA",
+            "municipio": "AMAGÁ",
+            "longitud": "-75.70194607",
+            "latitud": "6.038808575"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05031",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5031",
+            "departamento": "ANTIOQUIA",
             "municipio": "AMALFI",
-            "Longitud": "-75.08252428",
-            "Latitud": "6.912304726"
+            "longitud": "-75.08252428",
+            "latitud": "6.912304726"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05034",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5034",
+            "departamento": "ANTIOQUIA",
             "municipio": "ANDES",
-            "Longitud": "-75.87879189",
-            "Latitud": "5.656774852"
+            "longitud": "-75.87879189",
+            "latitud": "5.656774852"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05036",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "ANGELOPOLIS",
-            "Longitud": "-75.71135114",
-            "Latitud": "6.109614368"
+            "dep": "5",
+            "muni": "5036",
+            "departamento": "ANTIOQUIA",
+            "municipio": "ANGELÓPOLIS",
+            "longitud": "-75.71135114",
+            "latitud": "6.109614368"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05038",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5038",
+            "departamento": "ANTIOQUIA",
             "municipio": "ANGOSTURA",
-            "Longitud": "-75.33511597",
-            "Latitud": "6.885174591"
+            "longitud": "-75.33511597",
+            "latitud": "6.885174591"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05040",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "ANORI",
-            "Longitud": "-75.14834842",
-            "Latitud": "7.074707669"
+            "dep": "5",
+            "muni": "5040",
+            "departamento": "ANTIOQUIA",
+            "municipio": "ANORÍ",
+            "longitud": "-75.14834842",
+            "latitud": "7.074707669"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05042",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "SANTA FE DE ANTIOQUIA",
-            "Longitud": "-75.82707907",
-            "Latitud": "6.556533296"
+            "dep": "5",
+            "muni": "5042",
+            "departamento": "ANTIOQUIA",
+            "municipio": "SANTA FÉ DE ANTIOQUIA",
+            "longitud": "-75.82707907",
+            "latitud": "6.556533296"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05044",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "ANZA",
-            "Longitud": "-75.85444158",
-            "Latitud": "6.302658359"
+            "dep": "5",
+            "muni": "5044",
+            "departamento": "ANTIOQUIA",
+            "municipio": "ANZÁ",
+            "longitud": "-75.85444158",
+            "latitud": "6.302658359"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05045",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "APARTADO",
-            "Longitud": "-76.62596065",
-            "Latitud": "7.883417406"
+            "dep": "5",
+            "muni": "5045",
+            "departamento": "ANTIOQUIA",
+            "municipio": "APARTADÓ",
+            "longitud": "-76.62596065",
+            "latitud": "7.883417406"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05051",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5051",
+            "departamento": "ANTIOQUIA",
             "municipio": "ARBOLETES",
-            "Longitud": "-76.4270568",
-            "Latitud": "8.850567734"
+            "longitud": "-76.4270568",
+            "latitud": "8.850567734"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05055",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5055",
+            "departamento": "ANTIOQUIA",
             "municipio": "ARGELIA",
-            "Longitud": "-75.14174146",
-            "Latitud": "5.730671879"
+            "longitud": "-75.14174146",
+            "latitud": "5.730671879"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05059",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5059",
+            "departamento": "ANTIOQUIA",
             "municipio": "ARMENIA",
-            "Longitud": "-75.78683783",
-            "Latitud": "6.155818729"
+            "longitud": "-75.78683783",
+            "latitud": "6.155818729"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05079",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5079",
+            "departamento": "ANTIOQUIA",
             "municipio": "BARBOSA",
-            "Longitud": "-75.33164423",
-            "Latitud": "6.439226882",
+            "longitud": "-75.33164423",
+            "latitud": "6.439226882",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05086",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5086",
+            "departamento": "ANTIOQUIA",
             "municipio": "BELMIRA",
-            "Longitud": "-75.66737413",
-            "Latitud": "6.606159502"
+            "longitud": "-75.66737413",
+            "latitud": "6.606159502"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05088",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "MONTEBELLO",
-            "Longitud": "-75.5160235",
-            "Latitud": "5.9245259",
-            "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
-        },
-        {
-            "Código departamento": "05",
-            "Código municipio": "05091",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "BETANIA",
-            "Longitud": "-75.97554408",
-            "Latitud": "5.74474718"
-        },
-        {
-            "Código departamento": "05",
-            "Código municipio": "0508961",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5088",
+            "departamento": "ANTIOQUIA",
             "municipio": "BELLO",
-            "Longitud": "-75.5595887",
-            "Latitud": "6.3345447"
+            "longitud": "-75.55466507",
+            "latitud": "6.334068836",
+            "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05093",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5091",
+            "departamento": "ANTIOQUIA",
+            "municipio": "BETANIA",
+            "longitud": "-75.97554408",
+            "latitud": "5.74474718"
+        },
+        {
+            "dep": "5",
+            "muni": "5093",
+            "departamento": "ANTIOQUIA",
             "municipio": "BETULIA",
-            "Longitud": "-75.98451587",
-            "Latitud": "6.115255594"
+            "longitud": "-75.98451587",
+            "latitud": "6.115255594"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05101",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "CIUDAD BOLIVAR",
-            "Longitud": "-76.02150921",
-            "Latitud": "5.850273232"
+            "dep": "5",
+            "muni": "5101",
+            "departamento": "ANTIOQUIA",
+            "municipio": "CIUDAD BOLÍVAR",
+            "longitud": "-76.02150921",
+            "latitud": "5.850273232"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05107",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5107",
+            "departamento": "ANTIOQUIA",
             "municipio": "BRICEÑO",
-            "Longitud": "-75.54813022",
-            "Latitud": "7.114882947"
+            "longitud": "-75.54813022",
+            "latitud": "7.114882947"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05113",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "BURITICA",
-            "Longitud": "-75.90753473",
-            "Latitud": "6.719735175"
+            "dep": "5",
+            "muni": "5113",
+            "departamento": "ANTIOQUIA",
+            "municipio": "BURITICÁ",
+            "longitud": "-75.90753473",
+            "latitud": "6.719735175"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05120",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "CACERES",
-            "Longitud": "-75.35235749",
-            "Latitud": "7.578315451"
+            "dep": "5",
+            "muni": "5120",
+            "departamento": "ANTIOQUIA",
+            "municipio": "CÁCERES",
+            "longitud": "-75.35235749",
+            "latitud": "7.578315451"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05125",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5125",
+            "departamento": "ANTIOQUIA",
             "municipio": "CAICEDO",
-            "Longitud": "-75.98281889",
-            "Latitud": "6.405567003"
+            "longitud": "-75.98281889",
+            "latitud": "6.405567003"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05129",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5129",
+            "departamento": "ANTIOQUIA",
             "municipio": "CALDAS",
-            "Longitud": "-75.63361872",
-            "Latitud": "6.091296966",
+            "longitud": "-75.63361872",
+            "latitud": "6.091296966",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05134",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5134",
+            "departamento": "ANTIOQUIA",
             "municipio": "CAMPAMENTO",
-            "Longitud": "-75.29808843",
-            "Latitud": "6.979777682"
+            "longitud": "-75.29808843",
+            "latitud": "6.979777682"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05138",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5138",
+            "departamento": "ANTIOQUIA",
             "municipio": "CAÑASGORDAS",
-            "Longitud": "-76.03220994",
-            "Latitud": "6.759477684"
+            "longitud": "-76.03220994",
+            "latitud": "6.759477684"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05142",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "CARACOLI",
-            "Longitud": "-74.75744944",
-            "Latitud": "6.409854727"
+            "dep": "5",
+            "muni": "5142",
+            "departamento": "ANTIOQUIA",
+            "municipio": "CARACOLÍ",
+            "longitud": "-74.75744944",
+            "latitud": "6.409854727"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05145",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5145",
+            "departamento": "ANTIOQUIA",
             "municipio": "CARAMANTA",
-            "Longitud": "-75.64386845",
-            "Latitud": "5.548530404"
+            "longitud": "-75.64386845",
+            "latitud": "5.548530404"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05147",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5147",
+            "departamento": "ANTIOQUIA",
             "municipio": "CAREPA",
-            "Longitud": "-76.65321034",
-            "Latitud": "7.755116346"
+            "longitud": "-76.65321034",
+            "latitud": "7.755116346"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05148",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5148",
+            "departamento": "ANTIOQUIA",
             "municipio": "EL CARMEN DE VIBORAL",
-            "Longitud": "-75.33536246",
-            "Latitud": "6.084551516"
+            "longitud": "-75.33536246",
+            "latitud": "6.084551516"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05150",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5150",
+            "departamento": "ANTIOQUIA",
             "municipio": "CAROLINA",
-            "Longitud": "-75.28317011",
-            "Latitud": "6.725977146"
+            "longitud": "-75.28317011",
+            "latitud": "6.725977146"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05154",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5154",
+            "departamento": "ANTIOQUIA",
             "municipio": "CAUCASIA",
-            "Longitud": "-75.19829033",
-            "Latitud": "7.977362333"
+            "longitud": "-75.19829033",
+            "latitud": "7.977362333"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05172",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "CHIGORODO",
-            "Longitud": "-76.6812164",
-            "Latitud": "7.666300439"
+            "dep": "5",
+            "muni": "5172",
+            "departamento": "ANTIOQUIA",
+            "municipio": "CHIGORODÓ",
+            "longitud": "-76.6812164",
+            "latitud": "7.666300439"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05190",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5190",
+            "departamento": "ANTIOQUIA",
             "municipio": "CISNEROS",
-            "Longitud": "-75.08720761",
-            "Latitud": "6.537761957"
+            "longitud": "-75.08720761",
+            "latitud": "6.537761957"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05197",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "COCORNA",
-            "Longitud": "-75.18548101",
-            "Latitud": "6.058306335"
+            "dep": "5",
+            "muni": "5197",
+            "departamento": "ANTIOQUIA",
+            "municipio": "COCORNÁ",
+            "longitud": "-75.18548101",
+            "latitud": "6.058306335"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05206",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "CONCEPCION",
-            "Longitud": "-75.2576027",
-            "Latitud": "6.394347095"
+            "dep": "5",
+            "muni": "5206",
+            "departamento": "ANTIOQUIA",
+            "municipio": "CONCEPCIÓN",
+            "longitud": "-75.2576027",
+            "latitud": "6.394347095"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05209",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5209",
+            "departamento": "ANTIOQUIA",
             "municipio": "CONCORDIA",
-            "Longitud": "-75.90750472",
-            "Latitud": "6.046568573"
+            "longitud": "-75.90750472",
+            "latitud": "6.046568573"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05212",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5212",
+            "departamento": "ANTIOQUIA",
             "municipio": "COPACABANA",
-            "Longitud": "-75.5093439",
-            "Latitud": "6.348640545",
+            "longitud": "-75.5093439",
+            "latitud": "6.348640545",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05234",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5234",
+            "departamento": "ANTIOQUIA",
             "municipio": "DABEIBA",
-            "Longitud": "-76.26297665",
-            "Latitud": "7.00032194"
+            "longitud": "-76.26297665",
+            "latitud": "7.00032194"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05237",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "DON MATIAS",
-            "Longitud": "-75.39272406",
-            "Latitud": "6.484469957"
+            "dep": "5",
+            "muni": "5237",
+            "departamento": "ANTIOQUIA",
+            "municipio": "DONMATÍAS",
+            "longitud": "-75.39272406",
+            "latitud": "6.484469957"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05240",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "EBEJICO",
-            "Longitud": "-75.76622047",
-            "Latitud": "6.326056658"
+            "dep": "5",
+            "muni": "5240",
+            "departamento": "ANTIOQUIA",
+            "municipio": "EBÉJICO",
+            "longitud": "-75.76622047",
+            "latitud": "6.326056658"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05250",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5250",
+            "departamento": "ANTIOQUIA",
             "municipio": "EL BAGRE",
-            "Longitud": "-74.79909729",
-            "Latitud": "7.597521794"
+            "longitud": "-74.79909729",
+            "latitud": "7.597521794"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05264",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "ENTRERRIOS",
-            "Longitud": "-75.5178008",
-            "Latitud": "6.566481448"
+            "dep": "5",
+            "muni": "5264",
+            "departamento": "ANTIOQUIA",
+            "municipio": "ENTRERRÍOS",
+            "longitud": "-75.5178008",
+            "latitud": "6.566481448"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05266",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5266",
+            "departamento": "ANTIOQUIA",
             "municipio": "ENVIGADO",
-            "Longitud": "-75.58301014",
-            "Latitud": "6.167004552",
+            "longitud": "-75.58301014",
+            "latitud": "6.167004552",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05282",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5282",
+            "departamento": "ANTIOQUIA",
             "municipio": "FREDONIA",
-            "Longitud": "-75.6705064",
-            "Latitud": "5.924368006"
+            "longitud": "-75.6705064",
+            "latitud": "5.924368006"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05284",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5284",
+            "departamento": "ANTIOQUIA",
             "municipio": "FRONTINO",
-            "Longitud": "-76.13076514",
-            "Latitud": "6.776065912"
+            "longitud": "-76.13076514",
+            "latitud": "6.776065912"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05306",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5306",
+            "departamento": "ANTIOQUIA",
             "municipio": "GIRALDO",
-            "Longitud": "-75.95215756",
-            "Latitud": "6.680808016"
+            "longitud": "-75.95215756",
+            "latitud": "6.680808016"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05308",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5308",
+            "departamento": "ANTIOQUIA",
             "municipio": "GIRARDOTA",
-            "Longitud": "-75.44446221",
-            "Latitud": "6.379613834",
+            "longitud": "-75.44446221",
+            "latitud": "6.379613834",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05310",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "GOMEZ PLATA",
-            "Longitud": "-75.2200382",
-            "Latitud": "6.683287586"
+            "dep": "5",
+            "muni": "5310",
+            "departamento": "ANTIOQUIA",
+            "municipio": "GÓMEZ PLATA",
+            "longitud": "-75.2200382",
+            "latitud": "6.683287586"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05313",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5313",
+            "departamento": "ANTIOQUIA",
             "municipio": "GRANADA",
-            "Longitud": "-75.18444508",
-            "Latitud": "6.142896667"
+            "longitud": "-75.18444508",
+            "latitud": "6.142896667"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05315",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5315",
+            "departamento": "ANTIOQUIA",
             "municipio": "GUADALUPE",
-            "Longitud": "-75.24001859",
-            "Latitud": "6.814263455"
+            "longitud": "-75.24001859",
+            "latitud": "6.814263455"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05318",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5318",
+            "departamento": "ANTIOQUIA",
             "municipio": "GUARNE",
-            "Longitud": "-75.44165392",
-            "Latitud": "6.278064077"
+            "longitud": "-75.44165392",
+            "latitud": "6.278064077"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05321",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "GUATAPE",
-            "Longitud": "-75.16229259",
-            "Latitud": "6.232592707"
+            "dep": "5",
+            "muni": "5321",
+            "departamento": "ANTIOQUIA",
+            "municipio": "GUATAPÉ",
+            "longitud": "-75.16229259",
+            "latitud": "6.232592707"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05347",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5347",
+            "departamento": "ANTIOQUIA",
             "municipio": "HELICONIA",
-            "Longitud": "-75.73432238",
-            "Latitud": "6.206757461"
+            "longitud": "-75.73432238",
+            "latitud": "6.206757461"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05353",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5353",
+            "departamento": "ANTIOQUIA",
             "municipio": "HISPANIA",
-            "Longitud": "-75.90658827",
-            "Latitud": "5.799461575"
+            "longitud": "-75.90658827",
+            "latitud": "5.799461575"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05360",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "ITAGUI",
-            "Longitud": "-75.61435871",
-            "Latitud": "6.169597629",
+            "dep": "5",
+            "muni": "5360",
+            "departamento": "ANTIOQUIA",
+            "municipio": "ITAGÜÍ",
+            "longitud": "-75.61435871",
+            "latitud": "6.169597629",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05361",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5361",
+            "departamento": "ANTIOQUIA",
             "municipio": "ITUANGO",
-            "Longitud": "-75.76467317",
-            "Latitud": "7.17162903"
+            "longitud": "-75.76467317",
+            "latitud": "7.17162903"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05364",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "JARDIN",
-            "Longitud": "-75.81898092",
-            "Latitud": "5.597541741"
+            "dep": "5",
+            "muni": "5364",
+            "departamento": "ANTIOQUIA",
+            "municipio": "JARDÍN",
+            "longitud": "-75.81898092",
+            "latitud": "5.597541741"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05368",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "JERICO",
-            "Longitud": "-75.78549855",
-            "Latitud": "5.789747931"
+            "dep": "5",
+            "muni": "5368",
+            "departamento": "ANTIOQUIA",
+            "municipio": "JERICÓ",
+            "longitud": "-75.78549855",
+            "latitud": "5.789747931"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05376",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5376",
+            "departamento": "ANTIOQUIA",
             "municipio": "LA CEJA",
-            "Longitud": "-75.42943089",
-            "Latitud": "6.028055744"
+            "longitud": "-75.42943089",
+            "latitud": "6.028055744"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05380",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5380",
+            "departamento": "ANTIOQUIA",
             "municipio": "LA ESTRELLA",
-            "Longitud": "-75.64519038",
-            "Latitud": "6.15841974",
+            "longitud": "-75.64519038",
+            "latitud": "6.15841974",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05390",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5390",
+            "departamento": "ANTIOQUIA",
             "municipio": "LA PINTADA",
-            "Longitud": "-75.60781026",
-            "Latitud": "5.743807479"
+            "longitud": "-75.60781026",
+            "latitud": "5.743807479"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05400",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "LA UNION",
-            "Longitud": "-75.3608659",
-            "Latitud": "5.973868218"
+            "dep": "5",
+            "muni": "5400",
+            "departamento": "ANTIOQUIA",
+            "municipio": "LA UNIÓN",
+            "longitud": "-75.3608659",
+            "latitud": "5.973868218"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05411",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5411",
+            "departamento": "ANTIOQUIA",
             "municipio": "LIBORINA",
-            "Longitud": "-75.81283227",
-            "Latitud": "6.677323053"
+            "longitud": "-75.81283227",
+            "latitud": "6.677323053"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05425",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5425",
+            "departamento": "ANTIOQUIA",
             "municipio": "MACEO",
-            "Longitud": "-74.78716148",
-            "Latitud": "6.552116913"
+            "longitud": "-74.78716148",
+            "latitud": "6.552116913"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05440",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5440",
+            "departamento": "ANTIOQUIA",
             "municipio": "MARINILLA",
-            "Longitud": "-75.33947788",
-            "Latitud": "6.172269255"
+            "longitud": "-75.33947788",
+            "latitud": "6.172269255"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05475",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "MURINDO",
-            "Longitud": "-76.81745806",
-            "Latitud": "6.977691853"
+            "dep": "5",
+            "muni": "5467",
+            "departamento": "ANTIOQUIA",
+            "municipio": "MONTEBELLO",
+            "longitud": "-75.52351091",
+            "latitud": "5.946325567"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05480",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "MUTATA",
-            "Longitud": "-76.4358754",
-            "Latitud": "7.242875057"
+            "dep": "5",
+            "muni": "5475",
+            "departamento": "ANTIOQUIA",
+            "municipio": "MURINDÓ",
+            "longitud": "-76.81745806",
+            "latitud": "6.977691853"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05483",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5480",
+            "departamento": "ANTIOQUIA",
+            "municipio": "MUTATÁ",
+            "longitud": "-76.4358754",
+            "latitud": "7.242875057"
+        },
+        {
+            "dep": "5",
+            "muni": "5483",
+            "departamento": "ANTIOQUIA",
             "municipio": "NARIÑO",
-            "Longitud": "-75.17626132",
-            "Latitud": "5.610774585"
+            "longitud": "-75.17626132",
+            "latitud": "5.610774585"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05490",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "NECOCLI",
-            "Longitud": "-76.7845745",
-            "Latitud": "8.426135983"
+            "dep": "5",
+            "muni": "5490",
+            "departamento": "ANTIOQUIA",
+            "municipio": "NECOCLÍ",
+            "longitud": "-76.7845745",
+            "latitud": "8.426135983"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05495",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "NECHI",
-            "Longitud": "-74.77647012",
-            "Latitud": "8.094128661"
+            "dep": "5",
+            "muni": "5495",
+            "departamento": "ANTIOQUIA",
+            "municipio": "NECHÍ",
+            "longitud": "-74.77647012",
+            "latitud": "8.094128661"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05501",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5501",
+            "departamento": "ANTIOQUIA",
             "municipio": "OLAYA",
-            "Longitud": "-75.81229873",
-            "Latitud": "6.627525738"
+            "longitud": "-75.81229873",
+            "latitud": "6.627525738"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05541",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5541",
+            "departamento": "ANTIOQUIA",
             "municipio": "PEÑOL",
-            "Longitud": "-75.24282171",
-            "Latitud": "6.219450549"
+            "longitud": "-75.24282171",
+            "latitud": "6.219450549"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05543",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5543",
+            "departamento": "ANTIOQUIA",
             "municipio": "PEQUE",
-            "Longitud": "-75.91034556",
-            "Latitud": "7.021017918"
+            "longitud": "-75.91034556",
+            "latitud": "7.021017918"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05576",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5576",
+            "departamento": "ANTIOQUIA",
             "municipio": "PUEBLORRICO",
-            "Longitud": "-75.84077355",
-            "Latitud": "5.791786032"
+            "longitud": "-75.84077355",
+            "latitud": "5.791786032"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05579",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "PUERTO BERRIO",
-            "Longitud": "-74.40994553",
-            "Latitud": "6.48704114"
+            "dep": "5",
+            "muni": "5579",
+            "departamento": "ANTIOQUIA",
+            "municipio": "PUERTO BERRÍO",
+            "longitud": "-74.40994553",
+            "latitud": "6.48704114"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05585",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5585",
+            "departamento": "ANTIOQUIA",
             "municipio": "PUERTO NARE",
-            "Longitud": "-74.58301201",
-            "Latitud": "6.186024828"
+            "longitud": "-74.58301201",
+            "latitud": "6.186024828"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05591",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5591",
+            "departamento": "ANTIOQUIA",
             "municipio": "PUERTO TRIUNFO",
-            "Longitud": "-74.64126293",
-            "Latitud": "5.871212959"
+            "longitud": "-74.64126293",
+            "latitud": "5.871212959"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05604",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5604",
+            "departamento": "ANTIOQUIA",
             "municipio": "REMEDIOS",
-            "Longitud": "-74.69594426",
-            "Latitud": "7.026094053"
+            "longitud": "-74.69594426",
+            "latitud": "7.026094053"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05607",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5607",
+            "departamento": "ANTIOQUIA",
             "municipio": "RETIRO",
-            "Longitud": "-75.50137516",
-            "Latitud": "6.063379954"
+            "longitud": "-75.50137516",
+            "latitud": "6.063379954"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05615",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5615",
+            "departamento": "ANTIOQUIA",
             "municipio": "RIONEGRO",
-            "Longitud": "-75.37676938",
-            "Latitud": "6.14722409"
+            "longitud": "-75.37676938",
+            "latitud": "6.14722409"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05628",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5628",
+            "departamento": "ANTIOQUIA",
             "municipio": "SABANALARGA",
-            "Longitud": "-75.81664609",
-            "Latitud": "6.85002589"
+            "longitud": "-75.81664609",
+            "latitud": "6.85002589"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05631",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5631",
+            "departamento": "ANTIOQUIA",
             "municipio": "SABANETA",
-            "Longitud": "-75.61558529",
-            "Latitud": "6.150970181",
+            "longitud": "-75.61558529",
+            "latitud": "6.150970181",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DE ABURRÁ"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05642",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5642",
+            "departamento": "ANTIOQUIA",
             "municipio": "SALGAR",
-            "Longitud": "-75.98204854",
-            "Latitud": "5.96564031"
+            "longitud": "-75.98204854",
+            "latitud": "5.96564031"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05647",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "SAN ANDRES DE CUERQUIA",
-            "Longitud": "-75.67473253",
-            "Latitud": "6.916808512"
+            "dep": "5",
+            "muni": "5647",
+            "departamento": "ANTIOQUIA",
+            "municipio": "SAN ANDRÉS DE CUERQUÍA",
+            "longitud": "-75.67473253",
+            "latitud": "6.916808512"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05649",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5649",
+            "departamento": "ANTIOQUIA",
             "municipio": "SAN CARLOS",
-            "Longitud": "-74.98795256",
-            "Latitud": "6.187991569"
+            "longitud": "-74.98795256",
+            "latitud": "6.187991569"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05652",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5652",
+            "departamento": "ANTIOQUIA",
             "municipio": "SAN FRANCISCO",
-            "Longitud": "-75.10268697",
-            "Latitud": "5.964079131"
+            "longitud": "-75.10268697",
+            "latitud": "5.964079131"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05656",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "SAN JERONIMO",
-            "Longitud": "-75.72700058",
-            "Latitud": "6.448066608"
+            "dep": "5",
+            "muni": "5656",
+            "departamento": "ANTIOQUIA",
+            "municipio": "SAN JERÓNIMO",
+            "longitud": "-75.72700058",
+            "latitud": "6.448066608"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05658",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "SAN JOSE DE LA MONTAÑA",
-            "Longitud": "-75.68335163",
-            "Latitud": "6.850090299"
+            "dep": "5",
+            "muni": "5658",
+            "departamento": "ANTIOQUIA",
+            "municipio": "SAN JOSÉ DE LA MONTAÑA",
+            "longitud": "-75.68335163",
+            "latitud": "6.850090299"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05659",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "SAN JUAN DE URABA",
-            "Longitud": "-76.52879434",
-            "Latitud": "8.759341801"
+            "dep": "5",
+            "muni": "5659",
+            "departamento": "ANTIOQUIA",
+            "municipio": "SAN JUAN DE URABÁ",
+            "longitud": "-76.52879434",
+            "latitud": "8.759341801"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05660",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5660",
+            "departamento": "ANTIOQUIA",
             "municipio": "SAN LUIS",
-            "Longitud": "-74.993641",
-            "Latitud": "6.042983285"
+            "longitud": "-74.993641",
+            "latitud": "6.042983285"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05664",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5664",
+            "departamento": "ANTIOQUIA",
             "municipio": "SAN PEDRO DE LOS MILAGROS",
-            "Longitud": "-75.55671915",
-            "Latitud": "6.460138599"
+            "longitud": "-75.55671915",
+            "latitud": "6.460138599"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05665",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "SAN PEDRO DE URABA",
-            "Longitud": "-76.38057789",
-            "Latitud": "8.276886664"
+            "dep": "5",
+            "muni": "5665",
+            "departamento": "ANTIOQUIA",
+            "municipio": "SAN PEDRO DE URABÁ",
+            "longitud": "-76.38057789",
+            "latitud": "8.276886664"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05667",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5667",
+            "departamento": "ANTIOQUIA",
             "municipio": "SAN RAFAEL",
-            "Longitud": "-75.02798382",
-            "Latitud": "6.293754876"
+            "longitud": "-75.02798382",
+            "latitud": "6.293754876"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05670",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5670",
+            "departamento": "ANTIOQUIA",
             "municipio": "SAN ROQUE",
-            "Longitud": "-75.01915757",
-            "Latitud": "6.485948936"
+            "longitud": "-75.01915757",
+            "latitud": "6.485948936"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05674",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5674",
+            "departamento": "ANTIOQUIA",
             "municipio": "SAN VICENTE FERRER",
-            "Longitud": "-75.33261381",
-            "Latitud": "6.282155852"
+            "longitud": "-75.33261381",
+            "latitud": "6.282155852"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05679",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "SANTA BARBARA",
-            "Longitud": "-75.56735178",
-            "Latitud": "5.875533398"
+            "dep": "5",
+            "muni": "5679",
+            "departamento": "ANTIOQUIA",
+            "municipio": "SANTA BÁRBARA",
+            "longitud": "-75.56735178",
+            "latitud": "5.875533398"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05686",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5686",
+            "departamento": "ANTIOQUIA",
             "municipio": "SANTA ROSA DE OSOS",
-            "Longitud": "-75.46074502",
-            "Latitud": "6.643326001"
+            "longitud": "-75.46074502",
+            "latitud": "6.643326001"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05690",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5690",
+            "departamento": "ANTIOQUIA",
             "municipio": "SANTO DOMINGO",
-            "Longitud": "-75.16778371",
-            "Latitud": "6.474843293"
+            "longitud": "-75.16778371",
+            "latitud": "6.474843293"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05697",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5697",
+            "departamento": "ANTIOQUIA",
             "municipio": "EL SANTUARIO",
-            "Longitud": "-75.26584979",
-            "Latitud": "6.137046858"
+            "longitud": "-75.26584979",
+            "latitud": "6.137046858"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05736",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5736",
+            "departamento": "ANTIOQUIA",
             "municipio": "SEGOVIA",
-            "Longitud": "-74.70159107",
-            "Latitud": "7.079639679"
+            "longitud": "-74.70159107",
+            "latitud": "7.079639679"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05756",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "SONSON",
-            "Longitud": "-75.30939515",
-            "Latitud": "5.714811641"
+            "dep": "5",
+            "muni": "5756",
+            "departamento": "ANTIOQUIA",
+            "municipio": "SONSÓN",
+            "longitud": "-75.30939515",
+            "latitud": "5.714811641"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05761",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "SOPETRAN",
-            "Longitud": "-75.74725636",
-            "Latitud": "6.500985773"
+            "dep": "5",
+            "muni": "5761",
+            "departamento": "ANTIOQUIA",
+            "municipio": "SOPETRÁN",
+            "longitud": "-75.74725636",
+            "latitud": "6.500985773"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05789",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "TAMESIS",
-            "Longitud": "-75.71432069",
-            "Latitud": "5.664466636"
+            "dep": "5",
+            "muni": "5789",
+            "departamento": "ANTIOQUIA",
+            "municipio": "TÁMESIS",
+            "longitud": "-75.71432069",
+            "latitud": "5.664466636"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05790",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "TARAZA",
-            "Longitud": "-75.40140596",
-            "Latitud": "7.580120815"
+            "dep": "5",
+            "muni": "5790",
+            "departamento": "ANTIOQUIA",
+            "municipio": "TARAZÁ",
+            "longitud": "-75.40140596",
+            "latitud": "7.580120815"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05792",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5792",
+            "departamento": "ANTIOQUIA",
             "municipio": "TARSO",
-            "Longitud": "-75.82321448",
-            "Latitud": "5.863295751"
+            "longitud": "-75.82321448",
+            "latitud": "5.863295751"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05809",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "TITIRIBI",
-            "Longitud": "-75.79154901",
-            "Latitud": "6.060980082"
+            "dep": "5",
+            "muni": "5809",
+            "departamento": "ANTIOQUIA",
+            "municipio": "TITIRIBÍ",
+            "longitud": "-75.79154901",
+            "latitud": "6.060980082"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05819",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5819",
+            "departamento": "ANTIOQUIA",
             "municipio": "TOLEDO",
-            "Longitud": "-75.69144241",
-            "Latitud": "7.010154029"
+            "longitud": "-75.69144241",
+            "latitud": "7.010154029"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05837",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5837",
+            "departamento": "ANTIOQUIA",
             "municipio": "TURBO",
-            "Longitud": "-76.72915844",
-            "Latitud": "8.089116411"
+            "longitud": "-76.72915844",
+            "latitud": "8.089116411"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05842",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5842",
+            "departamento": "ANTIOQUIA",
             "municipio": "URAMITA",
-            "Longitud": "-76.17340916",
-            "Latitud": "6.898494111"
+            "longitud": "-76.17340916",
+            "latitud": "6.898494111"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05847",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5847",
+            "departamento": "ANTIOQUIA",
             "municipio": "URRAO",
-            "Longitud": "-76.13394867",
-            "Latitud": "6.317319591"
+            "longitud": "-76.13394867",
+            "latitud": "6.317319591"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05854",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5854",
+            "departamento": "ANTIOQUIA",
             "municipio": "VALDIVIA",
-            "Longitud": "-75.43919844",
-            "Latitud": "7.16534"
+            "longitud": "-75.43919844",
+            "latitud": "7.16534"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05856",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "VALPARAISO",
-            "Longitud": "-75.62445888",
-            "Latitud": "5.614550725"
+            "dep": "5",
+            "muni": "5856",
+            "departamento": "ANTIOQUIA",
+            "municipio": "VALPARAÍSO",
+            "longitud": "-75.62445888",
+            "latitud": "5.614550725"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05858",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "VEGACHI",
-            "Longitud": "-74.79872695",
-            "Latitud": "6.77344632"
+            "dep": "5",
+            "muni": "5858",
+            "departamento": "ANTIOQUIA",
+            "municipio": "VEGACHÍ",
+            "longitud": "-74.79872695",
+            "latitud": "6.77344632"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05861",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5861",
+            "departamento": "ANTIOQUIA",
             "municipio": "VENECIA",
-            "Longitud": "-75.73550324",
-            "Latitud": "5.964733583"
+            "longitud": "-75.73550324",
+            "latitud": "5.964733583"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05873",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "VIGIA DEL FUERTE",
-            "Longitud": "-76.89618698",
-            "Latitud": "6.588119845"
+            "dep": "5",
+            "muni": "5873",
+            "departamento": "ANTIOQUIA",
+            "municipio": "VIGÍA DEL FUERTE",
+            "longitud": "-76.89618698",
+            "latitud": "6.588119845"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05885",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "YALI",
-            "Longitud": "-74.84004673",
-            "Latitud": "6.676567272"
+            "dep": "5",
+            "muni": "5885",
+            "departamento": "ANTIOQUIA",
+            "municipio": "YALÍ",
+            "longitud": "-74.84004673",
+            "latitud": "6.676567272"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05887",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5887",
+            "departamento": "ANTIOQUIA",
             "municipio": "YARUMAL",
-            "Longitud": "-75.41883314",
-            "Latitud": "6.963872352"
+            "longitud": "-75.41883314",
+            "latitud": "6.963872352"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05890",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "YOLOMBO",
-            "Longitud": "-75.01335058",
-            "Latitud": "6.594592434"
+            "dep": "5",
+            "muni": "5890",
+            "departamento": "ANTIOQUIA",
+            "municipio": "YOLOMBÓ",
+            "longitud": "-75.01335058",
+            "latitud": "6.594592434"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05893",
-            "Nombre departamento": "ANTIOQUIA",
-            "municipio": "YONDO",
-            "Longitud": "-73.91245795",
-            "Latitud": "7.003940734"
+            "dep": "5",
+            "muni": "5893",
+            "departamento": "ANTIOQUIA",
+            "municipio": "YONDÓ",
+            "longitud": "-73.91245795",
+            "latitud": "7.003940734"
         },
         {
-            "Código departamento": "05",
-            "Código municipio": "05895",
-            "Nombre departamento": "ANTIOQUIA",
+            "dep": "5",
+            "muni": "5895",
+            "departamento": "ANTIOQUIA",
             "municipio": "ZARAGOZA",
-            "Longitud": "-74.86707471",
-            "Latitud": "7.488583075"
+            "longitud": "-74.86707471",
+            "latitud": "7.488583075"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08001",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8001",
+            "departamento": "ATLÁNTICO",
             "municipio": "BARRANQUILLA",
-            "Longitud": "-74.79525905",
-            "Latitud": "10.97592682",
+            "longitud": "-74.79525905",
+            "latitud": "10.97592682",
             "Área metropolitana": "AREA METROPOLITANA DE BARRANQUILLA"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08078",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8078",
+            "departamento": "ATLÁNTICO",
             "municipio": "BARANOA",
-            "Longitud": "-74.91609981",
-            "Latitud": "10.79488048"
+            "longitud": "-74.91609981",
+            "latitud": "10.79488048"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08137",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8137",
+            "departamento": "ATLÁNTICO",
             "municipio": "CAMPO DE LA CRUZ",
-            "Longitud": "-74.88315173",
-            "Latitud": "10.37924013"
+            "longitud": "-74.88315173",
+            "latitud": "10.37924013"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08141",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8141",
+            "departamento": "ATLÁNTICO",
             "municipio": "CANDELARIA",
-            "Longitud": "-74.8799126",
-            "Latitud": "10.46121723"
+            "longitud": "-74.8799126",
+            "latitud": "10.46121723"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08296",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8296",
+            "departamento": "ATLÁNTICO",
             "municipio": "GALAPA",
-            "Longitud": "-74.8669381",
-            "Latitud": "10.919641",
+            "longitud": "-74.8669381",
+            "latitud": "10.919641",
             "Área metropolitana": "AREA METROPOLITANA DE BARRANQUILLA"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08372",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8372",
+            "departamento": "ATLÁNTICO",
             "municipio": "JUAN DE ACOSTA",
-            "Longitud": "-75.04079914",
-            "Latitud": "10.83018223"
+            "longitud": "-75.04079914",
+            "latitud": "10.83018223"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08421",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8421",
+            "departamento": "ATLÁNTICO",
             "municipio": "LURUACO",
-            "Longitud": "-75.14224614",
-            "Latitud": "10.61111642"
+            "longitud": "-75.14224614",
+            "latitud": "10.61111642"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08433",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8433",
+            "departamento": "ATLÁNTICO",
             "municipio": "MALAMBO",
-            "Longitud": "-74.77424057",
-            "Latitud": "10.85628724",
+            "longitud": "-74.77424057",
+            "latitud": "10.85628724",
             "Área metropolitana": "AREA METROPOLITANA DE BARRANQUILLA"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08436",
-            "Nombre departamento": "ATLÁNTICO",
-            "municipio": "MANATI",
-            "Longitud": "-74.95703499",
-            "Latitud": "10.44896238"
+            "dep": "8",
+            "muni": "8436",
+            "departamento": "ATLÁNTICO",
+            "municipio": "MANATÍ",
+            "longitud": "-74.95703499",
+            "latitud": "10.44896238"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08520",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8520",
+            "departamento": "ATLÁNTICO",
             "municipio": "PALMAR DE VARELA",
-            "Longitud": "-74.75475789",
-            "Latitud": "10.73858326"
+            "longitud": "-74.75475789",
+            "latitud": "10.73858326"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08549",
-            "Nombre departamento": "ATLÁNTICO",
-            "municipio": "PIOJO",
-            "Longitud": "-75.10747012",
-            "Latitud": "10.74934442"
+            "dep": "8",
+            "muni": "8549",
+            "departamento": "ATLÁNTICO",
+            "municipio": "PIOJÓ",
+            "longitud": "-75.10747012",
+            "latitud": "10.74934442"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08558",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8558",
+            "departamento": "ATLÁNTICO",
             "municipio": "POLONUEVO",
-            "Longitud": "-74.85425725",
-            "Latitud": "10.77772451"
+            "longitud": "-74.85425725",
+            "latitud": "10.77772451"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08560",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8560",
+            "departamento": "ATLÁNTICO",
             "municipio": "PONEDERA",
-            "Longitud": "-74.75390044",
-            "Latitud": "10.64179593"
+            "longitud": "-74.75390044",
+            "latitud": "10.64179593"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08573",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8573",
+            "departamento": "ATLÁNTICO",
             "municipio": "PUERTO COLOMBIA",
-            "Longitud": "-74.85196357",
-            "Latitud": "11.02294005",
+            "longitud": "-74.85196357",
+            "latitud": "11.02294005",
             "Área metropolitana": "AREA METROPOLITANA DE BARRANQUILLA"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08606",
-            "Nombre departamento": "ATLÁNTICO",
-            "municipio": "REPELON",
-            "Longitud": "-75.12548162",
-            "Latitud": "10.49334167"
+            "dep": "8",
+            "muni": "8606",
+            "departamento": "ATLÁNTICO",
+            "municipio": "REPELÓN",
+            "longitud": "-75.12548162",
+            "latitud": "10.49334167"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08634",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8634",
+            "departamento": "ATLÁNTICO",
             "municipio": "SABANAGRANDE",
-            "Longitud": "-74.75850721",
-            "Latitud": "10.79107595"
+            "longitud": "-74.75850721",
+            "latitud": "10.79107595"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08638",
-            "Nombre departamento": "ATLÁNTICO",
-            "municipio": "SABANALARGA",
-            "Longitud": "-74.92109368",
-            "Latitud": "10.63283523"
+            "dep": "8",
+            "muni": "8675",
+            "departamento": "ATLÁNTICO",
+            "municipio": "SANTA LUCÍA",
+            "longitud": "-74.95897145",
+            "latitud": "10.32327321"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08675",
-            "Nombre departamento": "ATLÁNTICO",
-            "municipio": "SANTA LUCIA",
-            "Longitud": "-74.95897145",
-            "Latitud": "10.32327321"
+            "dep": "8",
+            "muni": "8685",
+            "departamento": "ATLÁNTICO",
+            "municipio": "SANTO TOMÁS",
+            "longitud": "-74.75411186",
+            "latitud": "10.75605629"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08685",
-            "Nombre departamento": "ATLÁNTICO",
-            "municipio": "SANTO TOMAS",
-            "Longitud": "-74.75411186",
-            "Latitud": "10.75605629"
-        },
-        {
-            "Código departamento": "08",
-            "Código municipio": "08758",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8758",
+            "departamento": "ATLÁNTICO",
             "municipio": "SOLEDAD",
-            "Longitud": "-74.78483338",
-            "Latitud": "10.91017447",
+            "longitud": "-74.78483338",
+            "latitud": "10.91017447",
             "Área metropolitana": "AREA METROPOLITANA DE BARRANQUILLA"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08770",
-            "Nombre departamento": "ATLÁNTICO",
+            "dep": "8",
+            "muni": "8770",
+            "departamento": "ATLÁNTICO",
             "municipio": "SUAN",
-            "Longitud": "-74.88168748",
-            "Latitud": "10.33543138"
+            "longitud": "-74.88168748",
+            "latitud": "10.33543138"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08832",
-            "Nombre departamento": "ATLÁNTICO",
-            "municipio": "TUBARA",
-            "Longitud": "-74.97867947",
-            "Latitud": "10.87364774"
+            "dep": "8",
+            "muni": "8832",
+            "departamento": "ATLÁNTICO",
+            "municipio": "TUBARÁ",
+            "longitud": "-74.97867947",
+            "latitud": "10.87364774"
         },
         {
-            "Código departamento": "08",
-            "Código municipio": "08849",
-            "Nombre departamento": "ATLÁNTICO",
-            "municipio": "USIACURI",
-            "Longitud": "-74.97698261",
-            "Latitud": "10.74297819"
+            "dep": "8",
+            "muni": "8849",
+            "departamento": "ATLÁNTICO",
+            "municipio": "USIACURÍ",
+            "longitud": "-74.97698261",
+            "latitud": "10.74297819"
         },
         {
-            "Código departamento": "11",
-            "Código municipio": "11001",
-            "Nombre departamento": "BOGOTÁ, D. C.",
-            "municipio": "BOGOTA",
-            "Longitud": "-74.107359",
-            "Latitud": "4.65017303"
+            "dep": "11",
+            "muni": "11001",
+            "departamento": "BOGOTÁ, D. C.",
+            "municipio": "BOGOTÁ, D.C.",
+            "longitud": "-74.107359",
+            "latitud": "4.65017303"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13001",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "CARTAGENA",
-            "Longitud": "-75.49643103",
-            "Latitud": "10.38498552"
+            "dep": "13",
+            "muni": "13001",
+            "departamento": "BOLÍVAR",
+            "municipio": "CARTAGENA DE INDIAS",
+            "longitud": "-75.49643103",
+            "latitud": "10.38498552"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13006",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "ACHI",
-            "Longitud": "-74.55706395",
-            "Latitud": "8.569110393"
+            "dep": "13",
+            "muni": "13006",
+            "departamento": "BOLÍVAR",
+            "municipio": "ACHÍ",
+            "longitud": "-74.55706395",
+            "latitud": "8.569110393"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13030",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13030",
+            "departamento": "BOLÍVAR",
             "municipio": "ALTOS DEL ROSARIO",
-            "Longitud": "-74.16504945",
-            "Latitud": "8.791606399"
+            "longitud": "-74.16504945",
+            "latitud": "8.791606399"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13042",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13042",
+            "departamento": "BOLÍVAR",
             "municipio": "ARENAL",
-            "Longitud": "-73.94111583",
-            "Latitud": "8.458630438"
+            "longitud": "-73.94111583",
+            "latitud": "8.458630438"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13052",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13052",
+            "departamento": "BOLÍVAR",
             "municipio": "ARJONA",
-            "Longitud": "-75.34448845",
-            "Latitud": "10.25663152"
+            "longitud": "-75.34448845",
+            "latitud": "10.25663152"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13062",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13062",
+            "departamento": "BOLÍVAR",
             "municipio": "ARROYOHONDO",
-            "Longitud": "-75.01719268",
-            "Latitud": "10.24279848"
+            "longitud": "-75.01719268",
+            "latitud": "10.24279848"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13074",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13074",
+            "departamento": "BOLÍVAR",
             "municipio": "BARRANCO DE LOBA",
-            "Longitud": "-74.10522428",
-            "Latitud": "8.947730158"
+            "longitud": "-74.10522428",
+            "latitud": "8.947730158"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13140",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13140",
+            "departamento": "BOLÍVAR",
             "municipio": "CALAMAR",
-            "Longitud": "-74.91362928",
-            "Latitud": "10.25196336"
+            "longitud": "-74.91362928",
+            "latitud": "10.25196336"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13160",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13160",
+            "departamento": "BOLÍVAR",
             "municipio": "CANTAGALLO",
-            "Longitud": "-73.91465024",
-            "Latitud": "7.3783156"
+            "longitud": "-73.91465024",
+            "latitud": "7.3783156"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13188",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13188",
+            "departamento": "BOLÍVAR",
             "municipio": "CICUCO",
-            "Longitud": "-74.64549419",
-            "Latitud": "9.274745598"
+            "longitud": "-74.64549419",
+            "latitud": "9.274745598"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13212",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "CORDOBA",
-            "Longitud": "-74.82746263",
-            "Latitud": "9.586907918"
+            "dep": "13",
+            "muni": "13212",
+            "departamento": "BOLÍVAR",
+            "municipio": "CÓRDOBA",
+            "longitud": "-74.82746263",
+            "latitud": "9.586907918"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13222",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13222",
+            "departamento": "BOLÍVAR",
             "municipio": "CLEMENCIA",
-            "Longitud": "-75.32851201",
-            "Latitud": "10.56754177"
+            "longitud": "-75.32851201",
+            "latitud": "10.56754177"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13244",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "EL CARMEN DE BOLIVAR",
-            "Longitud": "-75.12121573",
-            "Latitud": "9.718579864"
+            "dep": "13",
+            "muni": "13244",
+            "departamento": "BOLÍVAR",
+            "municipio": "EL CARMEN DE BOLÍVAR",
+            "longitud": "-75.12121573",
+            "latitud": "9.718579864"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13248",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13248",
+            "departamento": "BOLÍVAR",
             "municipio": "EL GUAMO",
-            "Longitud": "-74.97611357",
-            "Latitud": "10.03091298"
+            "longitud": "-74.97611357",
+            "latitud": "10.03091298"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13268",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "EL PEÑON",
-            "Longitud": "-73.9494155",
-            "Latitud": "8.988219476"
+            "dep": "13",
+            "muni": "13268",
+            "departamento": "BOLÍVAR",
+            "municipio": "EL PEÑÓN",
+            "longitud": "-73.9494155",
+            "latitud": "8.988219476"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13300",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13300",
+            "departamento": "BOLÍVAR",
             "municipio": "HATILLO DE LOBA",
-            "Longitud": "-74.07836471",
-            "Latitud": "8.955614891"
+            "longitud": "-74.07836471",
+            "latitud": "8.955614891"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13430",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "MAGANGUE",
-            "Longitud": "-74.77017457",
-            "Latitud": "9.268563794"
+            "dep": "13",
+            "muni": "13430",
+            "departamento": "BOLÍVAR",
+            "municipio": "MAGANGUÉ",
+            "longitud": "-74.77017457",
+            "latitud": "9.268563794"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13433",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13433",
+            "departamento": "BOLÍVAR",
             "municipio": "MAHATES",
-            "Longitud": "-75.19133659",
-            "Latitud": "10.23325452"
+            "longitud": "-75.19133659",
+            "latitud": "10.23325452"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13440",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13440",
+            "departamento": "BOLÍVAR",
             "municipio": "MARGARITA",
-            "Longitud": "-74.28082176",
-            "Latitud": "9.155550472"
+            "longitud": "-74.28082176",
+            "latitud": "9.155550472"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13442",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "MARIA LA BAJA",
-            "Longitud": "-75.30075935",
-            "Latitud": "9.982645517"
+            "dep": "13",
+            "muni": "13442",
+            "departamento": "BOLÍVAR",
+            "municipio": "MARÍA LA BAJA",
+            "longitud": "-75.30075935",
+            "latitud": "9.982645517"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13458",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13458",
+            "departamento": "BOLÍVAR",
             "municipio": "MONTECRISTO",
-            "Longitud": "-74.47170385",
-            "Latitud": "8.297136275"
+            "longitud": "-74.47170385",
+            "latitud": "8.297136275"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13468",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13468",
+            "departamento": "BOLÍVAR",
             "municipio": "SANTA CRUZ DE MOMPOX",
-            "Longitud": "-74.42786642",
-            "Latitud": "9.243883757"
+            "longitud": "-74.42786642",
+            "latitud": "9.243883757"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13473",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13473",
+            "departamento": "BOLÍVAR",
             "municipio": "MORALES",
-            "Longitud": "-73.86814048",
-            "Latitud": "8.276306771"
+            "longitud": "-73.86814048",
+            "latitud": "8.276306771"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13490",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "NOROSI",
-            "Longitud": "-74.03805913",
-            "Latitud": "8.525980787"
+            "dep": "13",
+            "muni": "13490",
+            "departamento": "BOLÍVAR",
+            "municipio": "NOROSÍ",
+            "longitud": "-74.03805913",
+            "latitud": "8.525980787"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13549",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13549",
+            "departamento": "BOLÍVAR",
             "municipio": "PINILLOS",
-            "Longitud": "-74.46240354",
-            "Latitud": "8.915452234"
+            "longitud": "-74.46240354",
+            "latitud": "8.915452234"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13580",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13580",
+            "departamento": "BOLÍVAR",
             "municipio": "REGIDOR",
-            "Longitud": "-73.82163802",
-            "Latitud": "8.666257728"
+            "longitud": "-73.82163802",
+            "latitud": "8.666257728"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13600",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "RIO VIEJO",
-            "Longitud": "-73.83994549",
-            "Latitud": "8.587627712"
+            "dep": "13",
+            "muni": "13600",
+            "departamento": "BOLÍVAR",
+            "municipio": "RÍO VIEJO",
+            "longitud": "-73.83994549",
+            "latitud": "8.587627712"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13620",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "SAN CRISTOBAL",
-            "Longitud": "-75.06553417",
-            "Latitud": "10.39285577"
+            "dep": "13",
+            "muni": "13620",
+            "departamento": "BOLÍVAR",
+            "municipio": "SAN CRISTÓBAL",
+            "longitud": "-75.06553417",
+            "latitud": "10.39285577"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13647",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13647",
+            "departamento": "BOLÍVAR",
             "municipio": "SAN ESTANISLAO",
-            "Longitud": "-75.15325792",
-            "Latitud": "10.3984757"
+            "longitud": "-75.15325792",
+            "latitud": "10.3984757"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13650",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13650",
+            "departamento": "BOLÍVAR",
             "municipio": "SAN FERNANDO",
-            "Longitud": "-74.32386665",
-            "Latitud": "9.214179065"
+            "longitud": "-74.32386665",
+            "latitud": "9.214179065"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13654",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13654",
+            "departamento": "BOLÍVAR",
             "municipio": "SAN JACINTO",
-            "Longitud": "-75.1210888",
-            "Latitud": "9.830219073"
+            "longitud": "-75.1210888",
+            "latitud": "9.830219073"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13655",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13655",
+            "departamento": "BOLÍVAR",
             "municipio": "SAN JACINTO DEL CAUCA",
-            "Longitud": "-74.72082643",
-            "Latitud": "8.251739321"
+            "longitud": "-74.72082643",
+            "latitud": "8.251739321"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13657",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13657",
+            "departamento": "BOLÍVAR",
             "municipio": "SAN JUAN NEPOMUCENO",
-            "Longitud": "-75.08135293",
-            "Latitud": "9.953454388"
+            "longitud": "-75.08135293",
+            "latitud": "9.953454388"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13667",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "SAN MARTIN DE LOBA",
-            "Longitud": "-74.03901175",
-            "Latitud": "8.937090811"
+            "dep": "13",
+            "muni": "13667",
+            "departamento": "BOLÍVAR",
+            "municipio": "SAN MARTÍN DE LOBA",
+            "longitud": "-74.03901175",
+            "latitud": "8.937090811"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13670",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13670",
+            "departamento": "BOLÍVAR",
             "municipio": "SAN PABLO",
-            "Longitud": "-73.92416855",
-            "Latitud": "7.476720672"
+            "longitud": "-73.92416855",
+            "latitud": "7.476720672"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13673",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13673",
+            "departamento": "BOLÍVAR",
             "municipio": "SANTA CATALINA",
-            "Longitud": "-75.28776411",
-            "Latitud": "10.60505605"
+            "longitud": "-75.28776411",
+            "latitud": "10.60505605"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13683",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13683",
+            "departamento": "BOLÍVAR",
             "municipio": "SANTA ROSA",
-            "Longitud": "-75.36983166",
-            "Latitud": "10.44439608"
+            "longitud": "-75.36983166",
+            "latitud": "10.44439608"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13688",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13688",
+            "departamento": "BOLÍVAR",
             "municipio": "SANTA ROSA DEL SUR",
-            "Longitud": "-74.05284001",
-            "Latitud": "7.962854831"
+            "longitud": "-74.05284001",
+            "latitud": "7.962854831"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13744",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "SIMITI",
-            "Longitud": "-73.94731196",
-            "Latitud": "7.954176376"
+            "dep": "13",
+            "muni": "13744",
+            "departamento": "BOLÍVAR",
+            "municipio": "SIMITÍ",
+            "longitud": "-73.94731196",
+            "latitud": "7.954176376"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13760",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13760",
+            "departamento": "BOLÍVAR",
             "municipio": "SOPLAVIENTO",
-            "Longitud": "-75.13642551",
-            "Latitud": "10.38845743"
+            "longitud": "-75.13642551",
+            "latitud": "10.38845743"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13780",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13780",
+            "departamento": "BOLÍVAR",
             "municipio": "TALAIGUA NUEVO",
-            "Longitud": "-74.56762806",
-            "Latitud": "9.304889329"
+            "longitud": "-74.56762806",
+            "latitud": "9.304889329"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13810",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13810",
+            "departamento": "BOLÍVAR",
             "municipio": "TIQUISIO",
-            "Longitud": "-74.26354688",
-            "Latitud": "8.557741117"
+            "longitud": "-74.26354688",
+            "latitud": "8.557741117"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13836",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13836",
+            "departamento": "BOLÍVAR",
             "municipio": "TURBACO",
-            "Longitud": "-75.42440917",
-            "Latitud": "10.33276916"
+            "longitud": "-75.42440917",
+            "latitud": "10.33276916"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13838",
-            "Nombre departamento": "BOLÍVAR",
-            "municipio": "TURBANA",
-            "Longitud": "-75.44250247",
-            "Latitud": "10.27440205"
+            "dep": "13",
+            "muni": "13838",
+            "departamento": "BOLÍVAR",
+            "municipio": "TURBANÁ",
+            "longitud": "-75.44250247",
+            "latitud": "10.27440205"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13873",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13873",
+            "departamento": "BOLÍVAR",
             "municipio": "VILLANUEVA",
-            "Longitud": "-75.27475439",
-            "Latitud": "10.44449833"
+            "longitud": "-75.27475439",
+            "latitud": "10.44449833"
         },
         {
-            "Código departamento": "13",
-            "Código municipio": "13894",
-            "Nombre departamento": "BOLÍVAR",
+            "dep": "13",
+            "muni": "13894",
+            "departamento": "BOLÍVAR",
             "municipio": "ZAMBRANO",
-            "Longitud": "-74.8138396",
-            "Latitud": "9.7469139"
+            "longitud": "-74.8138396",
+            "latitud": "9.7469139"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15001",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15001",
+            "departamento": "BOYACÁ",
             "municipio": "TUNJA",
-            "Longitud": "-73.35548873",
-            "Latitud": "5.539953238"
+            "longitud": "-73.35548873",
+            "latitud": "5.539953238"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15022",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15022",
+            "departamento": "BOYACÁ",
             "municipio": "ALMEIDA",
-            "Longitud": "-73.3789331",
-            "Latitud": "4.970856509"
+            "longitud": "-73.3789331",
+            "latitud": "4.970856509"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15047",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15047",
+            "departamento": "BOYACÁ",
             "municipio": "AQUITANIA",
-            "Longitud": "-72.88398481",
-            "Latitud": "5.518603543"
+            "longitud": "-72.88398481",
+            "latitud": "5.518603543"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15051",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15051",
+            "departamento": "BOYACÁ",
             "municipio": "ARCABUCO",
-            "Longitud": "-73.43818476",
-            "Latitud": "5.755184269"
+            "longitud": "-73.43818476",
+            "latitud": "5.755184269"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15087",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "BELEN",
-            "Longitud": "-72.91161957",
-            "Latitud": "5.989277861"
+            "dep": "15",
+            "muni": "15087",
+            "departamento": "BOYACÁ",
+            "municipio": "BELÉN",
+            "longitud": "-72.91161957",
+            "latitud": "5.989277861"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15090",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15090",
+            "departamento": "BOYACÁ",
             "municipio": "BERBEO",
-            "Longitud": "-73.12703215",
-            "Latitud": "5.22728723"
+            "longitud": "-73.12703215",
+            "latitud": "5.22728723"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15092",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "BETEITIVA",
-            "Longitud": "-72.8090312",
-            "Latitud": "5.909907818"
+            "dep": "15",
+            "muni": "15092",
+            "departamento": "BOYACÁ",
+            "municipio": "BETÉITIVA",
+            "longitud": "-72.8090312",
+            "latitud": "5.909907818"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15097",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15097",
+            "departamento": "BOYACÁ",
             "municipio": "BOAVITA",
-            "Longitud": "-72.5849594",
-            "Latitud": "6.330652563"
+            "longitud": "-72.5849594",
+            "latitud": "6.330652563"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15104",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "BOYACA",
-            "Longitud": "-73.36230272",
-            "Latitud": "5.454237164"
+            "dep": "15",
+            "muni": "15104",
+            "departamento": "BOYACÁ",
+            "municipio": "BOYACÁ",
+            "longitud": "-73.36230272",
+            "latitud": "5.454237164"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15106",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "BRICEÑO",
-            "Longitud": "-73.9232597",
-            "Latitud": "5.690878897"
-        },
-        {
-            "Código departamento": "15",
-            "Código municipio": "15109",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15109",
+            "departamento": "BOYACÁ",
             "municipio": "BUENAVISTA",
-            "Longitud": "-73.94230522",
-            "Latitud": "5.512431151"
+            "longitud": "-73.94230522",
+            "latitud": "5.512431151"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15114",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "BUSBANZA",
-            "Longitud": "-72.88416175",
-            "Latitud": "5.831389532"
+            "dep": "15",
+            "muni": "15114",
+            "departamento": "BOYACÁ",
+            "municipio": "BUSBANZÁ",
+            "longitud": "-72.88416175",
+            "latitud": "5.831389532"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15131",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "CALDAS",
-            "Longitud": "-73.865541",
-            "Latitud": "5.554575079"
-        },
-        {
-            "Código departamento": "15",
-            "Código municipio": "15135",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15135",
+            "departamento": "BOYACÁ",
             "municipio": "CAMPOHERMOSO",
-            "Longitud": "-73.10416792",
-            "Latitud": "5.031660681"
+            "longitud": "-73.10416792",
+            "latitud": "5.031660681"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15162",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15162",
+            "departamento": "BOYACÁ",
             "municipio": "CERINZA",
-            "Longitud": "-72.94827585",
-            "Latitud": "5.956028189"
+            "longitud": "-72.94827585",
+            "latitud": "5.956028189"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15172",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15172",
+            "departamento": "BOYACÁ",
             "municipio": "CHINAVITA",
-            "Longitud": "-73.36847648",
-            "Latitud": "5.167483821"
+            "longitud": "-73.36847648",
+            "latitud": "5.167483821"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15176",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "CHIQUINQUIRA",
-            "Longitud": "-73.81838763",
-            "Latitud": "5.61412789"
+            "dep": "15",
+            "muni": "15176",
+            "departamento": "BOYACÁ",
+            "municipio": "CHIQUINQUIRÁ",
+            "longitud": "-73.81838763",
+            "latitud": "5.61412789"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15180",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15180",
+            "departamento": "BOYACÁ",
             "municipio": "CHISCAS",
-            "Longitud": "-72.50183507",
-            "Latitud": "6.554050428"
+            "longitud": "-72.50183507",
+            "latitud": "6.554050428"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15183",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15183",
+            "departamento": "BOYACÁ",
             "municipio": "CHITA",
-            "Longitud": "-72.47189235",
-            "Latitud": "6.187082996"
+            "longitud": "-72.47189235",
+            "latitud": "6.187082996"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15185",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15185",
+            "departamento": "BOYACÁ",
             "municipio": "CHITARAQUE",
-            "Longitud": "-73.4471004",
-            "Latitud": "6.027425133"
+            "longitud": "-73.4471004",
+            "latitud": "6.027425133"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15187",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "CHIVATA",
-            "Longitud": "-73.28252944",
-            "Latitud": "5.558948845"
+            "dep": "15",
+            "muni": "15187",
+            "departamento": "BOYACÁ",
+            "municipio": "CHIVATÁ",
+            "longitud": "-73.28252944",
+            "latitud": "5.558948845"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15189",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "CIENEGA",
-            "Longitud": "-73.29606129",
-            "Latitud": "5.408702192"
+            "dep": "15",
+            "muni": "15189",
+            "departamento": "BOYACÁ",
+            "municipio": "CIÉNEGA",
+            "longitud": "-73.29606129",
+            "latitud": "5.408702192"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15204",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "COMBITA",
-            "Longitud": "-73.32395641",
-            "Latitud": "5.634545314"
+            "dep": "15",
+            "muni": "15204",
+            "departamento": "BOYACÁ",
+            "municipio": "CÓMBITA",
+            "longitud": "-73.32395641",
+            "latitud": "5.634545314"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15212",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15212",
+            "departamento": "BOYACÁ",
             "municipio": "COPER",
-            "Longitud": "-74.04546072",
-            "Latitud": "5.474983018"
+            "longitud": "-74.04546072",
+            "latitud": "5.474983018"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15215",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15215",
+            "departamento": "BOYACÁ",
             "municipio": "CORRALES",
-            "Longitud": "-72.84479484",
-            "Latitud": "5.828102208"
+            "longitud": "-72.84479484",
+            "latitud": "5.828102208"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15218",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "COVARACHIA",
-            "Longitud": "-72.73897793",
-            "Latitud": "6.50017746"
+            "dep": "15",
+            "muni": "15218",
+            "departamento": "BOYACÁ",
+            "municipio": "COVARACHÍA",
+            "longitud": "-72.73897793",
+            "latitud": "6.50017746"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15223",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "CUBARA",
-            "Longitud": "-72.11068776",
-            "Latitud": "7.000092875"
+            "dep": "15",
+            "muni": "15223",
+            "departamento": "BOYACÁ",
+            "municipio": "CUBARÁ",
+            "longitud": "-72.11068776",
+            "latitud": "7.000092875"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15224",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15224",
+            "departamento": "BOYACÁ",
             "municipio": "CUCAITA",
-            "Longitud": "-73.45433765",
-            "Latitud": "5.544451559"
+            "longitud": "-73.45433765",
+            "latitud": "5.544451559"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15226",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "CUITIVA",
-            "Longitud": "-72.96592323",
-            "Latitud": "5.58036723"
+            "dep": "15",
+            "muni": "15226",
+            "departamento": "BOYACÁ",
+            "municipio": "CUÍTIVA",
+            "longitud": "-72.96592323",
+            "latitud": "5.58036723"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15232",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "CHIQUIZA",
-            "Longitud": "-73.44946261",
-            "Latitud": "5.639834305"
+            "dep": "15",
+            "muni": "15232",
+            "departamento": "BOYACÁ",
+            "municipio": "CHÍQUIZA",
+            "longitud": "-73.44946261",
+            "latitud": "5.639834305"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15236",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15236",
+            "departamento": "BOYACÁ",
             "municipio": "CHIVOR",
-            "Longitud": "-73.36689376",
-            "Latitud": "4.887781661"
+            "longitud": "-73.36689376",
+            "latitud": "4.887781661"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15238",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15238",
+            "departamento": "BOYACÁ",
             "municipio": "DUITAMA",
-            "Longitud": "-73.03060967",
-            "Latitud": "5.82298568"
+            "longitud": "-73.03060967",
+            "latitud": "5.82298568"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15244",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15244",
+            "departamento": "BOYACÁ",
             "municipio": "EL COCUY",
-            "Longitud": "-72.44472932",
-            "Latitud": "6.407716232"
+            "longitud": "-72.44472932",
+            "latitud": "6.407716232"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15248",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15248",
+            "departamento": "BOYACÁ",
             "municipio": "EL ESPINO",
-            "Longitud": "-72.49700735",
-            "Latitud": "6.483027406"
+            "longitud": "-72.49700735",
+            "latitud": "6.483027406"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15272",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15272",
+            "departamento": "BOYACÁ",
             "municipio": "FIRAVITOBA",
-            "Longitud": "-72.99336145",
-            "Latitud": "5.66892216"
+            "longitud": "-72.99336145",
+            "latitud": "5.66892216"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15276",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15276",
+            "departamento": "BOYACÁ",
             "municipio": "FLORESTA",
-            "Longitud": "-72.91811131",
-            "Latitud": "5.859519124"
+            "longitud": "-72.91811131",
+            "latitud": "5.859519124"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15293",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "GACHANTIVA",
-            "Longitud": "-73.54909239",
-            "Latitud": "5.751891082"
+            "dep": "15",
+            "muni": "15293",
+            "departamento": "BOYACÁ",
+            "municipio": "GACHANTIVÁ",
+            "longitud": "-73.54909239",
+            "latitud": "5.751891082"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15296",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "GAMEZA",
-            "Longitud": "-72.80552935",
-            "Latitud": "5.802337805"
+            "dep": "15",
+            "muni": "15296",
+            "departamento": "BOYACÁ",
+            "municipio": "GÁMEZA",
+            "longitud": "-72.80552935",
+            "latitud": "5.802337805"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15299",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15299",
+            "departamento": "BOYACÁ",
             "municipio": "GARAGOA",
-            "Longitud": "-73.36442756",
-            "Latitud": "5.083243463"
+            "longitud": "-73.36442756",
+            "latitud": "5.083243463"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15317",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15317",
+            "departamento": "BOYACÁ",
             "municipio": "GUACAMAYAS",
-            "Longitud": "-72.500812",
-            "Latitud": "6.459666516"
+            "longitud": "-72.500812",
+            "latitud": "6.459666516"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15322",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15322",
+            "departamento": "BOYACÁ",
             "municipio": "GUATEQUE",
-            "Longitud": "-73.47120697",
-            "Latitud": "5.007320895"
+            "longitud": "-73.47120697",
+            "latitud": "5.007320895"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15325",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "GUAYATA",
-            "Longitud": "-73.4896964",
-            "Latitud": "4.967122531"
+            "dep": "15",
+            "muni": "15325",
+            "departamento": "BOYACÁ",
+            "municipio": "GUAYATÁ",
+            "longitud": "-73.4896964",
+            "latitud": "4.967122531"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15332",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "GÜICAN DE LA SIERRA",
-            "Longitud": "-72.41176261",
-            "Latitud": "6.462863755"
+            "dep": "15",
+            "muni": "15332",
+            "departamento": "BOYACÁ",
+            "municipio": "GÜICÁN DE LA SIERRA",
+            "longitud": "-72.41176261",
+            "latitud": "6.462863755"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15362",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15362",
+            "departamento": "BOYACÁ",
             "municipio": "IZA",
-            "Longitud": "-72.98017623",
-            "Latitud": "5.61169614"
+            "longitud": "-72.98017623",
+            "latitud": "5.61169614"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15367",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15367",
+            "departamento": "BOYACÁ",
             "municipio": "JENESANO",
-            "Longitud": "-73.36373756",
-            "Latitud": "5.385812845"
+            "longitud": "-73.36373756",
+            "latitud": "5.385812845"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15368",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "JERICO",
-            "Longitud": "-72.57072349",
-            "Latitud": "6.145920383"
-        },
-        {
-            "Código departamento": "15",
-            "Código municipio": "15377",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15377",
+            "departamento": "BOYACÁ",
             "municipio": "LABRANZAGRANDE",
-            "Longitud": "-72.57777012",
-            "Latitud": "5.562687048"
+            "longitud": "-72.57777012",
+            "latitud": "5.562687048"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15380",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15380",
+            "departamento": "BOYACÁ",
             "municipio": "LA CAPILLA",
-            "Longitud": "-73.4443474",
-            "Latitud": "5.095686992"
+            "longitud": "-73.4443474",
+            "latitud": "5.095686992"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15401",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15401",
+            "departamento": "BOYACÁ",
             "municipio": "LA VICTORIA",
-            "Longitud": "-74.23439322",
-            "Latitud": "5.52379224"
+            "longitud": "-74.23439322",
+            "latitud": "5.52379224"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15403",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15403",
+            "departamento": "BOYACÁ",
             "municipio": "LA UVITA",
-            "Longitud": "-72.5599847",
-            "Latitud": "6.316206406"
+            "longitud": "-72.5599847",
+            "latitud": "6.316206406"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15407",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15407",
+            "departamento": "BOYACÁ",
             "municipio": "VILLA DE LEYVA",
-            "Longitud": "-73.5246846",
-            "Latitud": "5.632661849"
+            "longitud": "-73.5246846",
+            "latitud": "5.632661849"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15425",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15425",
+            "departamento": "BOYACÁ",
             "municipio": "MACANAL",
-            "Longitud": "-73.31964224",
-            "Latitud": "4.972466063"
+            "longitud": "-73.31964224",
+            "latitud": "4.972466063"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15442",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "MARIPI",
-            "Longitud": "-74.00404995",
-            "Latitud": "5.55009071"
+            "dep": "15",
+            "muni": "15442",
+            "departamento": "BOYACÁ",
+            "municipio": "MARIPÍ",
+            "longitud": "-74.00404995",
+            "latitud": "5.55009071"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15455",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15455",
+            "departamento": "BOYACÁ",
             "municipio": "MIRAFLORES",
-            "Longitud": "-73.14563048",
-            "Latitud": "5.196515115"
+            "longitud": "-73.14563048",
+            "latitud": "5.196515115"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15464",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15464",
+            "departamento": "BOYACÁ",
             "municipio": "MONGUA",
-            "Longitud": "-72.79809049",
-            "Latitud": "5.754242228"
+            "longitud": "-72.79809049",
+            "latitud": "5.754242228"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15466",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "MONGUI",
-            "Longitud": "-72.84926001",
-            "Latitud": "5.723404072"
+            "dep": "15",
+            "muni": "15466",
+            "departamento": "BOYACÁ",
+            "municipio": "MONGUÍ",
+            "longitud": "-72.84926001",
+            "latitud": "5.723404072"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15469",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "MONIQUIRA",
-            "Longitud": "-73.57337039",
-            "Latitud": "5.876334811"
+            "dep": "15",
+            "muni": "15469",
+            "departamento": "BOYACÁ",
+            "municipio": "MONIQUIRÁ",
+            "longitud": "-73.57337039",
+            "latitud": "5.876334811"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15476",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15476",
+            "departamento": "BOYACÁ",
             "municipio": "MOTAVITA",
-            "Longitud": "-73.36784105",
-            "Latitud": "5.5776996"
+            "longitud": "-73.36784105",
+            "latitud": "5.5776996"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15480",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15480",
+            "departamento": "BOYACÁ",
             "municipio": "MUZO",
-            "Longitud": "-74.10275078",
-            "Latitud": "5.532462867"
+            "longitud": "-74.10275078",
+            "latitud": "5.532462867"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15491",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15491",
+            "departamento": "BOYACÁ",
             "municipio": "NOBSA",
-            "Longitud": "-72.93985317",
-            "Latitud": "5.771042624"
+            "longitud": "-72.93985317",
+            "latitud": "5.771042624"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15494",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "NUEVO COLON",
-            "Longitud": "-73.45713618",
-            "Latitud": "5.355145864"
+            "dep": "15",
+            "muni": "15494",
+            "departamento": "BOYACÁ",
+            "municipio": "NUEVO COLÓN",
+            "longitud": "-73.45713618",
+            "latitud": "5.355145864"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15500",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "OICATA",
-            "Longitud": "-73.30840398",
-            "Latitud": "5.595234239"
+            "dep": "15",
+            "muni": "15500",
+            "departamento": "BOYACÁ",
+            "municipio": "OICATÁ",
+            "longitud": "-73.30840398",
+            "latitud": "5.595234239"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15507",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15507",
+            "departamento": "BOYACÁ",
             "municipio": "OTANCHE",
-            "Longitud": "-74.18096474",
-            "Latitud": "5.657535713"
+            "longitud": "-74.18096474",
+            "latitud": "5.657535713"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15511",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15511",
+            "departamento": "BOYACÁ",
             "municipio": "PACHAVITA",
-            "Longitud": "-73.39695306",
-            "Latitud": "5.140064731"
+            "longitud": "-73.39695306",
+            "latitud": "5.140064731"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15514",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "PAEZ",
-            "Longitud": "-73.05431038",
-            "Latitud": "5.095234631"
+            "dep": "15",
+            "muni": "15514",
+            "departamento": "BOYACÁ",
+            "municipio": "PÁEZ",
+            "longitud": "-73.05431038",
+            "latitud": "5.095234631"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15516",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15516",
+            "departamento": "BOYACÁ",
             "municipio": "PAIPA",
-            "Longitud": "-73.11791688",
-            "Latitud": "5.77994187"
+            "longitud": "-73.11791688",
+            "latitud": "5.77994187"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15518",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15518",
+            "departamento": "BOYACÁ",
             "municipio": "PAJARITO",
-            "Longitud": "-72.70320992",
-            "Latitud": "5.293665206"
+            "longitud": "-72.70320992",
+            "latitud": "5.293665206"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15522",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15522",
+            "departamento": "BOYACÁ",
             "municipio": "PANQUEBA",
-            "Longitud": "-72.45920027",
-            "Latitud": "6.443075415"
+            "longitud": "-72.45920027",
+            "latitud": "6.443075415"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15531",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15531",
+            "departamento": "BOYACÁ",
             "municipio": "PAUNA",
-            "Longitud": "-73.97844872",
-            "Latitud": "5.656322691"
+            "longitud": "-73.97844872",
+            "latitud": "5.656322691"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15533",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15533",
+            "departamento": "BOYACÁ",
             "municipio": "PAYA",
-            "Longitud": "-72.42377541",
-            "Latitud": "5.625698707"
+            "longitud": "-72.42377541",
+            "latitud": "5.625698707"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15537",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "PAZ DE RIO",
-            "Longitud": "-72.74913738",
-            "Latitud": "5.987644906"
+            "dep": "15",
+            "muni": "15537",
+            "departamento": "BOYACÁ",
+            "municipio": "PAZ DE RÍO",
+            "longitud": "-72.74913738",
+            "latitud": "5.987644906"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15542",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15542",
+            "departamento": "BOYACÁ",
             "municipio": "PESCA",
-            "Longitud": "-73.05087224",
-            "Latitud": "5.558807609"
+            "longitud": "-73.05087224",
+            "latitud": "5.558807609"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15550",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15550",
+            "departamento": "BOYACÁ",
             "municipio": "PISBA",
-            "Longitud": "-72.48594682",
-            "Latitud": "5.721615112"
+            "longitud": "-72.48594682",
+            "latitud": "5.721615112"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15572",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "PUERTO BOYACA",
-            "Longitud": "-74.58799919",
-            "Latitud": "5.977934952"
+            "dep": "15",
+            "muni": "15572",
+            "departamento": "BOYACÁ",
+            "municipio": "PUERTO BOYACÁ",
+            "longitud": "-74.58799919",
+            "latitud": "5.977934952"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15580",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "QUIPAMA",
-            "Longitud": "-74.17772939",
-            "Latitud": "5.518370385"
+            "dep": "15",
+            "muni": "15580",
+            "departamento": "BOYACÁ",
+            "municipio": "QUÍPAMA",
+            "longitud": "-74.17772939",
+            "latitud": "5.518370385"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15599",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "RAMIRIQUI",
-            "Longitud": "-73.33486896",
-            "Latitud": "5.400221644"
+            "dep": "15",
+            "muni": "15599",
+            "departamento": "BOYACÁ",
+            "municipio": "RAMIRIQUÍ",
+            "longitud": "-73.33486896",
+            "latitud": "5.400221644"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15600",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "RAQUIRA",
-            "Longitud": "-73.63249716",
-            "Latitud": "5.539065827"
+            "dep": "15",
+            "muni": "15600",
+            "departamento": "BOYACÁ",
+            "municipio": "RÁQUIRA",
+            "longitud": "-73.63249716",
+            "latitud": "5.539065827"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15621",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "RONDON",
-            "Longitud": "-73.20847397",
-            "Latitud": "5.357400116"
+            "dep": "15",
+            "muni": "15621",
+            "departamento": "BOYACÁ",
+            "municipio": "RONDÓN",
+            "longitud": "-73.20847397",
+            "latitud": "5.357400116"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15632",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SABOYA",
-            "Longitud": "-73.76466062",
-            "Latitud": "5.697733432"
+            "dep": "15",
+            "muni": "15632",
+            "departamento": "BOYACÁ",
+            "municipio": "SABOYÁ",
+            "longitud": "-73.76466062",
+            "latitud": "5.697733432"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15638",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SACHICA",
-            "Longitud": "-73.54263447",
-            "Latitud": "5.583592497"
+            "dep": "15",
+            "muni": "15638",
+            "departamento": "BOYACÁ",
+            "municipio": "SÁCHICA",
+            "longitud": "-73.54263447",
+            "latitud": "5.583592497"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15646",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SAMACA",
-            "Longitud": "-73.48564359",
-            "Latitud": "5.492314591"
+            "dep": "15",
+            "muni": "15646",
+            "departamento": "BOYACÁ",
+            "municipio": "SAMACÁ",
+            "longitud": "-73.48564359",
+            "latitud": "5.492314591"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15660",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15660",
+            "departamento": "BOYACÁ",
             "municipio": "SAN EDUARDO",
-            "Longitud": "-73.077143",
-            "Latitud": "5.22395594"
+            "longitud": "-73.077143",
+            "latitud": "5.22395594"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15664",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SAN JOSE DE PARE",
-            "Longitud": "-73.54537245",
-            "Latitud": "6.018975771"
+            "dep": "15",
+            "muni": "15664",
+            "departamento": "BOYACÁ",
+            "municipio": "SAN JOSÉ DE PARE",
+            "longitud": "-73.54537245",
+            "latitud": "6.018975771"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15667",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15667",
+            "departamento": "BOYACÁ",
             "municipio": "SAN LUIS DE GACENO",
-            "Longitud": "-73.16835942",
-            "Latitud": "4.819690447"
+            "longitud": "-73.16835942",
+            "latitud": "4.819690447"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15673",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15673",
+            "departamento": "BOYACÁ",
             "municipio": "SAN MATEO",
-            "Longitud": "-72.55526421",
-            "Latitud": "6.401683318"
+            "longitud": "-72.55526421",
+            "latitud": "6.401683318"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15676",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15676",
+            "departamento": "BOYACÁ",
             "municipio": "SAN MIGUEL DE SEMA",
-            "Longitud": "-73.72200484",
-            "Latitud": "5.518086388"
+            "longitud": "-73.72200484",
+            "latitud": "5.518086388"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15681",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15681",
+            "departamento": "BOYACÁ",
             "municipio": "SAN PABLO DE BORBUR",
-            "Longitud": "-74.06996448",
-            "Latitud": "5.650676396"
+            "longitud": "-74.06996448",
+            "latitud": "5.650676396"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15686",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15686",
+            "departamento": "BOYACÁ",
             "municipio": "SANTANA",
-            "Longitud": "-73.48122632",
-            "Latitud": "6.057413107"
+            "longitud": "-73.48122632",
+            "latitud": "6.057413107"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15690",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SANTA MARIA",
-            "Longitud": "-73.26351766",
-            "Latitud": "4.857192995"
+            "dep": "15",
+            "muni": "15690",
+            "departamento": "BOYACÁ",
+            "municipio": "SANTA MARÍA",
+            "longitud": "-73.26351766",
+            "latitud": "4.857192995"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15693",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15693",
+            "departamento": "BOYACÁ",
             "municipio": "SANTA ROSA DE VITERBO",
-            "Longitud": "-72.98246092",
-            "Latitud": "5.874555597"
+            "longitud": "-72.98246092",
+            "latitud": "5.874555597"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15696",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SANTA SOFIA",
-            "Longitud": "-73.60270717",
-            "Latitud": "5.713269421"
+            "dep": "15",
+            "muni": "15696",
+            "departamento": "BOYACÁ",
+            "municipio": "SANTA SOFÍA",
+            "longitud": "-73.60270717",
+            "latitud": "5.713269421"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15720",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15720",
+            "departamento": "BOYACÁ",
             "municipio": "SATIVANORTE",
-            "Longitud": "-72.70845816",
-            "Latitud": "6.131136111"
+            "longitud": "-72.70845816",
+            "latitud": "6.131136111"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15723",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15723",
+            "departamento": "BOYACÁ",
             "municipio": "SATIVASUR",
-            "Longitud": "-72.71243808",
-            "Latitud": "6.093182343"
+            "longitud": "-72.71243808",
+            "latitud": "6.093182343"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15740",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15740",
+            "departamento": "BOYACÁ",
             "municipio": "SIACHOQUE",
-            "Longitud": "-73.24464901",
-            "Latitud": "5.511815055"
+            "longitud": "-73.24464901",
+            "latitud": "5.511815055"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15753",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SOATA",
-            "Longitud": "-72.68402498",
-            "Latitud": "6.331911937"
+            "dep": "15",
+            "muni": "15753",
+            "departamento": "BOYACÁ",
+            "municipio": "SOATÁ",
+            "longitud": "-72.68402498",
+            "latitud": "6.331911937"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15755",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SOCOTA",
-            "Longitud": "-72.63665338",
-            "Latitud": "6.041161833"
+            "dep": "15",
+            "muni": "15755",
+            "departamento": "BOYACÁ",
+            "municipio": "SOCOTÁ",
+            "longitud": "-72.63665338",
+            "latitud": "6.041161833"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15757",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15757",
+            "departamento": "BOYACÁ",
             "municipio": "SOCHA",
-            "Longitud": "-72.69196586",
-            "Latitud": "5.996713021"
+            "longitud": "-72.69196586",
+            "latitud": "5.996713021"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15759",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15759",
+            "departamento": "BOYACÁ",
             "municipio": "SOGAMOSO",
-            "Longitud": "-72.92304769",
-            "Latitud": "5.72568939"
+            "longitud": "-72.92304769",
+            "latitud": "5.72568939"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15761",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15761",
+            "departamento": "BOYACÁ",
             "municipio": "SOMONDOCO",
-            "Longitud": "-73.43339298",
-            "Latitud": "4.985725507"
+            "longitud": "-73.43339298",
+            "latitud": "4.985725507"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15762",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15762",
+            "departamento": "BOYACÁ",
             "municipio": "SORA",
-            "Longitud": "-73.45015278",
-            "Latitud": "5.566839797"
+            "longitud": "-73.45015278",
+            "latitud": "5.566839797"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15763",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SOTAQUIRA",
-            "Longitud": "-73.24733448",
-            "Latitud": "5.765230774"
+            "dep": "15",
+            "muni": "15763",
+            "departamento": "BOYACÁ",
+            "municipio": "SOTAQUIRÁ",
+            "longitud": "-73.24733448",
+            "latitud": "5.765230774"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15764",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SORACA",
-            "Longitud": "-73.33280563",
-            "Latitud": "5.500904831"
+            "dep": "15",
+            "muni": "15764",
+            "departamento": "BOYACÁ",
+            "municipio": "SORACÁ",
+            "longitud": "-73.33280563",
+            "latitud": "5.500904831"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15774",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SUSACON",
-            "Longitud": "-72.69028925",
-            "Latitud": "6.230332074"
+            "dep": "15",
+            "muni": "15774",
+            "departamento": "BOYACÁ",
+            "municipio": "SUSACÓN",
+            "longitud": "-72.69028925",
+            "latitud": "6.230332074"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15776",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "SUTAMARCHAN",
-            "Longitud": "-73.6205861",
-            "Latitud": "5.619781419"
+            "dep": "15",
+            "muni": "15776",
+            "departamento": "BOYACÁ",
+            "municipio": "SUTAMARCHÁN",
+            "longitud": "-73.6205861",
+            "latitud": "5.619781419"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15778",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15778",
+            "departamento": "BOYACÁ",
             "municipio": "SUTATENZA",
-            "Longitud": "-73.45231714",
-            "Latitud": "5.022988994"
+            "longitud": "-73.45231714",
+            "latitud": "5.022988994"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15790",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15790",
+            "departamento": "BOYACÁ",
             "municipio": "TASCO",
-            "Longitud": "-72.78101116",
-            "Latitud": "5.909821031"
+            "longitud": "-72.78101116",
+            "latitud": "5.909821031"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15798",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15798",
+            "departamento": "BOYACÁ",
             "municipio": "TENZA",
-            "Longitud": "-73.42058911",
-            "Latitud": "5.077074351"
+            "longitud": "-73.42058911",
+            "latitud": "5.077074351"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15804",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "TIBANA",
-            "Longitud": "-73.39645722",
-            "Latitud": "5.317250924"
+            "dep": "15",
+            "muni": "15804",
+            "departamento": "BOYACÁ",
+            "municipio": "TIBANÁ",
+            "longitud": "-73.39645722",
+            "latitud": "5.317250924"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15806",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15806",
+            "departamento": "BOYACÁ",
             "municipio": "TIBASOSA",
-            "Longitud": "-72.99944921",
-            "Latitud": "5.747229977"
+            "longitud": "-72.99944921",
+            "latitud": "5.747229977"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15808",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "TINJACA",
-            "Longitud": "-73.64684734",
-            "Latitud": "5.57971331"
+            "dep": "15",
+            "muni": "15808",
+            "departamento": "BOYACÁ",
+            "municipio": "TINJACÁ",
+            "longitud": "-73.64684734",
+            "latitud": "5.57971331"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15810",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15810",
+            "departamento": "BOYACÁ",
             "municipio": "TIPACOQUE",
-            "Longitud": "-72.69317268",
-            "Latitud": "6.418585803"
+            "longitud": "-72.69317268",
+            "latitud": "6.418585803"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15814",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15814",
+            "departamento": "BOYACÁ",
             "municipio": "TOCA",
-            "Longitud": "-73.18479034",
-            "Latitud": "5.56646915"
+            "longitud": "-73.18479034",
+            "latitud": "5.56646915"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15816",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "TOGUI",
-            "Longitud": "-73.51365506",
-            "Latitud": "5.937438225"
+            "dep": "15",
+            "muni": "15816",
+            "departamento": "BOYACÁ",
+            "municipio": "TOGÜÍ",
+            "longitud": "-73.51365506",
+            "latitud": "5.937438225"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15820",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "TOPAGA",
-            "Longitud": "-72.83224493",
-            "Latitud": "5.768201449"
+            "dep": "15",
+            "muni": "15820",
+            "departamento": "BOYACÁ",
+            "municipio": "TÓPAGA",
+            "longitud": "-72.83224493",
+            "latitud": "5.768201449"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15822",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15822",
+            "departamento": "BOYACÁ",
             "municipio": "TOTA",
-            "Longitud": "-72.98589814",
-            "Latitud": "5.560497374"
+            "longitud": "-72.98589814",
+            "latitud": "5.560497374"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15832",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "TUNUNGUA",
-            "Longitud": "-73.9331548",
-            "Latitud": "5.730582208"
+            "dep": "15",
+            "muni": "15832",
+            "departamento": "BOYACÁ",
+            "municipio": "TUNUNGUÁ",
+            "longitud": "-73.9331548",
+            "latitud": "5.730582208"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15835",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "TURMEQUE",
-            "Longitud": "-73.49184702",
-            "Latitud": "5.323252768"
+            "dep": "15",
+            "muni": "15835",
+            "departamento": "BOYACÁ",
+            "municipio": "TURMEQUÉ",
+            "longitud": "-73.49184702",
+            "latitud": "5.323252768"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15837",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15837",
+            "departamento": "BOYACÁ",
             "municipio": "TUTA",
-            "Longitud": "-73.22597294",
-            "Latitud": "5.690968244"
+            "longitud": "-73.22597294",
+            "latitud": "5.690968244"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15839",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "TUTAZA",
-            "Longitud": "-72.85603548",
-            "Latitud": "6.032607903"
+            "dep": "15",
+            "muni": "15839",
+            "departamento": "BOYACÁ",
+            "municipio": "TUTAZÁ",
+            "longitud": "-72.85603548",
+            "latitud": "6.032607903"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15842",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "UMBITA",
-            "Longitud": "-73.45691657",
-            "Latitud": "5.221176201"
+            "dep": "15",
+            "muni": "15842",
+            "departamento": "BOYACÁ",
+            "municipio": "ÚMBITA",
+            "longitud": "-73.45691657",
+            "latitud": "5.221176201"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15861",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15861",
+            "departamento": "BOYACÁ",
             "municipio": "VENTAQUEMADA",
-            "Longitud": "-73.52237325",
-            "Latitud": "5.368733979"
+            "longitud": "-73.52237325",
+            "latitud": "5.368733979"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15879",
-            "Nombre departamento": "BOYACÁ",
-            "municipio": "VIRACACHA",
-            "Longitud": "-73.29689965",
-            "Latitud": "5.436788535"
+            "dep": "15",
+            "muni": "15879",
+            "departamento": "BOYACÁ",
+            "municipio": "VIRACACHÁ",
+            "longitud": "-73.29689965",
+            "latitud": "5.436788535"
         },
         {
-            "Código departamento": "15",
-            "Código municipio": "15897",
-            "Nombre departamento": "BOYACÁ",
+            "dep": "15",
+            "muni": "15897",
+            "departamento": "BOYACÁ",
             "municipio": "ZETAQUIRA",
-            "Longitud": "-73.16905201",
-            "Latitud": "5.282116052"
+            "longitud": "-73.16905201",
+            "latitud": "5.282116052"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17001",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17001",
+            "departamento": "CALDAS",
             "municipio": "MANIZALES",
-            "Longitud": "-75.49104898",
-            "Latitud": "5.057688197"
+            "longitud": "-75.49104898",
+            "latitud": "5.057688197"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17013",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17013",
+            "departamento": "CALDAS",
             "municipio": "AGUADAS",
-            "Longitud": "-75.45486967",
-            "Latitud": "5.610244456"
+            "longitud": "-75.45486967",
+            "latitud": "5.610244456"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17042",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17042",
+            "departamento": "CALDAS",
             "municipio": "ANSERMA",
-            "Longitud": "-75.78434266",
-            "Latitud": "5.236474391"
+            "longitud": "-75.78434266",
+            "latitud": "5.236474391"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17050",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17050",
+            "departamento": "CALDAS",
             "municipio": "ARANZAZU",
-            "Longitud": "-75.49125461",
-            "Latitud": "5.271141768"
+            "longitud": "-75.49125461",
+            "latitud": "5.271141768"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17088",
-            "Nombre departamento": "CALDAS",
-            "municipio": "BELALCAZAR",
-            "Longitud": "-75.8119183",
-            "Latitud": "4.9937939"
+            "dep": "17",
+            "muni": "17088",
+            "departamento": "CALDAS",
+            "municipio": "BELALCÁZAR",
+            "longitud": "-75.8119183",
+            "latitud": "4.9937939"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17174",
-            "Nombre departamento": "CALDAS",
-            "municipio": "CHINCHINA",
-            "Longitud": "-75.60748073",
-            "Latitud": "4.985812862"
+            "dep": "17",
+            "muni": "17174",
+            "departamento": "CALDAS",
+            "municipio": "CHINCHINÁ",
+            "longitud": "-75.60748073",
+            "latitud": "4.985812862"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17272",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17272",
+            "departamento": "CALDAS",
             "municipio": "FILADELFIA",
-            "Longitud": "-75.56247406",
-            "Latitud": "5.29709071"
+            "longitud": "-75.56247406",
+            "latitud": "5.29709071"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17380",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17380",
+            "departamento": "CALDAS",
             "municipio": "LA DORADA",
-            "Longitud": "-74.65820562",
-            "Latitud": "5.444406098"
+            "longitud": "-74.65820562",
+            "latitud": "5.444406098"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17388",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17388",
+            "departamento": "CALDAS",
             "municipio": "LA MERCED",
-            "Longitud": "-75.54790789",
-            "Latitud": "5.39477941"
+            "longitud": "-75.54790789",
+            "latitud": "5.39477941"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17433",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17433",
+            "departamento": "CALDAS",
             "municipio": "MANZANARES",
-            "Longitud": "-75.15282885",
-            "Latitud": "5.255720253"
+            "longitud": "-75.15282885",
+            "latitud": "5.255720253"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17442",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17442",
+            "departamento": "CALDAS",
             "municipio": "MARMATO",
-            "Longitud": "-75.60024162",
-            "Latitud": "5.47400482"
+            "longitud": "-75.60024162",
+            "latitud": "5.47400482"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17444",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17444",
+            "departamento": "CALDAS",
             "municipio": "MARQUETALIA",
-            "Longitud": "-75.05309703",
-            "Latitud": "5.297524561"
+            "longitud": "-75.05309703",
+            "latitud": "5.297524561"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17446",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17446",
+            "departamento": "CALDAS",
             "municipio": "MARULANDA",
-            "Longitud": "-75.25940253",
-            "Latitud": "5.284330464"
+            "longitud": "-75.25940253",
+            "latitud": "5.284330464"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17486",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17486",
+            "departamento": "CALDAS",
             "municipio": "NEIRA",
-            "Longitud": "-75.51984208",
-            "Latitud": "5.166705703"
+            "longitud": "-75.51984208",
+            "latitud": "5.166705703"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17495",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17495",
+            "departamento": "CALDAS",
             "municipio": "NORCASIA",
-            "Longitud": "-74.88954408",
-            "Latitud": "5.574795393"
+            "longitud": "-74.88954408",
+            "latitud": "5.574795393"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17513",
-            "Nombre departamento": "CALDAS",
-            "municipio": "PACORA",
-            "Longitud": "-75.45962126",
-            "Latitud": "5.527171733"
+            "dep": "17",
+            "muni": "17513",
+            "departamento": "CALDAS",
+            "municipio": "PÁCORA",
+            "longitud": "-75.45962126",
+            "latitud": "5.527171733"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17524",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17524",
+            "departamento": "CALDAS",
             "municipio": "PALESTINA",
-            "Longitud": "-75.62150256",
-            "Latitud": "5.020571168"
+            "longitud": "-75.62150256",
+            "latitud": "5.020571168"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17541",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17541",
+            "departamento": "CALDAS",
             "municipio": "PENSILVANIA",
-            "Longitud": "-75.16029852",
-            "Latitud": "5.383280594"
+            "longitud": "-75.16029852",
+            "latitud": "5.383280594"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17614",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17614",
+            "departamento": "CALDAS",
             "municipio": "RIOSUCIO",
-            "Longitud": "-75.70206971",
-            "Latitud": "5.423680913"
+            "longitud": "-75.70206971",
+            "latitud": "5.423680913"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17616",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17616",
+            "departamento": "CALDAS",
             "municipio": "RISARALDA",
-            "Longitud": "-75.76721954",
-            "Latitud": "5.164508957"
+            "longitud": "-75.76721954",
+            "latitud": "5.164508957"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17653",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17653",
+            "departamento": "CALDAS",
             "municipio": "SALAMINA",
-            "Longitud": "-75.48722244",
-            "Latitud": "5.403024515"
+            "longitud": "-75.48722244",
+            "latitud": "5.403024515"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17662",
-            "Nombre departamento": "CALDAS",
-            "municipio": "SAMANA",
-            "Longitud": "-74.99225776",
-            "Latitud": "5.413086301"
+            "dep": "17",
+            "muni": "17662",
+            "departamento": "CALDAS",
+            "municipio": "SAMANÁ",
+            "longitud": "-74.99225776",
+            "latitud": "5.413086301"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17665",
-            "Nombre departamento": "CALDAS",
-            "municipio": "SAN JOSE",
-            "Longitud": "-75.79200444",
-            "Latitud": "5.081569475"
+            "dep": "17",
+            "muni": "17665",
+            "departamento": "CALDAS",
+            "municipio": "SAN JOSÉ",
+            "longitud": "-75.79200444",
+            "latitud": "5.081569475"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17777",
-            "Nombre departamento": "CALDAS",
-            "municipio": "SUPIA",
-            "Longitud": "-75.64966031",
-            "Latitud": "5.446842982"
+            "dep": "17",
+            "muni": "17777",
+            "departamento": "CALDAS",
+            "municipio": "SUPÍA",
+            "longitud": "-75.64966031",
+            "latitud": "5.446842982"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17867",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17867",
+            "departamento": "CALDAS",
             "municipio": "VICTORIA",
-            "Longitud": "-74.91115304",
-            "Latitud": "5.3174202"
+            "longitud": "-74.91115304",
+            "latitud": "5.3174202"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17873",
-            "Nombre departamento": "CALDAS",
-            "municipio": "VILLAMARIA",
-            "Longitud": "-75.5137606",
-            "Latitud": "5.043806686"
+            "dep": "17",
+            "muni": "17873",
+            "departamento": "CALDAS",
+            "municipio": "VILLAMARÍA",
+            "longitud": "-75.5137606",
+            "latitud": "5.043806686"
         },
         {
-            "Código departamento": "17",
-            "Código municipio": "17877",
-            "Nombre departamento": "CALDAS",
+            "dep": "17",
+            "muni": "17877",
+            "departamento": "CALDAS",
             "municipio": "VITERBO",
-            "Longitud": "-75.87060986",
-            "Latitud": "5.062664236"
+            "longitud": "-75.87060986",
+            "latitud": "5.062664236"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18001",
-            "Nombre departamento": "CAQUETÁ",
+            "dep": "18",
+            "muni": "18001",
+            "departamento": "CAQUETÁ",
             "municipio": "FLORENCIA",
-            "Longitud": "-75.60856043",
-            "Latitud": "1.61792293"
+            "longitud": "-75.60856043",
+            "latitud": "1.61792293"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18029",
-            "Nombre departamento": "CAQUETÁ",
+            "dep": "18",
+            "muni": "18029",
+            "departamento": "CAQUETÁ",
             "municipio": "ALBANIA",
-            "Longitud": "-75.87837054",
-            "Latitud": "1.328522088"
+            "longitud": "-75.87837054",
+            "latitud": "1.328522088"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18094",
-            "Nombre departamento": "CAQUETÁ",
-            "municipio": "BELEN DE LOS ANDAQUIES",
-            "Longitud": "-75.87247395",
-            "Latitud": "1.415786446"
+            "dep": "18",
+            "muni": "18094",
+            "departamento": "CAQUETÁ",
+            "municipio": "BELÉN DE LOS ANDAQUÍES",
+            "longitud": "-75.87247395",
+            "latitud": "1.415786446"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18150",
-            "Nombre departamento": "CAQUETÁ",
-            "municipio": "CARTAGENA DEL CHAIRA",
-            "Longitud": "-74.84719837",
-            "Latitud": "1.335134955"
+            "dep": "18",
+            "muni": "18150",
+            "departamento": "CAQUETÁ",
+            "municipio": "CARTAGENA DEL CHAIRÁ",
+            "longitud": "-74.84719837",
+            "latitud": "1.335134955"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18205",
-            "Nombre departamento": "CAQUETÁ",
+            "dep": "18",
+            "muni": "18205",
+            "departamento": "CAQUETÁ",
             "municipio": "CURILLO",
-            "Longitud": "-75.91920435",
-            "Latitud": "1.033473748"
+            "longitud": "-75.91920435",
+            "latitud": "1.033473748"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18247",
-            "Nombre departamento": "CAQUETÁ",
+            "dep": "18",
+            "muni": "18247",
+            "departamento": "CAQUETÁ",
             "municipio": "EL DONCELLO",
-            "Longitud": "-75.28356287",
-            "Latitud": "1.679872476"
+            "longitud": "-75.28356287",
+            "latitud": "1.679872476"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18256",
-            "Nombre departamento": "CAQUETÁ",
-            "municipio": "EL PAUJIL",
-            "Longitud": "-75.32612346",
-            "Latitud": "1.570373283"
+            "dep": "18",
+            "muni": "18256",
+            "departamento": "CAQUETÁ",
+            "municipio": "EL PAUJÍL",
+            "longitud": "-75.32612346",
+            "latitud": "1.570373283"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18410",
-            "Nombre departamento": "CAQUETÁ",
+            "dep": "18",
+            "muni": "18410",
+            "departamento": "CAQUETÁ",
             "municipio": "LA MONTAÑITA",
-            "Longitud": "-75.43640776",
-            "Latitud": "1.479172635"
+            "longitud": "-75.43640776",
+            "latitud": "1.479172635"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18460",
-            "Nombre departamento": "CAQUETÁ",
-            "municipio": "MILAN",
-            "Longitud": "-75.50696203",
-            "Latitud": "1.290427202"
+            "dep": "18",
+            "muni": "18460",
+            "departamento": "CAQUETÁ",
+            "municipio": "MILÁN",
+            "longitud": "-75.50696203",
+            "latitud": "1.290427202"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18479",
-            "Nombre departamento": "CAQUETÁ",
+            "dep": "18",
+            "muni": "18479",
+            "departamento": "CAQUETÁ",
             "municipio": "MORELIA",
-            "Longitud": "-75.7245814",
-            "Latitud": "1.487623369"
+            "longitud": "-75.7245814",
+            "latitud": "1.487623369"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18592",
-            "Nombre departamento": "CAQUETÁ",
+            "dep": "18",
+            "muni": "18592",
+            "departamento": "CAQUETÁ",
             "municipio": "PUERTO RICO",
-            "Longitud": "-75.15748874",
-            "Latitud": "1.908935073"
+            "longitud": "-75.15748874",
+            "latitud": "1.908935073"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18610",
-            "Nombre departamento": "CAQUETÁ",
-            "municipio": "SAN JOSE DEL FRAGUA",
-            "Longitud": "-75.9735381",
-            "Latitud": "1.33194848"
+            "dep": "18",
+            "muni": "18610",
+            "departamento": "CAQUETÁ",
+            "municipio": "SAN JOSÉ DEL FRAGUA",
+            "longitud": "-75.9735381",
+            "latitud": "1.33194848"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18753",
-            "Nombre departamento": "CAQUETÁ",
-            "municipio": "SAN VICENTE DEL CAGUAN",
-            "Longitud": "-74.76734058",
-            "Latitud": "2.119786131"
+            "dep": "18",
+            "muni": "18753",
+            "departamento": "CAQUETÁ",
+            "municipio": "SAN VICENTE DEL CAGUÁN",
+            "longitud": "-74.76734058",
+            "latitud": "2.119786131"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18756",
-            "Nombre departamento": "CAQUETÁ",
+            "dep": "18",
+            "muni": "18756",
+            "departamento": "CAQUETÁ",
             "municipio": "SOLANO",
-            "Longitud": "-75.25370431",
-            "Latitud": "0.698977525"
+            "longitud": "-75.25370431",
+            "latitud": "0.698977525"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18785",
-            "Nombre departamento": "CAQUETÁ",
+            "dep": "18",
+            "muni": "18785",
+            "departamento": "CAQUETÁ",
             "municipio": "SOLITA",
-            "Longitud": "-75.61973409",
-            "Latitud": "0.876668003"
+            "longitud": "-75.61973409",
+            "latitud": "0.876668003"
         },
         {
-            "Código departamento": "18",
-            "Código municipio": "18860",
-            "Nombre departamento": "CAQUETÁ",
-            "municipio": "VALPARAISO",
-            "Longitud": "-75.70658353",
-            "Latitud": "1.194583032"
+            "dep": "19",
+            "muni": "19001",
+            "departamento": "CAUCA",
+            "municipio": "POPAYÁN",
+            "longitud": "-76.57406468",
+            "latitud": "2.482503391"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19001",
-            "Nombre departamento": "CAUCA",
-            "municipio": "POPAYAN",
-            "Longitud": "-76.57406468",
-            "Latitud": "2.482503391"
-        },
-        {
-            "Código departamento": "19",
-            "Código municipio": "19022",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19022",
+            "departamento": "CAUCA",
             "municipio": "ALMAGUER",
-            "Longitud": "-76.85592449",
-            "Latitud": "1.913360233"
+            "longitud": "-76.85592449",
+            "latitud": "1.913360233"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19050",
-            "Nombre departamento": "CAUCA",
-            "municipio": "ARGELIA",
-            "Longitud": "-77.24945028",
-            "Latitud": "2.256754909"
-        },
-        {
-            "Código departamento": "19",
-            "Código municipio": "19075",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19075",
+            "departamento": "CAUCA",
             "municipio": "BALBOA",
-            "Longitud": "-77.21589814",
-            "Latitud": "2.040478768"
+            "longitud": "-77.21589814",
+            "latitud": "2.040478768"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19100",
-            "Nombre departamento": "CAUCA",
-            "municipio": "BOLIVAR",
-            "Longitud": "-76.96631204",
-            "Latitud": "1.837416404"
+            "dep": "19",
+            "muni": "19100",
+            "departamento": "CAUCA",
+            "municipio": "BOLÍVAR",
+            "longitud": "-76.96631204",
+            "latitud": "1.837416404"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19110",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19110",
+            "departamento": "CAUCA",
             "municipio": "BUENOS AIRES",
-            "Longitud": "-76.64228059",
-            "Latitud": "3.01542683"
+            "longitud": "-76.64228059",
+            "latitud": "3.01542683"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19130",
-            "Nombre departamento": "CAUCA",
-            "municipio": "CAJIBIO",
-            "Longitud": "-76.57088427",
-            "Latitud": "2.623338254"
+            "dep": "19",
+            "muni": "19130",
+            "departamento": "CAUCA",
+            "municipio": "CAJIBÍO",
+            "longitud": "-76.57088427",
+            "latitud": "2.623338254"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19137",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19137",
+            "departamento": "CAUCA",
             "municipio": "CALDONO",
-            "Longitud": "-76.48444786",
-            "Latitud": "2.798130826"
+            "longitud": "-76.48444786",
+            "latitud": "2.798130826"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19142",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19142",
+            "departamento": "CAUCA",
             "municipio": "CALOTO",
-            "Longitud": "-76.40848704",
-            "Latitud": "3.034070778"
+            "longitud": "-76.40848704",
+            "latitud": "3.034070778"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19212",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19212",
+            "departamento": "CAUCA",
             "municipio": "CORINTO",
-            "Longitud": "-76.26131419",
-            "Latitud": "3.173815457"
+            "longitud": "-76.26131419",
+            "latitud": "3.173815457"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19256",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19256",
+            "departamento": "CAUCA",
             "municipio": "EL TAMBO",
-            "Longitud": "-76.81077225",
-            "Latitud": "2.45137136"
+            "longitud": "-76.81077225",
+            "latitud": "2.45137136"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19290",
-            "Nombre departamento": "CAUCA",
-            "municipio": "FLORENCIA",
-            "Longitud": "-77.07253426",
-            "Latitud": "1.682522463"
+            "dep": "19",
+            "muni": "19300",
+            "departamento": "CAUCA",
+            "municipio": "GUACHENÉ",
+            "longitud": "-76.39218874",
+            "latitud": "3.134153295"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19300",
-            "Nombre departamento": "CAUCA",
-            "municipio": "GUACHENE",
-            "Longitud": "-76.39218874",
-            "Latitud": "3.134153295"
-        },
-        {
-            "Código departamento": "19",
-            "Código municipio": "19318",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19318",
+            "departamento": "CAUCA",
             "municipio": "GUAPI",
-            "Longitud": "-77.88803347",
-            "Latitud": "2.572918366"
+            "longitud": "-77.88803347",
+            "latitud": "2.572918366"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19355",
-            "Nombre departamento": "CAUCA",
-            "municipio": "INZA",
-            "Longitud": "-76.06350272",
-            "Latitud": "2.549182984"
+            "dep": "19",
+            "muni": "19355",
+            "departamento": "CAUCA",
+            "municipio": "INZÁ",
+            "longitud": "-76.06350272",
+            "latitud": "2.549182984"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19364",
-            "Nombre departamento": "CAUCA",
-            "municipio": "JAMBALO",
-            "Longitud": "-76.32387818",
-            "Latitud": "2.777837347"
+            "dep": "19",
+            "muni": "19364",
+            "departamento": "CAUCA",
+            "municipio": "JAMBALÓ",
+            "longitud": "-76.32387818",
+            "latitud": "2.777837347"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19392",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19392",
+            "departamento": "CAUCA",
             "municipio": "LA SIERRA",
-            "Longitud": "-76.76320908",
-            "Latitud": "2.179322405"
+            "longitud": "-76.76320908",
+            "latitud": "2.179322405"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19397",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19397",
+            "departamento": "CAUCA",
             "municipio": "LA VEGA",
-            "Longitud": "-76.7788973",
-            "Latitud": "2.001109224"
+            "longitud": "-76.7788973",
+            "latitud": "2.001109224"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19418",
-            "Nombre departamento": "CAUCA",
-            "municipio": "LOPEZ DE MICAY",
-            "Longitud": "-77.24769154",
-            "Latitud": "2.846715932"
+            "dep": "19",
+            "muni": "19418",
+            "departamento": "CAUCA",
+            "municipio": "LÓPEZ DE MICAY",
+            "longitud": "-77.24769154",
+            "latitud": "2.846715932"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19450",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19450",
+            "departamento": "CAUCA",
             "municipio": "MERCADERES",
-            "Longitud": "-77.16584432",
-            "Latitud": "1.775772495"
+            "longitud": "-77.16584432",
+            "latitud": "1.775772495"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19455",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19455",
+            "departamento": "CAUCA",
             "municipio": "MIRANDA",
-            "Longitud": "-76.22886987",
-            "Latitud": "3.253095405"
+            "longitud": "-76.22886987",
+            "latitud": "3.253095405"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19473",
-            "Nombre departamento": "CAUCA",
-            "municipio": "MORALES",
-            "Longitud": "-76.62922056",
-            "Latitud": "2.754558567"
-        },
-        {
-            "Código departamento": "19",
-            "Código municipio": "19513",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19513",
+            "departamento": "CAUCA",
             "municipio": "PADILLA",
-            "Longitud": "-76.31329089",
-            "Latitud": "3.220853836"
+            "longitud": "-76.31329089",
+            "latitud": "3.220853836"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19517",
-            "Nombre departamento": "CAUCA",
-            "municipio": "PAEZ",
-            "Longitud": "-75.97196451",
-            "Latitud": "2.641366768"
+            "dep": "19",
+            "muni": "19532",
+            "departamento": "CAUCA",
+            "municipio": "PATÍA",
+            "longitud": "-76.98097859",
+            "latitud": "2.115670227"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19532",
-            "Nombre departamento": "CAUCA",
-            "municipio": "PATIA",
-            "Longitud": "-76.98097859",
-            "Latitud": "2.115670227"
-        },
-        {
-            "Código departamento": "19",
-            "Código municipio": "19533",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19533",
+            "departamento": "CAUCA",
             "municipio": "PIAMONTE",
-            "Longitud": "-76.32576425",
-            "Latitud": "1.117197782"
+            "longitud": "-76.32576425",
+            "latitud": "1.117197782"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19548",
-            "Nombre departamento": "CAUCA",
-            "municipio": "PIENDAMO",
-            "Longitud": "-76.52850592",
-            "Latitud": "2.641987578"
+            "dep": "19",
+            "muni": "19548",
+            "departamento": "CAUCA",
+            "municipio": "PIENDAMÓ - TUNÍA",
+            "longitud": "-76.52850592",
+            "latitud": "2.641987578"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19573",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19573",
+            "departamento": "CAUCA",
             "municipio": "PUERTO TEJADA",
-            "Longitud": "-76.4173078",
-            "Latitud": "3.233294127"
+            "longitud": "-76.4173078",
+            "latitud": "3.233294127"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19585",
-            "Nombre departamento": "CAUCA",
-            "municipio": "PURACE",
-            "Longitud": "-76.49563894",
-            "Latitud": "2.342644047"
+            "dep": "19",
+            "muni": "19585",
+            "departamento": "CAUCA",
+            "municipio": "PURACÉ",
+            "longitud": "-76.49563894",
+            "latitud": "2.342644047"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19622",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19622",
+            "departamento": "CAUCA",
             "municipio": "ROSAS",
-            "Longitud": "-76.74035187",
-            "Latitud": "2.260979699"
+            "longitud": "-76.74035187",
+            "latitud": "2.260979699"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19693",
-            "Nombre departamento": "CAUCA",
-            "municipio": "SAN SEBASTIAN",
-            "Longitud": "-76.7693316",
-            "Latitud": "1.838373887"
+            "dep": "19",
+            "muni": "19693",
+            "departamento": "CAUCA",
+            "municipio": "SAN SEBASTIÁN",
+            "longitud": "-76.7693316",
+            "latitud": "1.838373887"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19698",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19698",
+            "departamento": "CAUCA",
             "municipio": "SANTANDER DE QUILICHAO",
-            "Longitud": "-76.48537029",
-            "Latitud": "3.016053901"
+            "longitud": "-76.48537029",
+            "latitud": "3.016053901"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19701",
-            "Nombre departamento": "CAUCA",
-            "municipio": "SANTA ROSA",
-            "Longitud": "-76.57397297",
-            "Latitud": "1.702420284"
-        },
-        {
-            "Código departamento": "19",
-            "Código municipio": "19743",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19743",
+            "departamento": "CAUCA",
             "municipio": "SILVIA",
-            "Longitud": "-76.37957042",
-            "Latitud": "2.611815645"
+            "longitud": "-76.37957042",
+            "latitud": "2.611815645"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19760",
-            "Nombre departamento": "CAUCA",
-            "municipio": "SOTARA PAISPAMBA",
-            "Longitud": "-76.61329815",
-            "Latitud": "2.253134067"
+            "dep": "19",
+            "muni": "19760",
+            "departamento": "CAUCA",
+            "municipio": "SOTARÁ PAISPAMBA",
+            "longitud": "-76.61329815",
+            "latitud": "2.253134067"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19780",
-            "Nombre departamento": "CAUCA",
-            "municipio": "SUAREZ",
-            "Longitud": "-76.69344711",
-            "Latitud": "2.959701537"
+            "dep": "19",
+            "muni": "19780",
+            "departamento": "CAUCA",
+            "municipio": "SUÁREZ",
+            "longitud": "-76.69344711",
+            "latitud": "2.959701537"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19785",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19785",
+            "departamento": "CAUCA",
             "municipio": "SUCRE",
-            "Longitud": "-76.92627731",
-            "Latitud": "2.038251397"
+            "longitud": "-76.92627731",
+            "latitud": "2.038251397"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19807",
-            "Nombre departamento": "CAUCA",
-            "municipio": "TIMBIO",
-            "Longitud": "-76.68423879",
-            "Latitud": "2.349976425"
+            "dep": "19",
+            "muni": "19807",
+            "departamento": "CAUCA",
+            "municipio": "TIMBÍO",
+            "longitud": "-76.68423879",
+            "latitud": "2.349976425"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19809",
-            "Nombre departamento": "CAUCA",
-            "municipio": "TIMBIQUI",
-            "Longitud": "-77.66756524",
-            "Latitud": "2.777413702"
+            "dep": "19",
+            "muni": "19809",
+            "departamento": "CAUCA",
+            "municipio": "TIMBIQUÍ",
+            "longitud": "-77.66756524",
+            "latitud": "2.777413702"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19821",
-            "Nombre departamento": "CAUCA",
-            "municipio": "TORIBIO",
-            "Longitud": "-76.27112721",
-            "Latitud": "2.951450409"
+            "dep": "19",
+            "muni": "19821",
+            "departamento": "CAUCA",
+            "municipio": "TORIBÍO",
+            "longitud": "-76.27112721",
+            "latitud": "2.951450409"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19824",
-            "Nombre departamento": "CAUCA",
-            "municipio": "TOTORO",
-            "Longitud": "-76.40244251",
-            "Latitud": "2.510229193"
+            "dep": "19",
+            "muni": "19824",
+            "departamento": "CAUCA",
+            "municipio": "TOTORÓ",
+            "longitud": "-76.40244251",
+            "latitud": "2.510229193"
         },
         {
-            "Código departamento": "19",
-            "Código municipio": "19845",
-            "Nombre departamento": "CAUCA",
+            "dep": "19",
+            "muni": "19845",
+            "departamento": "CAUCA",
             "municipio": "VILLA RICA",
-            "Longitud": "-76.45787266",
-            "Latitud": "3.177577926"
+            "longitud": "-76.45787266",
+            "latitud": "3.177577926"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20001",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20001",
+            "departamento": "CESAR",
             "municipio": "VALLEDUPAR",
-            "Longitud": "-73.25938931",
-            "Latitud": "10.46048122",
+            "longitud": "-73.25938931",
+            "latitud": "10.46048122",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DEL CACIQUE UPAR"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20011",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20011",
+            "departamento": "CESAR",
             "municipio": "AGUACHICA",
-            "Longitud": "-73.59902858",
-            "Latitud": "8.310336958"
+            "longitud": "-73.59902858",
+            "latitud": "8.310336958"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20013",
-            "Nombre departamento": "CESAR",
-            "municipio": "AGUSTIN CODAZZI",
-            "Longitud": "-73.23839617",
-            "Latitud": "10.04045799",
+            "dep": "20",
+            "muni": "20013",
+            "departamento": "CESAR",
+            "municipio": "AGUSTÍN CODAZZI",
+            "longitud": "-73.23839617",
+            "latitud": "10.04045799",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DEL CACIQUE UPAR"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20032",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20032",
+            "departamento": "CESAR",
             "municipio": "ASTREA",
-            "Longitud": "-73.9758638",
-            "Latitud": "9.498161108"
+            "longitud": "-73.9758638",
+            "latitud": "9.498161108"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20045",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20045",
+            "departamento": "CESAR",
             "municipio": "BECERRIL",
-            "Longitud": "-73.27923167",
-            "Latitud": "9.704606116"
+            "longitud": "-73.27923167",
+            "latitud": "9.704606116"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20060",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20060",
+            "departamento": "CESAR",
             "municipio": "BOSCONIA",
-            "Longitud": "-73.88876766",
-            "Latitud": "9.9750947"
+            "longitud": "-73.88876766",
+            "latitud": "9.9750947"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20175",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20175",
+            "departamento": "CESAR",
             "municipio": "CHIMICHAGUA",
-            "Longitud": "-73.81332845",
-            "Latitud": "9.25827144"
+            "longitud": "-73.81332845",
+            "latitud": "9.25827144"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20178",
-            "Nombre departamento": "CESAR",
-            "municipio": "CHIRIGUANA",
-            "Longitud": "-73.60014444",
-            "Latitud": "9.361189611"
+            "dep": "20",
+            "muni": "20178",
+            "departamento": "CESAR",
+            "municipio": "CHIRIGUANÁ",
+            "longitud": "-73.60014444",
+            "latitud": "9.361189611"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20228",
-            "Nombre departamento": "CESAR",
-            "municipio": "CURUMANI",
-            "Longitud": "-73.54098652",
-            "Latitud": "9.201810592"
+            "dep": "20",
+            "muni": "20228",
+            "departamento": "CESAR",
+            "municipio": "CURUMANÍ",
+            "longitud": "-73.54098652",
+            "latitud": "9.201810592"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20238",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20238",
+            "departamento": "CESAR",
             "municipio": "EL COPEY",
-            "Longitud": "-73.96271744",
-            "Latitud": "10.14952543"
+            "longitud": "-73.96271744",
+            "latitud": "10.14952543"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20250",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20250",
+            "departamento": "CESAR",
             "municipio": "EL PASO",
-            "Longitud": "-73.74178848",
-            "Latitud": "9.668470391"
+            "longitud": "-73.74178848",
+            "latitud": "9.668470391"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20295",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20295",
+            "departamento": "CESAR",
             "municipio": "GAMARRA",
-            "Longitud": "-73.74376",
-            "Latitud": "8.320449051"
+            "longitud": "-73.74376",
+            "latitud": "8.320449051"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20310",
-            "Nombre departamento": "CESAR",
-            "municipio": "GONZALEZ",
-            "Longitud": "-73.38003986",
-            "Latitud": "8.389604097"
+            "dep": "20",
+            "muni": "20310",
+            "departamento": "CESAR",
+            "municipio": "GONZÁLEZ",
+            "longitud": "-73.38003986",
+            "latitud": "8.389604097"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20383",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20383",
+            "departamento": "CESAR",
             "municipio": "LA GLORIA",
-            "Longitud": "-73.80321012",
-            "Latitud": "8.619297878"
+            "longitud": "-73.80321012",
+            "latitud": "8.619297878"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20400",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20400",
+            "departamento": "CESAR",
             "municipio": "LA JAGUA DE IBIRICO",
-            "Longitud": "-73.33422791",
-            "Latitud": "9.5638873"
+            "longitud": "-73.33422791",
+            "latitud": "9.5638873"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20443",
-            "Nombre departamento": "CESAR",
-            "municipio": "MANAURE BALCON DEL CESAR",
-            "Longitud": "-73.02832046",
-            "Latitud": "10.39089864",
+            "dep": "20",
+            "muni": "20443",
+            "departamento": "CESAR",
+            "municipio": "MANAURE BALCÓN DEL CESAR",
+            "longitud": "-73.02832046",
+            "latitud": "10.39089864",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DEL CACIQUE UPAR"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20517",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20517",
+            "departamento": "CESAR",
             "municipio": "PAILITAS",
-            "Longitud": "-73.62581668",
-            "Latitud": "8.956033206"
+            "longitud": "-73.62581668",
+            "latitud": "8.956033206"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20550",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20550",
+            "departamento": "CESAR",
             "municipio": "PELAYA",
-            "Longitud": "-73.66635487",
-            "Latitud": "8.688650964"
+            "longitud": "-73.66635487",
+            "latitud": "8.688650964"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20570",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20570",
+            "departamento": "CESAR",
             "municipio": "PUEBLO BELLO",
-            "Longitud": "-73.58901062",
-            "Latitud": "10.4150616"
+            "longitud": "-73.58901062",
+            "latitud": "10.4150616"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20614",
-            "Nombre departamento": "CESAR",
-            "municipio": "RIO DE ORO",
-            "Longitud": "-73.3863952",
-            "Latitud": "8.292287384"
+            "dep": "20",
+            "muni": "20614",
+            "departamento": "CESAR",
+            "municipio": "RÍO DE ORO",
+            "longitud": "-73.3863952",
+            "latitud": "8.292287384"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20621",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20621",
+            "departamento": "CESAR",
             "municipio": "LA PAZ",
-            "Longitud": "-73.17136291",
-            "Latitud": "10.38748954",
+            "longitud": "-73.17136291",
+            "latitud": "10.38748954",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DEL CACIQUE UPAR"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20710",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20710",
+            "departamento": "CESAR",
             "municipio": "SAN ALBERTO",
-            "Longitud": "-73.39422534",
-            "Latitud": "7.76082642"
+            "longitud": "-73.39422534",
+            "latitud": "7.76082642"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20750",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20750",
+            "departamento": "CESAR",
             "municipio": "SAN DIEGO",
-            "Longitud": "-73.18121808",
-            "Latitud": "10.33303286",
+            "longitud": "-73.18121808",
+            "latitud": "10.33303286",
             "Área metropolitana": "AREA METROPOLITANA DEL VALLE DEL CACIQUE UPAR"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20770",
-            "Nombre departamento": "CESAR",
-            "municipio": "SAN MARTIN",
-            "Longitud": "-73.51097518",
-            "Latitud": "7.999895459"
+            "dep": "20",
+            "muni": "20770",
+            "departamento": "CESAR",
+            "municipio": "SAN MARTÍN",
+            "longitud": "-73.51097518",
+            "latitud": "7.999895459"
         },
         {
-            "Código departamento": "20",
-            "Código municipio": "20787",
-            "Nombre departamento": "CESAR",
+            "dep": "20",
+            "muni": "20787",
+            "departamento": "CESAR",
             "municipio": "TAMALAMEQUE",
-            "Longitud": "-73.8121728",
-            "Latitud": "8.861724986"
+            "longitud": "-73.8121728",
+            "latitud": "8.861724986"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23001",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "MONTERIA",
-            "Longitud": "-75.87557791",
-            "Latitud": "8.745132591"
+            "dep": "23",
+            "muni": "23001",
+            "departamento": "CÓRDOBA",
+            "municipio": "MONTERÍA",
+            "longitud": "-75.87557791",
+            "latitud": "8.745132591"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23068",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23068",
+            "departamento": "CÓRDOBA",
             "municipio": "AYAPEL",
-            "Longitud": "-75.14629076",
-            "Latitud": "8.314446629"
+            "longitud": "-75.14629076",
+            "latitud": "8.314446629"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23079",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "BUENAVISTA",
-            "Longitud": "-75.48089871",
-            "Latitud": "8.221165554"
-        },
-        {
-            "Código departamento": "23",
-            "Código municipio": "23090",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23090",
+            "departamento": "CÓRDOBA",
             "municipio": "CANALETE",
-            "Longitud": "-76.24139652",
-            "Latitud": "8.786944523"
+            "longitud": "-76.24139652",
+            "latitud": "8.786944523"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23162",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "CERETE",
-            "Longitud": "-75.79621652",
-            "Latitud": "8.888611812"
+            "dep": "23",
+            "muni": "23162",
+            "departamento": "CÓRDOBA",
+            "municipio": "CERETÉ",
+            "longitud": "-75.79621652",
+            "latitud": "8.888611812"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23168",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "CHIMA",
-            "Longitud": "-75.62689551",
-            "Latitud": "9.149480457"
+            "dep": "23",
+            "muni": "23168",
+            "departamento": "CÓRDOBA",
+            "municipio": "CHIMÁ",
+            "longitud": "-75.62689551",
+            "latitud": "9.149480457"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23182",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "CHINU",
-            "Longitud": "-75.39971962",
-            "Latitud": "9.105294089"
+            "dep": "23",
+            "muni": "23182",
+            "departamento": "CÓRDOBA",
+            "municipio": "CHINÚ",
+            "longitud": "-75.39971962",
+            "latitud": "9.105294089"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23189",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "CIENAGA DE ORO",
-            "Longitud": "-75.62078664",
-            "Latitud": "8.875502246"
+            "dep": "23",
+            "muni": "23189",
+            "departamento": "CÓRDOBA",
+            "municipio": "CIÉNAGA DE ORO",
+            "longitud": "-75.62078664",
+            "latitud": "8.875502246"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23300",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23300",
+            "departamento": "CÓRDOBA",
             "municipio": "COTORRA",
-            "Longitud": "-75.79914949",
-            "Latitud": "9.037088051"
+            "longitud": "-75.79914949",
+            "latitud": "9.037088051"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23350",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23350",
+            "departamento": "CÓRDOBA",
             "municipio": "LA APARTADA",
-            "Longitud": "-75.33901631",
-            "Latitud": "8.05245366"
+            "longitud": "-75.33901631",
+            "latitud": "8.05245366"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23417",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23417",
+            "departamento": "CÓRDOBA",
             "municipio": "LORICA",
-            "Longitud": "-75.8159954",
-            "Latitud": "9.240855143"
+            "longitud": "-75.8159954",
+            "latitud": "9.240855143"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23419",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "LOS CORDOBAS",
-            "Longitud": "-76.35519288",
-            "Latitud": "8.892168997"
+            "dep": "23",
+            "muni": "23419",
+            "departamento": "CÓRDOBA",
+            "municipio": "LOS CÓRDOBAS",
+            "longitud": "-76.35519288",
+            "latitud": "8.892168997"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23464",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23464",
+            "departamento": "CÓRDOBA",
             "municipio": "MOMIL",
-            "Longitud": "-75.67796062",
-            "Latitud": "9.240711917"
+            "longitud": "-75.67796062",
+            "latitud": "9.240711917"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23466",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "MONTELIBANO",
-            "Longitud": "-75.41681813",
-            "Latitud": "7.973777244"
+            "dep": "23",
+            "muni": "23466",
+            "departamento": "CÓRDOBA",
+            "municipio": "MONTELÍBANO",
+            "longitud": "-75.41681813",
+            "latitud": "7.973777244"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23500",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23500",
+            "departamento": "CÓRDOBA",
             "municipio": "MOÑITOS",
-            "Longitud": "-76.12939619",
-            "Latitud": "9.245280293"
+            "longitud": "-76.12939619",
+            "latitud": "9.245280293"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23555",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23555",
+            "departamento": "CÓRDOBA",
             "municipio": "PLANETA RICA",
-            "Longitud": "-75.58324299",
-            "Latitud": "8.408202562"
+            "longitud": "-75.58324299",
+            "latitud": "8.408202562"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23570",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23570",
+            "departamento": "CÓRDOBA",
             "municipio": "PUEBLO NUEVO",
-            "Longitud": "-75.50797138",
-            "Latitud": "8.504003297"
+            "longitud": "-75.50797138",
+            "latitud": "8.504003297"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23574",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23574",
+            "departamento": "CÓRDOBA",
             "municipio": "PUERTO ESCONDIDO",
-            "Longitud": "-76.26041108",
-            "Latitud": "9.005372178"
+            "longitud": "-76.26041108",
+            "latitud": "9.005372178"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23580",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23580",
+            "departamento": "CÓRDOBA",
             "municipio": "PUERTO LIBERTADOR",
-            "Longitud": "-75.67179975",
-            "Latitud": "7.888834815"
+            "longitud": "-75.67179975",
+            "latitud": "7.888834815"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23586",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "PURISIMA DE LA CONCEPCION",
-            "Longitud": "-75.72488526",
-            "Latitud": "9.239299079"
+            "dep": "23",
+            "muni": "23586",
+            "departamento": "CÓRDOBA",
+            "municipio": "PURÍSIMA DE LA CONCEPCIÓN",
+            "longitud": "-75.72488526",
+            "latitud": "9.239299079"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23660",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "SAHAGUN",
-            "Longitud": "-75.4459203",
-            "Latitud": "8.943125416"
+            "dep": "23",
+            "muni": "23660",
+            "departamento": "CÓRDOBA",
+            "municipio": "SAHAGÚN",
+            "longitud": "-75.4459203",
+            "latitud": "8.943125416"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23670",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "SAN ANDRES DE SOTAVENTO",
-            "Longitud": "-75.5088939",
-            "Latitud": "9.145162943"
+            "dep": "23",
+            "muni": "23670",
+            "departamento": "CÓRDOBA",
+            "municipio": "SAN ANDRÉS DE SOTAVENTO",
+            "longitud": "-75.5088939",
+            "latitud": "9.145162943"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23672",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23672",
+            "departamento": "CÓRDOBA",
             "municipio": "SAN ANTERO",
-            "Longitud": "-75.76077297",
-            "Latitud": "9.376217345"
+            "longitud": "-75.76077297",
+            "latitud": "9.376217345"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23675",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23675",
+            "departamento": "CÓRDOBA",
             "municipio": "SAN BERNARDO DEL VIENTO",
-            "Longitud": "-75.95474387",
-            "Latitud": "9.352301989"
+            "longitud": "-75.95474387",
+            "latitud": "9.352301989"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23678",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "SAN CARLOS",
-            "Longitud": "-75.69884549",
-            "Latitud": "8.799106591"
+            "dep": "23",
+            "muni": "23682",
+            "departamento": "CÓRDOBA",
+            "municipio": "SAN JOSÉ DE URÉ",
+            "longitud": "-75.5331329",
+            "latitud": "7.78718515"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23682",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "SAN JOSE DE URE",
-            "Longitud": "-75.5331329",
-            "Latitud": "7.78718515"
-        },
-        {
-            "Código departamento": "23",
-            "Código municipio": "23686",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23686",
+            "departamento": "CÓRDOBA",
             "municipio": "SAN PELAYO",
-            "Longitud": "-75.83512552",
-            "Latitud": "8.958010321"
+            "longitud": "-75.83512552",
+            "latitud": "8.958010321"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23807",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23807",
+            "departamento": "CÓRDOBA",
             "municipio": "TIERRALTA",
-            "Longitud": "-76.05969659",
-            "Latitud": "8.170378684"
+            "longitud": "-76.05969659",
+            "latitud": "8.170378684"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23815",
-            "Nombre departamento": "CÓRDOBA",
-            "municipio": "TUCHIN",
-            "Longitud": "-75.55445092",
-            "Latitud": "9.186965875"
+            "dep": "23",
+            "muni": "23815",
+            "departamento": "CÓRDOBA",
+            "municipio": "TUCHÍN",
+            "longitud": "-75.55445092",
+            "latitud": "9.186965875"
         },
         {
-            "Código departamento": "23",
-            "Código municipio": "23855",
-            "Nombre departamento": "CÓRDOBA",
+            "dep": "23",
+            "muni": "23855",
+            "departamento": "CÓRDOBA",
             "municipio": "VALENCIA",
-            "Longitud": "-76.15071869",
-            "Latitud": "8.255016584"
+            "longitud": "-76.15071869",
+            "latitud": "8.255016584"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25001",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25001",
+            "departamento": "CUNDINAMARCA",
             "municipio": "AGUA DE DIOS",
-            "Longitud": "-74.66921778",
-            "Latitud": "4.375312017"
+            "longitud": "-74.66921778",
+            "latitud": "4.375312017"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25019",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "ALBAN",
-            "Longitud": "-74.43826109",
-            "Latitud": "4.878022123"
+            "dep": "25",
+            "muni": "25019",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "ALBÁN",
+            "longitud": "-74.43826109",
+            "latitud": "4.878022123"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25035",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25035",
+            "departamento": "CUNDINAMARCA",
             "municipio": "ANAPOIMA",
-            "Longitud": "-74.52851753",
-            "Latitud": "4.562956175"
+            "longitud": "-74.52851753",
+            "latitud": "4.562956175"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25040",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25040",
+            "departamento": "CUNDINAMARCA",
             "municipio": "ANOLAIMA",
-            "Longitud": "-74.46384203",
-            "Latitud": "4.761695213"
+            "longitud": "-74.46384203",
+            "latitud": "4.761695213"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25053",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "ARBELAEZ",
-            "Longitud": "-74.41482562",
-            "Latitud": "4.272481672"
+            "dep": "25",
+            "muni": "25053",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "ARBELÁEZ",
+            "longitud": "-74.41482562",
+            "latitud": "4.272481672"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25086",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "BELTRAN",
-            "Longitud": "-74.7418023",
-            "Latitud": "4.802811459"
+            "dep": "25",
+            "muni": "25086",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "BELTRÁN",
+            "longitud": "-74.7418023",
+            "latitud": "4.802811459"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25095",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25095",
+            "departamento": "CUNDINAMARCA",
             "municipio": "BITUIMA",
-            "Longitud": "-74.53961893",
-            "Latitud": "4.872234339"
+            "longitud": "-74.53961893",
+            "latitud": "4.872234339"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25099",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "BOJACA",
-            "Longitud": "-74.34849164",
-            "Latitud": "4.741758118"
+            "dep": "25",
+            "muni": "25099",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "BOJACÁ",
+            "longitud": "-74.34849164",
+            "latitud": "4.741758118"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25120",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25120",
+            "departamento": "CUNDINAMARCA",
             "municipio": "CABRERA",
-            "Longitud": "-74.48418723",
-            "Latitud": "3.98461914"
+            "longitud": "-74.48418723",
+            "latitud": "3.98461914"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25123",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25123",
+            "departamento": "CUNDINAMARCA",
             "municipio": "CACHIPAY",
-            "Longitud": "-74.4357071",
-            "Latitud": "4.730954629"
+            "longitud": "-74.4357071",
+            "latitud": "4.730954629"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25126",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "CAJICA",
-            "Longitud": "-74.02345397",
-            "Latitud": "4.920809059"
+            "dep": "25",
+            "muni": "25126",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "CAJICÁ",
+            "longitud": "-74.02345397",
+            "latitud": "4.920809059"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25148",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "CAPARRAPI",
-            "Longitud": "-74.49111956",
-            "Latitud": "5.347943295"
+            "dep": "25",
+            "muni": "25148",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "CAPARRAPÍ",
+            "longitud": "-74.49111956",
+            "latitud": "5.347943295"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25151",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "CAQUEZA",
-            "Longitud": "-73.9464742",
-            "Latitud": "4.40410106"
+            "dep": "25",
+            "muni": "25151",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "CÁQUEZA",
+            "longitud": "-73.9464742",
+            "latitud": "4.40410106"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25154",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25154",
+            "departamento": "CUNDINAMARCA",
             "municipio": "CARMEN DE CARUPA",
-            "Longitud": "-73.90157376",
-            "Latitud": "5.349115758"
+            "longitud": "-73.90157376",
+            "latitud": "5.349115758"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25168",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "CHAGUANI",
-            "Longitud": "-74.59345529",
-            "Latitud": "4.948915827"
+            "dep": "25",
+            "muni": "25168",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "CHAGUANÍ",
+            "longitud": "-74.59345529",
+            "latitud": "4.948915827"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25175",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "CHÏA",
-            "Longitud": "-74.05034682",
-            "Latitud": "4.866065424"
+            "dep": "25",
+            "muni": "25175",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "CHÍA",
+            "longitud": "-74.05034682",
+            "latitud": "4.866065424"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25178",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25178",
+            "departamento": "CUNDINAMARCA",
             "municipio": "CHIPAQUE",
-            "Longitud": "-74.04487563",
-            "Latitud": "4.442671017"
+            "longitud": "-74.04487563",
+            "latitud": "4.442671017"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25181",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "CHOACHI",
-            "Longitud": "-73.92289448",
-            "Latitud": "4.527047921"
+            "dep": "25",
+            "muni": "25181",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "CHOACHÍ",
+            "longitud": "-73.92289448",
+            "latitud": "4.527047921"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25183",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "CHOCONTA",
-            "Longitud": "-73.68352344",
-            "Latitud": "5.145223894"
+            "dep": "25",
+            "muni": "25183",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "CHOCONTÁ",
+            "longitud": "-73.68352344",
+            "latitud": "5.145223894"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25200",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25200",
+            "departamento": "CUNDINAMARCA",
             "municipio": "COGUA",
-            "Longitud": "-73.97849669",
-            "Latitud": "5.061841798"
+            "longitud": "-73.97849669",
+            "latitud": "5.061841798"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25214",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25214",
+            "departamento": "CUNDINAMARCA",
             "municipio": "COTA",
-            "Longitud": "-74.10272646",
-            "Latitud": "4.812987769"
+            "longitud": "-74.10272646",
+            "latitud": "4.812987769"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25224",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "CUCUNUBA",
-            "Longitud": "-73.76621533",
-            "Latitud": "5.249767987"
+            "dep": "25",
+            "muni": "25224",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "CUCUNUBÁ",
+            "longitud": "-73.76621533",
+            "latitud": "5.249767987"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25245",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25245",
+            "departamento": "CUNDINAMARCA",
             "municipio": "EL COLEGIO",
-            "Longitud": "-74.44255169",
-            "Latitud": "4.579459662"
+            "longitud": "-74.44255169",
+            "latitud": "4.579459662"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25258",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "EL PEÑON",
-            "Longitud": "-74.29128594",
-            "Latitud": "5.249141171"
-        },
-        {
-            "Código departamento": "25",
-            "Código municipio": "25260",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25260",
+            "departamento": "CUNDINAMARCA",
             "municipio": "EL ROSAL",
-            "Longitud": "-74.26366739",
-            "Latitud": "4.852214275"
+            "longitud": "-74.26366739",
+            "latitud": "4.852214275"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25269",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "FACATATIVA",
-            "Longitud": "-74.35022793",
-            "Latitud": "4.813064178"
+            "dep": "25",
+            "muni": "25269",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "FACATATIVÁ",
+            "longitud": "-74.35022793",
+            "latitud": "4.813064178"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25279",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "FOMEQUE",
-            "Longitud": "-73.89252259",
-            "Latitud": "4.485474345"
+            "dep": "25",
+            "muni": "25279",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "FÓMEQUE",
+            "longitud": "-73.89252259",
+            "latitud": "4.485474345"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25281",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25281",
+            "departamento": "CUNDINAMARCA",
             "municipio": "FOSCA",
-            "Longitud": "-73.93902036",
-            "Latitud": "4.339092845"
+            "longitud": "-73.93902036",
+            "latitud": "4.339092845"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25286",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25286",
+            "departamento": "CUNDINAMARCA",
             "municipio": "FUNZA",
-            "Longitud": "-74.211525",
-            "Latitud": "4.712763015"
+            "longitud": "-74.211525",
+            "latitud": "4.712763015"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25288",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "FUQUENE",
-            "Longitud": "-73.79585543",
-            "Latitud": "5.404040766"
+            "dep": "25",
+            "muni": "25288",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "FÚQUENE",
+            "longitud": "-73.79585543",
+            "latitud": "5.404040766"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25290",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "FUSAGASUGA",
-            "Longitud": "-74.36633393",
-            "Latitud": "4.338480851"
+            "dep": "25",
+            "muni": "25290",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "FUSAGASUGÁ",
+            "longitud": "-74.36633393",
+            "latitud": "4.338480851"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25293",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "GACHALA",
-            "Longitud": "-73.52016136",
-            "Latitud": "4.693578672"
+            "dep": "25",
+            "muni": "25293",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "GACHALÁ",
+            "longitud": "-73.52016136",
+            "latitud": "4.693578672"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25295",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "GACHANCIPA",
-            "Longitud": "-73.87346922",
-            "Latitud": "4.990918172"
+            "dep": "25",
+            "muni": "25295",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "GACHANCIPÁ",
+            "longitud": "-73.87346922",
+            "latitud": "4.990918172"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25297",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "GACHETA",
-            "Longitud": "-73.63700651",
-            "Latitud": "4.817022162"
+            "dep": "25",
+            "muni": "25297",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "GACHETÁ",
+            "longitud": "-73.63700651",
+            "latitud": "4.817022162"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25299",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25299",
+            "departamento": "CUNDINAMARCA",
             "municipio": "GAMA",
-            "Longitud": "-73.61102894",
-            "Latitud": "4.7633382"
+            "longitud": "-73.61102894",
+            "latitud": "4.7633382"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25307",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25307",
+            "departamento": "CUNDINAMARCA",
             "municipio": "GIRARDOT",
-            "Longitud": "-74.79779459",
-            "Latitud": "4.313078337"
+            "longitud": "-74.79779459",
+            "latitud": "4.313078337"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25312",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "GRANADA",
-            "Longitud": "-74.35076611",
-            "Latitud": "4.519763473"
+            "dep": "25",
+            "muni": "25317",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "GUACHETÁ",
+            "longitud": "-73.68709822",
+            "latitud": "5.383741192"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25317",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "GUACHETA",
-            "Longitud": "-73.68709822",
-            "Latitud": "5.383741192"
-        },
-        {
-            "Código departamento": "25",
-            "Código municipio": "25320",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25320",
+            "departamento": "CUNDINAMARCA",
             "municipio": "GUADUAS",
-            "Longitud": "-74.60295627",
-            "Latitud": "5.071870533"
+            "longitud": "-74.60295627",
+            "latitud": "5.071870533"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25322",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25322",
+            "departamento": "CUNDINAMARCA",
             "municipio": "GUASCA",
-            "Longitud": "-73.87714344",
-            "Latitud": "4.866719147"
+            "longitud": "-73.87714344",
+            "latitud": "4.866719147"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25324",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "GUATAQUI",
-            "Longitud": "-74.78996878",
-            "Latitud": "4.517417235"
+            "dep": "25",
+            "muni": "25324",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "GUATAQUÍ",
+            "longitud": "-74.78996878",
+            "latitud": "4.517417235"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25326",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25326",
+            "departamento": "CUNDINAMARCA",
             "municipio": "GUATAVITA",
-            "Longitud": "-73.83287404",
-            "Latitud": "4.934139703"
+            "longitud": "-73.83287404",
+            "latitud": "4.934139703"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25328",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "GUAYABAL DE SIQUIMA",
-            "Longitud": "-74.46743733",
-            "Latitud": "4.877968134"
+            "dep": "25",
+            "muni": "25328",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "GUAYABAL DE SÍQUIMA",
+            "longitud": "-74.46743733",
+            "latitud": "4.877968134"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25335",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25335",
+            "departamento": "CUNDINAMARCA",
             "municipio": "GUAYABETAL",
-            "Longitud": "-73.81509376",
-            "Latitud": "4.215296629"
+            "longitud": "-73.81509376",
+            "latitud": "4.215296629"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25339",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "GUTIERREZ",
-            "Longitud": "-74.0030419",
-            "Latitud": "4.254678867"
+            "dep": "25",
+            "muni": "25339",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "GUTIÉRREZ",
+            "longitud": "-74.0030419",
+            "latitud": "4.254678867"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25368",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "JERUSALEN",
-            "Longitud": "-74.69541923",
-            "Latitud": "4.562308267"
+            "dep": "25",
+            "muni": "25368",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "JERUSALÉN",
+            "longitud": "-74.69541923",
+            "latitud": "4.562308267"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25372",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "JUNIN",
-            "Longitud": "-73.66292455",
-            "Latitud": "4.790379974"
+            "dep": "25",
+            "muni": "25372",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "JUNÍN",
+            "longitud": "-73.66292455",
+            "latitud": "4.790379974"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25377",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25377",
+            "departamento": "CUNDINAMARCA",
             "municipio": "LA CALERA",
-            "Longitud": "-73.96974496",
-            "Latitud": "4.720344521"
+            "longitud": "-73.96974496",
+            "latitud": "4.720344521"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25386",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25386",
+            "departamento": "CUNDINAMARCA",
             "municipio": "LA MESA",
-            "Longitud": "-74.46154474",
-            "Latitud": "4.631044239"
+            "longitud": "-74.46154474",
+            "latitud": "4.631044239"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25394",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25394",
+            "departamento": "CUNDINAMARCA",
             "municipio": "LA PALMA",
-            "Longitud": "-74.39102017",
-            "Latitud": "5.358816711"
+            "longitud": "-74.39102017",
+            "latitud": "5.358816711"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25398",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25398",
+            "departamento": "CUNDINAMARCA",
             "municipio": "LA PEÑA",
-            "Longitud": "-74.39308873",
-            "Latitud": "5.200211147"
+            "longitud": "-74.39308873",
+            "latitud": "5.200211147"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25402",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "LA VEGA",
-            "Longitud": "-74.33113821",
-            "Latitud": "4.993077034"
-        },
-        {
-            "Código departamento": "25",
-            "Código municipio": "25407",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25407",
+            "departamento": "CUNDINAMARCA",
             "municipio": "LENGUAZAQUE",
-            "Longitud": "-73.71149354",
-            "Latitud": "5.306143499"
+            "longitud": "-73.71149354",
+            "latitud": "5.306143499"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25426",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "MACHETA",
-            "Longitud": "-73.608325",
-            "Latitud": "5.080198921"
+            "dep": "25",
+            "muni": "25426",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "MACHETÁ",
+            "longitud": "-73.608325",
+            "latitud": "5.080198921"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25430",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25430",
+            "departamento": "CUNDINAMARCA",
             "municipio": "MADRID",
-            "Longitud": "-74.26562577",
-            "Latitud": "4.736129766"
+            "longitud": "-74.26562577",
+            "latitud": "4.736129766"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25436",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25436",
+            "departamento": "CUNDINAMARCA",
             "municipio": "MANTA",
-            "Longitud": "-73.54050247",
-            "Latitud": "5.009058389"
+            "longitud": "-73.54050247",
+            "latitud": "5.009058389"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25438",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25438",
+            "departamento": "CUNDINAMARCA",
             "municipio": "MEDINA",
-            "Longitud": "-73.34912272",
-            "Latitud": "4.50661493"
+            "longitud": "-73.34912272",
+            "latitud": "4.50661493"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25473",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25473",
+            "departamento": "CUNDINAMARCA",
             "municipio": "MOSQUERA",
-            "Longitud": "-74.23177508",
-            "Latitud": "4.711371201"
+            "longitud": "-74.23177508",
+            "latitud": "4.711371201"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25483",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "NARIÑO",
-            "Longitud": "-74.82473179",
-            "Latitud": "4.399836799"
+            "dep": "25",
+            "muni": "25486",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "NEMOCÓN",
+            "longitud": "-73.87962974",
+            "latitud": "5.067364638"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25486",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "NEMOCON",
-            "Longitud": "-73.87962974",
-            "Latitud": "5.067364638"
-        },
-        {
-            "Código departamento": "25",
-            "Código municipio": "25488",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25488",
+            "departamento": "CUNDINAMARCA",
             "municipio": "NILO",
-            "Longitud": "-74.61996587",
-            "Latitud": "4.305801421"
+            "longitud": "-74.61996587",
+            "latitud": "4.305801421"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25489",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25489",
+            "departamento": "CUNDINAMARCA",
             "municipio": "NIMAIMA",
-            "Longitud": "-74.38600738",
-            "Latitud": "5.126026248"
+            "longitud": "-74.38600738",
+            "latitud": "5.126026248"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25491",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25491",
+            "departamento": "CUNDINAMARCA",
             "municipio": "NOCAIMA",
-            "Longitud": "-74.37772796",
-            "Latitud": "5.068933019"
+            "longitud": "-74.37772796",
+            "latitud": "5.068933019"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25506",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "VENECIA",
-            "Longitud": "-74.47817821",
-            "Latitud": "4.088960943"
-        },
-        {
-            "Código departamento": "25",
-            "Código municipio": "25513",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25513",
+            "departamento": "CUNDINAMARCA",
             "municipio": "PACHO",
-            "Longitud": "-74.15611662",
-            "Latitud": "5.136942297"
+            "longitud": "-74.15611662",
+            "latitud": "5.136942297"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25518",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25518",
+            "departamento": "CUNDINAMARCA",
             "municipio": "PAIME",
-            "Longitud": "-74.15221288",
-            "Latitud": "5.37048741"
+            "longitud": "-74.15221288",
+            "latitud": "5.37048741"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25524",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25524",
+            "departamento": "CUNDINAMARCA",
             "municipio": "PANDI",
-            "Longitud": "-74.48664128",
-            "Latitud": "4.190392561"
+            "longitud": "-74.48664128",
+            "latitud": "4.190392561"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25530",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25530",
+            "departamento": "CUNDINAMARCA",
             "municipio": "PARATEBUENO",
-            "Longitud": "-73.21282724",
-            "Latitud": "4.374832781"
+            "longitud": "-73.21282724",
+            "latitud": "4.374832781"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25535",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25535",
+            "departamento": "CUNDINAMARCA",
             "municipio": "PASCA",
-            "Longitud": "-74.30545993",
-            "Latitud": "4.309854412"
+            "longitud": "-74.30545993",
+            "latitud": "4.309854412"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25572",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25572",
+            "departamento": "CUNDINAMARCA",
             "municipio": "PUERTO SALGAR",
-            "Longitud": "-74.6528007",
-            "Latitud": "5.464956044"
+            "longitud": "-74.6528007",
+            "latitud": "5.464956044"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25580",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "PULI",
-            "Longitud": "-74.71447646",
-            "Latitud": "4.681785104"
+            "dep": "25",
+            "muni": "25580",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "PULÍ",
+            "longitud": "-74.71447646",
+            "latitud": "4.681785104"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25592",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25592",
+            "departamento": "CUNDINAMARCA",
             "municipio": "QUEBRADANEGRA",
-            "Longitud": "-74.48014501",
-            "Latitud": "5.118071005"
+            "longitud": "-74.48014501",
+            "latitud": "5.118071005"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25594",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25594",
+            "departamento": "CUNDINAMARCA",
             "municipio": "QUETAME",
-            "Longitud": "-73.86311388",
-            "Latitud": "4.329825602"
+            "longitud": "-73.86311388",
+            "latitud": "4.329825602"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25596",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25596",
+            "departamento": "CUNDINAMARCA",
             "municipio": "QUIPILE",
-            "Longitud": "-74.53370501",
-            "Latitud": "4.744809893"
+            "longitud": "-74.53370501",
+            "latitud": "4.744809893"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25599",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25599",
+            "departamento": "CUNDINAMARCA",
             "municipio": "APULO",
-            "Longitud": "-74.59380454",
-            "Latitud": "4.520347219"
+            "longitud": "-74.59380454",
+            "latitud": "4.520347219"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25612",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25612",
+            "departamento": "CUNDINAMARCA",
             "municipio": "RICAURTE",
-            "Longitud": "-74.78454297",
-            "Latitud": "4.293949747"
+            "longitud": "-74.78454297",
+            "latitud": "4.293949747"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25645",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25645",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SAN ANTONIO DEL TEQUENDAMA",
-            "Longitud": "-74.35144269",
-            "Latitud": "4.616138045"
+            "longitud": "-74.35144269",
+            "latitud": "4.616138045"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25649",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25649",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SAN BERNARDO",
-            "Longitud": "-74.42296242",
-            "Latitud": "4.179432363"
+            "longitud": "-74.42296242",
+            "latitud": "4.179432363"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25653",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25653",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SAN CAYETANO",
-            "Longitud": "-74.02475397",
-            "Latitud": "5.332937545"
+            "longitud": "-74.02475397",
+            "latitud": "5.332937545"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25658",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "SAN FRANCISCO",
-            "Longitud": "-74.28967198",
-            "Latitud": "4.97291694"
+            "dep": "25",
+            "muni": "25662",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "SAN JUAN DE RIOSECO",
+            "longitud": "-74.62191472",
+            "latitud": "4.847575999"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25662",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "SAN JUAN DE RIO SECO",
-            "Longitud": "-74.62191472",
-            "Latitud": "4.847575999"
-        },
-        {
-            "Código departamento": "25",
-            "Código municipio": "25718",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25718",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SASAIMA",
-            "Longitud": "-74.43262795",
-            "Latitud": "4.962166987"
+            "longitud": "-74.43262795",
+            "latitud": "4.962166987"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25736",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "SESQUILE",
-            "Longitud": "-73.79612783",
-            "Latitud": "5.044729613"
+            "dep": "25",
+            "muni": "25736",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "SESQUILÉ",
+            "longitud": "-73.79612783",
+            "latitud": "5.044729613"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25740",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "SIBATE",
-            "Longitud": "-74.25899225",
-            "Latitud": "4.489763593"
+            "dep": "25",
+            "muni": "25740",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "SIBATÉ",
+            "longitud": "-74.25899225",
+            "latitud": "4.489763593"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25743",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25743",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SILVANIA",
-            "Longitud": "-74.40552821",
-            "Latitud": "4.381941157"
+            "longitud": "-74.40552821",
+            "latitud": "4.381941157"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25745",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25745",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SIMIJACA",
-            "Longitud": "-73.85032035",
-            "Latitud": "5.505428098"
+            "longitud": "-73.85032035",
+            "latitud": "5.505428098"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25754",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25754",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SOACHA",
-            "Longitud": "-74.21452753",
-            "Latitud": "4.585491658"
+            "longitud": "-74.21452753",
+            "latitud": "4.585491658"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25758",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "SOPO",
-            "Longitud": "-73.94577489",
-            "Latitud": "4.906330809"
+            "dep": "25",
+            "muni": "25758",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "SOPÓ",
+            "longitud": "-73.94577489",
+            "latitud": "4.906330809"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25769",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25769",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SUBACHOQUE",
-            "Longitud": "-74.17270846",
-            "Latitud": "4.929079289"
+            "longitud": "-74.17270846",
+            "latitud": "4.929079289"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25772",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25772",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SUESCA",
-            "Longitud": "-73.79828978",
-            "Latitud": "5.103516839"
+            "longitud": "-73.79828978",
+            "latitud": "5.103516839"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25777",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "SUPATA",
-            "Longitud": "-74.23540301",
-            "Latitud": "5.061619547"
+            "dep": "25",
+            "muni": "25777",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "SUPATÁ",
+            "longitud": "-74.23540301",
+            "latitud": "5.061619547"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25779",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25779",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SUSA",
-            "Longitud": "-73.81400325",
-            "Latitud": "5.454868004"
+            "longitud": "-73.81400325",
+            "latitud": "5.454868004"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25781",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25781",
+            "departamento": "CUNDINAMARCA",
             "municipio": "SUTATAUSA",
-            "Longitud": "-73.85315889",
-            "Latitud": "5.247482313"
+            "longitud": "-73.85315889",
+            "latitud": "5.247482313"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25785",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25785",
+            "departamento": "CUNDINAMARCA",
             "municipio": "TABIO",
-            "Longitud": "-74.09618339",
-            "Latitud": "4.917202192"
+            "longitud": "-74.09618339",
+            "latitud": "4.917202192"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25793",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25793",
+            "departamento": "CUNDINAMARCA",
             "municipio": "TAUSA",
-            "Longitud": "-73.88647267",
-            "Latitud": "5.196555039"
+            "longitud": "-73.88647267",
+            "latitud": "5.196555039"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25797",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25797",
+            "departamento": "CUNDINAMARCA",
             "municipio": "TENA",
-            "Longitud": "-74.38953312",
-            "Latitud": "4.655339153"
+            "longitud": "-74.38953312",
+            "latitud": "4.655339153"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25799",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25799",
+            "departamento": "CUNDINAMARCA",
             "municipio": "TENJO",
-            "Longitud": "-74.14395621",
-            "Latitud": "4.871960537"
+            "longitud": "-74.14395621",
+            "latitud": "4.871960537"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25805",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25805",
+            "departamento": "CUNDINAMARCA",
             "municipio": "TIBACUY",
-            "Longitud": "-74.45234352",
-            "Latitud": "4.348314659"
+            "longitud": "-74.45234352",
+            "latitud": "4.348314659"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25807",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25807",
+            "departamento": "CUNDINAMARCA",
             "municipio": "TIBIRITA",
-            "Longitud": "-73.50451403",
-            "Latitud": "5.052277838"
+            "longitud": "-73.50451403",
+            "latitud": "5.052277838"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25815",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25815",
+            "departamento": "CUNDINAMARCA",
             "municipio": "TOCAIMA",
-            "Longitud": "-74.63630492",
-            "Latitud": "4.459270864"
+            "longitud": "-74.63630492",
+            "latitud": "4.459270864"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25817",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "TOCANCIPA",
-            "Longitud": "-73.91209121",
-            "Latitud": "4.964786354"
+            "dep": "25",
+            "muni": "25817",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "TOCANCIPÁ",
+            "longitud": "-73.91209121",
+            "latitud": "4.964786354"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25823",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "TOPAIPI",
-            "Longitud": "-74.30268797",
-            "Latitud": "5.33597335"
+            "dep": "25",
+            "muni": "25823",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "TOPAIPÍ",
+            "longitud": "-74.30268797",
+            "latitud": "5.33597335"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25839",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "UBALA",
-            "Longitud": "-73.53397993",
-            "Latitud": "4.743901408"
+            "dep": "25",
+            "muni": "25839",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "UBALÁ",
+            "longitud": "-73.53397993",
+            "latitud": "4.743901408"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25841",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25841",
+            "departamento": "CUNDINAMARCA",
             "municipio": "UBAQUE",
-            "Longitud": "-73.93346087",
-            "Latitud": "4.483802095"
+            "longitud": "-73.93346087",
+            "latitud": "4.483802095"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25843",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "UBATE",
-            "Longitud": "-73.81434634",
-            "Latitud": "5.307540984"
+            "dep": "25",
+            "muni": "25843",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "VILLA DE SAN DIEGO DE UBATÉ",
+            "longitud": "-73.81434634",
+            "latitud": "5.307540984"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25845",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25845",
+            "departamento": "CUNDINAMARCA",
             "municipio": "UNE",
-            "Longitud": "-74.02518226",
-            "Latitud": "4.402450393"
+            "longitud": "-74.02518226",
+            "latitud": "4.402450393"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25851",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "UTICA",
-            "Longitud": "-74.48312029",
-            "Latitud": "5.190590104"
+            "dep": "25",
+            "muni": "25851",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "ÚTICA",
+            "longitud": "-74.48312029",
+            "latitud": "5.190590104"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25862",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25862",
+            "departamento": "CUNDINAMARCA",
             "municipio": "VERGARA",
-            "Longitud": "-74.34636043",
-            "Latitud": "5.117304568"
+            "longitud": "-74.34636043",
+            "latitud": "5.117304568"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25867",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "VIANI",
-            "Longitud": "-74.56132662",
-            "Latitud": "4.875205217"
+            "dep": "25",
+            "muni": "25867",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "VIANÍ",
+            "longitud": "-74.56132662",
+            "latitud": "4.875205217"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25871",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "VILLAGOMEZ",
-            "Longitud": "-74.19514546",
-            "Latitud": "5.273023755"
+            "dep": "25",
+            "muni": "25871",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "VILLAGÓMEZ",
+            "longitud": "-74.19514546",
+            "latitud": "5.273023755"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25873",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "VILLAPINZON",
-            "Longitud": "-73.59535467",
-            "Latitud": "5.216438372"
+            "dep": "25",
+            "muni": "25873",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "VILLAPINZÓN",
+            "longitud": "-73.59535467",
+            "latitud": "5.216438372"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25875",
-            "Nombre departamento": "CUNDINAMARCA",
+            "dep": "25",
+            "muni": "25875",
+            "departamento": "CUNDINAMARCA",
             "municipio": "VILLETA",
-            "Longitud": "-74.46970495",
-            "Latitud": "5.012790639"
+            "longitud": "-74.46970495",
+            "latitud": "5.012790639"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25878",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "VIOTA",
-            "Longitud": "-74.52316032",
-            "Latitud": "4.439355814"
+            "dep": "25",
+            "muni": "25878",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "VIOTÁ",
+            "longitud": "-74.52316032",
+            "latitud": "4.439355814"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25885",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "YACOPI",
-            "Longitud": "-74.33802435",
-            "Latitud": "5.459290341"
+            "dep": "25",
+            "muni": "25885",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "YACOPÍ",
+            "longitud": "-74.33802435",
+            "latitud": "5.459290341"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25898",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "ZIPACON",
-            "Longitud": "-74.37959142",
-            "Latitud": "4.759924886"
+            "dep": "25",
+            "muni": "25898",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "ZIPACÓN",
+            "longitud": "-74.37959142",
+            "latitud": "4.759924886"
         },
         {
-            "Código departamento": "25",
-            "Código municipio": "25899",
-            "Nombre departamento": "CUNDINAMARCA",
-            "municipio": "ZIPAQUIRA",
-            "Longitud": "-73.99447124",
-            "Latitud": "5.025471685"
+            "dep": "25",
+            "muni": "25899",
+            "departamento": "CUNDINAMARCA",
+            "municipio": "ZIPAQUIRÁ",
+            "longitud": "-73.99447124",
+            "latitud": "5.025471685"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27001",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "QUIBDO",
-            "Longitud": "-76.62596936",
-            "Latitud": "5.692195187"
+            "dep": "27",
+            "muni": "27001",
+            "departamento": "CHOCÓ",
+            "municipio": "QUIBDÓ",
+            "longitud": "-76.62596936",
+            "latitud": "5.692195187"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27006",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "ACANDI",
-            "Longitud": "-77.28009788",
-            "Latitud": "8.511405952"
+            "dep": "27",
+            "muni": "27006",
+            "departamento": "CHOCÓ",
+            "municipio": "ACANDÍ",
+            "longitud": "-77.28009788",
+            "latitud": "8.511405952"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27025",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "ALTO BAUDO",
-            "Longitud": "-76.97439919",
-            "Latitud": "5.516309869"
+            "dep": "27",
+            "muni": "27025",
+            "departamento": "CHOCÓ",
+            "municipio": "ALTO BAUDÓ",
+            "longitud": "-76.97439919",
+            "latitud": "5.516309869"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27050",
-            "Nombre departamento": "CHOCÓ",
+            "dep": "27",
+            "muni": "27050",
+            "departamento": "CHOCÓ",
             "municipio": "ATRATO",
-            "Longitud": "-76.63503746",
-            "Latitud": "5.531373511"
+            "longitud": "-76.63503746",
+            "latitud": "5.531373511"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27073",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "BAGADO",
-            "Longitud": "-76.41529299",
-            "Latitud": "5.41055496"
+            "dep": "27",
+            "muni": "27073",
+            "departamento": "CHOCÓ",
+            "municipio": "BAGADÓ",
+            "longitud": "-76.41529299",
+            "latitud": "5.41055496"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27075",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "BAHIA SOLANO",
-            "Longitud": "-77.40275035",
-            "Latitud": "6.22224546"
+            "dep": "27",
+            "muni": "27075",
+            "departamento": "CHOCÓ",
+            "municipio": "BAHÍA SOLANO",
+            "longitud": "-77.40275035",
+            "latitud": "6.22224546"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27077",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "BAJO BAUDO",
-            "Longitud": "-77.36540999",
-            "Latitud": "4.954626672"
+            "dep": "27",
+            "muni": "27077",
+            "departamento": "CHOCÓ",
+            "municipio": "BAJO BAUDÓ",
+            "longitud": "-77.36540999",
+            "latitud": "4.954626672"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27099",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "BOJAYA",
-            "Longitud": "-76.88346949",
-            "Latitud": "6.556257444"
+            "dep": "27",
+            "muni": "27099",
+            "departamento": "CHOCÓ",
+            "municipio": "BOJAYÁ",
+            "longitud": "-76.88346949",
+            "latitud": "6.556257444"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27135",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "EL CANTON DEL SAN PABLO",
-            "Longitud": "-76.72685005",
-            "Latitud": "5.33533532"
+            "dep": "27",
+            "muni": "27135",
+            "departamento": "CHOCÓ",
+            "municipio": "EL CANTÓN DEL SAN PABLO",
+            "longitud": "-76.72685005",
+            "latitud": "5.33533532"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27150",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "DARIEN",
-            "Longitud": "-76.97071697",
-            "Latitud": "7.158402966"
+            "dep": "27",
+            "muni": "27150",
+            "departamento": "CHOCÓ",
+            "municipio": "CARMEN DEL DARIÉN",
+            "longitud": "-76.97071697",
+            "latitud": "7.158402966"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27160",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "CERTEGUI",
-            "Longitud": "-76.60802121",
-            "Latitud": "5.37041379"
+            "dep": "27",
+            "muni": "27160",
+            "departamento": "CHOCÓ",
+            "municipio": "CÉRTEGUI",
+            "longitud": "-76.60802121",
+            "latitud": "5.37041379"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27205",
-            "Nombre departamento": "CHOCÓ",
+            "dep": "27",
+            "muni": "27205",
+            "departamento": "CHOCÓ",
             "municipio": "CONDOTO",
-            "Longitud": "-76.65068266",
-            "Latitud": "5.091003208"
+            "longitud": "-76.65068266",
+            "latitud": "5.091003208"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27245",
-            "Nombre departamento": "CHOCÓ",
+            "dep": "27",
+            "muni": "27245",
+            "departamento": "CHOCÓ",
             "municipio": "EL CARMEN DE ATRATO",
-            "Longitud": "-76.14222986",
-            "Latitud": "5.899751361"
+            "longitud": "-76.14222986",
+            "latitud": "5.899751361"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27250",
-            "Nombre departamento": "CHOCÓ",
+            "dep": "27",
+            "muni": "27250",
+            "departamento": "CHOCÓ",
             "municipio": "EL LITORAL DEL SAN JUAN",
-            "Longitud": "-77.35983784",
-            "Latitud": "4.256766706"
+            "longitud": "-77.35983784",
+            "latitud": "4.256766706"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27361",
-            "Nombre departamento": "CHOCÓ",
+            "dep": "27",
+            "muni": "27361",
+            "departamento": "CHOCÓ",
             "municipio": "ISTMINA",
-            "Longitud": "-76.68518032",
-            "Latitud": "5.153946496"
+            "longitud": "-76.68518032",
+            "latitud": "5.153946496"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27372",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "JURADO",
-            "Longitud": "-77.76275092",
-            "Latitud": "7.103619083"
+            "dep": "27",
+            "muni": "27372",
+            "departamento": "CHOCÓ",
+            "municipio": "JURADÓ",
+            "longitud": "-77.76275092",
+            "latitud": "7.103619083"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27413",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "LLORO",
-            "Longitud": "-76.54521063",
-            "Latitud": "5.498150801"
+            "dep": "27",
+            "muni": "27413",
+            "departamento": "CHOCÓ",
+            "municipio": "LLORÓ",
+            "longitud": "-76.54521063",
+            "latitud": "5.498150801"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27425",
-            "Nombre departamento": "CHOCÓ",
+            "dep": "27",
+            "muni": "27425",
+            "departamento": "CHOCÓ",
             "municipio": "MEDIO ATRATO",
-            "Longitud": "-76.78241422",
-            "Latitud": "5.994835471"
+            "longitud": "-76.78241422",
+            "latitud": "5.994835471"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27430",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "MEDIO BAUDO",
-            "Longitud": "-76.94960604",
-            "Latitud": "5.193563954"
+            "dep": "27",
+            "muni": "27430",
+            "departamento": "CHOCÓ",
+            "municipio": "MEDIO BAUDÓ",
+            "longitud": "-76.94960604",
+            "latitud": "5.193563954"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27450",
-            "Nombre departamento": "CHOCÓ",
+            "dep": "27",
+            "muni": "27450",
+            "departamento": "CHOCÓ",
             "municipio": "MEDIO SAN JUAN",
-            "Longitud": "-76.69335794",
-            "Latitud": "5.100240747"
+            "longitud": "-76.69335794",
+            "latitud": "5.100240747"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27491",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "NOVITA",
-            "Longitud": "-76.60711814",
-            "Latitud": "4.956097009"
+            "dep": "27",
+            "muni": "27491",
+            "departamento": "CHOCÓ",
+            "municipio": "NÓVITA",
+            "longitud": "-76.60711814",
+            "latitud": "4.956097009"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27495",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "NUQUI",
-            "Longitud": "-77.26290346",
-            "Latitud": "5.711957236"
+            "dep": "27",
+            "muni": "27495",
+            "departamento": "CHOCÓ",
+            "municipio": "NUQUÍ",
+            "longitud": "-77.26290346",
+            "latitud": "5.711957236"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27580",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "RIO IRO",
-            "Longitud": "-76.47292479",
-            "Latitud": "5.186299794"
+            "dep": "27",
+            "muni": "27580",
+            "departamento": "CHOCÓ",
+            "municipio": "RÍO IRÓ",
+            "longitud": "-76.47292479",
+            "latitud": "5.186299794"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27600",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "RIO QUITO",
-            "Longitud": "-76.74101656",
-            "Latitud": "5.483727751"
+            "dep": "27",
+            "muni": "27600",
+            "departamento": "CHOCÓ",
+            "municipio": "RÍO QUITO",
+            "longitud": "-76.74101656",
+            "latitud": "5.483727751"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27615",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "RIOSUCIO",
-            "Longitud": "-77.11310959",
-            "Latitud": "7.436631552"
+            "dep": "27",
+            "muni": "27660",
+            "departamento": "CHOCÓ",
+            "municipio": "SAN JOSÉ DEL PALMAR",
+            "longitud": "-76.23284882",
+            "latitud": "4.89759308"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27660",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "SAN JOSE DEL PALMAR",
-            "Longitud": "-76.23284882",
-            "Latitud": "4.89759308"
+            "dep": "27",
+            "muni": "27745",
+            "departamento": "CHOCÓ",
+            "municipio": "SIPÍ",
+            "longitud": "-76.64440389",
+            "latitud": "4.651204152"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27745",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "SIPI",
-            "Longitud": "-76.64440389",
-            "Latitud": "4.651204152"
+            "dep": "27",
+            "muni": "27787",
+            "departamento": "CHOCÓ",
+            "municipio": "TADÓ",
+            "longitud": "-76.55876602",
+            "latitud": "5.264139949"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27787",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "TADO",
-            "Longitud": "-76.55876602",
-            "Latitud": "5.264139949"
+            "dep": "27",
+            "muni": "27800",
+            "departamento": "CHOCÓ",
+            "municipio": "UNGUÍA",
+            "longitud": "-77.09175303",
+            "latitud": "8.042760782"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27800",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "UNGUIA",
-            "Longitud": "-77.09175303",
-            "Latitud": "8.042760782"
+            "dep": "27",
+            "muni": "27810",
+            "departamento": "CHOCÓ",
+            "municipio": "UNIÓN PANAMERICANA",
+            "longitud": "-76.62840607",
+            "latitud": "5.281095852"
         },
         {
-            "Código departamento": "27",
-            "Código municipio": "27810",
-            "Nombre departamento": "CHOCÓ",
-            "municipio": "UNION PANAMERICANA",
-            "Longitud": "-76.62840607",
-            "Latitud": "5.281095852"
-        },
-        {
-            "Código departamento": "41",
-            "Código municipio": "41001",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41001",
+            "departamento": "HUILA",
             "municipio": "NEIVA",
-            "Longitud": "-75.27772259",
-            "Latitud": "2.935604415"
+            "longitud": "-75.27772259",
+            "latitud": "2.935604415"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41006",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41006",
+            "departamento": "HUILA",
             "municipio": "ACEVEDO",
-            "Longitud": "-75.88853156",
-            "Latitud": "1.805263228"
+            "longitud": "-75.88853156",
+            "latitud": "1.805263228"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41013",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41013",
+            "departamento": "HUILA",
             "municipio": "AGRADO",
-            "Longitud": "-75.77190358",
-            "Latitud": "2.259729394"
+            "longitud": "-75.77190358",
+            "latitud": "2.259729394"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41016",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41016",
+            "departamento": "HUILA",
             "municipio": "AIPE",
-            "Longitud": "-75.23903118",
-            "Latitud": "3.223597562"
+            "longitud": "-75.23903118",
+            "latitud": "3.223597562"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41020",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41020",
+            "departamento": "HUILA",
             "municipio": "ALGECIRAS",
-            "Longitud": "-75.31537288",
-            "Latitud": "2.522447597"
+            "longitud": "-75.31537288",
+            "latitud": "2.522447597"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41026",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41026",
+            "departamento": "HUILA",
             "municipio": "ALTAMIRA",
-            "Longitud": "-75.7883629",
-            "Latitud": "2.063710886"
+            "longitud": "-75.7883629",
+            "latitud": "2.063710886"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41078",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41078",
+            "departamento": "HUILA",
             "municipio": "BARAYA",
-            "Longitud": "-75.05427025",
-            "Latitud": "3.153198541"
+            "longitud": "-75.05427025",
+            "latitud": "3.153198541"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41132",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41132",
+            "departamento": "HUILA",
             "municipio": "CAMPOALEGRE",
-            "Longitud": "-75.32573546",
-            "Latitud": "2.686827401"
+            "longitud": "-75.32573546",
+            "latitud": "2.686827401"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41206",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41206",
+            "departamento": "HUILA",
             "municipio": "COLOMBIA",
-            "Longitud": "-74.80281318",
-            "Latitud": "3.376977129"
+            "longitud": "-74.80281318",
+            "latitud": "3.376977129"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41244",
-            "Nombre departamento": "HUILA",
-            "municipio": "ELIAS",
-            "Longitud": "-75.93801084",
-            "Latitud": "2.012697094"
+            "dep": "41",
+            "muni": "41244",
+            "departamento": "HUILA",
+            "municipio": "ELÍAS",
+            "longitud": "-75.93801084",
+            "latitud": "2.012697094"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41298",
-            "Nombre departamento": "HUILA",
-            "municipio": "GARZON",
-            "Longitud": "-75.62769374",
-            "Latitud": "2.196994421"
+            "dep": "41",
+            "muni": "41298",
+            "departamento": "HUILA",
+            "municipio": "GARZÓN",
+            "longitud": "-75.62769374",
+            "latitud": "2.196994421"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41306",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41306",
+            "departamento": "HUILA",
             "municipio": "GIGANTE",
-            "Longitud": "-75.54121989",
-            "Latitud": "2.388235625"
+            "longitud": "-75.54121989",
+            "latitud": "2.388235625"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41319",
-            "Nombre departamento": "HUILA",
-            "municipio": "GUADALUPE",
-            "Longitud": "-75.75502825",
-            "Latitud": "2.025157323"
-        },
-        {
-            "Código departamento": "41",
-            "Código municipio": "41349",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41349",
+            "departamento": "HUILA",
             "municipio": "HOBO",
-            "Longitud": "-75.45115097",
-            "Latitud": "2.582867976"
+            "longitud": "-75.45115097",
+            "latitud": "2.582867976"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41357",
-            "Nombre departamento": "HUILA",
-            "municipio": "IQUIRA",
-            "Longitud": "-75.63449748",
-            "Latitud": "2.64935907"
+            "dep": "41",
+            "muni": "41357",
+            "departamento": "HUILA",
+            "municipio": "ÍQUIRA",
+            "longitud": "-75.63449748",
+            "latitud": "2.64935907"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41359",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41359",
+            "departamento": "HUILA",
             "municipio": "ISNOS",
-            "Longitud": "-76.21763745",
-            "Latitud": "1.92946706"
+            "longitud": "-76.21763745",
+            "latitud": "1.92946706"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41378",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41378",
+            "departamento": "HUILA",
             "municipio": "LA ARGENTINA",
-            "Longitud": "-75.97976842",
-            "Latitud": "2.198246252"
+            "longitud": "-75.97976842",
+            "latitud": "2.198246252"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41396",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41396",
+            "departamento": "HUILA",
             "municipio": "LA PLATA",
-            "Longitud": "-75.89145131",
-            "Latitud": "2.389646694"
+            "longitud": "-75.89145131",
+            "latitud": "2.389646694"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41483",
-            "Nombre departamento": "HUILA",
-            "municipio": "NATAGA",
-            "Longitud": "-75.80878532",
-            "Latitud": "2.545352901"
+            "dep": "41",
+            "muni": "41483",
+            "departamento": "HUILA",
+            "municipio": "NÁTAGA",
+            "longitud": "-75.80878532",
+            "latitud": "2.545352901"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41503",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41503",
+            "departamento": "HUILA",
             "municipio": "OPORAPA",
-            "Longitud": "-75.99517781",
-            "Latitud": "2.025054002"
+            "longitud": "-75.99517781",
+            "latitud": "2.025054002"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41518",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41518",
+            "departamento": "HUILA",
             "municipio": "PAICOL",
-            "Longitud": "-75.77299232",
-            "Latitud": "2.449548949"
+            "longitud": "-75.77299232",
+            "latitud": "2.449548949"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41524",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41524",
+            "departamento": "HUILA",
             "municipio": "PALERMO",
-            "Longitud": "-75.43371912",
-            "Latitud": "2.888406236"
+            "longitud": "-75.43371912",
+            "latitud": "2.888406236"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41530",
-            "Nombre departamento": "HUILA",
-            "municipio": "PALESTINA",
-            "Longitud": "-76.13312235",
-            "Latitud": "1.723444181"
-        },
-        {
-            "Código departamento": "41",
-            "Código municipio": "41548",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41548",
+            "departamento": "HUILA",
             "municipio": "PITAL",
-            "Longitud": "-75.80400492",
-            "Latitud": "2.266679376"
+            "longitud": "-75.80400492",
+            "latitud": "2.266679376"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41551",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41551",
+            "departamento": "HUILA",
             "municipio": "PITALITO",
-            "Longitud": "-76.0487449",
-            "Latitud": "1.852578355"
+            "longitud": "-76.0487449",
+            "latitud": "1.852578355"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41615",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41615",
+            "departamento": "HUILA",
             "municipio": "RIVERA",
-            "Longitud": "-75.25854672",
-            "Latitud": "2.777570516"
+            "longitud": "-75.25854672",
+            "latitud": "2.777570516"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41660",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41660",
+            "departamento": "HUILA",
             "municipio": "SALADOBLANCO",
-            "Longitud": "-76.04414126",
-            "Latitud": "1.992494881"
+            "longitud": "-76.04414126",
+            "latitud": "1.992494881"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41668",
-            "Nombre departamento": "HUILA",
-            "municipio": "SAN AGUSTIN",
-            "Longitud": "-76.27035968",
-            "Latitud": "1.881081298"
+            "dep": "41",
+            "muni": "41668",
+            "departamento": "HUILA",
+            "municipio": "SAN AGUSTÍN",
+            "longitud": "-76.27035968",
+            "latitud": "1.881081298"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41676",
-            "Nombre departamento": "HUILA",
-            "municipio": "SANTA MARIA",
-            "Longitud": "-75.58611594",
-            "Latitud": "2.939755223"
-        },
-        {
-            "Código departamento": "41",
-            "Código municipio": "41770",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41770",
+            "departamento": "HUILA",
             "municipio": "SUAZA",
-            "Longitud": "-75.7950558",
-            "Latitud": "1.97584609"
+            "longitud": "-75.7950558",
+            "latitud": "1.97584609"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41791",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41791",
+            "departamento": "HUILA",
             "municipio": "TARQUI",
-            "Longitud": "-75.82357508",
-            "Latitud": "2.111321102"
+            "longitud": "-75.82357508",
+            "latitud": "2.111321102"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41797",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41797",
+            "departamento": "HUILA",
             "municipio": "TESALIA",
-            "Longitud": "-75.72984017",
-            "Latitud": "2.486050264"
+            "longitud": "-75.72984017",
+            "latitud": "2.486050264"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41799",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41799",
+            "departamento": "HUILA",
             "municipio": "TELLO",
-            "Longitud": "-75.13877304",
-            "Latitud": "3.067538095"
+            "longitud": "-75.13877304",
+            "latitud": "3.067538095"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41801",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41801",
+            "departamento": "HUILA",
             "municipio": "TERUEL",
-            "Longitud": "-75.56703425",
-            "Latitud": "2.740968416"
+            "longitud": "-75.56703425",
+            "latitud": "2.740968416"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41807",
-            "Nombre departamento": "HUILA",
-            "municipio": "TIMANA",
-            "Longitud": "-75.932087",
-            "Latitud": "1.974224443"
+            "dep": "41",
+            "muni": "41807",
+            "departamento": "HUILA",
+            "municipio": "TIMANÁ",
+            "longitud": "-75.932087",
+            "latitud": "1.974224443"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41872",
-            "Nombre departamento": "HUILA",
+            "dep": "41",
+            "muni": "41872",
+            "departamento": "HUILA",
             "municipio": "VILLAVIEJA",
-            "Longitud": "-75.21724434",
-            "Latitud": "3.22076759"
+            "longitud": "-75.21724434",
+            "latitud": "3.22076759"
         },
         {
-            "Código departamento": "41",
-            "Código municipio": "41885",
-            "Nombre departamento": "HUILA",
-            "municipio": "YAGUARA",
-            "Longitud": "-75.51802329",
-            "Latitud": "2.664694213"
+            "dep": "41",
+            "muni": "41885",
+            "departamento": "HUILA",
+            "municipio": "YAGUARÁ",
+            "longitud": "-75.51802329",
+            "latitud": "2.664694213"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44001",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44001",
+            "departamento": "LA GUAJIRA",
             "municipio": "RIOHACHA",
-            "Longitud": "-72.91148891",
-            "Latitud": "11.52875138"
+            "longitud": "-72.91148891",
+            "latitud": "11.52875138"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44035",
-            "Nombre departamento": "LA GUAJIRA",
-            "municipio": "ALBANIA",
-            "Longitud": "-72.59852163",
-            "Latitud": "11.15748865"
-        },
-        {
-            "Código departamento": "44",
-            "Código municipio": "44078",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44078",
+            "departamento": "LA GUAJIRA",
             "municipio": "BARRANCAS",
-            "Longitud": "-72.79357567",
-            "Latitud": "10.95866671"
+            "longitud": "-72.79357567",
+            "latitud": "10.95866671"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44090",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44090",
+            "departamento": "LA GUAJIRA",
             "municipio": "DIBULLA",
-            "Longitud": "-73.30761979",
-            "Latitud": "11.2715694"
+            "longitud": "-73.30761979",
+            "latitud": "11.2715694"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44098",
-            "Nombre departamento": "LA GUAJIRA",
-            "municipio": "DISTRACCION",
-            "Longitud": "-72.88739268",
-            "Latitud": "10.89847259"
+            "dep": "44",
+            "muni": "44098",
+            "departamento": "LA GUAJIRA",
+            "municipio": "DISTRACCIÓN",
+            "longitud": "-72.88739268",
+            "latitud": "10.89847259"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44110",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44110",
+            "departamento": "LA GUAJIRA",
             "municipio": "EL MOLINO",
-            "Longitud": "-72.92674334",
-            "Latitud": "10.65350251"
+            "longitud": "-72.92674334",
+            "latitud": "10.65350251"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44279",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44279",
+            "departamento": "LA GUAJIRA",
             "municipio": "FONSECA",
-            "Longitud": "-72.84666224",
-            "Latitud": "10.88430067"
+            "longitud": "-72.84666224",
+            "latitud": "10.88430067"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44378",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44378",
+            "departamento": "LA GUAJIRA",
             "municipio": "HATONUEVO",
-            "Longitud": "-72.75901658",
-            "Latitud": "11.06874303"
+            "longitud": "-72.75901658",
+            "latitud": "11.06874303"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44420",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44420",
+            "departamento": "LA GUAJIRA",
             "municipio": "LA JAGUA DEL PILAR",
-            "Longitud": "-73.07167902",
-            "Latitud": "10.51021405"
+            "longitud": "-73.07167902",
+            "latitud": "10.51021405"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44430",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44430",
+            "departamento": "LA GUAJIRA",
             "municipio": "MAICAO",
-            "Longitud": "-72.24190502",
-            "Latitud": "11.37832678"
+            "longitud": "-72.24190502",
+            "latitud": "11.37832678"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44560",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44560",
+            "departamento": "LA GUAJIRA",
             "municipio": "MANAURE",
-            "Longitud": "-72.43966737",
-            "Latitud": "11.77405659"
+            "longitud": "-72.43966737",
+            "latitud": "11.77405659"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44650",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44650",
+            "departamento": "LA GUAJIRA",
             "municipio": "SAN JUAN DEL CESAR",
-            "Longitud": "-73.00059321",
-            "Latitud": "10.76957868"
+            "longitud": "-73.00059321",
+            "latitud": "10.76957868"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44847",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44847",
+            "departamento": "LA GUAJIRA",
             "municipio": "URIBIA",
-            "Longitud": "-72.26476063",
-            "Latitud": "11.71464582"
+            "longitud": "-72.26476063",
+            "latitud": "11.71464582"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44855",
-            "Nombre departamento": "LA GUAJIRA",
+            "dep": "44",
+            "muni": "44855",
+            "departamento": "LA GUAJIRA",
             "municipio": "URUMITA",
-            "Longitud": "-73.01250679",
-            "Latitud": "10.56016864"
+            "longitud": "-73.01250679",
+            "latitud": "10.56016864"
         },
         {
-            "Código departamento": "44",
-            "Código municipio": "44874",
-            "Nombre departamento": "LA GUAJIRA",
-            "municipio": "VILLANUEVA",
-            "Longitud": "-72.97762278",
-            "Latitud": "10.60881169"
-        },
-        {
-            "Código departamento": "47",
-            "Código municipio": "47001",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47001",
+            "departamento": "MAGDALENA",
             "municipio": "SANTA MARTA",
-            "Longitud": "-74.19089412",
-            "Latitud": "11.2294335"
+            "longitud": "-74.19089412",
+            "latitud": "11.2294335"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47030",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47030",
+            "departamento": "MAGDALENA",
             "municipio": "ALGARROBO",
-            "Longitud": "-74.06113245",
-            "Latitud": "10.18803886"
+            "longitud": "-74.06113245",
+            "latitud": "10.18803886"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47053",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47053",
+            "departamento": "MAGDALENA",
             "municipio": "ARACATACA",
-            "Longitud": "-74.18676284",
-            "Latitud": "10.58980001"
+            "longitud": "-74.18676284",
+            "latitud": "10.58980001"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47058",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "ARIGUANI",
-            "Longitud": "-74.23649889",
-            "Latitud": "9.847057076"
+            "dep": "47",
+            "muni": "47058",
+            "departamento": "MAGDALENA",
+            "municipio": "ARIGUANÍ",
+            "longitud": "-74.23649889",
+            "latitud": "9.847057076"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47161",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47161",
+            "departamento": "MAGDALENA",
             "municipio": "CERRO DE SAN ANTONIO",
-            "Longitud": "-74.868473",
-            "Latitud": "10.32565943"
+            "longitud": "-74.868473",
+            "latitud": "10.32565943"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47170",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47170",
+            "departamento": "MAGDALENA",
             "municipio": "CHIVOLO",
-            "Longitud": "-74.62313794",
-            "Latitud": "10.02684116"
+            "longitud": "-74.62313794",
+            "latitud": "10.02684116"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47189",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "CIENAGA",
-            "Longitud": "-74.24128616",
-            "Latitud": "11.00665688"
+            "dep": "47",
+            "muni": "47189",
+            "departamento": "MAGDALENA",
+            "municipio": "CIÉNAGA",
+            "longitud": "-74.24128616",
+            "latitud": "11.00665688"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47205",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "CONCORDIA",
-            "Longitud": "-74.8330299",
-            "Latitud": "10.25731061"
-        },
-        {
-            "Código departamento": "47",
-            "Código municipio": "47245",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47245",
+            "departamento": "MAGDALENA",
             "municipio": "EL BANCO",
-            "Longitud": "-73.97428121",
-            "Latitud": "9.008733009"
+            "longitud": "-73.97428121",
+            "latitud": "9.008733009"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47258",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "EL PIÑON",
-            "Longitud": "-74.82329109",
-            "Latitud": "10.40309454"
+            "dep": "47",
+            "muni": "47258",
+            "departamento": "MAGDALENA",
+            "municipio": "EL PIÑÓN",
+            "longitud": "-74.82329109",
+            "latitud": "10.40309454"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47268",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "EL RETEN",
-            "Longitud": "-74.2684561",
-            "Latitud": "10.61066766"
+            "dep": "47",
+            "muni": "47268",
+            "departamento": "MAGDALENA",
+            "municipio": "EL RETÉN",
+            "longitud": "-74.2684561",
+            "latitud": "10.61066766"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47288",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "FUNDACION",
-            "Longitud": "-74.19134346",
-            "Latitud": "10.5140924"
+            "dep": "47",
+            "muni": "47288",
+            "departamento": "MAGDALENA",
+            "municipio": "FUNDACIÓN",
+            "longitud": "-74.19134346",
+            "latitud": "10.5140924"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47318",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47318",
+            "departamento": "MAGDALENA",
             "municipio": "GUAMAL",
-            "Longitud": "-74.22369928",
-            "Latitud": "9.144385832"
+            "longitud": "-74.22369928",
+            "latitud": "9.144385832"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47460",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47460",
+            "departamento": "MAGDALENA",
             "municipio": "NUEVA GRANADA",
-            "Longitud": "-74.39223564",
-            "Latitud": "9.801547971"
+            "longitud": "-74.39223564",
+            "latitud": "9.801547971"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47541",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47541",
+            "departamento": "MAGDALENA",
             "municipio": "PEDRAZA",
-            "Longitud": "-74.91545773",
-            "Latitud": "10.18820578"
+            "longitud": "-74.91545773",
+            "latitud": "10.18820578"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47545",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47545",
+            "departamento": "MAGDALENA",
             "municipio": "PIJIÑO DEL CARMEN",
-            "Longitud": "-74.45821824",
-            "Latitud": "9.331953112"
+            "longitud": "-74.45821824",
+            "latitud": "9.331953112"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47551",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47551",
+            "departamento": "MAGDALENA",
             "municipio": "PIVIJAY",
-            "Longitud": "-74.61351795",
-            "Latitud": "10.46069324"
+            "longitud": "-74.61351795",
+            "latitud": "10.46069324"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47555",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47555",
+            "departamento": "MAGDALENA",
             "municipio": "PLATO",
-            "Longitud": "-74.78468286",
-            "Latitud": "9.796769868"
+            "longitud": "-74.78468286",
+            "latitud": "9.796769868"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47570",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47570",
+            "departamento": "MAGDALENA",
             "municipio": "PUEBLOVIEJO",
-            "Longitud": "-74.28248423",
-            "Latitud": "10.99482965"
+            "longitud": "-74.28248423",
+            "latitud": "10.99482965"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47605",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47605",
+            "departamento": "MAGDALENA",
             "municipio": "REMOLINO",
-            "Longitud": "-74.71614047",
-            "Latitud": "10.70217005"
+            "longitud": "-74.71614047",
+            "latitud": "10.70217005"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47660",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "SABANAS DE SAN ANGEL",
-            "Longitud": "-74.2139389",
-            "Latitud": "10.03253601"
+            "dep": "47",
+            "muni": "47660",
+            "departamento": "MAGDALENA",
+            "municipio": "SABANAS DE SAN ÁNGEL",
+            "longitud": "-74.2139389",
+            "latitud": "10.03253601"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47675",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "SALAMINA",
-            "Longitud": "-74.79418892",
-            "Latitud": "10.49122904"
+            "dep": "47",
+            "muni": "47692",
+            "departamento": "MAGDALENA",
+            "municipio": "SAN SEBASTIÁN DE BUENAVISTA",
+            "longitud": "-74.35167514",
+            "latitud": "9.24050525"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47692",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "SAN SEBASTIAN DE BUENAVISTA",
-            "Longitud": "-74.35167514",
-            "Latitud": "9.24050525"
+            "dep": "47",
+            "muni": "47703",
+            "departamento": "MAGDALENA",
+            "municipio": "SAN ZENÓN",
+            "longitud": "-74.4989915",
+            "latitud": "9.245060603"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47703",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "SAN ZENON",
-            "Longitud": "-74.4989915",
-            "Latitud": "9.245060603"
-        },
-        {
-            "Código departamento": "47",
-            "Código municipio": "47707",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47707",
+            "departamento": "MAGDALENA",
             "municipio": "SANTA ANA",
-            "Longitud": "-74.56765762",
-            "Latitud": "9.321837859"
+            "longitud": "-74.56765762",
+            "latitud": "9.321837859"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47720",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "SANTA BARBARA DE PINTO",
-            "Longitud": "-74.70468582",
-            "Latitud": "9.432257137"
+            "dep": "47",
+            "muni": "47720",
+            "departamento": "MAGDALENA",
+            "municipio": "SANTA BÁRBARA DE PINTO",
+            "longitud": "-74.70468582",
+            "latitud": "9.432257137"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47745",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47745",
+            "departamento": "MAGDALENA",
             "municipio": "SITIONUEVO",
-            "Longitud": "-74.72016921",
-            "Latitud": "10.77540964"
+            "longitud": "-74.72016921",
+            "latitud": "10.77540964"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47798",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47798",
+            "departamento": "MAGDALENA",
             "municipio": "TENERIFE",
-            "Longitud": "-74.8607752",
-            "Latitud": "9.897787141"
+            "longitud": "-74.8607752",
+            "latitud": "9.897787141"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47960",
-            "Nombre departamento": "MAGDALENA",
-            "municipio": "ZAPAYAN",
-            "Longitud": "-74.71687797",
-            "Latitud": "10.16829671"
+            "dep": "47",
+            "muni": "47960",
+            "departamento": "MAGDALENA",
+            "municipio": "ZAPAYÁN",
+            "longitud": "-74.71687797",
+            "latitud": "10.16829671"
         },
         {
-            "Código departamento": "47",
-            "Código municipio": "47980",
-            "Nombre departamento": "MAGDALENA",
+            "dep": "47",
+            "muni": "47980",
+            "departamento": "MAGDALENA",
             "municipio": "ZONA BANANERA",
-            "Longitud": "-74.14008184",
-            "Latitud": "10.76302682"
+            "longitud": "-74.14008184",
+            "latitud": "10.76302682"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50001",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50001",
+            "departamento": "META",
             "municipio": "VILLAVICENCIO",
-            "Longitud": "-73.62709204",
-            "Latitud": "4.1238615"
+            "longitud": "-73.62709204",
+            "latitud": "4.1238615"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50006",
-            "Nombre departamento": "META",
-            "municipio": "ACACIAS",
-            "Longitud": "-73.76593665",
-            "Latitud": "3.990120663"
+            "dep": "50",
+            "muni": "50006",
+            "departamento": "META",
+            "municipio": "ACACÍAS",
+            "longitud": "-73.76593665",
+            "latitud": "3.990120663"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50110",
-            "Nombre departamento": "META",
-            "municipio": "BARRANCA DE UPIA",
-            "Longitud": "-72.96433381",
-            "Latitud": "4.570622971"
+            "dep": "50",
+            "muni": "50110",
+            "departamento": "META",
+            "municipio": "BARRANCA DE UPÍA",
+            "longitud": "-72.96433381",
+            "latitud": "4.570622971"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50124",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50124",
+            "departamento": "META",
             "municipio": "CABUYARO",
-            "Longitud": "-72.79197878",
-            "Latitud": "4.285923848"
+            "longitud": "-72.79197878",
+            "latitud": "4.285923848"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50150",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50150",
+            "departamento": "META",
             "municipio": "CASTILLA LA NUEVA",
-            "Longitud": "-73.6881296",
-            "Latitud": "3.828040352"
+            "longitud": "-73.6881296",
+            "latitud": "3.828040352"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50223",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50223",
+            "departamento": "META",
             "municipio": "CUBARRAL",
-            "Longitud": "-73.83921349",
-            "Latitud": "3.794089465"
+            "longitud": "-73.83921349",
+            "latitud": "3.794089465"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50226",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50226",
+            "departamento": "META",
             "municipio": "CUMARAL",
-            "Longitud": "-73.48610878",
-            "Latitud": "4.269537766"
+            "longitud": "-73.48610878",
+            "latitud": "4.269537766"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50245",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50245",
+            "departamento": "META",
             "municipio": "EL CALVARIO",
-            "Longitud": "-73.71332879",
-            "Latitud": "4.352622053"
+            "longitud": "-73.71332879",
+            "latitud": "4.352622053"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50251",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50251",
+            "departamento": "META",
             "municipio": "EL CASTILLO",
-            "Longitud": "-73.79401276",
-            "Latitud": "3.563834019"
+            "longitud": "-73.79401276",
+            "latitud": "3.563834019"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50270",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50270",
+            "departamento": "META",
             "municipio": "EL DORADO",
-            "Longitud": "-73.835012",
-            "Latitud": "3.740004078"
+            "longitud": "-73.835012",
+            "latitud": "3.740004078"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50287",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50287",
+            "departamento": "META",
             "municipio": "FUENTEDEORO",
-            "Longitud": "-73.61798161",
-            "Latitud": "3.462868031"
+            "longitud": "-73.61798161",
+            "latitud": "3.462868031"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50313",
-            "Nombre departamento": "META",
-            "municipio": "GRANADA",
-            "Longitud": "-73.70571533",
-            "Latitud": "3.546694724"
+            "dep": "50",
+            "muni": "50325",
+            "departamento": "META",
+            "municipio": "MAPIRIPÁN",
+            "longitud": "-72.13564487",
+            "latitud": "2.896439137"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50318",
-            "Nombre departamento": "META",
-            "municipio": "GUAMAL",
-            "Longitud": "-73.77033863",
-            "Latitud": "3.880638599"
-        },
-        {
-            "Código departamento": "50",
-            "Código municipio": "50325",
-            "Nombre departamento": "META",
-            "municipio": "MAPIRIPAN",
-            "Longitud": "-72.13564487",
-            "Latitud": "2.896439137"
-        },
-        {
-            "Código departamento": "50",
-            "Código municipio": "50330",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50330",
+            "departamento": "META",
             "municipio": "MESETAS",
-            "Longitud": "-74.04368085",
-            "Latitud": "3.383924761"
+            "longitud": "-74.04368085",
+            "latitud": "3.383924761"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50350",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50350",
+            "departamento": "META",
             "municipio": "LA MACARENA",
-            "Longitud": "-73.78706882",
-            "Latitud": "2.17821427"
+            "longitud": "-73.78706882",
+            "latitud": "2.17821427"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50370",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50370",
+            "departamento": "META",
             "municipio": "URIBE",
-            "Longitud": "-74.35154535",
-            "Latitud": "3.239652997"
+            "longitud": "-74.35154535",
+            "latitud": "3.239652997"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50400",
-            "Nombre departamento": "META",
-            "municipio": "LEJANIAS",
-            "Longitud": "-74.024022",
-            "Latitud": "3.525919845"
+            "dep": "50",
+            "muni": "50400",
+            "departamento": "META",
+            "municipio": "LEJANÍAS",
+            "longitud": "-74.024022",
+            "latitud": "3.525919845"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50450",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50450",
+            "departamento": "META",
             "municipio": "PUERTO CONCORDIA",
-            "Longitud": "-72.76004759",
-            "Latitud": "2.623082153"
+            "longitud": "-72.76004759",
+            "latitud": "2.623082153"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50568",
-            "Nombre departamento": "META",
-            "municipio": "PUERTO GAITAN",
-            "Longitud": "-72.08307894",
-            "Latitud": "4.314487455"
+            "dep": "50",
+            "muni": "50568",
+            "departamento": "META",
+            "municipio": "PUERTO GAITÁN",
+            "longitud": "-72.08307894",
+            "latitud": "4.314487455"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50573",
-            "Nombre departamento": "META",
-            "municipio": "PUERTO LOPEZ",
-            "Longitud": "-72.95743626",
-            "Latitud": "4.093406425"
+            "dep": "50",
+            "muni": "50573",
+            "departamento": "META",
+            "municipio": "PUERTO LÓPEZ",
+            "longitud": "-72.95743626",
+            "latitud": "4.093406425"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50577",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50577",
+            "departamento": "META",
             "municipio": "PUERTO LLERAS",
-            "Longitud": "-73.37374343",
-            "Latitud": "3.269732439"
+            "longitud": "-73.37374343",
+            "latitud": "3.269732439"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50590",
-            "Nombre departamento": "META",
-            "municipio": "PUERTO RICO",
-            "Longitud": "-73.20651333",
-            "Latitud": "2.939743676"
-        },
-        {
-            "Código departamento": "50",
-            "Código municipio": "50606",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50606",
+            "departamento": "META",
             "municipio": "RESTREPO",
-            "Longitud": "-73.56460418",
-            "Latitud": "4.260731994"
+            "longitud": "-73.56460418",
+            "latitud": "4.260731994"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50680",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50680",
+            "departamento": "META",
             "municipio": "SAN CARLOS DE GUAROA",
-            "Longitud": "-73.24140912",
-            "Latitud": "3.71053664"
+            "longitud": "-73.24140912",
+            "latitud": "3.71053664"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50683",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50683",
+            "departamento": "META",
             "municipio": "SAN JUAN DE ARAMA",
-            "Longitud": "-73.87583154",
-            "Latitud": "3.373727874"
+            "longitud": "-73.87583154",
+            "latitud": "3.373727874"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50686",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50686",
+            "departamento": "META",
             "municipio": "SAN JUANITO",
-            "Longitud": "-73.67669903",
-            "Latitud": "4.458180005"
+            "longitud": "-73.67669903",
+            "latitud": "4.458180005"
         },
         {
-            "Código departamento": "50",
-            "Código municipio": "50689",
-            "Nombre departamento": "META",
-            "municipio": "SAN MARTIN",
-            "Longitud": "-73.69561782",
-            "Latitud": "3.701879876"
-        },
-        {
-            "Código departamento": "50",
-            "Código municipio": "50711",
-            "Nombre departamento": "META",
+            "dep": "50",
+            "muni": "50711",
+            "departamento": "META",
             "municipio": "VISTAHERMOSA",
-            "Longitud": "-73.75116676",
-            "Latitud": "3.1257521"
+            "longitud": "-73.75116676",
+            "latitud": "3.1257521"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52001",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52001",
+            "departamento": "NARIÑO",
             "municipio": "PASTO",
-            "Longitud": "-77.27857635",
-            "Latitud": "1.212124365"
+            "longitud": "-77.27857635",
+            "latitud": "1.212124365"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52019",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "ALBAN",
-            "Longitud": "-77.08071233",
-            "Latitud": "1.474978015"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52022",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52022",
+            "departamento": "NARIÑO",
             "municipio": "ALDANA",
-            "Longitud": "-77.70035656",
-            "Latitud": "0.882181195"
+            "longitud": "-77.70035656",
+            "latitud": "0.882181195"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52036",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52036",
+            "departamento": "NARIÑO",
             "municipio": "ANCUYA",
-            "Longitud": "-77.51451329",
-            "Latitud": "1.263299977"
+            "longitud": "-77.51451329",
+            "latitud": "1.263299977"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52051",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52051",
+            "departamento": "NARIÑO",
             "municipio": "ARBOLEDA",
-            "Longitud": "-77.13539889",
-            "Latitud": "1.503536564"
+            "longitud": "-77.13539889",
+            "latitud": "1.503536564"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52079",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52079",
+            "departamento": "NARIÑO",
             "municipio": "BARBACOAS",
-            "Longitud": "-78.13989493",
-            "Latitud": "1.670345194"
+            "longitud": "-78.13989493",
+            "latitud": "1.670345194"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52083",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "BELEN",
-            "Longitud": "-77.01566573",
-            "Latitud": "1.595676065"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52110",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52110",
+            "departamento": "NARIÑO",
             "municipio": "BUESACO",
-            "Longitud": "-77.15647975",
-            "Latitud": "1.381434415"
+            "longitud": "-77.15647975",
+            "latitud": "1.381434415"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52203",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "COLON",
-            "Longitud": "-77.01977704",
-            "Latitud": "1.643874302"
+            "dep": "52",
+            "muni": "52203",
+            "departamento": "NARIÑO",
+            "municipio": "COLÓN",
+            "longitud": "-77.01977704",
+            "latitud": "1.643874302"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52207",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "CONSACA",
-            "Longitud": "-77.46510211",
-            "Latitud": "1.207623056"
+            "dep": "52",
+            "muni": "52207",
+            "departamento": "NARIÑO",
+            "municipio": "CONSACÁ",
+            "longitud": "-77.46510211",
+            "latitud": "1.207623056"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52210",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52210",
+            "departamento": "NARIÑO",
             "municipio": "CONTADERO",
-            "Longitud": "-77.54940902",
-            "Latitud": "0.910457863"
+            "longitud": "-77.54940902",
+            "latitud": "0.910457863"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52215",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "CORDOBA",
-            "Longitud": "-77.51789656",
-            "Latitud": "0.854564418"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52224",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52224",
+            "departamento": "NARIÑO",
             "municipio": "CUASPUD CARLOSAMA",
-            "Longitud": "-77.72894683",
-            "Latitud": "0.862978103"
+            "longitud": "-77.72894683",
+            "latitud": "0.862978103"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52227",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52227",
+            "departamento": "NARIÑO",
             "municipio": "CUMBAL",
-            "Longitud": "-77.79227662",
-            "Latitud": "0.906185361"
+            "longitud": "-77.79227662",
+            "latitud": "0.906185361"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52233",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52233",
+            "departamento": "NARIÑO",
             "municipio": "CUMBITARA",
-            "Longitud": "-77.57814673",
-            "Latitud": "1.646845971"
+            "longitud": "-77.57814673",
+            "latitud": "1.646845971"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52240",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "CHACHAGÜI",
-            "Longitud": "-77.28170144",
-            "Latitud": "1.36032802"
+            "dep": "52",
+            "muni": "52240",
+            "departamento": "NARIÑO",
+            "municipio": "CHACHAGÜÍ",
+            "longitud": "-77.28170144",
+            "latitud": "1.36032802"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52250",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52250",
+            "departamento": "NARIÑO",
             "municipio": "EL CHARCO",
-            "Longitud": "-78.109849",
-            "Latitud": "2.477550593"
+            "longitud": "-78.109849",
+            "latitud": "2.477550593"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52254",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52254",
+            "departamento": "NARIÑO",
             "municipio": "EL PEÑOL",
-            "Longitud": "-77.43785937",
-            "Latitud": "1.452892601"
+            "longitud": "-77.43785937",
+            "latitud": "1.452892601"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52256",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52256",
+            "departamento": "NARIÑO",
             "municipio": "EL ROSARIO",
-            "Longitud": "-77.33456556",
-            "Latitud": "1.742475705"
+            "longitud": "-77.33456556",
+            "latitud": "1.742475705"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52258",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "EL TABLON DE GOMEZ",
-            "Longitud": "-77.09673083",
-            "Latitud": "1.427054031"
+            "dep": "52",
+            "muni": "52258",
+            "departamento": "NARIÑO",
+            "municipio": "EL TABLÓN DE GÓMEZ",
+            "longitud": "-77.09673083",
+            "latitud": "1.427054031"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52260",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "EL TAMBO",
-            "Longitud": "-77.39020466",
-            "Latitud": "1.407643422"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52287",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52287",
+            "departamento": "NARIÑO",
             "municipio": "FUNES",
-            "Longitud": "-77.4489786",
-            "Latitud": "1.001135181"
+            "longitud": "-77.4489786",
+            "latitud": "1.001135181"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52317",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52317",
+            "departamento": "NARIÑO",
             "municipio": "GUACHUCAL",
-            "Longitud": "-77.73158986",
-            "Latitud": "0.959743484"
+            "longitud": "-77.73158986",
+            "latitud": "0.959743484"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52320",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52320",
+            "departamento": "NARIÑO",
             "municipio": "GUAITARILLA",
-            "Longitud": "-77.54968882",
-            "Latitud": "1.129632504"
+            "longitud": "-77.54968882",
+            "latitud": "1.129632504"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52323",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "GUALMATAN",
-            "Longitud": "-77.56681512",
-            "Latitud": "0.91980291"
+            "dep": "52",
+            "muni": "52323",
+            "departamento": "NARIÑO",
+            "municipio": "GUALMATÁN",
+            "longitud": "-77.56681512",
+            "latitud": "0.91980291"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52352",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52352",
+            "departamento": "NARIÑO",
             "municipio": "ILES",
-            "Longitud": "-77.5209759",
-            "Latitud": "0.969205287"
+            "longitud": "-77.5209759",
+            "latitud": "0.969205287"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52354",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "IMUES",
-            "Longitud": "-77.49617816",
-            "Latitud": "1.055137709"
+            "dep": "52",
+            "muni": "52354",
+            "departamento": "NARIÑO",
+            "municipio": "IMUÉS",
+            "longitud": "-77.49617816",
+            "latitud": "1.055137709"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52356",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52356",
+            "departamento": "NARIÑO",
             "municipio": "IPIALES",
-            "Longitud": "-77.64640075",
-            "Latitud": "0.827734241"
+            "longitud": "-77.64640075",
+            "latitud": "0.827734241"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52378",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52378",
+            "departamento": "NARIÑO",
             "municipio": "LA CRUZ",
-            "Longitud": "-76.97053174",
-            "Latitud": "1.601339314"
+            "longitud": "-76.97053174",
+            "latitud": "1.601339314"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52381",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52381",
+            "departamento": "NARIÑO",
             "municipio": "LA FLORIDA",
-            "Longitud": "-77.40643084",
-            "Latitud": "1.299192232"
+            "longitud": "-77.40643084",
+            "latitud": "1.299192232"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52385",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52385",
+            "departamento": "NARIÑO",
             "municipio": "LA LLANADA",
-            "Longitud": "-77.58071165",
-            "Latitud": "1.472636197"
+            "longitud": "-77.58071165",
+            "latitud": "1.472636197"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52390",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52390",
+            "departamento": "NARIÑO",
             "municipio": "LA TOLA",
-            "Longitud": "-78.19039205",
-            "Latitud": "2.398212191"
+            "longitud": "-78.19039205",
+            "latitud": "2.398212191"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52399",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "LA UNION",
-            "Longitud": "-77.13115435",
-            "Latitud": "1.600268613"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52405",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52405",
+            "departamento": "NARIÑO",
             "municipio": "LEIVA",
-            "Longitud": "-77.30621378",
-            "Latitud": "1.934516214"
+            "longitud": "-77.30621378",
+            "latitud": "1.934516214"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52411",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52411",
+            "departamento": "NARIÑO",
             "municipio": "LINARES",
-            "Longitud": "-77.52193996",
-            "Latitud": "1.351145073"
+            "longitud": "-77.52193996",
+            "latitud": "1.351145073"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52418",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52418",
+            "departamento": "NARIÑO",
             "municipio": "LOS ANDES",
-            "Longitud": "-77.52132596",
-            "Latitud": "1.494547405"
+            "longitud": "-77.52132596",
+            "latitud": "1.494547405"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52427",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "MAGÜI",
-            "Longitud": "-78.18106078",
-            "Latitud": "1.765313671"
+            "dep": "52",
+            "muni": "52427",
+            "departamento": "NARIÑO",
+            "municipio": "MAGÜÍ",
+            "longitud": "-78.18106078",
+            "latitud": "1.765313671"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52435",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52435",
+            "departamento": "NARIÑO",
             "municipio": "MALLAMA",
-            "Longitud": "-77.86442829",
-            "Latitud": "1.14083897"
+            "longitud": "-77.86442829",
+            "latitud": "1.14083897"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52473",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "MOSQUERA",
-            "Longitud": "-78.45298541",
-            "Latitud": "2.507116414"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52480",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "NARIÑO",
-            "Longitud": "-77.35797213",
-            "Latitud": "1.288978992"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52490",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52490",
+            "departamento": "NARIÑO",
             "municipio": "OLAYA HERRERA",
-            "Longitud": "-78.32561871",
-            "Latitud": "2.347584488"
+            "longitud": "-78.32561871",
+            "latitud": "2.347584488"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52506",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52506",
+            "departamento": "NARIÑO",
             "municipio": "OSPINA",
-            "Longitud": "-77.56606698",
-            "Latitud": "1.058491691"
+            "longitud": "-77.56606698",
+            "latitud": "1.058491691"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52520",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52520",
+            "departamento": "NARIÑO",
             "municipio": "FRANCISCO PIZARRO",
-            "Longitud": "-78.65818187",
-            "Latitud": "2.040809056"
+            "longitud": "-78.65818187",
+            "latitud": "2.040809056"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52540",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52540",
+            "departamento": "NARIÑO",
             "municipio": "POLICARPA",
-            "Longitud": "-77.45926539",
-            "Latitud": "1.62813872"
+            "longitud": "-77.45926539",
+            "latitud": "1.62813872"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52560",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "POTOSI",
-            "Longitud": "-77.57279178",
-            "Latitud": "0.806340417"
+            "dep": "52",
+            "muni": "52560",
+            "departamento": "NARIÑO",
+            "municipio": "POTOSÍ",
+            "longitud": "-77.57279178",
+            "latitud": "0.806340417"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52565",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52565",
+            "departamento": "NARIÑO",
             "municipio": "PROVIDENCIA",
-            "Longitud": "-77.59659215",
-            "Latitud": "1.237691504"
+            "longitud": "-77.59659215",
+            "latitud": "1.237691504"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52573",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52573",
+            "departamento": "NARIÑO",
             "municipio": "PUERRES",
-            "Longitud": "-77.50421065",
-            "Latitud": "0.885125175"
+            "longitud": "-77.50421065",
+            "latitud": "0.885125175"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52585",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52585",
+            "departamento": "NARIÑO",
             "municipio": "PUPIALES",
-            "Longitud": "-77.63350443",
-            "Latitud": "0.867139628"
+            "longitud": "-77.63350443",
+            "latitud": "0.867139628"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52612",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "RICAURTE",
-            "Longitud": "-77.99544487",
-            "Latitud": "1.212931458"
+            "dep": "52",
+            "muni": "52621",
+            "departamento": "NARIÑO",
+            "municipio": "ROBERTO PAYÁN",
+            "longitud": "-78.24566252",
+            "latitud": "1.697744768"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52621",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "ROBERTO PAYAN",
-            "Longitud": "-78.24566252",
-            "Latitud": "1.697744768"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52678",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52678",
+            "departamento": "NARIÑO",
             "municipio": "SAMANIEGO",
-            "Longitud": "-77.59445713",
-            "Latitud": "1.335351879"
+            "longitud": "-77.59445713",
+            "latitud": "1.335351879"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52683",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "SANDONA",
-            "Longitud": "-77.46956757",
-            "Latitud": "1.28613693"
+            "dep": "52",
+            "muni": "52683",
+            "departamento": "NARIÑO",
+            "municipio": "SANDONÁ",
+            "longitud": "-77.46956757",
+            "latitud": "1.28613693"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52685",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "SAN BERNARDO",
-            "Longitud": "-77.04740277",
-            "Latitud": "1.514253666"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52687",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52687",
+            "departamento": "NARIÑO",
             "municipio": "SAN LORENZO",
-            "Longitud": "-77.21523165",
-            "Latitud": "1.503340987"
+            "longitud": "-77.21523165",
+            "latitud": "1.503340987"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52693",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "SAN PABLO",
-            "Longitud": "-77.01392439",
-            "Latitud": "1.669426894"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52694",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52694",
+            "departamento": "NARIÑO",
             "municipio": "SAN PEDRO DE CARTAGO",
-            "Longitud": "-77.1191975",
-            "Latitud": "1.551658844"
+            "longitud": "-77.1191975",
+            "latitud": "1.551658844"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52696",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "SANTA BARBARA",
-            "Longitud": "-77.97908278",
-            "Latitud": "2.449548194"
-        },
-        {
-            "Código departamento": "52",
-            "Código municipio": "52699",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52699",
+            "departamento": "NARIÑO",
             "municipio": "SANTACRUZ",
-            "Longitud": "-77.67702224",
-            "Latitud": "1.221985919"
+            "longitud": "-77.67702224",
+            "latitud": "1.221985919"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52720",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52720",
+            "departamento": "NARIÑO",
             "municipio": "SAPUYES",
-            "Longitud": "-77.62030027",
-            "Latitud": "1.037527856"
+            "longitud": "-77.62030027",
+            "latitud": "1.037527856"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52786",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52786",
+            "departamento": "NARIÑO",
             "municipio": "TAMINANGO",
-            "Longitud": "-77.2802216",
-            "Latitud": "1.570047767"
+            "longitud": "-77.2802216",
+            "latitud": "1.570047767"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52788",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52788",
+            "departamento": "NARIÑO",
             "municipio": "TANGUA",
-            "Longitud": "-77.39269418",
-            "Latitud": "1.094880515"
+            "longitud": "-77.39269418",
+            "latitud": "1.094880515"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52835",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "TUMACO",
-            "Longitud": "-78.76385415",
-            "Latitud": "1.80711725"
+            "dep": "52",
+            "muni": "52835",
+            "departamento": "NARIÑO",
+            "municipio": "SAN ANDRÉS DE TUMACO",
+            "longitud": "-78.76385415",
+            "latitud": "1.80711725"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52838",
-            "Nombre departamento": "NARIÑO",
-            "municipio": "TUQUERRES",
-            "Longitud": "-77.61688638",
-            "Latitud": "1.085193359"
+            "dep": "52",
+            "muni": "52838",
+            "departamento": "NARIÑO",
+            "municipio": "TÚQUERRES",
+            "longitud": "-77.61688638",
+            "latitud": "1.085193359"
         },
         {
-            "Código departamento": "52",
-            "Código municipio": "52885",
-            "Nombre departamento": "NARIÑO",
+            "dep": "52",
+            "muni": "52885",
+            "departamento": "NARIÑO",
             "municipio": "YACUANQUER",
-            "Longitud": "-77.40282382",
-            "Latitud": "1.114556241"
+            "longitud": "-77.40282382",
+            "latitud": "1.114556241"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54001",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "CUCUTA",
-            "Longitud": "-72.5082562",
-            "Latitud": "7.905306295",
+            "dep": "54",
+            "muni": "54001",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "CÚCUTA",
+            "longitud": "-72.5082562",
+            "latitud": "7.905306295",
             "Área metropolitana": "AREA METROPOLITANA DE CÚCUTA"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54003",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "ABREGO",
-            "Longitud": "-73.2217344",
-            "Latitud": "8.081784141"
+            "dep": "54",
+            "muni": "54003",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "ÁBREGO",
+            "longitud": "-73.2217344",
+            "latitud": "8.081784141"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54051",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54051",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "ARBOLEDAS",
-            "Longitud": "-72.79887452",
-            "Latitud": "7.64297044"
+            "longitud": "-72.79887452",
+            "latitud": "7.64297044"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54099",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54099",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "BOCHALEMA",
-            "Longitud": "-72.64703809",
-            "Latitud": "7.612168052"
+            "longitud": "-72.64703809",
+            "latitud": "7.612168052"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54109",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54109",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "BUCARASICA",
-            "Longitud": "-72.86795437",
-            "Latitud": "8.041167343"
+            "longitud": "-72.86795437",
+            "latitud": "8.041167343"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54125",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "CACOTA",
-            "Longitud": "-72.64205884",
-            "Latitud": "7.268705462"
+            "dep": "54",
+            "muni": "54125",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "CÁCOTA",
+            "longitud": "-72.64205884",
+            "latitud": "7.268705462"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54128",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "CACHIRA",
-            "Longitud": "-73.04874552",
-            "Latitud": "7.740905158"
+            "dep": "54",
+            "muni": "54128",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "CÁCHIRA",
+            "longitud": "-73.04874552",
+            "latitud": "7.740905158"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54172",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "CHINACOTA",
-            "Longitud": "-72.60467824",
-            "Latitud": "7.600957669"
+            "dep": "54",
+            "muni": "54172",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "CHINÁCOTA",
+            "longitud": "-72.60467824",
+            "latitud": "7.600957669"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54174",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "CHITAGA",
-            "Longitud": "-72.66543492",
-            "Latitud": "7.138122324"
+            "dep": "54",
+            "muni": "54174",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "CHITAGÁ",
+            "longitud": "-72.66543492",
+            "latitud": "7.138122324"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54206",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "CONVENCION",
-            "Longitud": "-73.33720845",
-            "Latitud": "8.470368933"
+            "dep": "54",
+            "muni": "54206",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "CONVENCIÓN",
+            "longitud": "-73.33720845",
+            "latitud": "8.470368933"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54223",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54223",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "CUCUTILLA",
-            "Longitud": "-72.77257191",
-            "Latitud": "7.538987137"
+            "longitud": "-72.77257191",
+            "latitud": "7.538987137"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54239",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54239",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "DURANIA",
-            "Longitud": "-72.65860469",
-            "Latitud": "7.714779625"
+            "longitud": "-72.65860469",
+            "latitud": "7.714779625"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54245",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54245",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "EL CARMEN",
-            "Longitud": "-73.44668712",
-            "Latitud": "8.510578756"
+            "longitud": "-73.44668712",
+            "latitud": "8.510578756"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54250",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54250",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "EL TARRA",
-            "Longitud": "-73.09484592",
-            "Latitud": "8.576771365"
+            "longitud": "-73.09484592",
+            "latitud": "8.576771365"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54261",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54261",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "EL ZULIA",
-            "Longitud": "-72.60466818",
-            "Latitud": "7.938229487",
+            "longitud": "-72.60466818",
+            "latitud": "7.938229487",
             "Área metropolitana": "AREA METROPOLITANA DE CÚCUTA"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54313",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54313",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "GRAMALOTE",
-            "Longitud": "-72.78683006",
-            "Latitud": "7.916581824"
+            "longitud": "-72.78683006",
+            "latitud": "7.916581824"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54344",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "HACARI",
-            "Longitud": "-73.14597535",
-            "Latitud": "8.321714562"
+            "dep": "54",
+            "muni": "54344",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "HACARÍ",
+            "longitud": "-73.14597535",
+            "latitud": "8.321714562"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54347",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "HERRAN",
-            "Longitud": "-72.48351934",
-            "Latitud": "7.506540865"
+            "dep": "54",
+            "muni": "54347",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "HERRÁN",
+            "longitud": "-72.48351934",
+            "latitud": "7.506540865"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54377",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54377",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "LABATECA",
-            "Longitud": "-72.49587415",
-            "Latitud": "7.298339256"
+            "longitud": "-72.49587415",
+            "latitud": "7.298339256"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54385",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54385",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "LA ESPERANZA",
-            "Longitud": "-73.32789745",
-            "Latitud": "7.639990913"
+            "longitud": "-73.32789745",
+            "latitud": "7.639990913"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54398",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54398",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "LA PLAYA",
-            "Longitud": "-73.23864867",
-            "Latitud": "8.212627106"
+            "longitud": "-73.23864867",
+            "latitud": "8.212627106"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54405",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54405",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "LOS PATIOS",
-            "Longitud": "-72.50571256",
-            "Latitud": "7.833256289",
+            "longitud": "-72.50571256",
+            "latitud": "7.833256289",
             "Área metropolitana": "AREA METROPOLITANA DE CÚCUTA"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54418",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54418",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "LOURDES",
-            "Longitud": "-72.83251126",
-            "Latitud": "7.944519557"
+            "longitud": "-72.83251126",
+            "latitud": "7.944519557"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54480",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54480",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "MUTISCUA",
-            "Longitud": "-72.74713854",
-            "Latitud": "7.300280499"
+            "longitud": "-72.74713854",
+            "latitud": "7.300280499"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54498",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54498",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "OCAÑA",
-            "Longitud": "-73.3558144",
-            "Latitud": "8.247453792"
+            "longitud": "-73.3558144",
+            "latitud": "8.247453792"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54518",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54518",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "PAMPLONA",
-            "Longitud": "-72.64768144",
-            "Latitud": "7.37285018"
+            "longitud": "-72.64768144",
+            "latitud": "7.37285018"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54520",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54520",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "PAMPLONITA",
-            "Longitud": "-72.63920376",
-            "Latitud": "7.43674668"
+            "longitud": "-72.63920376",
+            "latitud": "7.43674668"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54553",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54553",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "PUERTO SANTANDER",
-            "Longitud": "-72.41031378",
-            "Latitud": "8.360945615",
+            "longitud": "-72.41031378",
+            "latitud": "8.360945615",
             "Área metropolitana": "AREA METROPOLITANA DE CÚCUTA"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54599",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54599",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "RAGONVALIA",
-            "Longitud": "-72.47670824",
-            "Latitud": "7.577861415"
+            "longitud": "-72.47670824",
+            "latitud": "7.577861415"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54660",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54660",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "SALAZAR",
-            "Longitud": "-72.81312435",
-            "Latitud": "7.773671228"
+            "longitud": "-72.81312435",
+            "latitud": "7.773671228"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54670",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54670",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "SAN CALIXTO",
-            "Longitud": "-73.20605269",
-            "Latitud": "8.40015189"
+            "longitud": "-73.20605269",
+            "latitud": "8.40015189"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54673",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "SAN CAYETANO",
-            "Longitud": "-72.62541163",
-            "Latitud": "7.875532739",
-            "Área metropolitana": "AREA METROPOLITANA DE CÚCUTA"
-        },
-        {
-            "Código departamento": "54",
-            "Código municipio": "54680",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54680",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "SANTIAGO",
-            "Longitud": "-72.71661777",
-            "Latitud": "7.86516264"
+            "longitud": "-72.71661777",
+            "latitud": "7.86516264"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54720",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54720",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "SARDINATA",
-            "Longitud": "-72.80075838",
-            "Latitud": "8.082013666"
+            "longitud": "-72.80075838",
+            "latitud": "8.082013666"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54743",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54743",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "SILOS",
-            "Longitud": "-72.75706248",
-            "Latitud": "7.204786615"
+            "longitud": "-72.75706248",
+            "latitud": "7.204786615"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54800",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54800",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "TEORAMA",
-            "Longitud": "-73.28740929",
-            "Latitud": "8.436377338"
+            "longitud": "-73.28740929",
+            "latitud": "8.436377338"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54810",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "TIBU",
-            "Longitud": "-72.73591863",
-            "Latitud": "8.639548853"
+            "dep": "54",
+            "muni": "54810",
+            "departamento": "NORTE DE SANTANDER",
+            "municipio": "TIBÚ",
+            "longitud": "-72.73591863",
+            "latitud": "8.639548853"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54820",
-            "Nombre departamento": "NORTE DE SANTANDER",
-            "municipio": "TOLEDO",
-            "Longitud": "-72.48510732",
-            "Latitud": "7.310031828"
-        },
-        {
-            "Código departamento": "54",
-            "Código municipio": "54871",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54871",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "VILLA CARO",
-            "Longitud": "-72.97365239",
-            "Latitud": "7.914278305"
+            "longitud": "-72.97365239",
+            "latitud": "7.914278305"
         },
         {
-            "Código departamento": "54",
-            "Código municipio": "54874",
-            "Nombre departamento": "NORTE DE SANTANDER",
+            "dep": "54",
+            "muni": "54874",
+            "departamento": "NORTE DE SANTANDER",
             "municipio": "VILLA DEL ROSARIO",
-            "Longitud": "-72.47006734",
-            "Latitud": "7.847487432",
+            "longitud": "-72.47006734",
+            "latitud": "7.847487432",
             "Área metropolitana": "AREA METROPOLITANA DE CÚCUTA"
         },
         {
-            "Código departamento": "63",
-            "Código municipio": "63001",
-            "Nombre departamento": "QUINDÍO",
-            "municipio": "ARMENIA",
-            "Longitud": "-75.68075076",
-            "Latitud": "4.535989502"
+            "dep": "63",
+            "muni": "63130",
+            "departamento": "QUINDÍO",
+            "municipio": "CALARCÁ",
+            "longitud": "-75.64908836",
+            "latitud": "4.515281846"
         },
         {
-            "Código departamento": "63",
-            "Código municipio": "63111",
-            "Nombre departamento": "QUINDÍO",
-            "municipio": "BUENAVISTA",
-            "Longitud": "-75.73933006",
-            "Latitud": "4.360325225"
-        },
-        {
-            "Código departamento": "63",
-            "Código municipio": "63130",
-            "Nombre departamento": "QUINDÍO",
-            "municipio": "CALARCA",
-            "Longitud": "-75.64908836",
-            "Latitud": "4.515281846"
-        },
-        {
-            "Código departamento": "63",
-            "Código municipio": "63190",
-            "Nombre departamento": "QUINDÍO",
+            "dep": "63",
+            "muni": "63190",
+            "departamento": "QUINDÍO",
             "municipio": "CIRCASIA",
-            "Longitud": "-75.63652823",
-            "Latitud": "4.617792043"
+            "longitud": "-75.63652823",
+            "latitud": "4.617792043"
         },
         {
-            "Código departamento": "63",
-            "Código municipio": "63212",
-            "Nombre departamento": "QUINDÍO",
-            "municipio": "CORDOBA",
-            "Longitud": "-75.68786636",
-            "Latitud": "4.392485449"
-        },
-        {
-            "Código departamento": "63",
-            "Código municipio": "63272",
-            "Nombre departamento": "QUINDÍO",
+            "dep": "63",
+            "muni": "63272",
+            "departamento": "QUINDÍO",
             "municipio": "FILANDIA",
-            "Longitud": "-75.65868588",
-            "Latitud": "4.674145572"
+            "longitud": "-75.65868588",
+            "latitud": "4.674145572"
         },
         {
-            "Código departamento": "63",
-            "Código municipio": "63302",
-            "Nombre departamento": "QUINDÍO",
-            "municipio": "GENOVA",
-            "Longitud": "-75.78981661",
-            "Latitud": "4.207477888"
+            "dep": "63",
+            "muni": "63302",
+            "departamento": "QUINDÍO",
+            "municipio": "GÉNOVA",
+            "longitud": "-75.78981661",
+            "latitud": "4.207477888"
         },
         {
-            "Código departamento": "63",
-            "Código municipio": "63401",
-            "Nombre departamento": "QUINDÍO",
+            "dep": "63",
+            "muni": "63401",
+            "departamento": "QUINDÍO",
             "municipio": "LA TEBAIDA",
-            "Longitud": "-75.78646018",
-            "Latitud": "4.453650416"
+            "longitud": "-75.78646018",
+            "latitud": "4.453650416"
         },
         {
-            "Código departamento": "63",
-            "Código municipio": "63470",
-            "Nombre departamento": "QUINDÍO",
+            "dep": "63",
+            "muni": "63470",
+            "departamento": "QUINDÍO",
             "municipio": "MONTENEGRO",
-            "Longitud": "-75.75181224",
-            "Latitud": "4.562959743"
+            "longitud": "-75.75181224",
+            "latitud": "4.562959743"
         },
         {
-            "Código departamento": "63",
-            "Código municipio": "63548",
-            "Nombre departamento": "QUINDÍO",
+            "dep": "63",
+            "muni": "63548",
+            "departamento": "QUINDÍO",
             "municipio": "PIJAO",
-            "Longitud": "-75.703317",
-            "Latitud": "4.33503789"
+            "longitud": "-75.703317",
+            "latitud": "4.33503789"
         },
         {
-            "Código departamento": "63",
-            "Código municipio": "63594",
-            "Nombre departamento": "QUINDÍO",
+            "dep": "63",
+            "muni": "63594",
+            "departamento": "QUINDÍO",
             "municipio": "QUIMBAYA",
-            "Longitud": "-75.7650742",
-            "Latitud": "4.624386086"
+            "longitud": "-75.7650742",
+            "latitud": "4.624386086"
         },
         {
-            "Código departamento": "63",
-            "Código municipio": "63690",
-            "Nombre departamento": "QUINDÍO",
+            "dep": "63",
+            "muni": "63690",
+            "departamento": "QUINDÍO",
             "municipio": "SALENTO",
-            "Longitud": "-75.57084419",
-            "Latitud": "4.637156761"
+            "longitud": "-75.57084419",
+            "latitud": "4.637156761"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66001",
-            "Nombre departamento": "RISARALDA",
+            "dep": "66",
+            "muni": "66001",
+            "departamento": "RISARALDA",
             "municipio": "PEREIRA",
-            "Longitud": "-75.71712306",
-            "Latitud": "4.805680265",
+            "longitud": "-75.71712306",
+            "latitud": "4.805680265",
             "Área metropolitana": "AREA METROPOLITANA DE CENTRO OCCIDENTE"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66045",
-            "Nombre departamento": "RISARALDA",
-            "municipio": "APIA",
-            "Longitud": "-75.94193069",
-            "Latitud": "5.105739367"
+            "dep": "66",
+            "muni": "66045",
+            "departamento": "RISARALDA",
+            "municipio": "APÍA",
+            "longitud": "-75.94193069",
+            "latitud": "5.105739367"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66075",
-            "Nombre departamento": "RISARALDA",
-            "municipio": "BALBOA",
-            "Longitud": "-75.96022168",
-            "Latitud": "4.945769195"
+            "dep": "66",
+            "muni": "66088",
+            "departamento": "RISARALDA",
+            "municipio": "BELÉN DE UMBRÍA",
+            "longitud": "-75.86821852",
+            "latitud": "5.200645376"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66088",
-            "Nombre departamento": "RISARALDA",
-            "municipio": "BELEN DE UMBRIA",
-            "Longitud": "-75.86821852",
-            "Latitud": "5.200645376"
-        },
-        {
-            "Código departamento": "66",
-            "Código municipio": "66170",
-            "Nombre departamento": "RISARALDA",
+            "dep": "66",
+            "muni": "66170",
+            "departamento": "RISARALDA",
             "municipio": "DOSQUEBRADAS",
-            "Longitud": "-75.68246912",
-            "Latitud": "4.827187832",
+            "longitud": "-75.68246912",
+            "latitud": "4.827187832",
             "Área metropolitana": "AREA METROPOLITANA DE CENTRO OCCIDENTE"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66318",
-            "Nombre departamento": "RISARALDA",
-            "municipio": "GUATICA",
-            "Longitud": "-75.7993628",
-            "Latitud": "5.316209512"
+            "dep": "66",
+            "muni": "66318",
+            "departamento": "RISARALDA",
+            "municipio": "GUÁTICA",
+            "longitud": "-75.7993628",
+            "latitud": "5.316209512"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66383",
-            "Nombre departamento": "RISARALDA",
+            "dep": "66",
+            "muni": "66383",
+            "departamento": "RISARALDA",
             "municipio": "LA CELIA",
-            "Longitud": "-76.00307565",
-            "Latitud": "5.002847301"
+            "longitud": "-76.00307565",
+            "latitud": "5.002847301"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66400",
-            "Nombre departamento": "RISARALDA",
+            "dep": "66",
+            "muni": "66400",
+            "departamento": "RISARALDA",
             "municipio": "LA VIRGINIA",
-            "Longitud": "-75.88405843",
-            "Latitud": "4.898666957",
+            "longitud": "-75.88405843",
+            "latitud": "4.898666957",
             "Área metropolitana": "AREA METROPOLITANA DE CENTRO OCCIDENTE"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66440",
-            "Nombre departamento": "RISARALDA",
+            "dep": "66",
+            "muni": "66440",
+            "departamento": "RISARALDA",
             "municipio": "MARSELLA",
-            "Longitud": "-75.73858326",
-            "Latitud": "4.935559519"
+            "longitud": "-75.73858326",
+            "latitud": "4.935559519"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66456",
-            "Nombre departamento": "RISARALDA",
-            "municipio": "MISTRATO",
-            "Longitud": "-75.88286047",
-            "Latitud": "5.297059061"
+            "dep": "66",
+            "muni": "66456",
+            "departamento": "RISARALDA",
+            "municipio": "MISTRATÓ",
+            "longitud": "-75.88286047",
+            "latitud": "5.297059061"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66572",
-            "Nombre departamento": "RISARALDA",
+            "dep": "66",
+            "muni": "66572",
+            "departamento": "RISARALDA",
             "municipio": "PUEBLO RICO",
-            "Longitud": "-76.03066815",
-            "Latitud": "5.221912104"
+            "longitud": "-76.03066815",
+            "latitud": "5.221912104"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66594",
-            "Nombre departamento": "RISARALDA",
-            "municipio": "QUINCHIA",
-            "Longitud": "-75.7304126",
-            "Latitud": "5.34044568"
+            "dep": "66",
+            "muni": "66594",
+            "departamento": "RISARALDA",
+            "municipio": "QUINCHÍA",
+            "longitud": "-75.7304126",
+            "latitud": "5.34044568"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66682",
-            "Nombre departamento": "RISARALDA",
+            "dep": "66",
+            "muni": "66682",
+            "departamento": "RISARALDA",
             "municipio": "SANTA ROSA DE CABAL",
-            "Longitud": "-75.62001066",
-            "Latitud": "4.867526454"
+            "longitud": "-75.62001066",
+            "latitud": "4.867526454"
         },
         {
-            "Código departamento": "66",
-            "Código municipio": "66687",
-            "Nombre departamento": "RISARALDA",
+            "dep": "66",
+            "muni": "66687",
+            "departamento": "RISARALDA",
             "municipio": "SANTUARIO",
-            "Longitud": "-75.96211553",
-            "Latitud": "5.072781139"
+            "longitud": "-75.96211553",
+            "latitud": "5.072781139"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68001",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68001",
+            "departamento": "SANTANDER",
             "municipio": "BUCARAMANGA",
-            "Longitud": "-73.13259818",
-            "Latitud": "7.116267276",
+            "longitud": "-73.13259818",
+            "latitud": "7.116267276",
             "Área metropolitana": "AREA METROPOLITANA DE BUCARAMANGA"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68013",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68013",
+            "departamento": "SANTANDER",
             "municipio": "AGUADA",
-            "Longitud": "-73.52323684",
-            "Latitud": "6.162237533"
+            "longitud": "-73.52323684",
+            "latitud": "6.162237533"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68020",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "ALBANIA",
-            "Longitud": "-73.91385377",
-            "Latitud": "5.75887024"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68051",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68051",
+            "departamento": "SANTANDER",
             "municipio": "ARATOCA",
-            "Longitud": "-73.01784989",
-            "Latitud": "6.694439966"
+            "longitud": "-73.01784989",
+            "latitud": "6.694439966"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68077",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "BARBOSA",
-            "Longitud": "-73.61599887",
-            "Latitud": "5.932609875"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68079",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68079",
+            "departamento": "SANTANDER",
             "municipio": "BARICHARA",
-            "Longitud": "-73.22309933",
-            "Latitud": "6.634229273"
+            "longitud": "-73.22309933",
+            "latitud": "6.634229273"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68081",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68081",
+            "departamento": "SANTANDER",
             "municipio": "BARRANCABERMEJA",
-            "Longitud": "-73.84995698",
-            "Latitud": "7.064963864"
+            "longitud": "-73.84995698",
+            "latitud": "7.064963864"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68092",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "BETULIA",
-            "Longitud": "-73.28366913",
-            "Latitud": "6.899525365"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68101",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "BOLIVAR",
-            "Longitud": "-73.77134641",
-            "Latitud": "5.988952616"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68121",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "CABRERA",
-            "Longitud": "-73.2465029",
-            "Latitud": "6.592260802"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68132",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68132",
+            "departamento": "SANTANDER",
             "municipio": "CALIFORNIA",
-            "Longitud": "-72.9463583",
-            "Latitud": "7.347884751"
+            "longitud": "-72.9463583",
+            "latitud": "7.347884751"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68147",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68147",
+            "departamento": "SANTANDER",
             "municipio": "CAPITANEJO",
-            "Longitud": "-72.69919959",
-            "Latitud": "6.533179982"
+            "longitud": "-72.69919959",
+            "latitud": "6.533179982"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68152",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "CARCASI",
-            "Longitud": "-72.62708287",
-            "Latitud": "6.628732408"
+            "dep": "68",
+            "muni": "68152",
+            "departamento": "SANTANDER",
+            "municipio": "CARCASÍ",
+            "longitud": "-72.62708287",
+            "latitud": "6.628732408"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68160",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "CEPITA",
-            "Longitud": "-72.97353646",
-            "Latitud": "6.753518402"
+            "dep": "68",
+            "muni": "68160",
+            "departamento": "SANTANDER",
+            "municipio": "CEPITÁ",
+            "longitud": "-72.97353646",
+            "latitud": "6.753518402"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68162",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68162",
+            "departamento": "SANTANDER",
             "municipio": "CERRITO",
-            "Longitud": "-72.69234535",
-            "Latitud": "6.844243582"
+            "longitud": "-72.69234535",
+            "latitud": "6.844243582"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68167",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "CHARALA",
-            "Longitud": "-73.14687039",
-            "Latitud": "6.284348897"
+            "dep": "68",
+            "muni": "68167",
+            "departamento": "SANTANDER",
+            "municipio": "CHARALÁ",
+            "longitud": "-73.14687039",
+            "latitud": "6.284348897"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68169",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68169",
+            "departamento": "SANTANDER",
             "municipio": "CHARTA",
-            "Longitud": "-72.96879846",
-            "Latitud": "7.280820472"
+            "longitud": "-72.96879846",
+            "latitud": "7.280820472"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68176",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68176",
+            "departamento": "SANTANDER",
             "municipio": "CHIMA",
-            "Longitud": "-73.37374774",
-            "Latitud": "6.344351721"
+            "longitud": "-73.37374774",
+            "latitud": "6.344351721"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68179",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "CHIPATA",
-            "Longitud": "-73.63711064",
-            "Latitud": "6.062520904"
+            "dep": "68",
+            "muni": "68179",
+            "departamento": "SANTANDER",
+            "municipio": "CHIPATÁ",
+            "longitud": "-73.63711064",
+            "latitud": "6.062520904"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68190",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68190",
+            "departamento": "SANTANDER",
             "municipio": "CIMITARRA",
-            "Longitud": "-73.95258212",
-            "Latitud": "6.320681867"
+            "longitud": "-73.95258212",
+            "latitud": "6.320681867"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68207",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "CONCEPCION",
-            "Longitud": "-72.69459425",
-            "Latitud": "6.768836528"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68209",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68209",
+            "departamento": "SANTANDER",
             "municipio": "CONFINES",
-            "Longitud": "-73.24055388",
-            "Latitud": "6.35732749"
+            "longitud": "-73.24055388",
+            "latitud": "6.35732749"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68211",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "CONTRATACION",
-            "Longitud": "-73.47442637",
-            "Latitud": "6.290561328"
+            "dep": "68",
+            "muni": "68211",
+            "departamento": "SANTANDER",
+            "municipio": "CONTRATACIÓN",
+            "longitud": "-73.47442637",
+            "latitud": "6.290561328"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68217",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68217",
+            "departamento": "SANTANDER",
             "municipio": "COROMORO",
-            "Longitud": "-73.04081675",
-            "Latitud": "6.294994914"
+            "longitud": "-73.04081675",
+            "latitud": "6.294994914"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68229",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "CURITI",
-            "Longitud": "-73.06939052",
-            "Latitud": "6.605106785"
+            "dep": "68",
+            "muni": "68229",
+            "departamento": "SANTANDER",
+            "municipio": "CURITÍ",
+            "longitud": "-73.06939052",
+            "latitud": "6.605106785"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68235",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68235",
+            "departamento": "SANTANDER",
             "municipio": "EL CARMEN DE CHUCURI",
-            "Longitud": "-73.51126774",
-            "Latitud": "6.697911451"
+            "longitud": "-73.51126774",
+            "latitud": "6.697911451"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68245",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68245",
+            "departamento": "SANTANDER",
             "municipio": "EL GUACAMAYO",
-            "Longitud": "-73.49689291",
-            "Latitud": "6.245119007"
+            "longitud": "-73.49689291",
+            "latitud": "6.245119007"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68250",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "EL PEÑON",
-            "Longitud": "-73.81691092",
-            "Latitud": "6.054277046"
+            "dep": "68",
+            "muni": "68255",
+            "departamento": "SANTANDER",
+            "municipio": "EL PLAYÓN",
+            "longitud": "-73.20287793",
+            "latitud": "7.470719593"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68255",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "EL PLAYON",
-            "Longitud": "-73.20287793",
-            "Latitud": "7.470719593"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68264",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68264",
+            "departamento": "SANTANDER",
             "municipio": "ENCINO",
-            "Longitud": "-73.09873802",
-            "Latitud": "6.137402497"
+            "longitud": "-73.09873802",
+            "latitud": "6.137402497"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68266",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68266",
+            "departamento": "SANTANDER",
             "municipio": "ENCISO",
-            "Longitud": "-72.69964704",
-            "Latitud": "6.66803389"
+            "longitud": "-72.69964704",
+            "latitud": "6.66803389"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68271",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "FLORIAN",
-            "Longitud": "-73.97142307",
-            "Latitud": "5.804666368"
+            "dep": "68",
+            "muni": "68271",
+            "departamento": "SANTANDER",
+            "municipio": "FLORIÁN",
+            "longitud": "-73.97142307",
+            "latitud": "5.804666368"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68276",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68276",
+            "departamento": "SANTANDER",
             "municipio": "FLORIDABLANCA",
-            "Longitud": "-73.09903262",
-            "Latitud": "7.072360403",
+            "longitud": "-73.09903262",
+            "latitud": "7.072360403",
             "Área metropolitana": "AREA METROPOLITANA DE BUCARAMANGA"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68296",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "GALAN",
-            "Longitud": "-73.28776473",
-            "Latitud": "6.638415002"
+            "dep": "68",
+            "muni": "68296",
+            "departamento": "SANTANDER",
+            "municipio": "GALÁN",
+            "longitud": "-73.28776473",
+            "latitud": "6.638415002"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68298",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "GAMBITA",
-            "Longitud": "-73.34418354",
-            "Latitud": "5.945981203"
+            "dep": "68",
+            "muni": "68298",
+            "departamento": "SANTANDER",
+            "municipio": "GÁMBITA",
+            "longitud": "-73.34418354",
+            "latitud": "5.945981203"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68307",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "GIRON",
-            "Longitud": "-73.16825587",
-            "Latitud": "7.072775109",
+            "dep": "68",
+            "muni": "68307",
+            "departamento": "SANTANDER",
+            "municipio": "GIRÓN",
+            "longitud": "-73.16825587",
+            "latitud": "7.072775109",
             "Área metropolitana": "AREA METROPOLITANA DE BUCARAMANGA"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68318",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68318",
+            "departamento": "SANTANDER",
             "municipio": "GUACA",
-            "Longitud": "-72.85632201",
-            "Latitud": "6.876563452"
+            "longitud": "-72.85632201",
+            "latitud": "6.876563452"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68320",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "GUADALUPE",
-            "Longitud": "-73.41929203",
-            "Latitud": "6.245846765"
+            "dep": "68",
+            "muni": "68322",
+            "departamento": "SANTANDER",
+            "municipio": "GUAPOTÁ",
+            "longitud": "-73.32069909",
+            "latitud": "6.308588013"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68322",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "GUAPOTA",
-            "Longitud": "-73.32069909",
-            "Latitud": "6.308588013"
+            "dep": "68",
+            "muni": "68324",
+            "departamento": "SANTANDER",
+            "municipio": "GUAVATÁ",
+            "longitud": "-73.7008021",
+            "latitud": "5.954136076"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68324",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "GUAVATA",
-            "Longitud": "-73.7008021",
-            "Latitud": "5.954136076"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68327",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68327",
+            "departamento": "SANTANDER",
             "municipio": "GÜEPSA",
-            "Longitud": "-73.57532595",
-            "Latitud": "6.024849176"
+            "longitud": "-73.57532595",
+            "latitud": "6.024849176"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68344",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68344",
+            "departamento": "SANTANDER",
             "municipio": "HATO",
-            "Longitud": "-73.30814481",
-            "Latitud": "6.542963886"
+            "longitud": "-73.30814481",
+            "latitud": "6.542963886"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68368",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "JESUS MARIA",
-            "Longitud": "-73.78332817",
-            "Latitud": "5.876543464"
+            "dep": "68",
+            "muni": "68368",
+            "departamento": "SANTANDER",
+            "municipio": "JESÚS MARÍA",
+            "longitud": "-73.78332817",
+            "latitud": "5.876543464"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68370",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "JORDAN",
-            "Longitud": "-73.09605306",
-            "Latitud": "6.732727095"
+            "dep": "68",
+            "muni": "68370",
+            "departamento": "SANTANDER",
+            "municipio": "JORDÁN",
+            "longitud": "-73.09605306",
+            "latitud": "6.732727095"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68377",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68377",
+            "departamento": "SANTANDER",
             "municipio": "LA BELLEZA",
-            "Longitud": "-73.96562587",
-            "Latitud": "5.859549848"
+            "longitud": "-73.96562587",
+            "latitud": "5.859549848"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68385",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "LANDAZURI",
-            "Longitud": "-73.81108528",
-            "Latitud": "6.218748615"
+            "dep": "68",
+            "muni": "68385",
+            "departamento": "SANTANDER",
+            "municipio": "LANDÁZURI",
+            "longitud": "-73.81108528",
+            "latitud": "6.218748615"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68397",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "LA PAZ",
-            "Longitud": "-73.58959003",
-            "Latitud": "6.178509326"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68406",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68406",
+            "departamento": "SANTANDER",
             "municipio": "LEBRIJA",
-            "Longitud": "-73.21955144",
-            "Latitud": "7.113356081"
+            "longitud": "-73.21955144",
+            "latitud": "7.113356081"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68418",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68418",
+            "departamento": "SANTANDER",
             "municipio": "LOS SANTOS",
-            "Longitud": "-73.10265667",
-            "Latitud": "6.755175194"
+            "longitud": "-73.10265667",
+            "latitud": "6.755175194"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68425",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68425",
+            "departamento": "SANTANDER",
             "municipio": "MACARAVITA",
-            "Longitud": "-72.59310546",
-            "Latitud": "6.506580428"
+            "longitud": "-72.59310546",
+            "latitud": "6.506580428"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68432",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "MALAGA",
-            "Longitud": "-72.7323798",
-            "Latitud": "6.703058458"
+            "dep": "68",
+            "muni": "68432",
+            "departamento": "SANTANDER",
+            "municipio": "MÁLAGA",
+            "longitud": "-72.7323798",
+            "latitud": "6.703058458"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68444",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68444",
+            "departamento": "SANTANDER",
             "municipio": "MATANZA",
-            "Longitud": "-73.01556564",
-            "Latitud": "7.323175124"
+            "longitud": "-73.01556564",
+            "latitud": "7.323175124"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68464",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68464",
+            "departamento": "SANTANDER",
             "municipio": "MOGOTES",
-            "Longitud": "-72.96981379",
-            "Latitud": "6.475209953"
+            "longitud": "-72.96981379",
+            "latitud": "6.475209953"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68468",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68468",
+            "departamento": "SANTANDER",
             "municipio": "MOLAGAVITA",
-            "Longitud": "-72.80947223",
-            "Latitud": "6.674357231"
+            "longitud": "-72.80947223",
+            "latitud": "6.674357231"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68498",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68498",
+            "departamento": "SANTANDER",
             "municipio": "OCAMONTE",
-            "Longitud": "-73.12256304",
-            "Latitud": "6.33998773"
+            "longitud": "-73.12256304",
+            "latitud": "6.33998773"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68500",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68500",
+            "departamento": "SANTANDER",
             "municipio": "OIBA",
-            "Longitud": "-73.29978602",
-            "Latitud": "6.265175133"
+            "longitud": "-73.29978602",
+            "latitud": "6.265175133"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68502",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68502",
+            "departamento": "SANTANDER",
             "municipio": "ONZAGA",
-            "Longitud": "-72.81675984",
-            "Latitud": "6.344093685"
+            "longitud": "-72.81675984",
+            "latitud": "6.344093685"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68522",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68522",
+            "departamento": "SANTANDER",
             "municipio": "PALMAR",
-            "Longitud": "-73.29109018",
-            "Latitud": "6.537789332"
+            "longitud": "-73.29109018",
+            "latitud": "6.537789332"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68524",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68524",
+            "departamento": "SANTANDER",
             "municipio": "PALMAS DEL SOCORRO",
-            "Longitud": "-73.28776397",
-            "Latitud": "6.406138656"
+            "longitud": "-73.28776397",
+            "latitud": "6.406138656"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68533",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "PARAMO",
-            "Longitud": "-73.17039954",
-            "Latitud": "6.416592378"
+            "dep": "68",
+            "muni": "68533",
+            "departamento": "SANTANDER",
+            "municipio": "PÁRAMO",
+            "longitud": "-73.17039954",
+            "latitud": "6.416592378"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68547",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68547",
+            "departamento": "SANTANDER",
             "municipio": "PIEDECUESTA",
-            "Longitud": "-73.05466085",
-            "Latitud": "6.997475804",
+            "longitud": "-73.05466085",
+            "latitud": "6.997475804",
             "Área metropolitana": "AREA METROPOLITANA DE BUCARAMANGA"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68549",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68549",
+            "departamento": "SANTANDER",
             "municipio": "PINCHOTE",
-            "Longitud": "-73.17291432",
-            "Latitud": "6.53206027"
+            "longitud": "-73.17291432",
+            "latitud": "6.53206027"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68572",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68572",
+            "departamento": "SANTANDER",
             "municipio": "PUENTE NACIONAL",
-            "Longitud": "-73.6781341",
-            "Latitud": "5.877962665"
+            "longitud": "-73.6781341",
+            "latitud": "5.877962665"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68573",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68573",
+            "departamento": "SANTANDER",
             "municipio": "PUERTO PARRA",
-            "Longitud": "-74.05609429",
-            "Latitud": "6.650806702"
+            "longitud": "-74.05609429",
+            "latitud": "6.650806702"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68575",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68575",
+            "departamento": "SANTANDER",
             "municipio": "PUERTO WILCHES",
-            "Longitud": "-73.89933402",
-            "Latitud": "7.349066144"
+            "longitud": "-73.89933402",
+            "latitud": "7.349066144"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68615",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "RIONEGRO",
-            "Longitud": "-73.15014691",
-            "Latitud": "7.265010486"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68655",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68655",
+            "departamento": "SANTANDER",
             "municipio": "SABANA DE TORRES",
-            "Longitud": "-73.49905016",
-            "Latitud": "7.391911944"
+            "longitud": "-73.49905016",
+            "latitud": "7.391911944"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68669",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "SAN ANDRES",
-            "Longitud": "-72.84880424",
-            "Latitud": "6.812310152"
+            "dep": "68",
+            "muni": "68669",
+            "departamento": "SANTANDER",
+            "municipio": "SAN ANDRÉS",
+            "longitud": "-72.84880424",
+            "latitud": "6.812310152"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68673",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68673",
+            "departamento": "SANTANDER",
             "municipio": "SAN BENITO",
-            "Longitud": "-73.50938735",
-            "Latitud": "6.126244581"
+            "longitud": "-73.50938735",
+            "latitud": "6.126244581"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68679",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68679",
+            "departamento": "SANTANDER",
             "municipio": "SAN GIL",
-            "Longitud": "-73.1368815",
-            "Latitud": "6.555609467"
+            "longitud": "-73.1368815",
+            "latitud": "6.555609467"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68682",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "SAN JOAQUIN",
-            "Longitud": "-72.86763812",
-            "Latitud": "6.427547936"
+            "dep": "68",
+            "muni": "68682",
+            "departamento": "SANTANDER",
+            "municipio": "SAN JOAQUÍN",
+            "longitud": "-72.86763812",
+            "latitud": "6.427547936"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68684",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "SAN JOSE DE MIRANDA",
-            "Longitud": "-72.73361596",
-            "Latitud": "6.658994797"
+            "dep": "68",
+            "muni": "68684",
+            "departamento": "SANTANDER",
+            "municipio": "SAN JOSÉ DE MIRANDA",
+            "longitud": "-72.73361596",
+            "latitud": "6.658994797"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68686",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68686",
+            "departamento": "SANTANDER",
             "municipio": "SAN MIGUEL",
-            "Longitud": "-72.64415509",
-            "Latitud": "6.575625393"
+            "longitud": "-72.64415509",
+            "latitud": "6.575625393"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68689",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "SAN VICENTE DE CHUCURI",
-            "Longitud": "-73.41102393",
-            "Latitud": "6.880382935"
+            "dep": "68",
+            "muni": "68689",
+            "departamento": "SANTANDER",
+            "municipio": "SAN VICENTE DE CHUCURÍ",
+            "longitud": "-73.41102393",
+            "latitud": "6.880382935"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68705",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "SANTA BARBARA",
-            "Longitud": "-72.90733628",
-            "Latitud": "6.990510681"
+            "dep": "68",
+            "muni": "68720",
+            "departamento": "SANTANDER",
+            "municipio": "SANTA HELENA DEL OPÓN",
+            "longitud": "-73.61679327",
+            "latitud": "6.33964535"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68720",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "SANTA HELENA DEL OPON",
-            "Longitud": "-73.61679327",
-            "Latitud": "6.33964535"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68745",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68745",
+            "departamento": "SANTANDER",
             "municipio": "SIMACOTA",
-            "Longitud": "-73.33736767",
-            "Latitud": "6.443471137"
+            "longitud": "-73.33736767",
+            "latitud": "6.443471137"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68755",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68755",
+            "departamento": "SANTANDER",
             "municipio": "SOCORRO",
-            "Longitud": "-73.26119642",
-            "Latitud": "6.463855516"
+            "longitud": "-73.26119642",
+            "latitud": "6.463855516"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68770",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68770",
+            "departamento": "SANTANDER",
             "municipio": "SUAITA",
-            "Longitud": "-73.43841636",
-            "Latitud": "6.103542295"
+            "longitud": "-73.43841636",
+            "latitud": "6.103542295"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68773",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "SUCRE",
-            "Longitud": "-73.79097463",
-            "Latitud": "5.918743412"
+            "dep": "68",
+            "muni": "68780",
+            "departamento": "SANTANDER",
+            "municipio": "SURATÁ",
+            "longitud": "-72.98423197",
+            "latitud": "7.366579569"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68780",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "SURATA",
-            "Longitud": "-72.98423197",
-            "Latitud": "7.366579569"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68820",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68820",
+            "departamento": "SANTANDER",
             "municipio": "TONA",
-            "Longitud": "-72.96601826",
-            "Latitud": "7.202735241"
+            "longitud": "-72.96601826",
+            "latitud": "7.202735241"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68855",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "VALLE DE SAN JOSE",
-            "Longitud": "-73.14373727",
-            "Latitud": "6.447789687"
+            "dep": "68",
+            "muni": "68855",
+            "departamento": "SANTANDER",
+            "municipio": "VALLE DE SAN JOSÉ",
+            "longitud": "-73.14373727",
+            "latitud": "6.447789687"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68861",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "VELEZ",
-            "Longitud": "-73.66629907",
-            "Latitud": "6.010953449"
+            "dep": "68",
+            "muni": "68861",
+            "departamento": "SANTANDER",
+            "municipio": "VÉLEZ",
+            "longitud": "-73.66629907",
+            "latitud": "6.010953449"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68867",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68867",
+            "departamento": "SANTANDER",
             "municipio": "VETAS",
-            "Longitud": "-72.87104088",
-            "Latitud": "7.309810023"
+            "longitud": "-72.87104088",
+            "latitud": "7.309810023"
         },
         {
-            "Código departamento": "68",
-            "Código municipio": "68872",
-            "Nombre departamento": "SANTANDER",
-            "municipio": "VILLANUEVA",
-            "Longitud": "-73.17430669",
-            "Latitud": "6.670077672"
-        },
-        {
-            "Código departamento": "68",
-            "Código municipio": "68895",
-            "Nombre departamento": "SANTANDER",
+            "dep": "68",
+            "muni": "68895",
+            "departamento": "SANTANDER",
             "municipio": "ZAPATOCA",
-            "Longitud": "-73.26791008",
-            "Latitud": "6.8143389"
+            "longitud": "-73.26791008",
+            "latitud": "6.8143389"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70001",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70001",
+            "departamento": "SUCRE",
             "municipio": "SINCELEJO",
-            "Longitud": "-75.39548356",
-            "Latitud": "9.302333104"
+            "longitud": "-75.39548356",
+            "latitud": "9.302333104"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70110",
-            "Nombre departamento": "SUCRE",
-            "municipio": "BUENAVISTA",
-            "Longitud": "-74.973015",
-            "Latitud": "9.319857278"
-        },
-        {
-            "Código departamento": "70",
-            "Código municipio": "70124",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70124",
+            "departamento": "SUCRE",
             "municipio": "CAIMITO",
-            "Longitud": "-75.11714082",
-            "Latitud": "8.789323934"
+            "longitud": "-75.11714082",
+            "latitud": "8.789323934"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70204",
-            "Nombre departamento": "SUCRE",
-            "municipio": "COLOSO",
-            "Longitud": "-75.35325675",
-            "Latitud": "9.494192858"
+            "dep": "70",
+            "muni": "70204",
+            "departamento": "SUCRE",
+            "municipio": "COLOSÓ",
+            "longitud": "-75.35325675",
+            "latitud": "9.494192858"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70215",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70215",
+            "departamento": "SUCRE",
             "municipio": "COROZAL",
-            "Longitud": "-75.29316717",
-            "Latitud": "9.319105571"
+            "longitud": "-75.29316717",
+            "latitud": "9.319105571"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70221",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70221",
+            "departamento": "SUCRE",
             "municipio": "COVEÑAS",
-            "Longitud": "-75.6918671",
-            "Latitud": "9.402463394"
+            "longitud": "-75.6918671",
+            "latitud": "9.402463394"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70230",
-            "Nombre departamento": "SUCRE",
-            "municipio": "CHALAN",
-            "Longitud": "-75.31269631",
-            "Latitud": "9.545351624"
+            "dep": "70",
+            "muni": "70230",
+            "departamento": "SUCRE",
+            "municipio": "CHALÁN",
+            "longitud": "-75.31269631",
+            "latitud": "9.545351624"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70233",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70233",
+            "departamento": "SUCRE",
             "municipio": "EL ROBLE",
-            "Longitud": "-75.1988311",
-            "Latitud": "9.099531847"
+            "longitud": "-75.1988311",
+            "latitud": "9.099531847"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70235",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70235",
+            "departamento": "SUCRE",
             "municipio": "GALERAS",
-            "Longitud": "-75.04942002",
-            "Latitud": "9.159672619"
+            "longitud": "-75.04942002",
+            "latitud": "9.159672619"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70265",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70265",
+            "departamento": "SUCRE",
             "municipio": "GUARANDA",
-            "Longitud": "-74.53834542",
-            "Latitud": "8.464847043"
+            "longitud": "-74.53834542",
+            "latitud": "8.464847043"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70400",
-            "Nombre departamento": "SUCRE",
-            "municipio": "LA UNION",
-            "Longitud": "-75.2760558",
-            "Latitud": "8.85397531"
-        },
-        {
-            "Código departamento": "70",
-            "Código municipio": "70418",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70418",
+            "departamento": "SUCRE",
             "municipio": "LOS PALMITOS",
-            "Longitud": "-75.26874889",
-            "Latitud": "9.380228408"
+            "longitud": "-75.26874889",
+            "latitud": "9.380228408"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70429",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70429",
+            "departamento": "SUCRE",
             "municipio": "MAJAGUAL",
-            "Longitud": "-74.6281014",
-            "Latitud": "8.540712996"
+            "longitud": "-74.6281014",
+            "latitud": "8.540712996"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70473",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70473",
+            "departamento": "SUCRE",
             "municipio": "MORROA",
-            "Longitud": "-75.30619978",
-            "Latitud": "9.331319381"
+            "longitud": "-75.30619978",
+            "latitud": "9.331319381"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70508",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70508",
+            "departamento": "SUCRE",
             "municipio": "OVEJAS",
-            "Longitud": "-75.22908444",
-            "Latitud": "9.526687239"
+            "longitud": "-75.22908444",
+            "latitud": "9.526687239"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70523",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70523",
+            "departamento": "SUCRE",
             "municipio": "PALMITO",
-            "Longitud": "-75.54125915",
-            "Latitud": "9.333108298"
+            "longitud": "-75.54125915",
+            "latitud": "9.333108298"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70670",
-            "Nombre departamento": "SUCRE",
-            "municipio": "SAMPUES",
-            "Longitud": "-75.38019123",
-            "Latitud": "9.183205955"
+            "dep": "70",
+            "muni": "70670",
+            "departamento": "SUCRE",
+            "municipio": "SAMPUÉS",
+            "longitud": "-75.38019123",
+            "latitud": "9.183205955"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70678",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70678",
+            "departamento": "SUCRE",
             "municipio": "SAN BENITO ABAD",
-            "Longitud": "-75.03116081",
-            "Latitud": "8.92997106"
+            "longitud": "-75.03116081",
+            "latitud": "8.92997106"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70702",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70702",
+            "departamento": "SUCRE",
             "municipio": "SAN JUAN DE BETULIA",
-            "Longitud": "-75.24356454",
-            "Latitud": "9.273065988"
+            "longitud": "-75.24356454",
+            "latitud": "9.273065988"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70708",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70708",
+            "departamento": "SUCRE",
             "municipio": "SAN MARCOS",
-            "Longitud": "-75.1323976",
-            "Latitud": "8.664828891"
+            "longitud": "-75.1323976",
+            "latitud": "8.664828891"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70713",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70713",
+            "departamento": "SUCRE",
             "municipio": "SAN ONOFRE",
-            "Longitud": "-75.5230307",
-            "Latitud": "9.736932014"
+            "longitud": "-75.5230307",
+            "latitud": "9.736932014"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70717",
-            "Nombre departamento": "SUCRE",
+            "dep": "70",
+            "muni": "70717",
+            "departamento": "SUCRE",
             "municipio": "SAN PEDRO",
-            "Longitud": "-75.0634897",
-            "Latitud": "9.395963637"
+            "longitud": "-75.0634897",
+            "latitud": "9.395963637"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70742",
-            "Nombre departamento": "SUCRE",
-            "municipio": "SAN LUIS DE SINCE",
-            "Longitud": "-75.14603305",
-            "Latitud": "9.244195993"
+            "dep": "70",
+            "muni": "70742",
+            "departamento": "SUCRE",
+            "municipio": "SAN LUIS DE SINCÉ",
+            "longitud": "-75.14603305",
+            "latitud": "9.244195993"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70771",
-            "Nombre departamento": "SUCRE",
-            "municipio": "SUCRE",
-            "Longitud": "-74.72322511",
-            "Latitud": "8.811740746"
+            "dep": "70",
+            "muni": "70820",
+            "departamento": "SUCRE",
+            "municipio": "SANTIAGO DE TOLÚ",
+            "longitud": "-75.58129872",
+            "latitud": "9.525473229"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70820",
-            "Nombre departamento": "SUCRE",
-            "municipio": "SANTIAGO DE TOLU",
-            "Longitud": "-75.58129872",
-            "Latitud": "9.525473229"
+            "dep": "70",
+            "muni": "70823",
+            "departamento": "SUCRE",
+            "municipio": "SAN JOSÉ DE TOLUVIEJO",
+            "longitud": "-75.44082177",
+            "latitud": "9.451844699"
         },
         {
-            "Código departamento": "70",
-            "Código municipio": "70823",
-            "Nombre departamento": "SUCRE",
-            "municipio": "SAN JOSE DE TOLUVIEJO",
-            "Longitud": "-75.44082177",
-            "Latitud": "9.451844699"
+            "dep": "73",
+            "muni": "73001",
+            "departamento": "TOLIMA",
+            "municipio": "IBAGUÉ",
+            "longitud": "-75.19371478",
+            "latitud": "4.439608991"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73001",
-            "Nombre departamento": "TOLIMA",
-            "municipio": "IBAGUE",
-            "Longitud": "-75.19371478",
-            "Latitud": "4.439608991"
-        },
-        {
-            "Código departamento": "73",
-            "Código municipio": "73024",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73024",
+            "departamento": "TOLIMA",
             "municipio": "ALPUJARRA",
-            "Longitud": "-74.93286382",
-            "Latitud": "3.391731289"
+            "longitud": "-74.93286382",
+            "latitud": "3.391731289"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73026",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73026",
+            "departamento": "TOLIMA",
             "municipio": "ALVARADO",
-            "Longitud": "-74.95355714",
-            "Latitud": "4.567343598"
+            "longitud": "-74.95355714",
+            "latitud": "4.567343598"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73030",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73030",
+            "departamento": "TOLIMA",
             "municipio": "AMBALEMA",
-            "Longitud": "-74.76444089",
-            "Latitud": "4.782633993"
+            "longitud": "-74.76444089",
+            "latitud": "4.782633993"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73043",
-            "Nombre departamento": "TOLIMA",
-            "municipio": "ANZOATEGUI",
-            "Longitud": "-75.09645074",
-            "Latitud": "4.627473618"
+            "dep": "73",
+            "muni": "73043",
+            "departamento": "TOLIMA",
+            "municipio": "ANZOÁTEGUI",
+            "longitud": "-75.09645074",
+            "latitud": "4.627473618"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73055",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73055",
+            "departamento": "TOLIMA",
             "municipio": "ARMERO",
-            "Longitud": "-74.884413",
-            "Latitud": "5.030678392"
+            "longitud": "-74.884413",
+            "latitud": "5.030678392"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73067",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73067",
+            "departamento": "TOLIMA",
             "municipio": "ATACO",
-            "Longitud": "-75.38253426",
-            "Latitud": "3.590635737"
+            "longitud": "-75.38253426",
+            "latitud": "3.590635737"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73124",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73124",
+            "departamento": "TOLIMA",
             "municipio": "CAJAMARCA",
-            "Longitud": "-75.43548526",
-            "Latitud": "4.436672762"
+            "longitud": "-75.43548526",
+            "latitud": "4.436672762"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73148",
-            "Nombre departamento": "TOLIMA",
-            "municipio": "CARMEN DE APICALA",
-            "Longitud": "-74.71616942",
-            "Latitud": "4.147912057"
+            "dep": "73",
+            "muni": "73148",
+            "departamento": "TOLIMA",
+            "municipio": "CARMEN DE APICALÁ",
+            "longitud": "-74.71616942",
+            "latitud": "4.147912057"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73152",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73152",
+            "departamento": "TOLIMA",
             "municipio": "CASABIANCA",
-            "Longitud": "-75.12096615",
-            "Latitud": "5.078464508"
+            "longitud": "-75.12096615",
+            "latitud": "5.078464508"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73168",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73168",
+            "departamento": "TOLIMA",
             "municipio": "CHAPARRAL",
-            "Longitud": "-75.48074305",
-            "Latitud": "3.723068376"
+            "longitud": "-75.48074305",
+            "latitud": "3.723068376"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73200",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73200",
+            "departamento": "TOLIMA",
             "municipio": "COELLO",
-            "Longitud": "-74.89846435",
-            "Latitud": "4.28727555"
+            "longitud": "-74.89846435",
+            "latitud": "4.28727555"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73217",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73217",
+            "departamento": "TOLIMA",
             "municipio": "COYAIMA",
-            "Longitud": "-75.1938783",
-            "Latitud": "3.79802798"
+            "longitud": "-75.1938783",
+            "latitud": "3.79802798"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73226",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73226",
+            "departamento": "TOLIMA",
             "municipio": "CUNDAY",
-            "Longitud": "-74.69222722",
-            "Latitud": "4.059259258"
+            "longitud": "-74.69222722",
+            "latitud": "4.059259258"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73236",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73236",
+            "departamento": "TOLIMA",
             "municipio": "DOLORES",
-            "Longitud": "-74.89684475",
-            "Latitud": "3.539036003"
+            "longitud": "-74.89684475",
+            "latitud": "3.539036003"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73268",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73268",
+            "departamento": "TOLIMA",
             "municipio": "ESPINAL",
-            "Longitud": "-74.88544976",
-            "Latitud": "4.151314221"
+            "longitud": "-74.88544976",
+            "latitud": "4.151314221"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73270",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73270",
+            "departamento": "TOLIMA",
             "municipio": "FALAN",
-            "Longitud": "-74.95300717",
-            "Latitud": "5.123103863"
+            "longitud": "-74.95300717",
+            "latitud": "5.123103863"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73275",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73275",
+            "departamento": "TOLIMA",
             "municipio": "FLANDES",
-            "Longitud": "-74.81876746",
-            "Latitud": "4.27637165"
+            "longitud": "-74.81876746",
+            "latitud": "4.27637165"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73283",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73283",
+            "departamento": "TOLIMA",
             "municipio": "FRESNO",
-            "Longitud": "-75.03562715",
-            "Latitud": "5.153638261"
+            "longitud": "-75.03562715",
+            "latitud": "5.153638261"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73319",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73319",
+            "departamento": "TOLIMA",
             "municipio": "GUAMO",
-            "Longitud": "-74.96812715",
-            "Latitud": "4.031003906"
+            "longitud": "-74.96812715",
+            "latitud": "4.031003906"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73347",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73347",
+            "departamento": "TOLIMA",
             "municipio": "HERVEO",
-            "Longitud": "-75.17715109",
-            "Latitud": "5.080227525"
+            "longitud": "-75.17715109",
+            "latitud": "5.080227525"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73349",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73349",
+            "departamento": "TOLIMA",
             "municipio": "HONDA",
-            "Longitud": "-74.74157797",
-            "Latitud": "5.201508899"
+            "longitud": "-74.74157797",
+            "latitud": "5.201508899"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73352",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73352",
+            "departamento": "TOLIMA",
             "municipio": "ICONONZO",
-            "Longitud": "-74.53197619",
-            "Latitud": "4.176436205"
+            "longitud": "-74.53197619",
+            "latitud": "4.176436205"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73408",
-            "Nombre departamento": "TOLIMA",
-            "municipio": "LERIDA",
-            "Longitud": "-74.91063435",
-            "Latitud": "4.862025346"
+            "dep": "73",
+            "muni": "73408",
+            "departamento": "TOLIMA",
+            "municipio": "LÉRIDA",
+            "longitud": "-74.91063435",
+            "latitud": "4.862025346"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73411",
-            "Nombre departamento": "TOLIMA",
-            "municipio": "LIBANO",
-            "Longitud": "-75.06342093",
-            "Latitud": "4.923442374"
+            "dep": "73",
+            "muni": "73411",
+            "departamento": "TOLIMA",
+            "municipio": "LÍBANO",
+            "longitud": "-75.06342093",
+            "latitud": "4.923442374"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73443",
-            "Nombre departamento": "TOLIMA",
-            "municipio": "SAN SEBASTIAN DE MARIQUITA",
-            "Longitud": "-74.88929482",
-            "Latitud": "5.199691183"
+            "dep": "73",
+            "muni": "73443",
+            "departamento": "TOLIMA",
+            "municipio": "SAN SEBASTIÁN DE MARIQUITA",
+            "longitud": "-74.88929482",
+            "latitud": "5.199691183"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73449",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73449",
+            "departamento": "TOLIMA",
             "municipio": "MELGAR",
-            "Longitud": "-74.6298504",
-            "Latitud": "4.208154892"
+            "longitud": "-74.6298504",
+            "latitud": "4.208154892"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73461",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73461",
+            "departamento": "TOLIMA",
             "municipio": "MURILLO",
-            "Longitud": "-75.17078682",
-            "Latitud": "4.875071014"
+            "longitud": "-75.17078682",
+            "latitud": "4.875071014"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73483",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73483",
+            "departamento": "TOLIMA",
             "municipio": "NATAGAIMA",
-            "Longitud": "-75.093478",
-            "Latitud": "3.624858538"
+            "longitud": "-75.093478",
+            "latitud": "3.624858538"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73504",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73504",
+            "departamento": "TOLIMA",
             "municipio": "ORTEGA",
-            "Longitud": "-75.2226011",
-            "Latitud": "3.934916387"
+            "longitud": "-75.2226011",
+            "latitud": "3.934916387"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73520",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73520",
+            "departamento": "TOLIMA",
             "municipio": "PALOCABILDO",
-            "Longitud": "-75.02219757",
-            "Latitud": "5.120971969"
+            "longitud": "-75.02219757",
+            "latitud": "5.120971969"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73547",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73547",
+            "departamento": "TOLIMA",
             "municipio": "PIEDRAS",
-            "Longitud": "-74.87807399",
-            "Latitud": "4.543908286"
+            "longitud": "-74.87807399",
+            "latitud": "4.543908286"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73555",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73555",
+            "departamento": "TOLIMA",
             "municipio": "PLANADAS",
-            "Longitud": "-75.64396147",
-            "Latitud": "3.197661469"
+            "longitud": "-75.64396147",
+            "latitud": "3.197661469"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73563",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73563",
+            "departamento": "TOLIMA",
             "municipio": "PRADO",
-            "Longitud": "-74.92745557",
-            "Latitud": "3.751013234"
+            "longitud": "-74.92745557",
+            "latitud": "3.751013234"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73585",
-            "Nombre departamento": "TOLIMA",
-            "municipio": "PURIFICACION",
-            "Longitud": "-74.92864619",
-            "Latitud": "3.859379857"
+            "dep": "73",
+            "muni": "73585",
+            "departamento": "TOLIMA",
+            "municipio": "PURIFICACIÓN",
+            "longitud": "-74.92864619",
+            "latitud": "3.859379857"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73616",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73616",
+            "departamento": "TOLIMA",
             "municipio": "RIOBLANCO",
-            "Longitud": "-75.64438767",
-            "Latitud": "3.52986323"
+            "longitud": "-75.64438767",
+            "latitud": "3.52986323"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73622",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73622",
+            "departamento": "TOLIMA",
             "municipio": "RONCESVALLES",
-            "Longitud": "-75.60600233",
-            "Latitud": "4.01159776"
+            "longitud": "-75.60600233",
+            "latitud": "4.01159776"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73624",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73624",
+            "departamento": "TOLIMA",
             "municipio": "ROVIRA",
-            "Longitud": "-75.2408683",
-            "Latitud": "4.238932685"
+            "longitud": "-75.2408683",
+            "latitud": "4.238932685"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73671",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73671",
+            "departamento": "TOLIMA",
             "municipio": "SALDAÑA",
-            "Longitud": "-75.016069",
-            "Latitud": "3.926792658"
+            "longitud": "-75.016069",
+            "latitud": "3.926792658"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73675",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73675",
+            "departamento": "TOLIMA",
             "municipio": "SAN ANTONIO",
-            "Longitud": "-75.48090671",
-            "Latitud": "3.912976052"
+            "longitud": "-75.48090671",
+            "latitud": "3.912976052"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73678",
-            "Nombre departamento": "TOLIMA",
-            "municipio": "SAN LUIS",
-            "Longitud": "-75.09578719",
-            "Latitud": "4.133720614"
-        },
-        {
-            "Código departamento": "73",
-            "Código municipio": "73686",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73686",
+            "departamento": "TOLIMA",
             "municipio": "SANTA ISABEL",
-            "Longitud": "-75.09793439",
-            "Latitud": "4.713605767"
+            "longitud": "-75.09793439",
+            "latitud": "4.713605767"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73770",
-            "Nombre departamento": "TOLIMA",
-            "municipio": "SUAREZ",
-            "Longitud": "-74.83188311",
-            "Latitud": "4.048884259"
-        },
-        {
-            "Código departamento": "73",
-            "Código municipio": "73854",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73854",
+            "departamento": "TOLIMA",
             "municipio": "VALLE DE SAN JUAN",
-            "Longitud": "-75.11566923",
-            "Latitud": "4.197493673"
+            "longitud": "-75.11566923",
+            "latitud": "4.197493673"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73861",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73861",
+            "departamento": "TOLIMA",
             "municipio": "VENADILLO",
-            "Longitud": "-74.92917085",
-            "Latitud": "4.717966593"
+            "longitud": "-74.92917085",
+            "latitud": "4.717966593"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73870",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73870",
+            "departamento": "TOLIMA",
             "municipio": "VILLAHERMOSA",
-            "Longitud": "-75.1177291",
-            "Latitud": "5.030452282"
+            "longitud": "-75.1177291",
+            "latitud": "5.030452282"
         },
         {
-            "Código departamento": "73",
-            "Código municipio": "73873",
-            "Nombre departamento": "TOLIMA",
+            "dep": "73",
+            "muni": "73873",
+            "departamento": "TOLIMA",
             "municipio": "VILLARRICA",
-            "Longitud": "-74.60029555",
-            "Latitud": "3.936745138"
+            "longitud": "-74.60029555",
+            "latitud": "3.936745138"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76001",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76001",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "CALI",
-            "Longitud": "-76.52156515",
-            "Latitud": "3.414414305"
+            "longitud": "-76.52156515",
+            "latitud": "3.414414305"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76020",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "ALCALA",
-            "Longitud": "-75.77981387",
-            "Latitud": "4.674989542"
+            "dep": "76",
+            "muni": "76020",
+            "departamento": "VALLE DEL CAUCA",
+            "municipio": "ALCALÁ",
+            "longitud": "-75.77981387",
+            "latitud": "4.674989542"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76036",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "ANDALUCIA",
-            "Longitud": "-76.1679212",
-            "Latitud": "4.171724416"
+            "dep": "76",
+            "muni": "76036",
+            "departamento": "VALLE DEL CAUCA",
+            "municipio": "ANDALUCÍA",
+            "longitud": "-76.1679212",
+            "latitud": "4.171724416"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76041",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76041",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "ANSERMANUEVO",
-            "Longitud": "-75.99198067",
-            "Latitud": "4.794922714"
+            "longitud": "-75.99198067",
+            "latitud": "4.794922714"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76054",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "ARGELIA",
-            "Longitud": "-76.11990571",
-            "Latitud": "4.726946265"
-        },
-        {
-            "Código departamento": "76",
-            "Código municipio": "76100",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "BOLIVAR",
-            "Longitud": "-76.18357386",
-            "Latitud": "4.337842204"
-        },
-        {
-            "Código departamento": "76",
-            "Código municipio": "76109",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76109",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "BUENAVENTURA",
-            "Longitud": "-77.0117402",
-            "Latitud": "3.875802437"
+            "longitud": "-77.0117402",
+            "latitud": "3.875802437"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76111",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76111",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "GUADALAJARA DE BUGA",
-            "Longitud": "-76.29896113",
-            "Latitud": "3.900823544"
+            "longitud": "-76.29896113",
+            "latitud": "3.900823544"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76113",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "BUGA",
-            "Longitud": "-76.15680774",
-            "Latitud": "4.208331592"
+            "dep": "76",
+            "muni": "76113",
+            "departamento": "VALLE DEL CAUCA",
+            "municipio": "BUGALAGRANDE",
+            "longitud": "-76.15680774",
+            "latitud": "4.208331592"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76122",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76122",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "CAICEDONIA",
-            "Longitud": "-75.83031805",
-            "Latitud": "4.334609694"
+            "longitud": "-75.83031805",
+            "latitud": "4.334609694"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76126",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76126",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "CALIMA",
-            "Longitud": "-76.48439175",
-            "Latitud": "3.933524463"
+            "longitud": "-76.48439175",
+            "latitud": "3.933524463"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76130",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "CANDELARIA",
-            "Longitud": "-76.34642891",
-            "Latitud": "3.407766466"
-        },
-        {
-            "Código departamento": "76",
-            "Código municipio": "76147",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76147",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "CARTAGO",
-            "Longitud": "-75.94226404",
-            "Latitud": "4.758755098"
+            "longitud": "-75.94226404",
+            "latitud": "4.758755098"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76233",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76233",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "DAGUA",
-            "Longitud": "-76.68887101",
-            "Latitud": "3.657308485"
+            "longitud": "-76.68887101",
+            "latitud": "3.657308485"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76243",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "EL AGUILA",
-            "Longitud": "-76.04129907",
-            "Latitud": "4.90961334"
+            "dep": "76",
+            "muni": "76243",
+            "departamento": "VALLE DEL CAUCA",
+            "municipio": "EL ÁGUILA",
+            "longitud": "-76.04129907",
+            "latitud": "4.90961334"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76246",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76246",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "EL CAIRO",
-            "Longitud": "-76.22160351",
-            "Latitud": "4.7608831"
+            "longitud": "-76.22160351",
+            "latitud": "4.7608831"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76248",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76248",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "EL CERRITO",
-            "Longitud": "-76.31172554",
-            "Latitud": "3.684258941"
+            "longitud": "-76.31172554",
+            "latitud": "3.684258941"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76250",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76250",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "EL DOVIO",
-            "Longitud": "-76.23708411",
-            "Latitud": "4.510452885"
+            "longitud": "-76.23708411",
+            "latitud": "4.510452885"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76275",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76275",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "FLORIDA",
-            "Longitud": "-76.23450174",
-            "Latitud": "3.323918106"
+            "longitud": "-76.23450174",
+            "latitud": "3.323918106"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76306",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76306",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "GINEBRA",
-            "Longitud": "-76.26806789",
-            "Latitud": "3.724181147"
+            "longitud": "-76.26806789",
+            "latitud": "3.724181147"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76318",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "GUACARI",
-            "Longitud": "-76.33136735",
-            "Latitud": "3.762909008"
+            "dep": "76",
+            "muni": "76318",
+            "departamento": "VALLE DEL CAUCA",
+            "municipio": "GUACARÍ",
+            "longitud": "-76.33136735",
+            "latitud": "3.762909008"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76364",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "JAMUNDI",
-            "Longitud": "-76.54245873",
-            "Latitud": "3.26227576"
+            "dep": "76",
+            "muni": "76364",
+            "departamento": "VALLE DEL CAUCA",
+            "municipio": "JAMUNDÍ",
+            "longitud": "-76.54245873",
+            "latitud": "3.26227576"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76377",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76377",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "LA CUMBRE",
-            "Longitud": "-76.56793222",
-            "Latitud": "3.649447161"
+            "longitud": "-76.56793222",
+            "latitud": "3.649447161"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76400",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "LA UNION",
-            "Longitud": "-76.09960718",
-            "Latitud": "4.533783288"
-        },
-        {
-            "Código departamento": "76",
-            "Código municipio": "76403",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "LA VICTORIA",
-            "Longitud": "-76.03652878",
-            "Latitud": "4.523603264"
-        },
-        {
-            "Código departamento": "76",
-            "Código municipio": "76497",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76497",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "OBANDO",
-            "Longitud": "-75.97468873",
-            "Latitud": "4.575722705"
+            "longitud": "-75.97468873",
+            "latitud": "4.575722705"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76520",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76520",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "PALMIRA",
-            "Longitud": "-76.29858255",
-            "Latitud": "3.532349153"
+            "longitud": "-76.29858255",
+            "latitud": "3.532349153"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76563",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76563",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "PRADERA",
-            "Longitud": "-76.24182023",
-            "Latitud": "3.419827409"
+            "longitud": "-76.24182023",
+            "latitud": "3.419827409"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76606",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "RESTREPO",
-            "Longitud": "-76.52311704",
-            "Latitud": "3.821348382"
+            "dep": "76",
+            "muni": "76616",
+            "departamento": "VALLE DEL CAUCA",
+            "municipio": "RIOFRÍO",
+            "longitud": "-76.28831268",
+            "latitud": "4.156904989"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76616",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "RIOFRIO",
-            "Longitud": "-76.28831268",
-            "Latitud": "4.156904989"
-        },
-        {
-            "Código departamento": "76",
-            "Código municipio": "76622",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76622",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "ROLDANILLO",
-            "Longitud": "-76.15228663",
-            "Latitud": "4.4135962"
+            "longitud": "-76.15228663",
+            "latitud": "4.4135962"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76670",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "SAN PEDRO",
-            "Longitud": "-76.22853779",
-            "Latitud": "3.994992607"
-        },
-        {
-            "Código departamento": "76",
-            "Código municipio": "76736",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76736",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "SEVILLA",
-            "Longitud": "-75.93094058",
-            "Latitud": "4.267033273"
+            "longitud": "-75.93094058",
+            "latitud": "4.267033273"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76823",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76823",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "TORO",
-            "Longitud": "-76.0768535",
-            "Latitud": "4.608084546"
+            "longitud": "-76.0768535",
+            "latitud": "4.608084546"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76828",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76828",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "TRUJILLO",
-            "Longitud": "-76.31880894",
-            "Latitud": "4.212050806"
+            "longitud": "-76.31880894",
+            "latitud": "4.212050806"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76834",
-            "Nombre departamento": "VALLE DEL CAUCA",
-            "municipio": "TULUA",
-            "Longitud": "-76.19769968",
-            "Latitud": "4.085261239"
+            "dep": "76",
+            "muni": "76834",
+            "departamento": "VALLE DEL CAUCA",
+            "municipio": "TULUÁ",
+            "longitud": "-76.19769968",
+            "latitud": "4.085261239"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76845",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76845",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "ULLOA",
-            "Longitud": "-75.73774747",
-            "Latitud": "4.702513911"
+            "longitud": "-75.73774747",
+            "latitud": "4.702513911"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76863",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76863",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "VERSALLES",
-            "Longitud": "-76.19920358",
-            "Latitud": "4.575018566"
+            "longitud": "-76.19920358",
+            "latitud": "4.575018566"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76869",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76869",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "VIJES",
-            "Longitud": "-76.44196521",
-            "Latitud": "3.698587929"
+            "longitud": "-76.44196521",
+            "latitud": "3.698587929"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76890",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76890",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "YOTOCO",
-            "Longitud": "-76.38247445",
-            "Latitud": "3.861214584"
+            "longitud": "-76.38247445",
+            "latitud": "3.861214584"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76892",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76892",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "YUMBO",
-            "Longitud": "-76.49981978",
-            "Latitud": "3.528968908"
+            "longitud": "-76.49981978",
+            "latitud": "3.528968908"
         },
         {
-            "Código departamento": "76",
-            "Código municipio": "76895",
-            "Nombre departamento": "VALLE DEL CAUCA",
+            "dep": "76",
+            "muni": "76895",
+            "departamento": "VALLE DEL CAUCA",
             "municipio": "ZARZAL",
-            "Longitud": "-76.07084935",
-            "Latitud": "4.392621473"
+            "longitud": "-76.07084935",
+            "latitud": "4.392621473"
         },
         {
-            "Código departamento": "81",
-            "Código municipio": "81001",
-            "Nombre departamento": "ARAUCA",
+            "dep": "81",
+            "muni": "81001",
+            "departamento": "ARAUCA",
             "municipio": "ARAUCA",
-            "Longitud": "-70.74635031",
-            "Latitud": "7.077358544"
+            "longitud": "-70.74635031",
+            "latitud": "7.077358544"
         },
         {
-            "Código departamento": "81",
-            "Código municipio": "81065",
-            "Nombre departamento": "ARAUCA",
+            "dep": "81",
+            "muni": "81065",
+            "departamento": "ARAUCA",
             "municipio": "ARAUQUITA",
-            "Longitud": "-71.42675118",
-            "Latitud": "7.026981415"
+            "longitud": "-71.42675118",
+            "latitud": "7.026981415"
         },
         {
-            "Código departamento": "81",
-            "Código municipio": "81220",
-            "Nombre departamento": "ARAUCA",
+            "dep": "81",
+            "muni": "81220",
+            "departamento": "ARAUCA",
             "municipio": "CRAVO NORTE",
-            "Longitud": "-70.20428555",
-            "Latitud": "6.303912752"
+            "longitud": "-70.20428555",
+            "latitud": "6.303912752"
         },
         {
-            "Código departamento": "81",
-            "Código municipio": "81300",
-            "Nombre departamento": "ARAUCA",
+            "dep": "81",
+            "muni": "81300",
+            "departamento": "ARAUCA",
             "municipio": "FORTUL",
-            "Longitud": "-71.7685578",
-            "Latitud": "6.797075753"
+            "longitud": "-71.7685578",
+            "latitud": "6.797075753"
         },
         {
-            "Código departamento": "81",
-            "Código municipio": "81591",
-            "Nombre departamento": "ARAUCA",
-            "municipio": "PUERTO RONDON",
-            "Longitud": "-71.09774286",
-            "Latitud": "6.283851501"
+            "dep": "81",
+            "muni": "81591",
+            "departamento": "ARAUCA",
+            "municipio": "PUERTO RONDÓN",
+            "longitud": "-71.09774286",
+            "latitud": "6.283851501"
         },
         {
-            "Código departamento": "81",
-            "Código municipio": "81736",
-            "Nombre departamento": "ARAUCA",
+            "dep": "81",
+            "muni": "81736",
+            "departamento": "ARAUCA",
             "municipio": "SARAVENA",
-            "Longitud": "-71.87233343",
-            "Latitud": "6.95385957"
+            "longitud": "-71.87233343",
+            "latitud": "6.95385957"
         },
         {
-            "Código departamento": "81",
-            "Código municipio": "81794",
-            "Nombre departamento": "ARAUCA",
+            "dep": "81",
+            "muni": "81794",
+            "departamento": "ARAUCA",
             "municipio": "TAME",
-            "Longitud": "-71.75861086",
-            "Latitud": "6.449379486"
+            "longitud": "-71.75861086",
+            "latitud": "6.449379486"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85001",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85001",
+            "departamento": "CASANARE",
             "municipio": "YOPAL",
-            "Longitud": "-72.39691516",
-            "Latitud": "5.327612651"
+            "longitud": "-72.39691516",
+            "latitud": "5.327612651"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85010",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85010",
+            "departamento": "CASANARE",
             "municipio": "AGUAZUL",
-            "Longitud": "-72.54630026",
-            "Latitud": "5.172690765"
+            "longitud": "-72.54630026",
+            "latitud": "5.172690765"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85015",
-            "Nombre departamento": "CASANARE",
-            "municipio": "CHAMEZA",
-            "Longitud": "-72.87023558",
-            "Latitud": "5.214311749"
+            "dep": "85",
+            "muni": "85015",
+            "departamento": "CASANARE",
+            "municipio": "CHÁMEZA",
+            "longitud": "-72.87023558",
+            "latitud": "5.214311749"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85125",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85125",
+            "departamento": "CASANARE",
             "municipio": "HATO COROZAL",
-            "Longitud": "-71.76492254",
-            "Latitud": "6.156172443"
+            "longitud": "-71.76492254",
+            "latitud": "6.156172443"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85136",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85136",
+            "departamento": "CASANARE",
             "municipio": "LA SALINA",
-            "Longitud": "-72.33388167",
-            "Latitud": "6.127825385"
+            "longitud": "-72.33388167",
+            "latitud": "6.127825385"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85139",
-            "Nombre departamento": "CASANARE",
-            "municipio": "MANI",
-            "Longitud": "-72.28139845",
-            "Latitud": "4.81682686"
+            "dep": "85",
+            "muni": "85139",
+            "departamento": "CASANARE",
+            "municipio": "MANÍ",
+            "longitud": "-72.28139845",
+            "latitud": "4.81682686"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85162",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85162",
+            "departamento": "CASANARE",
             "municipio": "MONTERREY",
-            "Longitud": "-72.89503614",
-            "Latitud": "4.876845436"
+            "longitud": "-72.89503614",
+            "latitud": "4.876845436"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85225",
-            "Nombre departamento": "CASANARE",
-            "municipio": "NUNCHIA",
-            "Longitud": "-72.19507104",
-            "Latitud": "5.636662597"
+            "dep": "85",
+            "muni": "85225",
+            "departamento": "CASANARE",
+            "municipio": "NUNCHÍA",
+            "longitud": "-72.19507104",
+            "latitud": "5.636662597"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85230",
-            "Nombre departamento": "CASANARE",
-            "municipio": "OROCUE",
-            "Longitud": "-71.33851792",
-            "Latitud": "4.790269665"
+            "dep": "85",
+            "muni": "85230",
+            "departamento": "CASANARE",
+            "municipio": "OROCUÉ",
+            "longitud": "-71.33851792",
+            "latitud": "4.790269665"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85250",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85250",
+            "departamento": "CASANARE",
             "municipio": "PAZ DE ARIPORO",
-            "Longitud": "-71.89092396",
-            "Latitud": "5.88003657"
+            "longitud": "-71.89092396",
+            "latitud": "5.88003657"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85263",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85263",
+            "departamento": "CASANARE",
             "municipio": "PORE",
-            "Longitud": "-71.9928596",
-            "Latitud": "5.727729878"
+            "longitud": "-71.9928596",
+            "latitud": "5.727729878"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85279",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85279",
+            "departamento": "CASANARE",
             "municipio": "RECETOR",
-            "Longitud": "-72.76114606",
-            "Latitud": "5.229493648"
+            "longitud": "-72.76114606",
+            "latitud": "5.229493648"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85300",
-            "Nombre departamento": "CASANARE",
-            "municipio": "SABANALARGA",
-            "Longitud": "-73.03872338",
-            "Latitud": "4.854617866"
+            "dep": "85",
+            "muni": "85315",
+            "departamento": "CASANARE",
+            "municipio": "SÁCAMA",
+            "longitud": "-72.25027589",
+            "latitud": "6.09697492"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85315",
-            "Nombre departamento": "CASANARE",
-            "municipio": "SACAMA",
-            "Longitud": "-72.25027589",
-            "Latitud": "6.09697492"
-        },
-        {
-            "Código departamento": "85",
-            "Código municipio": "85325",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85325",
+            "departamento": "CASANARE",
             "municipio": "SAN LUIS DE PALENQUE",
-            "Longitud": "-71.73292506",
-            "Latitud": "5.420887071"
+            "longitud": "-71.73292506",
+            "latitud": "5.420887071"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85400",
-            "Nombre departamento": "CASANARE",
-            "municipio": "TAMARA",
-            "Longitud": "-72.16182524",
-            "Latitud": "5.829826597"
+            "dep": "85",
+            "muni": "85400",
+            "departamento": "CASANARE",
+            "municipio": "TÁMARA",
+            "longitud": "-72.16182524",
+            "latitud": "5.829826597"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85410",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85410",
+            "departamento": "CASANARE",
             "municipio": "TAURAMENA",
-            "Longitud": "-72.74725192",
-            "Latitud": "5.01920526"
+            "longitud": "-72.74725192",
+            "latitud": "5.01920526"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85430",
-            "Nombre departamento": "CASANARE",
+            "dep": "85",
+            "muni": "85430",
+            "departamento": "CASANARE",
             "municipio": "TRINIDAD",
-            "Longitud": "-71.6633409",
-            "Latitud": "5.412214716"
+            "longitud": "-71.6633409",
+            "latitud": "5.412214716"
         },
         {
-            "Código departamento": "85",
-            "Código municipio": "85440",
-            "Nombre departamento": "CASANARE",
-            "municipio": "VILLANUEVA",
-            "Longitud": "-72.92746843",
-            "Latitud": "4.609799108"
-        },
-        {
-            "Código departamento": "86",
-            "Código municipio": "86001",
-            "Nombre departamento": "PUTUMAYO",
+            "dep": "86",
+            "muni": "86001",
+            "departamento": "PUTUMAYO",
             "municipio": "MOCOA",
-            "Longitud": "-76.65027142",
-            "Latitud": "1.152296118"
+            "longitud": "-76.65027142",
+            "latitud": "1.152296118"
         },
         {
-            "Código departamento": "86",
-            "Código municipio": "86219",
-            "Nombre departamento": "PUTUMAYO",
-            "municipio": "COLON",
-            "Longitud": "-76.97230179",
-            "Latitud": "1.189825988"
-        },
-        {
-            "Código departamento": "86",
-            "Código municipio": "86320",
-            "Nombre departamento": "PUTUMAYO",
+            "dep": "86",
+            "muni": "86320",
+            "departamento": "PUTUMAYO",
             "municipio": "ORITO",
-            "Longitud": "-76.87302769",
-            "Latitud": "0.663816899"
+            "longitud": "-76.87302769",
+            "latitud": "0.663816899"
         },
         {
-            "Código departamento": "86",
-            "Código municipio": "86568",
-            "Nombre departamento": "PUTUMAYO",
-            "municipio": "PUERTO ASIS",
-            "Longitud": "-76.49727285",
-            "Latitud": "0.505046722"
+            "dep": "86",
+            "muni": "86568",
+            "departamento": "PUTUMAYO",
+            "municipio": "PUERTO ASÍS",
+            "longitud": "-76.49727285",
+            "latitud": "0.505046722"
         },
         {
-            "Código departamento": "86",
-            "Código municipio": "86569",
-            "Nombre departamento": "PUTUMAYO",
+            "dep": "86",
+            "muni": "86569",
+            "departamento": "PUTUMAYO",
             "municipio": "PUERTO CAICEDO",
-            "Longitud": "-76.60483235",
-            "Latitud": "0.684841656"
+            "longitud": "-76.60483235",
+            "latitud": "0.684841656"
         },
         {
-            "Código departamento": "86",
-            "Código municipio": "86571",
-            "Nombre departamento": "PUTUMAYO",
-            "municipio": "PUERTO GUZMAN",
-            "Longitud": "-76.40852154",
-            "Latitud": "0.962922439"
+            "dep": "86",
+            "muni": "86571",
+            "departamento": "PUTUMAYO",
+            "municipio": "PUERTO GUZMÁN",
+            "longitud": "-76.40852154",
+            "latitud": "0.962922439"
         },
         {
-            "Código departamento": "86",
-            "Código municipio": "86573",
-            "Nombre departamento": "PUTUMAYO",
-            "municipio": "PUERTO LEGUIZAMO",
-            "Longitud": "-74.78247103",
-            "Latitud": "-0.191872849"
+            "dep": "86",
+            "muni": "86573",
+            "departamento": "PUTUMAYO",
+            "municipio": "PUERTO LEGUÍZAMO",
+            "longitud": "-74.78247103",
+            "latitud": "-0.191872849"
         },
         {
-            "Código departamento": "86",
-            "Código municipio": "86749",
-            "Nombre departamento": "PUTUMAYO",
+            "dep": "86",
+            "muni": "86749",
+            "departamento": "PUTUMAYO",
             "municipio": "SIBUNDOY",
-            "Longitud": "-76.91748216",
-            "Latitud": "1.200115733"
+            "longitud": "-76.91748216",
+            "latitud": "1.200115733"
         },
         {
-            "Código departamento": "86",
-            "Código municipio": "86755",
-            "Nombre departamento": "PUTUMAYO",
-            "municipio": "SAN FRANCISCO",
-            "Longitud": "-76.87923491",
-            "Latitud": "1.174218321"
-        },
-        {
-            "Código departamento": "86",
-            "Código municipio": "86757",
-            "Nombre departamento": "PUTUMAYO",
-            "municipio": "SAN MIGUEL",
-            "Longitud": "-76.91241019",
-            "Latitud": "0.343272204"
-        },
-        {
-            "Código departamento": "86",
-            "Código municipio": "86760",
-            "Nombre departamento": "PUTUMAYO",
-            "municipio": "SANTIAGO",
-            "Longitud": "-77.00182343",
-            "Latitud": "1.14553777"
-        },
-        {
-            "Código departamento": "86",
-            "Código municipio": "86865",
-            "Nombre departamento": "PUTUMAYO",
+            "dep": "86",
+            "muni": "86865",
+            "departamento": "PUTUMAYO",
             "municipio": "VALLE DEL GUAMUEZ",
-            "Longitud": "-76.9059688",
-            "Latitud": "0.423904093"
+            "longitud": "-76.9059688",
+            "latitud": "0.423904093"
         },
         {
-            "Código departamento": "86",
-            "Código municipio": "86885",
-            "Nombre departamento": "PUTUMAYO",
-            "municipio": "VILLAGARZON",
-            "Longitud": "-76.61716247",
-            "Latitud": "1.028941012"
+            "dep": "86",
+            "muni": "86885",
+            "departamento": "PUTUMAYO",
+            "municipio": "VILLAGARZÓN",
+            "longitud": "-76.61716247",
+            "latitud": "1.028941012"
         },
         {
-            "Código departamento": "88",
-            "Código municipio": "88001",
-            "Nombre departamento": "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA",
-            "municipio": "SAN ANDRES",
-            "Longitud": "-81.69606298",
-            "Latitud": "12.58301369"
-        },
-        {
-            "Código departamento": "88",
-            "Código municipio": "88564",
-            "Nombre departamento": "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA",
-            "municipio": "PROVIDENCIA",
-            "Longitud": "-81.3709116",
-            "Latitud": "13.37009985"
-        },
-        {
-            "Código departamento": "91",
-            "Código municipio": "91001",
-            "Nombre departamento": "AMAZONAS",
+            "dep": "91",
+            "muni": "91001",
+            "departamento": "AMAZONAS",
             "municipio": "LETICIA",
-            "Longitud": "-69.94142671",
-            "Latitud": "-4.199836935"
+            "longitud": "-69.94142671",
+            "latitud": "-4.199836935"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91263",
-            "Nombre departamento": "AMAZONAS",
-            "municipio": "EL ENCANTO",
-            "Longitud": "-73.20930718",
-            "Latitud": "-1.745555377"
+            "dep": "91",
+            "muni": "91263",
+            "departamento": "AMAZONAS",
+            "municipio": "EL ENCANTO (ANM)",
+            "longitud": "-73.20930718",
+            "latitud": "-1.745555377"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91405",
-            "Nombre departamento": "AMAZONAS",
-            "municipio": "LA CHORRERA",
-            "Longitud": "-72.79558336",
-            "Latitud": "-1.44329152"
+            "dep": "91",
+            "muni": "91405",
+            "departamento": "AMAZONAS",
+            "municipio": "LA CHORRERA (ANM)",
+            "longitud": "-72.79558336",
+            "latitud": "-1.44329152"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91407",
-            "Nombre departamento": "AMAZONAS",
-            "municipio": "LA PEDRERA",
-            "Longitud": "-69.58842102",
-            "Latitud": "-1.319312591"
+            "dep": "91",
+            "muni": "91407",
+            "departamento": "AMAZONAS",
+            "municipio": "LA PEDRERA (ANM)",
+            "longitud": "-69.58842102",
+            "latitud": "-1.319312591"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91430",
-            "Nombre departamento": "AMAZONAS",
-            "municipio": "LA VICTORIA",
-            "Longitud": "-71.223",
-            "Latitud": "0.053"
+            "dep": "91",
+            "muni": "91430",
+            "departamento": "AMAZONAS",
+            "municipio": "LA VICTORIA (ANM)",
+            "longitud": "-71.223",
+            "latitud": "0.053"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91460",
-            "Nombre departamento": "AMAZONAS",
-            "municipio": "MIRITI - PARANA",
-            "Longitud": "-70.98893023",
-            "Latitud": "-0.888832636"
+            "dep": "91",
+            "muni": "91460",
+            "departamento": "AMAZONAS",
+            "municipio": "MIRITÍ - PARANÁ (ANM)",
+            "longitud": "-70.98893023",
+            "latitud": "-0.888832636"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91530",
-            "Nombre departamento": "AMAZONAS",
-            "municipio": "PUERTO ALEGRIA",
-            "Longitud": "-74.01446088",
-            "Latitud": "-1.005673854"
+            "dep": "91",
+            "muni": "91530",
+            "departamento": "AMAZONAS",
+            "municipio": "PUERTO ALEGRÍA (ANM)",
+            "longitud": "-74.01446088",
+            "latitud": "-1.005673854"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91536",
-            "Nombre departamento": "AMAZONAS",
-            "municipio": "PUERTO ARICA",
-            "Longitud": "-71.75263619",
-            "Latitud": "-2.148446597"
+            "dep": "91",
+            "muni": "91536",
+            "departamento": "AMAZONAS",
+            "municipio": "PUERTO ARICA (ANM)",
+            "longitud": "-71.75263619",
+            "latitud": "-2.148446597"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91540",
-            "Nombre departamento": "AMAZONAS",
+            "dep": "91",
+            "muni": "91540",
+            "departamento": "AMAZONAS",
             "municipio": "PUERTO NARIÑO",
-            "Longitud": "-70.36451835",
-            "Latitud": "-3.780447632"
+            "longitud": "-70.36451835",
+            "latitud": "-3.780447632"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91669",
-            "Nombre departamento": "AMAZONAS",
-            "municipio": "PUERTO SANTANDER",
-            "Longitud": "-72.38421269",
-            "Latitud": "-0.621184474"
+            "dep": "91",
+            "muni": "91669",
+            "departamento": "AMAZONAS",
+            "municipio": "PUERTO SANTANDER (ANM)",
+            "longitud": "-72.38421269",
+            "latitud": "-0.621184474"
         },
         {
-            "Código departamento": "91",
-            "Código municipio": "91798",
-            "Nombre departamento": "AMAZONAS",
-            "municipio": "TARAPACA",
-            "Longitud": "-69.74176597",
-            "Latitud": "-2.890088948"
+            "dep": "91",
+            "muni": "91798",
+            "departamento": "AMAZONAS",
+            "municipio": "TARAPACÁ (ANM)",
+            "longitud": "-69.74176597",
+            "latitud": "-2.890088948"
         },
         {
-            "Código departamento": "94",
-            "Código municipio": "94001",
-            "Nombre departamento": "GUAINÍA",
-            "municipio": "INIRIDA",
-            "Longitud": "-67.91883684",
-            "Latitud": "3.866161619"
+            "dep": "94",
+            "muni": "94001",
+            "departamento": "GUAINÍA",
+            "municipio": "INÍRIDA",
+            "longitud": "-67.91883684",
+            "latitud": "3.866161619"
         },
         {
-            "Código departamento": "94",
-            "Código municipio": "94343",
-            "Nombre departamento": "GUAINÍA",
-            "municipio": "BARRANCOMINAS",
-            "Longitud": "-69.8132491",
-            "Latitud": "3.494005121"
+            "dep": "94",
+            "muni": "94343",
+            "departamento": "GUAINÍA",
+            "municipio": "BARRANCOMINAS (ANM)",
+            "longitud": "-69.8132491",
+            "latitud": "3.494005121"
         },
         {
-            "Código departamento": "94",
-            "Código municipio": "94663",
-            "Nombre departamento": "GUAINÍA",
-            "municipio": "MAPIRIPANA",
-            "Longitud": "-70.47625203",
-            "Latitud": "2.812147736"
+            "dep": "94",
+            "muni": "94663",
+            "departamento": "GUAINÍA",
+            "municipio": "MAPIRIPANA (ANM)",
+            "longitud": "-70.47625203",
+            "latitud": "2.812147736"
         },
         {
-            "Código departamento": "94",
-            "Código municipio": "94883",
-            "Nombre departamento": "GUAINÍA",
-            "municipio": "SAN FELIPE",
-            "Longitud": "-67.06882712",
-            "Latitud": "1.910021951"
+            "dep": "94",
+            "muni": "94883",
+            "departamento": "GUAINÍA",
+            "municipio": "SAN FELIPE (ANM)",
+            "longitud": "-67.06882712",
+            "latitud": "1.910021951"
         },
         {
-            "Código departamento": "94",
-            "Código municipio": "94884",
-            "Nombre departamento": "GUAINÍA",
-            "municipio": "PUERTO COLOMBIA",
-            "Longitud": "-67.56677875",
-            "Latitud": "2.726463724"
+            "dep": "94",
+            "muni": "94884",
+            "departamento": "GUAINÍA",
+            "municipio": "PUERTO COLOMBIA (ANM)",
+            "longitud": "-67.56677875",
+            "latitud": "2.726463724"
         },
         {
-            "Código departamento": "94",
-            "Código municipio": "94885",
-            "Nombre departamento": "GUAINÍA",
-            "municipio": "LA GUADALUPE",
-            "Longitud": "-66.96373918",
-            "Latitud": "1.632265613"
+            "dep": "94",
+            "muni": "94885",
+            "departamento": "GUAINÍA",
+            "municipio": "LA GUADALUPE (ANM)",
+            "longitud": "-66.96373918",
+            "latitud": "1.632265613"
         },
         {
-            "Código departamento": "94",
-            "Código municipio": "94886",
-            "Nombre departamento": "GUAINÍA",
-            "municipio": "CACAHUAL",
-            "Longitud": "-67.41326289",
-            "Latitud": "3.526372267"
+            "dep": "94",
+            "muni": "94886",
+            "departamento": "GUAINÍA",
+            "municipio": "CACAHUAL (ANM)",
+            "longitud": "-67.41326289",
+            "latitud": "3.526372267"
         },
         {
-            "Código departamento": "94",
-            "Código municipio": "94887",
-            "Nombre departamento": "GUAINÍA",
-            "municipio": "PANA PANA",
-            "Longitud": "-69.00983182",
-            "Latitud": "1.865680719"
+            "dep": "94",
+            "muni": "94887",
+            "departamento": "GUAINÍA",
+            "municipio": "PANA PANA (ANM)",
+            "longitud": "-69.00983182",
+            "latitud": "1.865680719"
         },
         {
-            "Código departamento": "94",
-            "Código municipio": "94888",
-            "Nombre departamento": "GUAINÍA",
-            "municipio": "MORICHAL",
-            "Longitud": "-69.91947848",
-            "Latitud": "2.265125333"
+            "dep": "94",
+            "muni": "94888",
+            "departamento": "GUAINÍA",
+            "municipio": "MORICHAL (ANM)",
+            "longitud": "-69.91947848",
+            "latitud": "2.265125333"
         },
         {
-            "Código departamento": "95",
-            "Código municipio": "95001",
-            "Nombre departamento": "GUAVIARE",
-            "municipio": "SAN JOSE DEL GUAVIARE",
-            "Longitud": "-72.63898622",
-            "Latitud": "2.566428399"
+            "dep": "95",
+            "muni": "95001",
+            "departamento": "GUAVIARE",
+            "municipio": "SAN JOSÉ DEL GUAVIARE",
+            "longitud": "-72.63898622",
+            "latitud": "2.566428399"
         },
         {
-            "Código departamento": "95",
-            "Código municipio": "95015",
-            "Nombre departamento": "GUAVIARE",
-            "municipio": "CALAMAR",
-            "Longitud": "-72.655172",
-            "Latitud": "1.960108633"
-        },
-        {
-            "Código departamento": "95",
-            "Código municipio": "95025",
-            "Nombre departamento": "GUAVIARE",
+            "dep": "95",
+            "muni": "95025",
+            "departamento": "GUAVIARE",
             "municipio": "EL RETORNO",
-            "Longitud": "-72.62718599",
-            "Latitud": "2.330161549"
+            "longitud": "-72.62718599",
+            "latitud": "2.330161549"
         },
         {
-            "Código departamento": "95",
-            "Código municipio": "95200",
-            "Nombre departamento": "GUAVIARE",
-            "municipio": "MIRAFLORES",
-            "Longitud": "-71.95054317",
-            "Latitud": "1.337574043"
+            "dep": "97",
+            "muni": "97001",
+            "departamento": "VAUPÉS",
+            "municipio": "MITÚ",
+            "longitud": "-70.23475052",
+            "latitud": "1.251190563"
         },
         {
-            "Código departamento": "97",
-            "Código municipio": "97001",
-            "Nombre departamento": "VAUPÉS",
-            "municipio": "MITU",
-            "Longitud": "-70.23475052",
-            "Latitud": "1.251190563"
+            "dep": "97",
+            "muni": "97161",
+            "departamento": "VAUPÉS",
+            "municipio": "CARURÚ",
+            "longitud": "-71.29779326",
+            "latitud": "1.014597709"
         },
         {
-            "Código departamento": "97",
-            "Código municipio": "97161",
-            "Nombre departamento": "VAUPÉS",
-            "municipio": "CARURU",
-            "Longitud": "-71.29779326",
-            "Latitud": "1.014597709"
+            "dep": "97",
+            "muni": "97511",
+            "departamento": "VAUPÉS",
+            "municipio": "PACOA (ANM)",
+            "longitud": "-71.00433923",
+            "latitud": "0.02069806"
         },
         {
-            "Código departamento": "97",
-            "Código municipio": "97511",
-            "Nombre departamento": "VAUPÉS",
-            "municipio": "PACOA",
-            "Longitud": "-71.00433923",
-            "Latitud": "0.02069806"
-        },
-        {
-            "Código departamento": "97",
-            "Código municipio": "97666",
-            "Nombre departamento": "VAUPÉS",
+            "dep": "97",
+            "muni": "97666",
+            "departamento": "VAUPÉS",
             "municipio": "TARAIRA",
-            "Longitud": "-69.63900366",
-            "Latitud": "-0.56938554"
+            "longitud": "-69.63900366",
+            "latitud": "-0.56938554"
         },
         {
-            "Código departamento": "97",
-            "Código municipio": "97777",
-            "Nombre departamento": "VAUPÉS",
-            "municipio": "PAPUNAHUA",
-            "Longitud": "-70.76116746",
-            "Latitud": "1.9074028"
+            "dep": "97",
+            "muni": "97777",
+            "departamento": "VAUPÉS",
+            "municipio": "PAPUNAHUA (ANM)",
+            "longitud": "-70.76116746",
+            "latitud": "1.9074028"
         },
         {
-            "Código departamento": "97",
-            "Código municipio": "97889",
-            "Nombre departamento": "VAUPÉS",
-            "municipio": "YAVARATE",
-            "Longitud": "-69.20333732",
-            "Latitud": "0.609141615"
+            "dep": "97",
+            "muni": "97889",
+            "departamento": "VAUPÉS",
+            "municipio": "YAVARATÉ (ANM)",
+            "longitud": "-69.20333732",
+            "latitud": "0.609141615"
         },
         {
-            "Código departamento": "99",
-            "Código municipio": "99001",
-            "Nombre departamento": "VICHADA",
+            "dep": "99",
+            "muni": "99001",
+            "departamento": "VICHADA",
             "municipio": "PUERTO CARREÑO",
-            "Longitud": "-67.486997",
-            "Latitud": "6.186864187"
+            "longitud": "-67.486997",
+            "latitud": "6.186864187"
         },
         {
-            "Código departamento": "99",
-            "Código municipio": "99524",
-            "Nombre departamento": "VICHADA",
+            "dep": "99",
+            "muni": "99524",
+            "departamento": "VICHADA",
             "municipio": "LA PRIMAVERA",
-            "Longitud": "-70.41042001",
-            "Latitud": "5.486337614"
+            "longitud": "-70.41042001",
+            "latitud": "5.486337614"
         },
         {
-            "Código departamento": "99",
-            "Código municipio": "99624",
-            "Nombre departamento": "VICHADA",
-            "municipio": "SANTA ROSALIA",
-            "Longitud": "-70.85974134",
-            "Latitud": "5.136431386"
+            "dep": "99",
+            "muni": "99624",
+            "departamento": "VICHADA",
+            "municipio": "SANTA ROSALÍA",
+            "longitud": "-70.85974134",
+            "latitud": "5.136431386"
         },
         {
-            "Código departamento": "99",
-            "Código municipio": "99773",
-            "Nombre departamento": "VICHADA",
+            "dep": "99",
+            "muni": "99773",
+            "departamento": "VICHADA",
             "municipio": "CUMARIBO",
-            "Longitud": "-69.79553294",
-            "Latitud": "4.446352174"
+            "longitud": "-69.79553294",
+            "latitud": "4.446352174"
         }
-]
+    ]
