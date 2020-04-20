@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 import { GoogleAnalyticsService } from 'mugan86-ng-google-analytics';
 import { Title } from '@angular/platform-browser';
 
+
 @Component({
   selector: 'app-covid19',
   templateUrl: './covid19.component.html',
@@ -185,18 +186,22 @@ export class Covid19Component implements OnInit {
     let repetidos = {};
     for (let i in this.casos) {
       if (this.casos[i].atenci_n === "Fallecido") {
-        repetidos[this.casos[i].fecha_de_diagn_stico] = (repetidos[this.casos[i].fecha_de_diagn_stico] || 0) + 1;
+        repetidos[this.casos[i].fecha_de_notificaci_n] = (repetidos[this.casos[i].fecha_de_notificaci_n] || 0) + 1;
       }
 
     }
 
     for (let x in repetidos) {
+
+      let fecha = new Date(x).toLocaleDateString();
+      if(fecha!=='Invalid Date'){
       multi[0]['series'].push(
         {
-          "name": x,
+          "name": fecha,
           "value": repetidos[x]
 
         })
+      }
     }
     this._behaviorSubject.serviceExternalLineChart(multi);
   }
@@ -227,6 +232,8 @@ export class Covid19Component implements OnInit {
   }
 
   sendDataAreaChart() {
+
+  
     let multi = [
       {
         "name": "Casos reportados por día",
@@ -236,20 +243,24 @@ export class Covid19Component implements OnInit {
     let repetidos = {};
     for (let i in this.casos) {
       if (this.casos[i].atenci_n !== "Recuperado" && this.casos[i].atenci_n !== "Fallecido") {
-        repetidos[this.casos[i].fecha_de_diagn_stico] = (repetidos[this.casos[i].fecha_de_diagn_stico] || 0) + 1;
+        repetidos[this.casos[i].fecha_de_notificaci_n] = (repetidos[this.casos[i].fecha_de_notificaci_n] || 0) + 1;
       }
 
     }
 
     for (let x in repetidos) {
 
-      //console.log(x) para controlar las fechas que vienen erradas pendiente
-      multi[0]['series'].push(
-        {
-          "name": x,
-          "value": repetidos[x]
-
-        })
+      
+      let fecha = new Date(x).toLocaleDateString();
+      if(fecha!=='Invalid Date'){
+        multi[0]['series'].push(
+          {
+            "name": fecha,
+            "value": repetidos[x]
+  
+          })
+      }
+     
     }
     this._behaviorSubject.serviceExternalAreaChart(multi);
   }
@@ -389,13 +400,13 @@ export class Covid19Component implements OnInit {
   asignCoord() {
     for (let x in coord_muni) {
       for (let i in this.casos) {
-        if (this.casos[i].ciudad_de_ubicaci_n.includes(this.MaysPrimera(coord_muni[x].municipio.toLowerCase()))) {
+        if (this.casos[i].codigo_divipola===coord_muni[x].muni) {
 
 
           this.coordinates.push(
             {
               'title': this.casos[i].ciudad_de_ubicaci_n,
-              'coordinates': [parseFloat(coord_muni[x].Longitud), parseFloat(coord_muni[x].Latitud)]
+              'coordinates': [parseFloat(coord_muni[x].longitud), parseFloat(coord_muni[x].latitud)]
             })
         }
       }
