@@ -60,9 +60,16 @@
    
   </div>
  
-  <div class="row ml-1 mb-2 mt-3">
-    <button (click)="deleteRowCoti()" class="btn btn-warning">Borrar</button>
-    <button *ngIf="showButtonSave" (click)="saveCotizacion()" class="btn btn-info ml-1">Guardar cotización</button>
+  <div class="row ml-1 mb-1 mt-3">
+    <div class="col">  <button (click)="deleteRowCoti()" class="btn btn-warning">Borrar</button>
+      <button *ngIf="showButtonSave" (click)="saveCotizacion()" class="btn btn-info ml-1">Guardar cotización</button></div>
+    <div class="col"> <mat-form-field class="ml-5">
+      <mat-label>Buscar</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ej. Tornillo">
+    </mat-form-field></div>
+    
+  
+   
   </div>
 
 

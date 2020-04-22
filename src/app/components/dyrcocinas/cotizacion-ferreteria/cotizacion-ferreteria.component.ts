@@ -20,13 +20,13 @@ import { Ferreteria } from 'src/app/models/dyrcocinas/ferreteria.model';
 
 export class CotizacionFerreteriaComponent implements OnInit {
 
-  showButtonSave=false;
+  showButtonSave = false;
   dataCotiFerreteria: CotiFerreteria[] = [];
   displayedColumns: string[] = ['select', 'nombre', 'precio_unitario', 'cantidad', 'costo_total'];
   dataSource = new MatTableDataSource<CotiFerreteria>(this.dataCotiFerreteria);
   selection = new SelectionModel<CotiFerreteria>(true, []);
   cliente: Cliente;
-  id_cliente:string;
+  id_cliente: string;
   ferreterias: Ferreteria[];
   ferreteria: Ferreteria;
   nombres_apellidos: string;
@@ -39,7 +39,7 @@ export class CotizacionFerreteriaComponent implements OnInit {
   precio: number;
   cantidad: number;
   totalArticulo: number;
-  granTotal: number = 0;
+  granTotal = 0;
 
 
   constructor(private route: ActivatedRoute, private _clienteService: ClienteService, private _ferreteriaService: FerreteriaService) { }
@@ -48,9 +48,9 @@ export class CotizacionFerreteriaComponent implements OnInit {
     this.id_cliente = this.route.snapshot.paramMap.get('id');
 
     this._ferreteriaService.getFerreterias().subscribe(resp => {
-      this.ferreterias = resp.ferreterias
+      this.ferreterias = resp.ferreterias;
     }, error => {
-      console.log(<any>error)
+      console.log(error);
       Swal.fire({
         title: 'Error de conexión',
         icon: 'error',
@@ -63,18 +63,18 @@ export class CotizacionFerreteriaComponent implements OnInit {
         this.ngOnInit();
       });
     }
-    )
+    );
 
 
     this._clienteService.getCliente(this.id_cliente).subscribe(
       resp => {
-        this.cliente=resp.cliente;
+        this.cliente = resp.cliente;
         this.nombres_apellidos = resp.cliente.nombres_apellidos;
         this.celular = resp.cliente.celular;
         this.nombre_proyecto = resp.cliente.nombre_proyecto;
         this.estado = resp.cliente.estado;
         this.medidas = resp.cliente.medidas;
-        this.dataCotiFerreteria = resp.cliente.coti_ferreteria
+        this.dataCotiFerreteria = resp.cliente.coti_ferreteria;
         this.dataSource = new MatTableDataSource<CotiFerreteria>(this.dataCotiFerreteria);
 
 
@@ -82,7 +82,7 @@ export class CotizacionFerreteriaComponent implements OnInit {
 
 
       }, error => {
-        console.log(<any>error)
+        console.log(error);
         Swal.fire({
           title: 'Error de conexión',
           icon: 'error',
@@ -94,49 +94,55 @@ export class CotizacionFerreteriaComponent implements OnInit {
           Swal.showLoading();
           this.ngOnInit();
         });
-      })
+      });
 
   }
 
-  saveCotizacion(){
-    
-    this.cliente.coti_ferreteria=this.dataCotiFerreteria;
-    this._clienteService.putCliente(this.id_cliente,this.cliente).subscribe(
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+  }
+
+  saveCotizacion() {
+
+    this.cliente.coti_ferreteria = this.dataCotiFerreteria;
+    this._clienteService.putCliente(this.id_cliente, this.cliente).subscribe(
       resp => {
-          Swal.fire({
-            text: 'Se actualizó correctamente',
-            icon: 'success'
-          })
-          this.showButtonSave=false;
+        Swal.fire({
+          text: 'Se actualizó correctamente',
+          icon: 'success'
+        });
+        this.showButtonSave = false;
       }, error => {
         Swal.fire({
           text: error.message,
           icon: 'error'
-        })
-        console.log(error)
+        });
+        console.log(error);
       }
-    )
+    );
   }
 
   addCotizacion(form: NgForm) {
-    if (form.invalid||this.totalArticulo===0) {
+    if (form.invalid || this.totalArticulo === 0) {
       Swal.fire({
         icon: 'warning',
         text: 'Faltan campos por llenar',
-      })
-      return
+      });
+      return;
     }
 
-    this.showButtonSave=true;
+    this.showButtonSave = true;
 
-    let newRowArticle = {
+    const newRowArticle = {
       nombre: form.value.ferreteria.nombre,
       precio_unitario: this.precio,
       cantidad: this.cantidad,
       costo_total: this.totalArticulo
-    }
+    };
 
-    this.dataCotiFerreteria.push(newRowArticle)
+    this.dataCotiFerreteria.push(newRowArticle);
     this.dataSource = new MatTableDataSource<CotiFerreteria>(this.dataCotiFerreteria);
     Swal.fire({
       position: 'top-end',
@@ -144,7 +150,7 @@ export class CotizacionFerreteriaComponent implements OnInit {
       title: 'Ok Agregado',
       showConfirmButton: false,
       timer: 900
-    })
+    });
   }
 
   selectFerreteria(ferreteria: Ferreteria) {
@@ -173,7 +179,7 @@ export class CotizacionFerreteriaComponent implements OnInit {
       Swal.fire({
         icon: 'warning',
         text: 'Debes seleccionar una ferretería',
-      })
+      });
     } else {
       Swal.fire({
         title: '¿Está seguro?',
@@ -185,8 +191,8 @@ export class CotizacionFerreteriaComponent implements OnInit {
       }).then(resp => {
         if (resp.value) {
           this.selection.selected.forEach(item => {
-            let index: number = this.dataCotiFerreteria.findIndex(d => d === item);
-            this.dataCotiFerreteria.splice(index, 1)
+            const index: number = this.dataCotiFerreteria.findIndex(d => d === item);
+            this.dataCotiFerreteria.splice(index, 1);
             this.dataSource = new MatTableDataSource<CotiFerreteria>(this.dataCotiFerreteria);
             Swal.fire({
               position: 'top-end',
@@ -194,13 +200,13 @@ export class CotizacionFerreteriaComponent implements OnInit {
               title: 'Ok Eliminado',
               showConfirmButton: false,
               timer: 1500
-            })
+            });
           });
           this.selection = new SelectionModel<CotiFerreteria>(true, []);
-          this.showButtonSave=true;
+          this.showButtonSave = true;
         }
-        this.selection.clear()
-      })
+        this.selection.clear();
+      });
     }
 
 
