@@ -8,27 +8,8 @@
 
 }
 
-#galeria {
-    margin: 1rem auto;
-    width:100%;
-    max-width:960px;
-    column-count: 3;
-}
 
 
-/* Móviles en horizontal o tablets en vertical */
-
-@media (max-width: 767px) { 
-    #galeria {
-        columns:2;
-    }
-
-}
-        
-/* Móviles en vertical */
-
-@media (max-width: 480px) {
-    #galeria {
-        columns: 1;
-    }
+#gallery{
+    background-color: transparent !important;
 }

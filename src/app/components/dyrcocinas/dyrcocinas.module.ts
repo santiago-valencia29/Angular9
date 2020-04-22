@@ -21,7 +21,7 @@ import { GALLERY_CONFIG, GalleryModule } from '@ngx-gallery/core';
     provide: GALLERY_CONFIG,
     useValue: {
       dots: true,
-      imageSize: 'cover'
+      imageSize: 'cover',
     }
   }],
   declarations: [
