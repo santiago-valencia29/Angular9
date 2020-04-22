@@ -50,7 +50,7 @@ const routes: Routes = [
   { path: 'cliente', component: ClienteComponent,canActivate:[AuthMeanGuard] },
   { path: 'color-madecor', component: ColorMadecorComponent,canActivate:[AuthMeanGuard] },
   { path: 'ferreteria', component: FerreteriaComponent,canActivate:[AuthMeanGuard] },
-  { path: 'cotizacion-ferreteria', component: CotizacionFerreteriaComponent,canActivate:[AuthMeanGuard] },
+  { path: 'cotizacion-ferreteria/:id', component: CotizacionFerreteriaComponent,canActivate:[AuthMeanGuard] },
   { path: 'cotizacion-madera', component: CotizacionMaderaComponent,canActivate:[AuthMeanGuard] },
   { path: 'publico', component: PublicoComponent },
 

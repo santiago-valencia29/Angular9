@@ -1,32 +1,131 @@
 <app-nav-dyrcocinas></app-nav-dyrcocinas>
 <div class="boxDiv animated fadeInUp ">
-    <h3 class="text-black">Cotización Ferretería</h3>
+  <div class="row">
+    <div class="col">
+      <h3 class="text-black">Cotización Ferretería</h3>
+    </div>
+   
+  </div>
 
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <div class="row">
+    <div class="col-5">
+      <p class="campos">Nombre del proyecto : </p>
+      <p class="text-black">{{nombre_proyecto}}</p>
+      <p class="campos">Estado del proyecto : </p>
+      <span  [ngClass]="{'row-cierre': estado === 'Cierre','row-espera':estado === 'En Espera','row-proceso': estado === 'En Proceso','row-descartado': estado === 'Descartado'}"class="text-black"> {{estado}}</span>
+    
+    </div>
+    <div class="col">
+      <p class="campos">Cliente : </p>
+      <p class="text-black"> {{nombres_apellidos}}</p>
+      <p class="campos">Celular : </p>
+      <p class="text-black"> {{celular}}</p>
+      <p class="campos">Medidas : </p>
+      <p class="text-black"> {{medidas}}</p>
 
-      <ng-container matColumnDef="position">
-        <th mat-header-cell *matHeaderCellDef> Position </th>
-        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-        <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td>
-      </ng-container>
+    </div>
+  </div>
+
   
-      <!-- Cost Column -->
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.cost | currency}} </td>
-        
-        <td mat-footer-cell *matFooterCellDef> Total </td>
+  <div class="row">
+    <form (ngSubmit)="addCotizacion(f)" #f="ngForm">
+      <mat-form-field class="ml-3"  >
+        <mat-label>Seleccionar Ferretería</mat-label>
+        <mat-select [(ngModel)]="ferreteria" name="ferreteria" (selectionChange)="selectFerreteria($event.value)" required >
+            <mat-option disabled>Seleccionar</mat-option>
+            <mat-option *ngFor="let ferreteria of ferreterias" [value]="ferreteria">{{ferreteria.nombre}}</mat-option>
+        </mat-select>
+        <mat-error>Debe seleccionar una Ferretería</mat-error>
+    </mat-form-field>
+    <mat-form-field class="ml-3 mat-cantidad">
+      <mat-label>Cantidad</mat-label>
+      <input type="number" [(ngModel)]="cantidad" name="cantidad" (ngModelChange)="calculateTotal($event)" matInput placeholder="Ej: 7" min="1" pattern="^[0-9]+" required>
+      <mat-error>Ingresar cantidad</mat-error>
+
+    </mat-form-field>
+    <mat-form-field class="ml-3 mat-precio">
+      <mat-label>Precio</mat-label>
+      <input type="number" [(ngModel)]="precio" name="precio" matInput disabled >
+    </mat-form-field>
+    <mat-form-field class="ml-3 mat-costototal">
+      <mat-label>Total</mat-label>
+      <input type="number" [(ngModel)]="totalArticulo" name="totalArticulo" matInput  placeholder="Ej: 7" disabled >
+    </mat-form-field>
+    <div class="save-coti">
+      <button  type="submit">  <mat-icon>add_box</mat-icon></button>
+     
+    </div>
+   
+    </form>
+   
+  </div>
+ 
+  <div class="row ml-1 mb-2 mt-3">
+    <button (click)="deleteRowCoti()" class="btn btn-warning">Borrar</button>
+    <button *ngIf="showButtonSave" (click)="saveCotizacion()" class="btn btn-info ml-1">Guardar cotización</button>
+  </div>
+
+
+
+  <div class="example-container mat-elevation-z8 mb-2">
+    <table mat-table [dataSource]="dataSource">
+
+      <!-- Checkbox Column -->
+      <ng-container matColumnDef="select">
+        <th mat-header-cell *matHeaderCellDef>
+          <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()"
+            [indeterminate]="selection.hasValue() && !isAllSelected()" [aria-label]="checkboxLabel()">
+          </mat-checkbox>
+        </th>
+        <td mat-cell *matCellDef="let row">
+          <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+            [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)">
+          </mat-checkbox>
+        </td>
+        <td mat-footer-cell *matFooterCellDef></td>
       </ng-container>
-  
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="num">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.num}} </td>
+        <td mat-footer-cell *matFooterCellDef></td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef> Nombre </th>
+        <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+        <td mat-footer-cell *matFooterCellDef></td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="precio_unitario">
+        <th mat-header-cell *matHeaderCellDef> Precio Unitario </th>
+        <td mat-cell *matCellDef="let element"> {{element.precio_unitario}} </td>
+        <td mat-footer-cell *matFooterCellDef></td>
+      </ng-container>
+
+      <ng-container matColumnDef="cantidad">
+        <th mat-header-cell *matHeaderCellDef> Cantidad </th>
+        <td mat-cell *matCellDef="let element"> {{element.cantidad}} </td>
+        <td mat-footer-cell *matFooterCellDef>Total:</td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="costo_total">
+        <th mat-header-cell *matHeaderCellDef> Costo total </th>
+        <td mat-cell *matCellDef="let element"> {{element.costo_total}} </td>
+        <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency:'COP':'symbol':'1.0-0'}} </td>
+      </ng-container>
+
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-      <tr mat-footer-row *matFooterRowDef="displayedColumns; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)">
+      </tr>
+      <tr mat-footer-row *matFooterRowDef="displayedColumns; sticky: true" colspan="2"></tr>
     </table>
+  </div>
+
+
+
 </div>
-
-
-
-
-
-
-
