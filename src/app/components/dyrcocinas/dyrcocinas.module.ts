@@ -12,8 +12,18 @@ import { CotizacionMaderaComponent } from './cotizacion-madera/cotizacion-madera
 import { CotizacionFerreteriaComponent } from './cotizacion-ferreteria/cotizacion-ferreteria.component';
 import { SharedModule } from '../../shared/shared.module';
 import { PublicoComponent } from './publico/publico.component';
+import { GALLERY_CONFIG, GalleryModule } from '@ngx-gallery/core';
+
+
 
 @NgModule({
+  providers:[{
+    provide: GALLERY_CONFIG,
+    useValue: {
+      dots: true,
+      imageSize: 'cover'
+    }
+  }],
   declarations: [
   ClienteComponent,
   ColorMadecorComponent,
@@ -32,7 +42,8 @@ import { PublicoComponent } from './publico/publico.component';
     AppMaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    GalleryModule
   ],
   
   exports:[

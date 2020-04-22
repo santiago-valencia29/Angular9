@@ -1,4 +1,4 @@
-export class CotiFerreteria {
+export class Cotizacion {
     nombre: string;
     precio_unitario: number;
     cantidad: number;

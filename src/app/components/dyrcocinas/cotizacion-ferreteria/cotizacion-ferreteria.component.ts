@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { SelectionModel } from '@angular/cdk/collections';
-import { CotiFerreteria } from '../../../models/dyrcocinas/coti_ferreteria.model';
+import { Cotizacion } from '../../../models/dyrcocinas/cotizacion.model';
 import Swal from 'sweetalert2';
 import { NgForm } from '@angular/forms';
 import { ClienteService } from 'src/app/services/dyrcocinas/cliente.service';
@@ -21,10 +21,10 @@ import { Ferreteria } from 'src/app/models/dyrcocinas/ferreteria.model';
 export class CotizacionFerreteriaComponent implements OnInit {
 
   showButtonSave = false;
-  dataCotiFerreteria: CotiFerreteria[] = [];
+  dataCotiFerreteria: Cotizacion[] = [];
   displayedColumns: string[] = ['select', 'nombre', 'precio_unitario', 'cantidad', 'costo_total'];
-  dataSource = new MatTableDataSource<CotiFerreteria>(this.dataCotiFerreteria);
-  selection = new SelectionModel<CotiFerreteria>(true, []);
+  dataSource = new MatTableDataSource<Cotizacion>(this.dataCotiFerreteria);
+  selection = new SelectionModel<Cotizacion>(true, []);
   cliente: Cliente;
   id_cliente: string;
   ferreterias: Ferreteria[];
@@ -75,7 +75,7 @@ export class CotizacionFerreteriaComponent implements OnInit {
         this.estado = resp.cliente.estado;
         this.medidas = resp.cliente.medidas;
         this.dataCotiFerreteria = resp.cliente.coti_ferreteria;
-        this.dataSource = new MatTableDataSource<CotiFerreteria>(this.dataCotiFerreteria);
+        this.dataSource = new MatTableDataSource<Cotizacion>(this.dataCotiFerreteria);
 
 
 
@@ -143,7 +143,7 @@ export class CotizacionFerreteriaComponent implements OnInit {
     };
 
     this.dataCotiFerreteria.push(newRowArticle);
-    this.dataSource = new MatTableDataSource<CotiFerreteria>(this.dataCotiFerreteria);
+    this.dataSource = new MatTableDataSource<Cotizacion>(this.dataCotiFerreteria);
     Swal.fire({
       position: 'top-end',
       icon: 'success',
@@ -193,7 +193,7 @@ export class CotizacionFerreteriaComponent implements OnInit {
           this.selection.selected.forEach(item => {
             const index: number = this.dataCotiFerreteria.findIndex(d => d === item);
             this.dataCotiFerreteria.splice(index, 1);
-            this.dataSource = new MatTableDataSource<CotiFerreteria>(this.dataCotiFerreteria);
+            this.dataSource = new MatTableDataSource<Cotizacion>(this.dataCotiFerreteria);
             Swal.fire({
               position: 'top-end',
               icon: 'success',
@@ -202,7 +202,7 @@ export class CotizacionFerreteriaComponent implements OnInit {
               timer: 1500
             });
           });
-          this.selection = new SelectionModel<CotiFerreteria>(true, []);
+          this.selection = new SelectionModel<Cotizacion>(true, []);
           this.showButtonSave = true;
         }
         this.selection.clear();
@@ -228,7 +228,7 @@ export class CotizacionFerreteriaComponent implements OnInit {
   }
 
   /** The label for the checkbox on the passed row */
-  checkboxLabel(row?: CotiFerreteria): string {
+  checkboxLabel(row?: Cotizacion): string {
     if (!row) {
       return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
     }

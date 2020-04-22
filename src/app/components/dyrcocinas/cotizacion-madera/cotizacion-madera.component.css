@@ -4,6 +4,85 @@
     background-image: url("../../../../assets/images/fondo.png");
     background-repeat: no-repeat;
     max-width: 1300px;
-    height: 1900px;
+    height: 900px;
 
 }
+
+.example-container {
+    max-height: 500px;
+    overflow: auto;
+  }
+  
+  table {
+    width: 100%;
+  
+  }
+  
+  tr.mat-footer-row {
+    font-weight: bold;
+  }
+  
+  .mat-table-sticky {
+    border-top: 5px solid black;
+  }
+  
+  .mat-header-cell {
+    font-weight: bold;
+    color: black;
+  
+  }
+  
+  ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+    opacity: 0.03 !important;
+    background-color: #cb4b16 !important;
+  }
+  
+  ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+  .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #cb4b16;
+  }
+  
+  .campos {
+    float: left;
+    color: black;
+    font-weight: bold;
+  
+  }
+  
+  .row-cierre{
+    background-color: #cdf0aa;
+  }
+  
+  .row-espera{
+    background-color: #f0aaaa;
+  }
+  
+  .row-proceso{
+    background-color: #f0f0aa;
+  }
+  
+  .row-descartado{
+    background-color: white;
+  }
+  
+   .mat-cantidad {
+    width: 70px !important;
+  }
+  
+  .mat-precio{
+    width: 100px;
+  }
+  
+  .mat-costototal{
+    width: 120px;
+  }
+  
+  .save-coti{
+    margin: 10px;
+    justify-content: center;
+    float: right;
+  }
+  .material-icons{
+    font-size: 35px;
+    color: #f98a40;
+  }

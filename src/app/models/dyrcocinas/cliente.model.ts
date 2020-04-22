@@ -19,6 +19,8 @@ export class Cliente {
         public fecha_entrega_proyecto: string,
         public fecha_garantia_proyecto: string,
         public desc_garantia: string,
-        public coti_ferreteria: any
+        public coti_ferreteria: any,
+        public coti_madecor: any
+
     ) { }
 }

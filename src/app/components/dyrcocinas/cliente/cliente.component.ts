@@ -261,7 +261,7 @@ export class ModalDialogCliente implements OnInit {
       nombres_apellidos: [this.data[0].nombres_apellidos, [Validators.required, Validators.minLength(4), Validators.maxLength(40)]],
       telefono: [this.data[0].telefono, [Validators.maxLength(9), Validators.pattern('^[0-9]*$')]],
       celular: [this.data[0].celular, [Validators.minLength(1), Validators.maxLength(11), Validators.pattern('^[0-9]*$')]],
-      correo: [this.data[0].correo, [Validators.maxLength(30), Validators.email]],
+      correo: [this.data[0].correo, [Validators.maxLength(30)]],
       ciudad: [this.data[0].ciudad, [Validators.required, Validators.minLength(4), Validators.maxLength(20)]],
       sector: [this.data[0].sector, [Validators.maxLength(20)]],
       direccion: [this.data[0].direccion, [Validators.maxLength(35)]],

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleryItem, ImageItem } from '@ngx-gallery/core';
-import { style } from '@angular/animations';
 import Swal from 'sweetalert2';
 @Component({
   selector: 'app-private-tasks',
