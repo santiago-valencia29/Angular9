@@ -52,7 +52,7 @@ const routes: Routes = [
   { path: 'ferreteria', component: FerreteriaComponent,canActivate:[AuthMeanGuard] },
   { path: 'cotizacion-ferreteria/:id', component: CotizacionFerreteriaComponent,canActivate:[AuthMeanGuard] },
   { path: 'cotizacion-madera/:id', component: CotizacionMaderaComponent,canActivate:[AuthMeanGuard] },
-  { path: 'publico', component: PublicoComponent },
+  { path: 'dyrcocinas', component: PublicoComponent },
 
 
   // CrudFirebase
