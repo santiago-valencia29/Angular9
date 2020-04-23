@@ -1,10 +1,10 @@
 ::ng-deep .content-inside {
-    padding: 0px !important;
+    padding: 40px !important;
     padding-bottom: 0px;
     background-image: url("../../../../assets/images/fondo.png");
     background-repeat: no-repeat;
     max-width: 1300px;
-    height: 2000px;
+    height: 2000px !important;
 }
 
 ::ng-deep .mat-header-cell {
