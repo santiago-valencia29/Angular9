@@ -26,7 +26,12 @@ import { global } from '../meanstack/global';
 
         getClientes(): Observable<any>{
             let headers = new HttpHeaders().set('Content-Type','application/json');
-            return this._http.get(this.url+'Clientes',{headers: headers})
+            return this._http.get(this.url+'clientes',{headers: headers})
+        }
+
+        getCliente(_id:string): Observable<any>{
+            let headers = new HttpHeaders().set('Content-Type','application/json');
+            return this._http.get(`${this.url}cliente/${_id}`,{headers: headers})
         }
 
         putCliente(_id:string, cliente:Cliente): Observable<any>{

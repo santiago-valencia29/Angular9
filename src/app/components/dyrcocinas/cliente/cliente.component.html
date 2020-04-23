@@ -15,30 +15,40 @@
   <div class="mat-elevation-z8">
     <mat-table [dataSource]="dataSource" matSort>
 
-      <ng-container matColumnDef="_id">
+      <ng-container matColumnDef="_id" sticky>
         <th mat-header-cell *matHeaderCellDef > Tools </th>
         <td mat-cell *matCellDef="let row">
           <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
             <mat-icon>more_vert</mat-icon>
           </button>
           <mat-menu #menu="matMenu">
-            <button (click)="deleteCliente(row._id)" mat-menu-item>
-              <mat-icon>delete</mat-icon>
-              <span>Eliminar</span>
+            <button [routerLink]="['/cotizacion-ferreteria', row._id]" mat-menu-item>
+              <mat-icon>credit_card</mat-icon>
+              <span>Cotización Ferretería</span>
+            </button>
+            <button  [routerLink]="['/cotizacion-madera', row._id]" mat-menu-item>
+              <mat-icon>receipt</mat-icon>
+              <span>Cotización Madera</span>
             </button>
             <button (click)="openModal(row,false)" mat-menu-item>
               <mat-icon>edit</mat-icon>
               <span>Editar</span>
             </button>
+           
+            <button (click)="deleteCliente(row._id)" mat-menu-item>
+              <mat-icon>delete</mat-icon>
+              <span>Eliminar</span>
+            </button>
+
           </mat-menu>
         </td>
       </ng-container>
       
-      <ng-container matColumnDef="num">
+      <ng-container matColumnDef="num" >
         <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
         <td mat-cell *matCellDef="let row"> {{row.num}} </td>
       </ng-container>
-
+      <!-- stickyEnd -->
 
       <ng-container matColumnDef="estado">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Estado </th>
@@ -136,7 +146,7 @@
         <td mat-cell *matCellDef="let row"> {{row.fecha_garantia_proyecto|date:'MMMM d, y'}} </td>
       </ng-container>
 
-      <ng-container matColumnDef="desc_garantia">
+      <ng-container matColumnDef="desc_garantia" >
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Descripción </th>
         <td mat-cell *matCellDef="let row"> {{row.desc_garantia}} </td>
       </ng-container>

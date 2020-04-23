@@ -20,37 +20,40 @@ export class ClienteComponent implements OnInit {
   displayedColumns: string[] = [
     '_id',
     'num',
-    'estado', 
-    'nombre_proyecto', 
-    'cedula', 
+    'estado',
+    'nombre_proyecto',
+    'cedula',
     'nombres_apellidos',
-    'telefono', 
+    'telefono',
     'celular',
-    'correo', 
-    'ciudad', 
-    'sector', 
-    'direccion', 
-    'medidas', 
-    'color_madekor_REL', 
-    'color_combinado_REL', 
-    'precio', 
-    'anticipo_70', 
-    'resta_cliente', 
-    'fecha_inicio_proyecto', 
-    'fecha_entrega_proyecto', 
-    'fecha_garantia_proyecto', 
+    'correo',
+    'ciudad',
+    'sector',
+    'direccion',
+    'medidas',
+    'color_madekor_REL',
+    'color_combinado_REL',
+    'precio',
+    'anticipo_70',
+    'resta_cliente',
+    'fecha_inicio_proyecto',
+    'fecha_entrega_proyecto',
+    'fecha_garantia_proyecto',
     'desc_garantia'
-    ];
+  ];
   dataSource: MatTableDataSource<Cliente>;
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   public clientes: Cliente[];
 
-  constructor(private titleService: Title,public dialog: MatDialog, private _clienteService: ClienteService, private paginatorleng: MatPaginatorIntl) {
-    this.paginatorleng.itemsPerPageLabel = "Registros por página";
+  constructor(
+    private titleService: Title, public dialog: MatDialog,
+    private _clienteService: ClienteService,
+    private paginatorleng: MatPaginatorIntl) {
+    this.paginatorleng.itemsPerPageLabel = 'Registros por página';
     this.paginatorleng.getRangeLabel = this.changeLenguage();
-    this.titleService.setTitle( 'Clientes' )
-   }
+    this.titleService.setTitle('Clientes');
+  }
 
   ngOnInit(): void {
     this.getClientes();
@@ -60,17 +63,17 @@ export class ClienteComponent implements OnInit {
   openModal(row, flagShowButton) {
     const dialogRef = this.dialog.open(ModalDialogCliente, {
       width: '700px',
-      height:'600px',
+      height: '600px',
       data: [row, flagShowButton]
     });
     dialogRef.afterClosed().subscribe(result => {
-      if(result==null){
-        return
+      if (result == null) {
+        return;
       } else
-      if (result !== false ) {
-        this.getClientes();
-        // console.log('The dialog was closed', result);
-      }
+        if (result !== false) {
+          this.getClientes();
+          // console.log('The dialog was closed', result);
+        }
     });
   }
 
@@ -85,7 +88,7 @@ export class ClienteComponent implements OnInit {
 
   changeLenguage() {
     const dutchRangeLabel = (page: number, pageSize: number, length: number) => {
-      if (length == 0 || pageSize == 0) { return `0 de ${length}`; }
+      if (length === 0 || pageSize === 0) { return `0 de ${length}`; }
 
       length = Math.max(length, 0);
 
@@ -97,9 +100,9 @@ export class ClienteComponent implements OnInit {
         startIndex + pageSize;
 
       return `${startIndex + 1} - ${endIndex} de ${length}`;
-    }
+    };
 
-    return dutchRangeLabel
+    return dutchRangeLabel;
 
   }
 
@@ -110,15 +113,15 @@ export class ClienteComponent implements OnInit {
       text: 'Espere por favor...'
     });
     Swal.showLoading();
-    this.clientes = []
+    this.clientes = [];
     this._clienteService.getClientes().subscribe(
       response => {
         if (response.clientes) {
-          let num = 1
+          let num = 1;
           response.clientes.forEach((element) => {
-            element['num'] = num++;
-            this.clientes.push(element)
-          });;
+            element.num = num++;
+            this.clientes.push(element);
+          });
           this.dataSource = new MatTableDataSource(this.clientes);
           this.dataSource.paginator = this.paginator;
           this.dataSource.sort = this.sort;
@@ -126,15 +129,15 @@ export class ClienteComponent implements OnInit {
         }
       },
       error => {
-        console.log(<any>error)
+        console.log(error);
         Swal.fire({
           title: 'Error de conexión',
           icon: 'error',
           text: error.message,
           showConfirmButton: true,
           allowOutsideClick: false,
-          confirmButtonText:'Intentar Nuevamente'
-        }).then((result)=>{
+          confirmButtonText: 'Intentar Nuevamente'
+        }).then((result) => {
           Swal.showLoading();
           this.ngOnInit();
         });
@@ -142,11 +145,12 @@ export class ClienteComponent implements OnInit {
     );
   }
 
-  deleteCliente(_id) {
+  deleteCliente(_id: string) {
     Swal.fire({
       title: '¿Está seguro?',
       text: `Desea borrar el Cliente?`,
       icon: 'question',
+      cancelButtonText: 'Cancelar',
       showConfirmButton: true,
       showCancelButton: true
     }).then(resp => {
@@ -158,17 +162,17 @@ export class ClienteComponent implements OnInit {
               title: 'Cliente Eliminado',
               icon: 'success',
               showConfirmButton: true
-            })
+            });
           }, 800);
         }, error => {
-          console.log(<any>error)
+          console.log(error);
           Swal.fire({
             title: 'Error',
             text: error.message,
             icon: 'error'
-          })
+          });
         }
-        )
+        );
       }
     }
     );
@@ -191,76 +195,77 @@ interface Estado {
 })
 
 
+// tslint:disable-next-line: component-class-suffix
 export class ModalDialogCliente implements OnInit {
 
   updateFormGroup: FormGroup;
   showInputId = false;
   showActionButton: boolean;
-  labelPrecio:number=0;
+  labelPrecio = 0;
 
-  estados :Estado[] = [
-    {value: '1', viewValue: 'En Espera'},
-    {value: '2', viewValue: 'En Proceso'},
-    {value: '3', viewValue: 'Cierre'},
-    {value: '4', viewValue: 'Descartado'},
+  estados: Estado[] = [
+    { value: '1', viewValue: 'En Espera' },
+    { value: '2', viewValue: 'En Proceso' },
+    { value: '3', viewValue: 'Cierre' },
+    { value: '4', viewValue: 'Descartado' },
   ];
 
-  colores:any;
-  
+  colores: any;
+
   constructor(
-    private _colorMadecorService: ColorMadecorService,private _clienteService: ClienteService, private _formBuilder: FormBuilder,
+    private _colorMadecorService: ColorMadecorService, private _clienteService: ClienteService, private _formBuilder: FormBuilder,
     public dialogRef: MatDialogRef<ModalDialogCliente>,
     @Inject(MAT_DIALOG_DATA) public data: [Cliente, boolean]) {
-      this.showActionButton = data[1]; 
-     
-    }
+    this.showActionButton = data[1];
+
+  }
 
 
   ngOnInit(): void {
     this.getListColors();
     this.updateFormCapture();
-    
-   
+
+
   }
 
   onSearchChange(searchValue: number): void {
-    this.labelPrecio=searchValue;
+    this.labelPrecio = searchValue;
   }
 
-  getListColors(){
+  getListColors() {
     this._colorMadecorService.getColorMadecors().subscribe(
-      resp=>{
-        this.colores=resp.colorMadecors;
-    }, error=>{ 
-      console.log(<any>error)
-      Swal.fire({
-        title: 'Error de conexión',
-        icon: 'error',
-        text: error.message,
-        showConfirmButton: true,
-        allowOutsideClick: false,
-        confirmButtonText:'Intentar Nuevamente'
-      }).then((result)=>{
-        Swal.showLoading();
-        this.ngOnInit();
+      resp => {
+        this.colores = resp.colorMadecors;
+      }, error => {
+        console.log(error);
+        Swal.fire({
+          title: 'Error de conexión',
+          icon: 'error',
+          text: error.message,
+          showConfirmButton: true,
+          allowOutsideClick: false,
+          confirmButtonText: 'Intentar Nuevamente'
+        }).then((result) => {
+          Swal.showLoading();
+          this.ngOnInit();
+        });
       });
-    })
   }
 
   updateFormCapture() {
     this.updateFormGroup = this._formBuilder.group({
       _id: new FormControl({ value: this.data[0]._id, disabled: true }),
-      estado: [this.data[0].estado,[Validators.required]],
+      estado: [this.data[0].estado, [Validators.required]],
       nombre_proyecto: [this.data[0].nombre_proyecto, [Validators.required, Validators.minLength(4), Validators.maxLength(50)]],
       cedula: [this.data[0].cedula, [Validators.maxLength(11)]],
       nombres_apellidos: [this.data[0].nombres_apellidos, [Validators.required, Validators.minLength(4), Validators.maxLength(40)]],
-      telefono: [this.data[0].telefono, [ Validators.maxLength(9), Validators.pattern("^[0-9]*$")]],
-      celular: [this.data[0].celular, [ Validators.minLength(1), Validators.maxLength(11), Validators.pattern("^[0-9]*$")]],
-      correo: [this.data[0].correo, [ Validators.maxLength(30), Validators.email]],
+      telefono: [this.data[0].telefono, [Validators.maxLength(9), Validators.pattern('^[0-9]*$')]],
+      celular: [this.data[0].celular, [Validators.minLength(1), Validators.maxLength(11), Validators.pattern('^[0-9]*$')]],
+      correo: [this.data[0].correo, [Validators.maxLength(30)]],
       ciudad: [this.data[0].ciudad, [Validators.required, Validators.minLength(4), Validators.maxLength(20)]],
       sector: [this.data[0].sector, [Validators.maxLength(20)]],
-      direccion: [this.data[0].direccion, [ Validators.maxLength(35)]],
-      medidas: [this.data[0].medidas, [ Validators.maxLength(30)]],
+      direccion: [this.data[0].direccion, [Validators.maxLength(35)]],
+      medidas: [this.data[0].medidas, [Validators.maxLength(30)]],
       color_madekor_REL: [this.data[0].color_madekor_REL],
       color_combinado_REL: [this.data[0].color_combinado_REL],
       precio: [this.data[0].precio],
@@ -278,7 +283,7 @@ export class ModalDialogCliente implements OnInit {
           Swal.fire({
             text: 'Se guardó correctamente',
             icon: 'success'
-          })
+          });
         }, 800);
 
         // console.log(resp)
@@ -286,42 +291,42 @@ export class ModalDialogCliente implements OnInit {
       }, error => {
         if (error.error.message.code === 11000) {
           Swal.fire({
-            text: "La Cédula ya existe",
+            text: 'La Cédula ya existe',
             icon: 'error'
-          })
+          });
         } else {
           Swal.fire({
             text: error.error.message,
             icon: 'error'
-          })
+          });
           this.dialogRef.close(false);
-          console.log(error)
+          console.log(error);
         }
       }
-    )
+    );
   }
 
   updateCliente() {
-    let updateCliente = this.updateFormGroup.value;
+    const updateCliente = this.updateFormGroup.value;
     this._clienteService.putCliente(this.data[0]._id, updateCliente).subscribe(
       resp => {
         setTimeout(() => {
           Swal.fire({
             text: 'Se actualizó correctamente',
             icon: 'success'
-          })
+          });
         }, 800);
-        console.log(resp)
+        console.log(resp);
         this.dialogRef.close(true);
       }, error => {
         Swal.fire({
           text: error.message,
           icon: 'error'
-        })
+        });
         this.dialogRef.close(false);
-        console.log(error)
+        console.log(error);
       }
-    )
+    );
   }
 
   onClose(): void {
