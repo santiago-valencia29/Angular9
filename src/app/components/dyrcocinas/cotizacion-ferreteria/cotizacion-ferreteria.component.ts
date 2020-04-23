@@ -9,6 +9,7 @@ import { Cliente } from '../../../models/dyrcocinas/cliente.model';
 import { ActivatedRoute } from '@angular/router';
 import { FerreteriaService } from '../../../services/dyrcocinas/ferreteria.service';
 import { Ferreteria } from 'src/app/models/dyrcocinas/ferreteria.model';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cotizacion-ferreteria',
@@ -42,7 +43,11 @@ export class CotizacionFerreteriaComponent implements OnInit {
   granTotal = 0;
 
 
-  constructor(private route: ActivatedRoute, private _clienteService: ClienteService, private _ferreteriaService: FerreteriaService) { }
+  constructor( private titleService: Title,private route: ActivatedRoute, private _clienteService: ClienteService, private _ferreteriaService: FerreteriaService) { 
+
+    this.titleService.setTitle('Cotización Ferretería');
+
+  }
 
   ngOnInit(): void {
     this.id_cliente = this.route.snapshot.paramMap.get('id');

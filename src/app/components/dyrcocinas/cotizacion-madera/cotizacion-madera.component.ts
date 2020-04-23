@@ -9,6 +9,7 @@ import { Cliente } from '../../../models/dyrcocinas/cliente.model';
 import { ActivatedRoute } from '@angular/router';
 import { ColorMadecorService } from '../../../services/dyrcocinas/colorMadecor.service';
 import { ColorMadecor } from 'src/app/models/dyrcocinas/colorMadecor.model';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cotizacion-madera',
@@ -36,7 +37,9 @@ export class CotizacionMaderaComponent implements OnInit {
   cantidad: number;
   totalArticulo: number;
   granTotal = 0;
-  constructor(private route: ActivatedRoute, private _clienteService: ClienteService, private _maderaService: ColorMadecorService) { }
+  constructor(private titleService:Title,private route: ActivatedRoute, private _clienteService: ClienteService, private _maderaService: ColorMadecorService) { 
+    this.titleService.setTitle('Cotización Ferretería');
+  }
 
   ngOnInit(): void {
     this.id_cliente = this.route.snapshot.paramMap.get('id');

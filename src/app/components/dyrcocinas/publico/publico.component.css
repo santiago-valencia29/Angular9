@@ -1,15 +1,23 @@
 ::ng-deep .content-inside {
-    padding: 0px !important;
     padding-bottom: 0px;
     background-image: url("../../../../assets/images/fondo.png");
     background-repeat: no-repeat;
     max-width: 1300px;
-    height: 1900px;
+    height: auto;
 
 }
 
 
 
 #gallery{
+    height: 600px;
     background-color: transparent !important;
+}
+
+.flotante {
+    display:scroll;
+
+        position:fixed;
+        bottom:650px;
+        right:50px;
 }
