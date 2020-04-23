@@ -4,7 +4,7 @@
     background-image: url("../../../../assets/images/fondo.png");
     background-repeat: no-repeat;
     max-width: 1300px;
-    height: 1900px;
+    height: 1900px !important;
 }
 
 
