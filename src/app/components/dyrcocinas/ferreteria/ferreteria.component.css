@@ -1,9 +1,9 @@
 ::ng-deep .content-inside {
     padding: 0px !important;
     padding-bottom: 0px;
-    background-image: url("../../../../assets/images/fondo.png") !important;
+    background-image: url("../../../../assets/images/fondo2.png") !important;
     background-repeat: no-repeat;
-    max-width: 1300px;
+    max-width: 1500px;
     height: 1900px;
 
 }
