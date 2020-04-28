@@ -2,7 +2,7 @@
 <div class="boxDiv animated fadeInLeft">
   <h3 class="text-black">Clientes</h3>
 
-  <button (click)="openModal(' ',true)" class="btn btn-dark mb-4 mt-4">Crear Cliente</button>
+  <button (click)="openModal(null,true)" class="btn btn-dark mb-4 mt-4">Crear Cliente</button>
 
   <mat-form-field class="ml-5">
     <mat-label>Buscar</mat-label>
@@ -108,12 +108,12 @@
 
       <ng-container matColumnDef="color_madekor_REL">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> ColorMadecor </th>
-        <td mat-cell *matCellDef="let row"> {{row.color_madekor_REL}} </td>
+        <td mat-cell *matCellDef="let row"> {{row.color_madekor_REL.nombre}} </td>
       </ng-container>
 
       <ng-container matColumnDef="color_combinado_REL">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Color Combinado </th>
-        <td mat-cell *matCellDef="let row"> {{row.color_combinado_REL}} </td>
+        <td mat-cell *matCellDef="let row"> {{row.color_combinado_REL.nombre}} </td>
       </ng-container>
 
       <ng-container matColumnDef="precio">

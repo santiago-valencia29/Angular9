@@ -12,6 +12,8 @@ import { global } from './global';
   export class ProjectService {
         public url: string;
 
+        headers =  new HttpHeaders().set('Content-Type','application/json');
+
         constructor(
             private _http: HttpClient
         ){
@@ -20,30 +22,21 @@ import { global } from './global';
 
         saveProject(project: Project): Observable<any>{
             let params = JSON.stringify(project);
-
-            let headers = new HttpHeaders().set('Content-Type','application/json');
-
-            return this._http.post(this.url+'save-project',params,{headers: headers});
+            return this._http.post(this.url+'project/save-project',params,{headers: this.headers});
         }
 
         getProjects(): Observable<any>{
-            let headers = new HttpHeaders().set('Content-Type','application/json');
-
-            return this._http.get(this.url+'projects',{headers: headers})
-
+            return this._http.get(this.url+'project',{headers: this.headers})
         }
 
         putProject(_id:string, project:Project): Observable<any>{
         
-              return this._http.put(`${this.url}project/${_id}`,project)
-
+              return this._http.put(`${this.url}project/update?projectID=${_id}`,project)
         }
-
-
 
         deleteProject(id: string){
             let headers = new HttpHeaders().set('Content-Type','application/json');
-            return this._http.delete(`${this.url}/project/${id}`,{headers: headers})
+            return this._http.delete(`${this.url}project/delete?projectID=${id}`,{headers: headers})
         }
 
   }

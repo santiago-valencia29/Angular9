@@ -84,7 +84,7 @@ export class CreateComponent implements OnInit {
       },
       error => {
         Swal.fire({
-          text: 'Hubo un error guardando el proyecto',
+          text: 'Hubo un error :'+error.error.message,
           icon: 'error'
         })
         console.log(<any>error)

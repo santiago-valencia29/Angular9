@@ -73,18 +73,14 @@ export class CotizacionFerreteriaComponent implements OnInit {
 
     this._clienteService.getCliente(this.id_cliente).subscribe(
       resp => {
-        this.cliente = resp.cliente;
-        this.nombres_apellidos = resp.cliente.nombres_apellidos;
-        this.celular = resp.cliente.celular;
-        this.nombre_proyecto = resp.cliente.nombre_proyecto;
-        this.estado = resp.cliente.estado;
-        this.medidas = resp.cliente.medidas;
-        this.dataCotiFerreteria = resp.cliente.coti_ferreteria;
+        this.cliente = resp;
+        this.nombres_apellidos = resp.nombres_apellidos;
+        this.celular = resp.celular;
+        this.nombre_proyecto = resp.nombre_proyecto;
+        this.estado = resp.estado;
+        this.medidas = resp.medidas;
+        this.dataCotiFerreteria = resp.coti_ferreteria;
         this.dataSource = new MatTableDataSource<Cotizacion>(this.dataCotiFerreteria);
-
-
-
-
 
       }, error => {
         console.log(error);

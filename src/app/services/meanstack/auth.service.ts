@@ -20,11 +20,11 @@ import { Router } from '@angular/router';
 
 
         signUp(user){
-            return this._http.post<any>(this.url +'signup',user);
+            return this._http.post<any>(this.url +'register',user);
         }
 
         signIn(user){
-            return this._http.post<any>(this.url +'signin',user);
+            return this._http.post<any>(this.url +'login',user);
         }
 
         loggedIn(){
