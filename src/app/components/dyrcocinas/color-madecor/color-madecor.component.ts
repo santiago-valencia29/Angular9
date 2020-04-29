@@ -222,7 +222,6 @@ export class ModalDialogColorMadecor implements OnInit {
             icon: 'success'
           })
         }, 800);
-        console.log(resp)
         this.dialogRef.close(true);
       }, error => {
         Swal.fire({

@@ -193,7 +193,6 @@ export class ModalDialogFerreteria implements OnInit {
           })
         }, 800);
 
-        console.log(resp)
         this.dialogRef.close(true);
       }, error => {
         if (error.error.message.code === 11000) {
