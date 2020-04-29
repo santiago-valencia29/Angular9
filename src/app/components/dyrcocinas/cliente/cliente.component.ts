@@ -223,9 +223,11 @@ export class ModalDialogCliente implements OnInit {
 
   ngOnInit(): void {
     this.getListColors();
-    this.updateFormCapture();
-
-
+    if(this.data[0]!=null){
+      this.updateFormCapture();
+    }else{
+      this.newFormCapture();
+    }
   }
 
   onSearchChange(searchValue: number): void {
@@ -252,6 +254,30 @@ export class ModalDialogCliente implements OnInit {
       });
   }
 
+  newFormCapture(){
+    this.updateFormGroup = this._formBuilder.group({
+      _id: new FormControl({ value: '', disabled: true }),
+      estado: ['', [Validators.required]],
+      nombre_proyecto: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(50)]],
+      cedula: ['', [Validators.maxLength(11)]],
+      nombres_apellidos: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(40)]],
+      telefono: ['', [Validators.maxLength(9), Validators.pattern('^[0-9]*$')]],
+      celular: ['', [Validators.minLength(1), Validators.maxLength(11), Validators.pattern('^[0-9]*$')]],
+      correo: ['', [Validators.maxLength(30)]],
+      ciudad: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(20)]],
+      sector: ['', [Validators.maxLength(20)]],
+      direccion: ['', [Validators.maxLength(35)]],
+      medidas: ['', [Validators.maxLength(30)]],
+      color_madekor_REL: ['',[Validators.required]],
+      color_combinado_REL: ['',[Validators.required]],
+      precio: [''],
+      fecha_inicio_proyecto: [''],
+      fecha_entrega_proyecto: [''],
+      fecha_garantia_proyecto: [''],
+      desc_garantia: ['']
+    });
+  }
+
   updateFormCapture() {
     this.updateFormGroup = this._formBuilder.group({
       _id: new FormControl({ value: this.data[0]._id, disabled: true }),
@@ -266,8 +292,8 @@ export class ModalDialogCliente implements OnInit {
       sector: [this.data[0].sector, [Validators.maxLength(20)]],
       direccion: [this.data[0].direccion, [Validators.maxLength(35)]],
       medidas: [this.data[0].medidas, [Validators.maxLength(30)]],
-      color_madekor_REL: [this.data[0].color_madekor_REL],
-      color_combinado_REL: [this.data[0].color_combinado_REL],
+      color_madekor_REL: [this.data[0].color_madekor_REL._id],
+      color_combinado_REL: [this.data[0].color_combinado_REL._id],
       precio: [this.data[0].precio],
       fecha_inicio_proyecto: [this.data[0].fecha_inicio_proyecto],
       fecha_entrega_proyecto: [this.data[0].fecha_entrega_proyecto],
@@ -316,7 +342,6 @@ export class ModalDialogCliente implements OnInit {
             icon: 'success'
           });
         }, 800);
-        console.log(resp);
         this.dialogRef.close(true);
       }, error => {
         Swal.fire({

@@ -11,7 +11,7 @@ import { global } from '../meanstack/global';
 
   export class ClienteService {
         public url: string;
-
+        headers = new HttpHeaders().set('Content-Type','application/json');
         constructor(
             private _http: HttpClient
         ){
@@ -20,27 +20,23 @@ import { global } from '../meanstack/global';
 
         saveCliente(cliente: Cliente): Observable<any>{
             let params = JSON.stringify(cliente);
-            let headers = new HttpHeaders().set('Content-Type','application/json');
-            return this._http.post(this.url+'save-cliente',params,{headers: headers});
+            return this._http.post(this.url+'cliente/save-cliente',params,{headers: this.headers});
         }
 
         getClientes(): Observable<any>{
-            let headers = new HttpHeaders().set('Content-Type','application/json');
-            return this._http.get(this.url+'clientes',{headers: headers})
+            return this._http.get(this.url+'cliente',{headers: this.headers})
         }
 
         getCliente(_id:string): Observable<any>{
-            let headers = new HttpHeaders().set('Content-Type','application/json');
-            return this._http.get(`${this.url}cliente/${_id}`,{headers: headers})
+            return this._http.get(`${this.url}cliente/${_id}`,{headers: this.headers})
         }
 
         putCliente(_id:string, cliente:Cliente): Observable<any>{
-              return this._http.put(`${this.url}cliente/${_id}`,cliente)
+            return this._http.put(`${this.url}cliente/update?clienteID=${_id}`,cliente,{headers: this.headers})
         }
 
-        deleteCliente(id: string){
-            let headers = new HttpHeaders().set('Content-Type','application/json');
-            return this._http.delete(`${this.url}/cliente/${id}`,{headers: headers})
+        deleteCliente(_id: string){
+            return this._http.delete(`${this.url}cliente/delete?clienteID=${_id}`,{headers: this.headers})
         }
 
   }

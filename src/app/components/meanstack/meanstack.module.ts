@@ -12,8 +12,8 @@ import { PrivateTasksComponent } from './private-tasks/private-tasks.component';
 import { GalleryModule } from  '@ngx-gallery/core';
 import { GALLERY_CONFIG } from '@ngx-gallery/core';
 
-// import { HTTP_INTERCEPTORS } from '@angular/common/http';
-// import { tokenService } from 'src/app/services/meanstack/token.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import {AddCustomHeadersInterceptor } from 'src/app/services/meanstack/token.service';
 
 
 
@@ -53,13 +53,10 @@ import { GALLERY_CONFIG } from '@ngx-gallery/core';
       dots: true,
       imageSize: 'cover'
     }
-  }]
-
-  // ],
-  // providers:[{
-  //   provide: HTTP_INTERCEPTORS, // permite agregar header autorization con el token verifyToken en node js
-  //   useClass: tokenService,
-  //   multi: true
-  // }]
+  },{
+      provide: HTTP_INTERCEPTORS, // permite agregar header autorization con el token verifyToken en node js
+      useClass: AddCustomHeadersInterceptor,
+       multi: true
+     }]
 })
 export class MeanstackModule { }

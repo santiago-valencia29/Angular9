@@ -11,6 +11,7 @@ import { global } from '../meanstack/global';
 
   export class FerreteriaService {
         public url: string;
+        headers = new HttpHeaders().set('Content-Type','application/json');
 
         constructor(
             private _http: HttpClient
@@ -20,22 +21,19 @@ import { global } from '../meanstack/global';
 
         saveFerreteria(ferreteria: Ferreteria): Observable<any>{
             let params = JSON.stringify(ferreteria);
-            let headers = new HttpHeaders().set('Content-Type','application/json');
-            return this._http.post(this.url+'save-ferreteria',params,{headers: headers});
+            return this._http.post(this.url+'ferreteria/save-ferreteria',params,{headers: this.headers});
         }
 
         getFerreterias(): Observable<any>{
-            let headers = new HttpHeaders().set('Content-Type','application/json');
-            return this._http.get(this.url+'Ferreterias',{headers: headers})
+            return this._http.get(this.url+'ferreteria',{headers: this.headers})
         }
 
         putFerreteria(_id:string, ferreteria:Ferreteria): Observable<any>{
-              return this._http.put(`${this.url}ferreteria/${_id}`,ferreteria)
+              return this._http.put(`${this.url}ferreteria/update?ferreteriaID=${_id}`,ferreteria,{headers: this.headers})
         }
 
-        deleteFerreteria(id: string){
-            let headers = new HttpHeaders().set('Content-Type','application/json');
-            return this._http.delete(`${this.url}/ferreteria/${id}`,{headers: headers})
+        deleteFerreteria(_id: string){
+            return this._http.delete(`${this.url}ferreteria/delete?ferreteriaID=${_id}`,{headers: this.headers})
         }
 
   }

@@ -12,15 +12,18 @@ export class Cliente {
         public sector: string,
         public direccion: string,
         public medidas: string,
-        public color_madekor_REL: { id: string, nombre: string },
-        public color_combinado_REL: { id: string, nombre: string },
+        public color_madekor_REL: any,
+        public color_combinado_REL: any,
         public precio: number,
         public fecha_inicio_proyecto: string,
         public fecha_entrega_proyecto: string,
         public fecha_garantia_proyecto: string,
         public desc_garantia: string,
         public coti_ferreteria: any,
-        public coti_madecor: any
+        public coti_madecor: any,
+        public color_madecor: any,
+        public color_combinado: any
+
 
     ) { }
 }

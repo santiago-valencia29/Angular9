@@ -54,8 +54,10 @@ export class ProjectsComponent implements OnInit {
 
       },
       error => {
-        console.log(<any>error)
-
+        Swal.fire({
+          text: error.error.message,
+          icon: 'error'
+        })
         this.loading = false;
       }
     );

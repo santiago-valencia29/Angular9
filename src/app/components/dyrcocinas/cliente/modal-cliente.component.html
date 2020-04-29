@@ -71,16 +71,16 @@
                     <mat-label>Color Madecor</mat-label>
                     <mat-select formControlName="color_madekor_REL">
                         <mat-option>Seleccionar</mat-option>
-                        <mat-option *ngFor="let color of colores" [value]="color.nombre">{{color.nombre}}</mat-option>
+                        <mat-option *ngFor="let color of colores" [value]="color._id">{{color.nombre}}</mat-option>
                     </mat-select>
                     <mat-error>Debe seleccionar un color</mat-error>
                 </mat-form-field>
 
                 <mat-form-field>
-                    <mat-label>Color Combinado</mat-label>
+                    <mat-label >Color Combinado</mat-label>
                     <mat-select formControlName="color_combinado_REL">
-                        <mat-option>Seleccionar</mat-option>
-                        <mat-option *ngFor="let color of colores" [value]="color.nombre">{{color.nombre}}</mat-option>
+                        <mat-option >Seleccionar</mat-option>
+                        <mat-option *ngFor="let color of colores" [value]="color._id">{{color.nombre}}</mat-option>
                     </mat-select>
                     <mat-error>Debe seleccionar un color</mat-error>
                 </mat-form-field>

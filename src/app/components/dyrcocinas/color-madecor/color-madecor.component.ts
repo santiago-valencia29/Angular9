@@ -177,7 +177,7 @@ export class ModalDialogColorMadecor implements OnInit {
     this.updateFormGroup = this._formBuilder.group({
       _id: new FormControl({ value: this.data[0]._id, disabled: true }),
       nombre: [this.data[0].nombre, [Validators.required, Validators.minLength(4), Validators.maxLength(50)]],
-      precio: [this.data[0].precio, [Validators.required, Validators.minLength(1), Validators.maxLength(8), Validators.pattern("^[0-9]*$")]],
+      precio: [this.data[0].precio, [Validators.required, Validators.minLength(0), Validators.maxLength(8), Validators.pattern("^[0-9]*$")]],
       proveedor: [this.data[0].proveedor, [Validators.maxLength(50)]],
       descripcion: [this.data[0].descripcion, [Validators.maxLength(500)]]
     });
@@ -193,7 +193,6 @@ export class ModalDialogColorMadecor implements OnInit {
           })
         }, 800);
 
-        console.log(resp)
         this.dialogRef.close(true);
       }, error => {
         if (error.error.message.code === 11000) {
