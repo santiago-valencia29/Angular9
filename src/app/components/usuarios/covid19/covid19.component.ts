@@ -32,13 +32,13 @@ export class Covid19Component implements OnInit {
   anio = new Date().getFullYear();
 
 
-  constructor(private titleService: Title,public googleAnalyticsService: GoogleAnalyticsService,private _behaviorSubject: BehaviorSubjectService, private _Covid19Service: Covid19Service) {
-    this.titleService.setTitle( 'Covid19 Colombia' );
+  constructor(private titleService: Title, public googleAnalyticsService: GoogleAnalyticsService, private _behaviorSubject: BehaviorSubjectService, private _Covid19Service: Covid19Service) {
+    this.titleService.setTitle('Covid19 Colombia');
   }
 
   ngOnInit(): void {
- 
-   
+
+
     this._Covid19Service.getDataCovid().subscribe((data: Casos) => {
       if (data) {
         this.loading = true;
@@ -63,7 +63,7 @@ export class Covid19Component implements OnInit {
           icon: 'error',
           text: error.message,
           showConfirmButton: false,
-          allowOutsideClick:false
+          allowOutsideClick: false
         });
       });
 
@@ -74,11 +74,11 @@ export class Covid19Component implements OnInit {
     this.googleAnalyticsService.eventEmitter('Resumen Covid', 'Clic boton', 'Ver porcentajes', 1);
   }
 
-  analyticsEventDiagnostico(){
+  analyticsEventDiagnostico() {
     this.googleAnalyticsService.eventEmitter('Diagnostico Covid', 'Clic item Nav', 'Pag Diagnostico', 1);
   }
 
-  analyticsEventPieChart(){
+  analyticsEventPieChart() {
     this.googleAnalyticsService.eventEmitter('Diagnostico Covid', 'Clic boton Fallecimiento', 'Data Fallecimiento', 1);
   }
 
@@ -194,13 +194,13 @@ export class Covid19Component implements OnInit {
     for (let x in repetidos) {
 
       let fecha = new Date(x).toLocaleDateString();
-      if(fecha!=='Invalid Date'){
-      multi[0]['series'].push(
-        {
-          "name": fecha,
-          "value": repetidos[x]
+      if (fecha !== 'Invalid Date') {
+        multi[0]['series'].push(
+          {
+            "name": fecha,
+            "value": repetidos[x]
 
-        })
+          })
       }
     }
     this._behaviorSubject.serviceExternalLineChart(multi);
@@ -232,8 +232,6 @@ export class Covid19Component implements OnInit {
   }
 
   sendDataAreaChart() {
-
-  
     let multi = [
       {
         "name": "Casos reportados por día",
@@ -242,25 +240,22 @@ export class Covid19Component implements OnInit {
     ]
     let repetidos = {};
     for (let i in this.casos) {
-      if (this.casos[i].atenci_n !== "Recuperado" && this.casos[i].atenci_n !== "Fallecido") {
-        repetidos[this.casos[i].fecha_de_notificaci_n] = (repetidos[this.casos[i].fecha_de_notificaci_n] || 0) + 1;
-      }
-
+      repetidos[this.casos[i].fecha_diagnostico] = (repetidos[this.casos[i].fecha_diagnostico] || 0) + 1;
     }
 
     for (let x in repetidos) {
 
-      
+
       let fecha = new Date(x).toLocaleDateString();
-      if(fecha!=='Invalid Date'){
+      if (fecha !== 'Invalid Date') {
         multi[0]['series'].push(
           {
             "name": fecha,
             "value": repetidos[x]
-  
+
           })
       }
-     
+
     }
     this._behaviorSubject.serviceExternalAreaChart(multi);
   }
@@ -285,22 +280,22 @@ export class Covid19Component implements OnInit {
 
   addMap() {
 
- 
+
     Mapboxgl.accessToken = environment.mapboxkey;
     this.mapa = new Mapboxgl.Map({
       container: 'mapa-mapbox', // container id
       style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
       center: [-74.2973328, 4.570868], // starting position [lng, lat]
       zoom: 4.5 // starting zoom    
-    },err =>{
+    }, err => {
       Swal.fire({
         title: 'Error al cargar el mapa',
         icon: 'error',
         text: err
       });
-    
+
     });
-   
+
   }
 
   addMarkers() {
@@ -393,14 +388,14 @@ export class Covid19Component implements OnInit {
     this._behaviorSubject.serviceExternalPieChart(dataPiechart);
   }
 
-  MaysPrimera(string){
+  MaysPrimera(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
   asignCoord() {
     for (let x in coord_muni) {
       for (let i in this.casos) {
-        if (this.casos[i].codigo_divipola===coord_muni[x].muni) {
+        if (this.casos[i].codigo_divipola === coord_muni[x].muni) {
 
 
           this.coordinates.push(
