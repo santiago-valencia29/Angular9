@@ -10,7 +10,7 @@ import { BehaviorSubjectService } from 'src/app/services/behavior-subject.servic
 export class BarChartComponent implements OnInit {
 
   single: any[];
-  view: any[] = [700, 200];
+  view: any[] = [];
 
   // options
   showXAxis: boolean = true;
@@ -27,6 +27,7 @@ export class BarChartComponent implements OnInit {
   };
 
   constructor(private _behaviorSubject:BehaviorSubjectService) { 
+    this.view = [innerWidth / 1, 400];
     this.single=this._behaviorSubject.serviceExternalBarChart();
     Object.assign(this, this.single );
   }
@@ -34,6 +35,10 @@ export class BarChartComponent implements OnInit {
   ngOnInit(): void {
     
   }
+
+  onResize(event) {
+    this.view = [event.target.innerWidth / 1, 400];
+}
 
   onSelect(data): void {
     // console.log('Item clicked', JSON.parse(JSON.stringify(data)));
