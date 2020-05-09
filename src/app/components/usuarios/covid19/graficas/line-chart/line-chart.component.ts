@@ -9,7 +9,7 @@ import { BehaviorSubjectService } from 'src/app/services/behavior-subject.servic
 })
 export class LineChartComponent implements OnInit {
   multi: any[];
-  view: any[] = [700, 300];
+  view: any[] = [];
 
   // options
   legend: boolean = true;
@@ -28,12 +28,17 @@ export class LineChartComponent implements OnInit {
   };
 
   constructor(private _behaviorSubject:BehaviorSubjectService) { 
+    this.view = [innerWidth / 1, 400];
     this.multi=this._behaviorSubject.serviceExternalLineChart();
     Object.assign(this, this.multi );
   }
 
   ngOnInit(): void {
   }
+
+  onResize(event) {
+    this.view = [event.target.innerWidth / 1, 400];
+}
 
   onSelect(data): void {
     // console.log('Item clicked', JSON.parse(JSON.stringify(data)));

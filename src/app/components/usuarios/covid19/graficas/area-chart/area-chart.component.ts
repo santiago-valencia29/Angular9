@@ -11,7 +11,7 @@ import { BehaviorSubjectService } from 'src/app/services/behavior-subject.servic
 export class AreaChartComponent implements OnInit {
 
   multi: any[];
-  view: any[] = [800, 300];
+  view: any[] = [];
 
   // options
   legend: boolean = false;
@@ -30,6 +30,7 @@ export class AreaChartComponent implements OnInit {
   };
 
   constructor(private _behaviorSubject: BehaviorSubjectService) {
+    this.view = [innerWidth / 1.2, 400];
     this.multi = this._behaviorSubject.serviceExternalAreaChart();
     Object.assign(this,this.multi);
 
@@ -44,6 +45,9 @@ export class AreaChartComponent implements OnInit {
     
    
   }
+  onResize(event) {
+    this.view = [event.target.innerWidth / 1.2, 400];
+}
 
 
 

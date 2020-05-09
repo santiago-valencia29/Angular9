@@ -42,7 +42,7 @@
 
                             </div>
                         </div>
-                        
+
                         <div class="card text-white bg-primary ml-3 mb-3" style="max-width: 15rem; max-height: 6rem;">
                             <div class="card-header">Activos</div>
                             <div class="card-body">
@@ -54,11 +54,12 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <button type="button" (click)="showPieChart=!showPieChart;analyticsEventVerPorcentajes()" class="btn btn-secondary">Ver Porcentajes</button>
+                        <button type="button" (click)="showPieChart=!showPieChart;analyticsEventVerPorcentajes()"
+                            class="btn btn-secondary">Ver Porcentajes</button>
                     </div>
-                    
+
                     <div *ngIf="showPieChart" class="row">
-                       
+
                         <div class="utilresponsive">
                             <app-pie-chart-advance></app-pie-chart-advance>
 
@@ -70,51 +71,49 @@
             <li *ngIf="loading" [ngbNavItem]="2">
                 <a class="nav-ng" ngbNavLink>Diagnóstico</a>
                 <ng-template ngbNavContent>
-                    <div class="row">
-                        <div class="utilresponsive">
-                            <app-area-chart></app-area-chart>
-                        </div>
+                    <div class="row ">
+                        <app-area-chart></app-area-chart>
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="utilresponsive">
-                            <app-bar-chart></app-bar-chart>
-                        </div>
+                        <app-bar-chart></app-bar-chart>
+
                     </div>
                     <hr>
                     <br>
                     <br>
                     <div class="row">
-                        <div class="utilresponsive">
+                        <!-- <div class="utilresponsive">
+                     
+                        </div> -->
                         <app-line-chart></app-line-chart>
-                        </div>
                     </div>
                     <hr>
 
                     <div class="row">
-                        <button (click)="sendDataCakePieCasosEdad()" class="btn btn-secondary mr-4 active">Casos por edad</button>
-                        <button (click)="sendDataCakePieFalleEdad();analyticsEventPieChart()" class="btn btn-secondary">Fallecimiento por edad</button>
+                        <button (click)="sendDataCakePieCasosEdad()" class="btn btn-secondary mr-4 active">Casos por
+                            edad</button>
+                        <button (click)="sendDataCakePieFalleEdad();analyticsEventPieChart()"
+                            class="btn btn-secondary">Fallecimiento por edad</button>
                     </div>
                     <div class="row">
-                        
-                        <div class="utilresponsive">
-                           
-                            <div style="height: 300px;">
+
+                        <div style="height: 300px;">
                             <div *ngIf="showpie">
                                 <app-cake-pie></app-cake-pie>
                             </div>
-                        </div>
-                       
+
+
                         </div>
                     </div>
                     <hr>
 
                     <div class="row">
                         <div class="utilresponsive">
-                           <app-area-muni-chart></app-area-muni-chart>
+                            <app-area-muni-chart></app-area-muni-chart>
                         </div>
                     </div>
-                   
+
 
                 </ng-template>
             </li>
@@ -124,7 +123,7 @@
 
     <div [ngbNavOutlet]="nav" class="mt-2"></div>
     <hr>
-    <div  class="row">
+    <div class="row">
         <div class="animated fadeIn" id="mapa-mapbox"></div>
     </div>
 
