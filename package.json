@@ -35,6 +35,7 @@
     "mapbox-gl": "^1.9.1",
     "mugan86-ng-google-analytics": "^1.1.1",
     "ng-animate": "^0.3.4",
+    "ngx-papaparse": "^4.0.4",
     "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "sweetalert2": "^9.7.1",
