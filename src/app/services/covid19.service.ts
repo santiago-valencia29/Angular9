@@ -19,7 +19,7 @@ export class Covid19Service {
         let headers = new HttpHeaders().set('Content-Type','application/json');
         headers.append('X-App-Token', this.token_apigov)
 
-        return this._http.get(this.url+'resource/gt2j-8ykr.json?$limit=30000',{headers: headers})
+        return this._http.get(this.url+'resource/gt2j-8ykr.json?$limit=50000',{headers: headers})
 
     }
 
