@@ -1,22 +1,21 @@
-FROM node:latest as node
+FROM node:latest as builder
 
-ARG ENV=prod
-ARG APP=angular-docker
+COPY package.json package-lock.json ./
 
-ENV ENV ${ENV}
-ENV APP ${APP}
+RUN npm install && mkdir /Angular9 && mv ./node_modules ./Angular9
 
-WORKDIR /app
-COPY ./ /app/
+WORKDIR /Angular9
 
-# Instala y construye el Angular App
-RUN npm ci
-RUN npm run build --prod
-RUN mv /app/dist/${APP}/* /app/dist/
+COPY . .
 
-# Angular app construida, la vamos a hostear un server production, este es Nginx
+RUN npm run ng build -- --deploy-url=/envapp/ --prod
 
-FROM nginx:1.13.8-alpine
+FROM nginx:alpine
 
-COPY --from=node /app/dist/ /usr/share/nginx/html
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+RUN rm -rf /usr/share/nginx/html/*
+
+COPY --from=builder /Angular9/dist /usr/share/nginx/html
+
+EXPOSE 4200 80
+
+ENTRYPOINT [ "nginx","-g","daemon off;" ]
