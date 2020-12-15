@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { Papa } from 'ngx-papaparse';
 
-import { Crm } from '../../../models/crm.nodel';
+import { Crm } from '../../../models/crm.model';
 import { NgForm, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 
@@ -140,7 +140,7 @@ export class PrivateTasksComponent implements OnInit {
       temporal = Object.assign([], data);
       temporal.splice(index, 1); //Se elimina el elemento q se compara
       /**
-       * Se busca en temporal el elemento, y en repetido para 
+       * Se busca en temporal el elemento, y en repetido para
        * ver si esta ingresado al array. indexOf retorna
        * -1 si el elemento no se encuetra
        **/
